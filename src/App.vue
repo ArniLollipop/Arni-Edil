@@ -1,20 +1,21 @@
 <template>
   <div id = "App" class = " px-6">
     <Head></Head>
-    <div>
+    <main>
       <router-view/>
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
-import Head from './components/Head.vue'
-export default {
-  name : 'app',
-  components:{
-    Head
+  import Head from './components/Head.vue'
+  export default {
+    name : 'app',
+    components:{
+      Head
+    },
   }
-}
+  
 </script>
 
 <style>

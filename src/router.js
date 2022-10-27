@@ -5,7 +5,7 @@ import About from './pages/About.vue'
 export default createRouter({
   history: createWebHashHistory(), 
   routes: [
-    {path: '/', component: Home , alias: '/'},
+    {path: '/', component: Home},
     {path: '/about', component: About},
   ]
 })

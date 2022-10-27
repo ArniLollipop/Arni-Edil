@@ -1,6 +1,6 @@
 <template>
   <header class = "pt-6 md:pt-[15px]">
-    <div class = "flex items-center justify-between">
+    <div class = "flex items-center justify-between pl-12">
       <div class = "flex items-center justify-center">
         <img src="@/img/ukraine.png" alt="" class = "mr-1 w-[22px] h-[12px]">
         <button class="text-accent hover:opacity-75 text-xl">UA</button>
@@ -8,7 +8,7 @@
         <button class="hover:opacity-75 text-xl">RU</button>
       </div>
       <div>
-        <nav class="flex items-center gap-20 xl:gap-8 lg:gap-2 flex-wrap md:hidden">
+        <nav class="flex items-center gap-[90px] xl:gap-8 lg:gap-2 flex-wrap md:hidden">
           <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#"><span>Україна</span></a>
           <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Магазини</a>
           <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Пошук на мапі</a>
@@ -34,10 +34,10 @@
         </a>
       </nav>
     </div>
-    <div class="flex justify-between items-center pt-2 gap-2 md:mt-[50px]">
+    <div class="flex justify-between items-center pt-2 md:mt-[50px]">
       <div class="text-accent font-semibold text-[40px] lg:text-2xl md:hidden">VamBeri</div>
-      <div class="flex max-w-[750px] grow md:gap-2 sm:max-w-[258px] sm:mx-auto md:max-w-none">
-        <button class="category-button button inline-flex items-center px-[21px] translate-x-4 z-[11] md:hidden">
+      <div class="flex max-w-[750px] ml-6 grow md:gap-2 sm:max-w-[258px] sm:mx-auto md:max-w-none w-[750px] bg-white py-2 pl-2 rounded-3xl">
+        <button class="inline-flex items-center px-[21px] z-[11] md:hidden bg-accent py-3 rounded-[20px] text-white">
           <img class="mr-[3px]" src="@/img/category.svg" alt="category select">
           Категорії
         </button>
@@ -46,11 +46,11 @@
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
         </svg>
-        <input class="header-input" type="text" placeholder="Пошук по оголошенням..." onfocus="this.placeholder = ''"
+        <input class="w-[500px] max-w-[500px] focus:outline-none px-2" type="text" placeholder="Пошук по оголошенням..." onfocus="this.placeholder = ''"
           onblur="this.placeholder = 'Пошук по оголошенням...'">
-        <button class="button px-[25px] z-[11] -translate-x-4 md:-translate-x-10 sm:hidden">Пошук</button>
+        <button class="px-[25px] z-[11] -translate-x-4 md:-translate-x-10 sm:hidden bg-accent rounded-[20px] text-white">Пошук</button>
       </div>
-      <button class="button px-[14px] md:hidden">Створити оголошення</button>
+      <button class="px-[25px] md:hidden bg-accent rounded-[20px] text-white py-3">Створити оголошення</button>
     </div>
   </header>
 </template>
