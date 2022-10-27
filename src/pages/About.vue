@@ -1,10 +1,10 @@
 <template>
-  <header class = "h-40 w-full bg-green-500">
+  <header class = "h-40 w-full">
 
   </header>
 </template>
 <script>
   export default{
-    
+
   }
 </script>
