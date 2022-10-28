@@ -1,8 +1,8 @@
 <template>
-  <div id="App">
-    <main class="container mx-auto px-5">
+   <div id="App">
+    <div>
       <router-view />
-    </main>
+    </div>
   </div>
 </template>
 
