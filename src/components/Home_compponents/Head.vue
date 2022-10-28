@@ -1,56 +1,149 @@
 <template>
-  <header class = "pt-6 md:pt-[15px] px-6">
-    <div class = "flex items-center justify-between pl-12">
-      <div class = "flex items-center justify-center">
-        <img src="@/img/ukraine.png" alt="" class = "mr-1 w-[22px] h-[12px]">
-        <button class="text-accent hover:opacity-75 text-xl">UA</button>
-        <span>|</span>
-        <button class="hover:opacity-75 text-xl">RU</button>
-      </div>
-      <div>
-        <nav class="flex items-center gap-[90px] xl:gap-8 lg:gap-2 flex-wrap md:hidden">
-          <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#"><span>Україна</span></a>
-          <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Магазини</a>
-          <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Пошук на мапі</a>
-          <div>
-            <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Увійти</a>
-            <span>|</span>
-            <a class="border-b border-accent border-opacity-0 hover:border-opacity-100 hover:text-accent" href="#">Реєстрація</a>
+  <header class="container mx-auto px-5 pt-4 xl:pt-6">
+    <div class="lg:hidden">
+      <div class="flex items-center justify-between">
+        <div
+          class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+        >
+          <CIcon
+            :icon="icon.cilHamburgerMenu"
+            size="sm"
+            custom-class-name="w-5 hover:text-accent"
+          />
+        </div>
+        <div class="font-semibold text-lg text-accent ml-8">VamBeri</div>
+        <div class="flex item-center space-x-1 shrink-0">
+          <div
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
+          >
+            <CIcon
+              :icon="icon.cilCart"
+              size="sm"
+              custom-class-name="w-4 hover:text-accent"
+            />
           </div>
-        </nav>
+          <div
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
+          >
+            <CIcon
+              :icon="icon.cilEnvelopeClosed"
+              size="sm"
+              custom-class-name="w-4 hover:text-accent -mt-0.5"
+            />
+          </div>
+        </div>
       </div>
-      <nav class="flex items-center flex-wrap justify-center gap-1 px-2 mr-2">
-        <a class="md:hidden px-2 py-2 bg-white rounded-full border border-black border-opacity-0 hover:border-opacity-100" href="#">
-          <img class="w-[17px] h-[17px]" src="@/img/user.svg" alt="pr border-b border-black border-opacity-0 hover:border-opacity-100ofile">
-        </a>
-        <a class=" px-2 py-2 bg-white rounded-full border border-black border-opacity-0 hover:border-opacity-100" href="#">
-          <img class="w-[17px] h-[17px] md:w-[24px] md:h-[24px]" src="@/img/mail.svg" alt="mail">
-        </a>
-        <button class="md:order-first px-2 py-2 bg-white rounded-full border border-black border-opacity-0 hover:border-opacity-100">
-          <img class="w-[17px] h-[17px] md:w-[20px] md:h-[20px]" src="@/img/trash.svg" alt="cart">
-        </button>
-        <a class="md:hidden px-2 py-2 bg-white rounded-full border border-black border-opacity-0 hover:border-opacity-100" href="#">
-          <img class="w-[17px] h-[17px]" src="@/img/wishlist.svg" alt="wishlist">
-        </a>
-      </nav>
+      <div class="flex mx-4 mt-2 px-3 py-2 bg-white rounded-xl space-x-3">
+        <CIcon
+          :icon="icon.cilSearch"
+          size="sm"
+          custom-class-name="w-4 hover:text-accent"
+        />
+        <input
+          type="text"
+          class="focus:ring-0 focus:outline-none placeholder:text-sm text-sm w-11/12"
+          placeholder="Пошук по оголошенням... "
+        />
+      </div>
     </div>
-    <div class="flex justify-between items-center pt-2 md:mt-[50px]">
-      <div class="text-accent font-semibold text-[40px] lg:text-2xl md:hidden">VamBeri</div>
-      <div class="flex max-w-[750px] ml-6 grow md:gap-2 sm:max-w-[258px] sm:mx-auto md:max-w-none w-[750px] bg-white py-2 pl-2 rounded-3xl">
-        <button class="inline-flex items-center px-[21px] z-[11] md:hidden bg-accent py-3 rounded-[20px] text-white">
-          <img class="mr-[3px] w-[14px] h-[14px]" src="@/img/category.svg" alt="category select">
-          Категорії
-        </button>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="hidden relative w-5 h-5 my-auto mr-[-30px] md:inline-block md:translate-x-4">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-        </svg>
-        <input class="w-[500px] max-w-[500px] focus:outline-none px-2" type="text" placeholder="Пошук по оголошенням..." onfocus="this.placeholder = ''"
-          onblur="this.placeholder = 'Пошук по оголошенням...'">
-        <button class="px-[25px] z-[11] -translate-x-4 md:-translate-x-10 sm:hidden bg-accent rounded-[20px] text-white">Пошук</button>
+    <div class="hidden lg:block">
+      <div class="flex justify-between items-center">
+        <div class="ml-11 flex">
+          <CIcon :icon="icon.cifUa" custom-class-name="w-5" />
+          <a href="#" class="ml-2">UA</a>|
+          <a href="#">RU</a>
+        </div>
+        <div class="flex space-x-16">
+          <a href="#" class="flex">
+            <CIcon :icon="icon.cilLocationPin" custom-class-name="w-4" />
+            <div class="ml-0.5">Україна</div>
+          </a>
+          <a href="#" class="">Магазини</a>
+          <a href="#" class="">Пошук на мапі</a>
+          <div>
+            <a href="#" class="">Увійти</a> |
+            <a href="#" class="">Реєстрація</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <a
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0 cursor-pointer"
+          >
+            <CIcon
+              :icon="icon.cilUser"
+              size="sm"
+              custom-class-name="w-5 hover:text-accent"
+            />
+          </a>
+          <button
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+          >
+            <CIcon
+              :icon="icon.cilEnvelopeClosed"
+              size="sm"
+              custom-class-name="w-5 -mt-1 hover:text-accent"
+            />
+          </button>
+          <button
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+          >
+            <CIcon
+              :icon="icon.cilCart"
+              size="sm"
+              custom-class-name="w-5  hover:text-accent"
+            />
+          </button>
+          <button
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+          >
+            <CIcon
+              :icon="icon.cilHeart"
+              size="sm"
+              custom-class-name="w-5  hover:text-accent"
+            />
+          </button>
+        </div>
       </div>
-      <button class="px-[25px] md:hidden bg-accent rounded-[20px] text-white py-3">Створити оголошення</button>
+      <div class="flex justify-between items-center mt-5">
+        <div class="font-semibold text-4xl text-accent">VamBeri</div>
+
+        <div class="py-1 px-3 flex items-center rounded-3xl bg-white w-1/2">
+          <div class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+            <CIcon :icon="icon.cilCommand" custom-class-name="w-4 text-white" />
+            <div class="ml-1 text-sm text-white">Категорії</div>
+          </div>
+          <input
+            type="text"
+            class="focus:ring-0 focus:outline-none w-3/5 ml-4 placeholder:text-sm text-sm"
+            placeholder="Пошук по оголошенням..."
+          />
+          <div
+            class="px-5 py-3 rounded-3xl bg-accent flex items-center ml-auto"
+          >
+            <div class="text-sm text-white">Пошук</div>
+          </div>
+        </div>
+
+        <div class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+          <div class="text-sm text-white">Створити оголошення</div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
+
+<script>
+import { CIcon } from "@coreui/icons-vue";
+import * as icon from "@coreui/icons";
+
+export default {
+  components: {
+    CIcon,
+  },
+  setup() {
+    return {
+      icon,
+    };
+  },
+};
+</script>
