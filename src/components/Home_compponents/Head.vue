@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <header class="container mx-auto px-5 pt-4 xl:pt-6">
     <div class="lg:hidden">
@@ -147,3 +148,5 @@ export default {
   },
 };
 </script>
+=======
+>>>>>>> 20ddfe392650928e43ce68ff499c13f121a7f4ae
