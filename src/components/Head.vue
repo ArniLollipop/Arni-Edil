@@ -1,5 +1,5 @@
 <template>
-  <header class = "pt-6 md:pt-[15px]">
+  <header class = "pt-6 md:pt-[15px] px-6">
     <div class = "flex items-center justify-between pl-12">
       <div class = "flex items-center justify-center">
         <img src="@/img/ukraine.png" alt="" class = "mr-1 w-[22px] h-[12px]">
@@ -38,7 +38,7 @@
       <div class="text-accent font-semibold text-[40px] lg:text-2xl md:hidden">VamBeri</div>
       <div class="flex max-w-[750px] ml-6 grow md:gap-2 sm:max-w-[258px] sm:mx-auto md:max-w-none w-[750px] bg-white py-2 pl-2 rounded-3xl">
         <button class="inline-flex items-center px-[21px] z-[11] md:hidden bg-accent py-3 rounded-[20px] text-white">
-          <img class="mr-[3px]" src="@/img/category.svg" alt="category select">
+          <img class="mr-[3px] w-[14px] h-[14px]" src="@/img/category.svg" alt="category select">
           Категорії
         </button>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

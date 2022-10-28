@@ -1,19 +1,29 @@
 <template>
-  <div id = "App" class = " px-6 pb-4">
+  <div id = "App">
     <Head></Head>
     <main>
       <router-view/>
     </main>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import Head from './components/Head.vue'
+  
   export default {
     name : 'app',
-    components:{
-      Head
-    },
+    data(){
+      return {
+        recomendation:[
+          {id: 1, title: 'Дитячі товари', image: 'img/Medved.png'},
+          
+        ],
+        images:[
+          '@/img/Medved.jpg',
+          '@/img/Medved.svg'
+        ]
+      }
+    }
   }
   
 </script>
