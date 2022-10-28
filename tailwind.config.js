@@ -22,6 +22,9 @@ module.exports = {
         back: '#E7E7E7',
       }
     },
+    backgroundImage : {
+      'boxes' : 'url("/src/img/boxes.svg")',
+    },
   },
   plugins: [],
 }

@@ -11,16 +11,21 @@
       </div>
     </div>
   </section>
+  <section>
+    <Advan></Advan>
+  </section>
   <Footer></Footer>
 </template>
 
 <script>
+  import Advan from '@/components/Home_compponents/Advantages.vue'
   import Head from '@/components/Home_compponents/Head.vue'
   import Footer from '@/components/Home_compponents/Footer.vue'
   export default{
     components:{
       Head,
-      Footer
+      Footer,
+      Advan
     },
     data(){
       return {
