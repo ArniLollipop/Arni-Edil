@@ -14,14 +14,14 @@
           </div>
           <a href="mailto:vamberi.sms@gmail.com" class="block mt-[10px] text-white lg:text-xs">vamberi.sms@gmail.com</a>
         </div>
-        <ul class="text-white xl:text-sm lg:text-xs">
+        <ul class="text-white xl:text-sm lg:text-xs w-1/4">
           <li><a href="#">Про нас</a></li>
           <li><a href="#">Безпечна угода</a></li>
           <li><a href="#">Правила подання оголошеннь</a></li>
           <li><a href="#">Пропозиції для покаращення сайту</a></li>
           <li><a href="#">Політики конфіденційності</a></li>
         </ul>
-        <ul class="text-white xl:text-sm lg:text-xs">
+        <ul class="text-white xl:text-sm lg:text-xs w-1/4">
           <li><a href="#">Блог</a></li>
           <li><a href="#">Дропшипінг</a></li>
           <li><a href="#">Правила сервісу</a></li>
