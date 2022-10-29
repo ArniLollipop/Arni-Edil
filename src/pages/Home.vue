@@ -1,9 +1,28 @@
 <template>
   <Head></Head>
-  
+  <section class="mt-10 px-6 pb-12">
+    <img src="@/img/Баннер.png" alt="" class="w-full h-[200px]" />
+    <div
+      class="mt-16 grid grid-cols-9 gap-y-3 gap-x-8 xl:grid-cols-9"
+    >
+      <div
+        class="mx-auto text-center text-base w-[130px]"
+        v-for="rec in recomendation"
+      >
+        <div
+          class="px-4 py-8 bg-white rounded-full flex items-center justify-center"
+        >
+          <img :src="require('../img/' + rec.image)" alt="" class="h-[65px]" />
+        </div>
+        <a href="#" class="hover:text-accent">{{ rec.title }}</a>
+      </div>
+    </div>
+  </section>
   <section>
     <Advan></Advan>
+    <Magazini></Magazini>
   </section>
+  <Footer></Footer>
 </template>
 
 <script>

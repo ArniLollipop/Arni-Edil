@@ -2,12 +2,12 @@
   <section class = "px-6 md:py-6">
     <div class = "w-full min-h-[250px] sm:flex relative">
       <img src="@/img/boxes.svg" alt="" class = "absolute top-2 xl:right-[10%] lg:right-[5%] z-0 xl:w-[35%] h-[95%] md:w-[50%] md:right-[3%] right-0 w-[50%]">
-      <div class = "md:pt-4 relative">
+      <div class = "sm:pt-4 relative">
         <div class = "md:w-[70%] w-full">
           <p class = "font-bold sm:text-2xl lg:text-4xl text-[14px]">Майданчик для інтернет-магазинів та  дошка для приватних оголошень</p>
         </div>
         <div class = "w-[50%] mt-7">
-          <p class = "font-normal text-[base] hidden lg:block">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
+          <p class = "font-normal text-[base] hidden xl:block">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
         </div>
         <div class = "absolute bottom-2 left-0 hidden md:block">
           <button class="hover:text-accent">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class ="md:bg-white xl:px-6 py-6 sm:px-4 rounded-xl xl:w-[27%] z-10 md:w-[30%] bg-transparent w-full md:relative absolute top-14 md:top-0">
-        <div class = "flex flex-col sm:gap-y-4 gap-y-1">
+        <div class = "flex flex-col sm:gap-y-2 gap-y-1">
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
             <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Безпечні угоди</p>
