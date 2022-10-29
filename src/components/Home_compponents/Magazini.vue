@@ -15,11 +15,11 @@
       </div>
     </div>
     <div class = "h-[170px] w-full">
-      <div class = "flex items-center h-full gap-x-5 overflow-hidden">
-        <button @click="prevSlide" href="#" class = "overflow-hidden z-50 bg-white min-w-[20px] py-[30px] px-1 rounded-3xl"><img src="@/img/Стрелка_left.png" alt=""></button>
+      <div class = "flex items-center h-full gap-x-3 overflow-hidden">
+        <button @click="prevSlide" href="#" class = "overflow-hidden z-50 bg-white min-w-[20px] py-2 px-2 rounded-full"><img src="@/img/Стрелка_left.png" alt=""></button>
         <div class = "w-full overflow-hidden">
           <div class = "flex gap-x-4 overflow-hidden slider transition-all duration-500">
-            <div class = "bg-white text-center px-6 py-9 rounded-[10px] flex items-center min-w-[330px] h-full" v-for="slide in slides">
+            <div class = "bg-white text-center px-6 py-9 rounded-[10px] flex items-center min-w-[310px] h-full" v-for="slide in slides">
               <div class = "h-[80px]">
                 <img :src="require('../../img/' + slide.img)" alt="" class = "pr-4 w-[130px] h-[56px]">
                 <div class = "flex items-center mx-auto ml-5">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <button @click="nextSlide" class = "bg-white min-w-[20px] py-[30px] px-1 rounded-3xl"><img src="@/img/Стрелка_right.png" alt=""></button>
+        <button @click="nextSlide" class = "bg-white min-w-[20px] py-2 px-2 rounded-full"><img src="@/img/Стрелка_right.png" alt=""></button>
       </div>
     </div>
   </section>
