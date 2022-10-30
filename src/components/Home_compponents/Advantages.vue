@@ -1,12 +1,12 @@
 <template>
   <section class = "px-6 md:py-6">
-    <div class = "w-full min-h-[250px] sm:flex relative">
-      <img src="@/img/boxes.svg" alt="" class = "absolute top-2 xl:right-[10%] lg:right-[5%] z-0 xl:w-[35%] h-[95%] md:w-[50%] md:right-[3%] right-0 w-[50%]">
+    <div class = "w-full min-h-[230px] sm:min-h-[300px] sm:flex relative">
+      <img src="@/img/boxes.svg" alt="" class = "absolute md:top-2 bottom-6 xl:right-[10%] lg:right-[5%] z-0 xl:w-[35%] md:h-[95%] md:w-[50%] md:right-[3%] -right-2 w-[162px] h-[105px]">
       <div class = "sm:pt-4 relative">
-        <div class = "md:w-[70%] w-full">
-          <p class = "font-bold sm:text-2xl lg:text-4xl text-[14px]">Майданчик для інтернет-магазинів та  дошка для приватних оголошень</p>
+        <div class = "md:w-[70%] w-full min-h-[50px]">
+          <p class = "font-bold sm:text-2xl lg:text-4xl text-[13px]">Майданчик для інтернет-магазинів та  дошка для приватних оголошень</p>
         </div>
-        <div class = "w-[50%] mt-7">
+        <div class = "w-[50%] xl:mt-7">
           <p class = "font-normal text-[base] hidden xl:block">Він заощаджує час пошуку необхідних спеціалістів, товарів, послуг. А ще це місце, де перевірені магазини можуть знайти нових вдячних клієнтів.</p>
         </div>
         <div class = "absolute bottom-2 left-0 hidden md:block">
@@ -22,7 +22,7 @@
           
         </div>
       </div>
-      <div class ="md:bg-white xl:px-6 py-6 sm:px-4 rounded-xl xl:w-[27%] z-10 md:w-[30%] bg-transparent w-full md:relative absolute top-14 md:top-0">
+      <div class ="md:bg-white xl:px-6 md:py-6 sm:px-4 rounded-xl xl:w-[27%] z-10 md:w-[30%] bg-transparent w-full md:relative absolute bottom-4 md:top-0">
         <div class = "flex flex-col sm:gap-y-2 gap-y-1">
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
