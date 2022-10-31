@@ -1,5 +1,5 @@
 <template>
-  <section class = "px-4 mb-14">
+  <section class = "px-4 pb-2 sm:pb-4 lg:pb-8">
     <div class = "w-fit py-6 flex sm:flex-col">
       <p class = "font-semibold text-black sm:text-3xl text-sm">Магазини</p>
       <div class = "flex items-center lg:pl-[2px] pl-2 pt-[2px] text-[12px] sm:text-sm">
