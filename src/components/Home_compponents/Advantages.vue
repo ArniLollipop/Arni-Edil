@@ -45,7 +45,7 @@
             <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Допомога ЗСУ</p>
           </div>
           <div class = "absolute bottom-4 right-6 bg-accent w-[52px] h-[52px] rounded-full xl:flex items-center justify-center hidden">
-            <img src="@/img/like.svg" alt="" class = "w-[26px] h-[26px]">
+            <img src="@/img/like.svg" alt="" class = "w-[26px] h-[26px] fill-white">
           </div>
         </div>
       </div>

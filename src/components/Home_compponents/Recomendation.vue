@@ -6,7 +6,7 @@
     >
       <div
         class="xl:text-base sm:w-[100px] text-center lg:text-[14px] sm:text-[12px] text-[11px] w-fit"
-        v-for="rec in recomendation"
+        v-for="rec in recomendation" v-show="rec.id>=1"
       >
         <div
           class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] sm:w-[80px] sm:h-[80px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center mx-auto"
@@ -41,17 +41,18 @@
         
       </swiper-slide>
     </swiper>
-    <button ref="prev" class="absolute bottom-1 left-6  z-10"><img src="@/img/Влево.png" alt=""></button>
-    <button ref="next" class="absolute bottom-1 right-6 z-10"><img src="@/img/Вправо.png" alt=""></button>
+    <button ref="prev" class="sm:hidden absolute bottom-1 left-6  z-10"><img src="@/img/Влево.png" alt=""></button>
+    <button ref="next" class="sm:hidden absolute bottom-1 right-6 z-10"><img src="@/img/Вправо.png" alt=""></button>
   </section>
 </template>
 
 <script>
-  import { Splide, SplideSlide } from '@splidejs/vue-splide';import { ref } from 'vue';
+  import { ref } from 'vue';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
   import 'swiper/css/navigation';
-  import { Navigation } from 'swiper';export default{
+  import { Navigation } from 'swiper';
+  export default{
     components: {
       Swiper,
       SwiperSlide,

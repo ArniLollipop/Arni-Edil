@@ -108,25 +108,25 @@
         <div class="font-semibold text-4xl text-accent">VamBeri</div>
 
         <div class="py-1 px-3 flex items-center rounded-3xl bg-white w-1/2">
-          <div class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+          <button class="px-5 py-3 rounded-3xl bg-accent flex items-center">
             <CIcon :icon="icon.cilCommand" custom-class-name="w-4 text-white" />
             <div class="ml-1 text-sm text-white">Категорії</div>
-          </div>
+          </button>
           <input
             type="text"
             class="focus:ring-0 focus:outline-none w-3/5 ml-4 placeholder:text-sm text-sm"
             placeholder="Пошук по оголошенням..."
           />
-          <div
+          <button
             class="px-5 py-3 rounded-3xl bg-accent flex items-center ml-auto"
           >
             <div class="text-sm text-white">Пошук</div>
-          </div>
+          </button>
         </div>
 
-        <div class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+        <button class="px-5 py-3 rounded-3xl bg-accent flex items-center">
           <div class="text-sm text-white">Створити оголошення</div>
-        </div>
+        </button>
       </div>
     </div>
   </header>
