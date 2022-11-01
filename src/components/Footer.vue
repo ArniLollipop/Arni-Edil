@@ -1,41 +1,113 @@
 <template>
-  <footer class = "bg-dark h-[252px] py-[52px]">
-    <div class = "container">
-      <div class="flex justify-between items-center md:hidden">
-        <div class="w-1/4">
-          <h3 class="text-accent font-semibold  lg:text-2xl text-[25px]">VamBeri</h3>
-          <div class="flex gap-[10px] mt-[60px]">
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/inst.svg" alt="instagram"></a>
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/facebook.svg" alt="fb"></a>
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/youtube.svg" alt="youtube"></a>
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/telegram.svg" alt="telegram"></a>
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/twitter.svg" alt="twitter"></a>
-            <a href="#" class=""><img class = "h-5 w-5" src="@/img/viber.svg" alt="viber"></a>
+  <footer class="bg-dark text-white">
+    <div class="container mx-auto px-5 h-full">
+      <div class="hidden lg:flex justify-between gap-x-10 pt-14 pb-12 h-full">
+        <div class="flex flex-col justify-between">
+          <div class="text-accent font-semibold text-2xl">VamBeri</div>
+          <div>
+            <div class="flex items-center space-x-2.5">
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/inst.svg" alt="instagram"
+              /></a>
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/facebook.svg" alt="fb"
+              /></a>
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/youtube.svg" alt="youtube"
+              /></a>
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/telegram.svg" alt="telegram"
+              /></a>
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/twitter.svg" alt="twitter"
+              /></a>
+              <a href="#" class=""
+                ><img class="h-5 w-5" src="@/img/viber.svg" alt="viber"
+              /></a>
+            </div>
+            <div class="mt-2">vamberi.sms@gmail.com</div>
           </div>
-          <a href="mailto:vamberi.sms@gmail.com" class="block mt-[10px] text-white lg:text-xs">vamberi.sms@gmail.com</a>
         </div>
-        <ul class="text-white xl:text-sm lg:text-xs w-1/4">
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Безпечна угода</a></li>
-          <li><a href="#">Правила подання оголошеннь</a></li>
-          <li><a href="#">Пропозиції для покаращення сайту</a></li>
-          <li><a href="#">Політики конфіденційності</a></li>
-        </ul>
-        <ul class="text-white xl:text-sm lg:text-xs w-1/4">
-          <li><a href="#">Блог</a></li>
-          <li><a href="#">Дропшипінг</a></li>
-          <li><a href="#">Правила сервісу</a></li>
-          <li><a href="#">Угода користвувача</a></li>
-          <li><a href="#">Служба підтримки</a></li>
-        </ul>
-        <div class="w-1/4">
-          <a href="#header" class="bg-transparent w-[60px] h-[60px] rounded-full flex items-center justify-center mx-auto my-4 border-[1px] border-white hover:border-accent">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
-            class="w-8 h-8 rotate-[90deg]">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-          </a>
-          <div class="text-white mt-8 text-center xl:text-sm lg:text-xs">© 2022 Доска объявлений vamberi.com.ua</div>
+        <div class="space-y-2.5">
+          <div><a href="#">Про нас</a></div>
+          <div><a href="#">Безпечна угода</a></div>
+          <div><a href="#">Правила подання оголошеннь</a></div>
+          <div><a href="#">Пропозиції для покаращення сайту</a></div>
+          <div><a href="#">Політики конфіденційності</a></div>
+        </div>
+        <div class="space-y-2.5">
+          <div><a href="#">Блог</a></div>
+          <div><a href="#">Дропшипінг </a></div>
+          <div><a href="#">Правила сервісу</a></div>
+          <div><a href="#">Угода користвувача</a></div>
+          <div><a href="#">Служба підтримки</a></div>
+        </div>
+        <div class="flex flex-col items-center justify-between">
+          <button
+            class="w-[60px] h-[60px] rounded-full border border-accent flex items-center justify-center"
+          >
+            <img src="@/img/footer-btn.svg" alt="" />
+          </button>
+          <div class="">© 2022 Доска объявлений vamberi.com.ua</div>
+        </div>
+      </div>
+      <div class="lg:hidden pt-4 pb-2 flex flex-col justify-between gap-y-6">
+        <div class="flex justify-between items-center">
+          <div class="text-sm text-accent">VamBeri</div>
+          <button
+            class="w-[30px] h-[30px] rounded-full border border-accent flex items-center justify-center"
+          >
+            <img src="@/img/footer-btn.svg" alt="" />
+          </button>
+        </div>
+        <div class="flex justify-between items-end text-xs">
+          <div class="space-y-1">
+            <div><a href="#">Про нас</a></div>
+            <div><a href="#">Блог </a></div>
+            <div><a href="#">Безпечна угода</a></div>
+            <div><a href="#">Дропшипінг </a></div>
+          </div>
+          <div class="space-y-1">
+            <div><a href="#">Угода користвувача</a></div>
+            <div><a href="#">Правила сервісу </a></div>
+            <div><a href="#">Служба підтримки</a></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div class="flex gap-x-1">
+            <a href="#" class=""
+              ><img
+                class="h-[15px] w-[15px]"
+                src="@/img/inst.svg"
+                alt="instagram"
+            /></a>
+            <a href="#" class=""
+              ><img class="h-[15px] w-[15px]" src="@/img/facebook.svg" alt="fb"
+            /></a>
+            <a href="#" class=""
+              ><img
+                class="h-[15px] w-[15px]"
+                src="@/img/youtube.svg"
+                alt="youtube"
+            /></a>
+            <a href="#" class=""
+              ><img
+                class="h-[15px] w-[15px]"
+                src="@/img/telegram.svg"
+                alt="telegram"
+            /></a>
+            <a href="#" class=""
+              ><img
+                class="h-[15px] w-[15px]"
+                src="@/img/twitter.svg"
+                alt="twitter"
+            /></a>
+            <a href="#" class=""
+              ><img class="h-[15px] w-[15px]" src="@/img/viber.svg" alt="viber"
+            /></a>
+          </div>
+          <div class="text-xs">vamberi.sms@gmail.com</div>
         </div>
       </div>
     </div>
