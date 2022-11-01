@@ -2,10 +2,10 @@
   <Head></Head>
   <Banner></Banner>
   <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark">
-    <div class = "flex items-center gap-x-1 pb-4 relative">
-      <p class = "font-normal text-sm">Головна</p>
+    <div class = "flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
+      <p class = "font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class = "w-[10] h-[10]">
-      <p class = "font-normal text-sm">Блог</p>
+      <p class = "font-normal sm:text-sm text-[11px]">Блог</p>
       <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] sm:hidden absolute right-0">
     </div>
     <div class = "sm:flex items-center md:gap-x-7 sm:gap-x-3 hidden">

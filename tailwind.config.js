@@ -10,6 +10,10 @@ module.exports = {
         dark: '#424242',
         back: '#E7E7E7',
         gray: '#999999',
+        pink: '#F2EEF9',
+      },
+      backgroundImage:{
+        send:'url("@/img/send.svg")',
       }
     },
   },
