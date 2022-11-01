@@ -15,6 +15,9 @@ import Ugoda from './pages/Ugoda.vue'
 import Reserved from './pages/Reserved.vue'
 import Drop from './pages/Dropshipping.vue'
 import Support_service from './pages/Support_service.vue'
+import Create from './components/Create_components/Create.vue'
+import Create1 from './components/Create_components/Create_1.vue'
+import Create2 from './components/Create_components/Create_2.vue'
 
 export default createRouter({
   history: createWebHashHistory(), 
@@ -35,5 +38,8 @@ export default createRouter({
     {path: '/reserved', component: Reserved},
     {path: '/dropShipping', component: Drop},
     {path: '/support', component: Support_service},
+    {path: '/create', component: Create},
+    {path: '/create/create1', component: Create1},
+    {path: '/create/create2', component: Create2},
   ]
 })

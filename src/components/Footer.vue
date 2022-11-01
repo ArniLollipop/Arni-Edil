@@ -25,7 +25,7 @@
                 ><img class="h-5 w-5" src="@/img/viber.svg" alt="viber"
               /></a>
             </div>
-            <div class="mt-2">vamberi.sms@gmail.com</div>
+            <div class="mt-2 lg:text-base text-xs">vamberi.sms@gmail.com</div>
           </div>
         </div>
         <div class="space-y-2.5">

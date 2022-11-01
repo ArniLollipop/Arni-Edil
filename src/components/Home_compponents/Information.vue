@@ -34,7 +34,7 @@
           </div>
           <div class = "lg:text-xl sm:text-base text-[12px] text-center">
             <img src="@/img/shopping.png" alt="" class = "mx-auto sm:w-1/4 w-[50px]">
-            <p class = "md:w-48"><span class = "hidden sm:block"> Лише</span> перевірені онлайн-магазини</p>
+            <p class = "md:w-48"><span class = "hidden sm:inline">Лише</span> перевірені онлайн-магазини</p>
           </div>
         </div>
       </div>
