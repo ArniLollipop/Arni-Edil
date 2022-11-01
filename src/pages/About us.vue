@@ -9,7 +9,7 @@
       <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] sm:hidden absolute right-0">
     </div>
     <div class = "lg:flex gap-x-5 relative">
-      <div class = "lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2 sm:pt-[5%] pt-[20%]">
+      <div class = "lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2 sm:pt-14 pt-12">
         <button class = "bg-white rounded-[10px] border-main border w-full">
           <p class = " px-1">Блог</p>
         </button>
@@ -48,8 +48,8 @@
         </button>
         <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto"></button>
       </div>
-      <div class = "lg:w-[85%] w-full">
-        <h1 class = "lg:text-[30px] md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0">Інформація про нашу компанію Vamberi, Ми працюємо для вас</h1>
+      <div class = "lg:w-[85%] w-full lg:pt-2">
+        <h1 class = "lg:text-3xl md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0">Інформація про нашу компанію Vamberi, Ми працюємо для вас</h1>
         <div class = "md:text-sm text-[12px] w-[94%]">
           <p class = "sm:mt-3 lg:my-9 md:my-6 sm:my-4 my-2 font-medium">Сайт Vamberi - Дошка оголошень України та майданчик для інтернет-магазинів, та приватних оголошень.</p>
           <p class = "">Купити та продати з VamBeri стало набагато простіше! Ми створили максимально зручний інтерфейс та щодня удосконалюємо для максимального Вашого комфорту! <br> Потреба в меблів є абсолютно у кожної людини, причиною може бути її відсутність у новому приміщенні, бажання змінити інтер'єр або просто примха купити щось новеньке, - і це чудово! Оголошення меблів на замовлення, нових готових, а також б.у., завдяки чому можна підібрати предмет меблів, що цікавить, за найприйнятнішою для Вас ціною. Всі оголошення розділені на категорії для легкого додавання та пошуку товару: <br> Меблі для дитячої, Меблі для спальні, Меблі для гардеробу, Меблі для кухні, Меблі для офісів</p>
