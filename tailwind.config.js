@@ -11,6 +11,7 @@ module.exports = {
         back: '#E7E7E7',
         gray: '#999999',
         pink: '#F2EEF9',
+        blue: '#1437AD',
       },
       backgroundImage:{
         send:'url("@/img/send.svg")',

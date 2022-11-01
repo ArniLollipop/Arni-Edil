@@ -5,7 +5,8 @@
     <div class = "flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class = "font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class = "w-[10] h-[10]">
-      <p class = "font-normal sm:text-sm text-[11px]">О нас</p>
+      <p class = "font-normal sm:text-sm text-[11px] hidden sm:block">Політика використання файлів cookie</p>
+      <p class = "font-normal sm:text-sm text-[11px] sm:hidden">Політика використання фай....</p>
       <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] sm:hidden absolute right-0">
     </div>
     <div class = "lg:flex gap-x-5 relative">
@@ -16,7 +17,7 @@
         <button class = "bg-white rounded-[10px] border-main border my-2 w-full">
           <p class = "px-1">Про нас</p>
         </button>
-        <button class = "bg-white rounded-[10px] border-main border my-1 w-full shadow-md shadow-accent">
+        <button class = "bg-white rounded-[10px] border-main border my-1 w-full">
           <p class = "px-1">Контакти</p>
         </button>
         <button class = "bg-white rounded-[10px] border-main border my-1 w-full">
@@ -43,26 +44,18 @@
         <button class = "bg-white rounded-[10px] border-main border my-1 w-full">
           <p class = "px-1">Заборонені публікації та товари</p>
         </button>
-        <button class = "bg-white rounded-[10px] border-main border my-1 w-full">
+        <button class = "bg-white rounded-[10px] border-main border my-1 w-full shadow-md shadow-accent">
           <p class = "px-1">Політика використання файлів cookie</p>
         </button>
         <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto"></button>
       </div>
       <div class = "lg:w-[85%] w-full lg:pt-2">
-        <h1 class = "lg:text-3xl md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0">Наші телефони, наш кол-центр завжди на зв'язку</h1>
-        <div class = "md:text-sm text-[12px] w-[94%]">
-          <div class = "flex items-center lg:mt-6 mt-0">
-            <img src="@/img/geo.svg" alt="" class = "w-fit mr-2">
-            <p>Україна,Одеська область, Одеса. </p>
-          </div>
-          <div class = "flex items-center my-4">
-            <img src="@/img/email.svg" alt="" class = "w-fit mr-2">
-            <p>E-mail: vamberi.sms@gmail.com</p>
-          </div>
-          <div class = "flex items-center">
-            <img src="@/img/phone.svg" alt="" class = "w-fit mr-2">
-            <p>+380978064260</p>
-          </div>
+        <h1 class = "lg:text-3xl md:text-[20px] sm:text-base text-sm font-medium text-center lg:text-start lg:relative absolute top-0 lg:mb-5 mb-2 h-fit">Політика використання файлів cookie сайту Vamberi</h1>
+        <div class = "md:text-sm text-xs w-[94%] relative">
+          <p class = "lg:mt-6 sm:mt-3 mt-2">Договор-оферта</p>
+          <p>Наш сайт використовує файли cookie та схожі технології, щоб гарантувати максимальну зручність користувачам, надаючи персональну інформацію, запам'ятовуючи переваги в галузі маркетингу та продукції, а також допомагаючи отримати правильну інформацію.</p>
+          <p>При використанні цього сайту, ви підтверджуєте свою згоду на використання файлів cookie відповідно до цього повідомлення щодо цього типу файлів.</p>
+          <p>Якщо ви не згодні з тим, щоб ми використовували цей тип файлів, ви повинні відповідним чином встановити налаштування вашого браузера або не використовувати цей сайт.</p>
         </div>
       </div>
     </div>
