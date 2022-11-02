@@ -9,14 +9,6 @@
 <script>
 export default {
   name: "app",
-  data() {
-    return {
-      recomendation: [
-        { id: 1, title: "Дитячі товари", image: "img/Medved.png" },
-      ],
-      images: ["@/img/Medved.jpg", "@/img/Medved.svg"],
-    };
-  },
 };
 </script>
 

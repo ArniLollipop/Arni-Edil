@@ -25,22 +25,22 @@
                 ><img class="h-5 w-5" src="@/img/viber.svg" alt="viber"
               /></a>
             </div>
-            <div class="mt-2">vamberi.sms@gmail.com</div>
+            <div class="mt-2 lg:text-base text-xs">vamberi.sms@gmail.com</div>
           </div>
         </div>
         <div class="space-y-2.5">
-          <div><a href="#">Про нас</a></div>
-          <div><a href="#">Безпечна угода</a></div>
-          <div><a href="#">Правила подання оголошеннь</a></div>
-          <div><a href="#">Пропозиції для покаращення сайту</a></div>
-          <div><a href="#">Політики конфіденційності</a></div>
+          <div><router-link to="/aboutUs">Про нас</router-link></div>
+          <div><router-link to="/ugoda">Безпечна угода</router-link></div>
+          <div><router-link to="rules">Правила подання оголошеннь</router-link></div>
+          <div><router-link to="/suggest">Пропозиції для покаращення сайту</router-link></div>
+          <div><router-link to="/politika">Політики конфіденційності</router-link></div>
         </div>
         <div class="space-y-2.5">
-          <div><a href="#">Блог</a></div>
-          <div><a href="#">Дропшипінг </a></div>
-          <div><a href="#">Правила сервісу</a></div>
-          <div><a href="#">Угода користвувача</a></div>
-          <div><a href="#">Служба підтримки</a></div>
+          <div><router-link to="/blog">Блог</router-link></div>
+          <div><router-link to="/dropShipping">Дропшипінг </router-link></div>
+          <div><router-link to="/rules">Правила сервісу</router-link></div>
+          <div><router-link to="/agree">Угода користвувача</router-link></div>
+          <div><router-link to="/support">Служба підтримки</router-link></div>
         </div>
         <div class="flex flex-col items-center justify-between">
           <button
@@ -62,15 +62,15 @@
         </div>
         <div class="flex justify-between items-end text-xs">
           <div class="space-y-1">
-            <div><a href="#">Про нас</a></div>
-            <div><a href="#">Блог </a></div>
-            <div><a href="#">Безпечна угода</a></div>
-            <div><a href="#">Дропшипінг </a></div>
+            <div><router-link to="/aboutUs">Про нас</router-link></div>
+            <div><router-link to="/blog">Блог </router-link></div>
+            <div><router-link to="/ugoda">Безпечна угода</router-link></div>
+            <div><router-link to="/dropShipping">Дропшипінг </router-link></div>
           </div>
           <div class="space-y-1">
-            <div><a href="#">Угода користвувача</a></div>
-            <div><a href="#">Правила сервісу </a></div>
-            <div><a href="#">Служба підтримки</a></div>
+            <div><router-link to="/agree">Угода користвувача</router-link></div>
+            <div><router-link to="/rules">Правила сервісу </router-link></div>
+            <div><router-link to="/support">Служба підтримки</router-link></div>
           </div>
         </div>
 

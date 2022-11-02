@@ -61,8 +61,8 @@
           <a href="#" class="">Магазини</a>
           <a href="#" class="">Пошук на мапі</a>
           <div>
-            <a href="#" class="">Увійти</a> |
-            <a href="#" class="">Реєстрація</a>
+            <router-link to="/login" class="">Увійти</router-link> |
+            <router-link to="/sign" class="">Реєстрація</router-link>
           </div>
         </div>
         <div class="flex items-center space-x-3">
