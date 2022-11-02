@@ -1,5 +1,5 @@
 <template>
-  <header class="container mx-auto px-5 pt-4 xl:pt-6">
+  <header class="container mx-auto px-5 pt-4 xl:pt-6 relative">
     <div class="lg:hidden">
       <div class="flex items-center justify-between">
         <div
@@ -108,7 +108,10 @@
         <div class="font-semibold text-4xl text-accent">VamBeri</div>
 
         <div class="py-1 px-3 flex items-center rounded-3xl bg-white w-1/2">
-          <button class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+          <button
+            class="px-5 py-3 rounded-3xl bg-accent flex items-center"
+            @click="isCategoryOpen = !isCategoryOpen"
+          >
             <CIcon :icon="icon.cilCommand" custom-class-name="w-4 text-white" />
             <div class="ml-1 text-sm text-white">Категорії</div>
           </button>
@@ -128,6 +131,7 @@
           <div class="text-sm text-white">Створити оголошення</div>
         </button>
       </div>
+      <Category v-if="isCategoryOpen"></Category>
     </div>
   </header>
 </template>
@@ -135,14 +139,21 @@
 <script>
 import { CIcon } from "@coreui/icons-vue";
 import * as icon from "@coreui/icons";
+import Category from "@/components/modal/Category.vue";
 
 export default {
   components: {
     CIcon,
+    Category,
   },
   setup() {
     return {
       icon,
+    };
+  },
+  data() {
+    return {
+      isCategoryOpen: false,
     };
   },
 };
