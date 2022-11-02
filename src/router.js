@@ -18,6 +18,7 @@ import Support_service from './pages/Support_service.vue'
 import Create from './components/Create_components/Create.vue'
 import Create1 from './components/Create_components/Create_1.vue'
 import Create2 from './components/Create_components/Create_2.vue'
+import Create3 from './components/Create_components/Create_3.vue'
 
 export default createRouter({
   history: createWebHashHistory(), 
@@ -41,5 +42,6 @@ export default createRouter({
     {path: '/create', component: Create},
     {path: '/create/create1', component: Create1},
     {path: '/create/create2', component: Create2},
+    {path: '/create/create2/create3', component: Create3},
   ]
 })

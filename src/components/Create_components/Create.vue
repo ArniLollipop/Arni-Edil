@@ -1,20 +1,25 @@
 <template>
   <Head></Head>
   <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark">
-    <div class = "flex items-center justify-center relative mt-32">
-      <router-link to="/" class = "text-blue text-sm absolute left-0 underline decoration-solid underline-offset-4">Вернуться на главную</router-link>
+    <div class = "w-full sm:hidden flex justify-between items-center">
+      <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
+      <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
+    </div>
+    <div class = "flex items-center sm:justify-center relative lg:mt-32 md:mt-16 sm:mt-8 my-3">
+      <router-link to="/" class = "text-blue text-sm absolute left-0 underline decoration-solid underline-offset-4 sm:block hidden">Вернуться на главную</router-link>
       <div>
-        <h1 class = "text-3xl font-medium">Публікація оголошення</h1>
+        <h1 class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium">Публікація оголошення</h1>
       </div>
     </div>
-    <div class="grid grid-cols-9 gap-x-5 gap-y-11 mt-6 w-full text-center">
-      <router-link to="/create/create1" class=" hover:text-accent" v-for="rec in recomendation" :key="rec.id">
-        <div class="w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center mx-auto">
+    <div class="sm:grid sm:grid-cols-6 lg:grid-cols-9 lg:gap-x-5 xl:gap-y-11 mt-6 w-full text-center">
+      <router-link to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full" v-for="rec in recomendation" :key="rec.id">
+        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
           <img :src="require('../../img/' + rec.image)" alt="" class="h-[70%] w-[70%]" />
         </div>
-        <div class = "mt-2 text-base flex items-center justify-center">
+        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
           <p>{{ rec.title }}</p>
         </div>
+        <img src="@/img/strelka_right.svg" alt="" class = "w-fit absolute right-3 sm:hidden">
       </router-link>
     </div>
   </section>
