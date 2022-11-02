@@ -20,20 +20,20 @@
         </div>
         <div class = "flex lg:gap-x-28 md:gap-x-10 sm:gap-x-5 lg:mt-16 sm:mt-10 mt-9 sm:w-full gap-x-2 mx-auto w-[95%]">
           <div class = "lg:text-xl sm:text-base text-[12px] text-center">
-            <img src="@/img/document.png" alt="" class = "mx-auto sm:w-1/4 w-[50px]">
+            <img src="@/img/document.png" alt="" class = "mx-auto lg:w-[100px] sm:w-[70px] w-[50px]">
             <p class = "">Безпечні угоди</p>
           </div>
           <div class = "lg:text-xl sm:text-base text-[12px] text-center">
-            <img src="@/img/Sale.png" alt="" class = "mx-auto sm:w-1/4 w-[50px]">
+            <img src="@/img/Sale.png" alt="" class = "mx-auto lg:w-[100px] sm:w-[70px] w-[50px]">
             <p class = "sm:block hidden">Турбопродаж</p>
             <p class = "sm:hidden">Турбо <br>продаж</p>
           </div>
           <div class = "lg:text-xl sm:text-base text-[12px] text-center">
-            <img src="@/img/iphone.png" alt="" class = "mx-auto sm:w-1/4 w-[50px]">
+            <img src="@/img/iphone.png" alt="" class = "mx-auto lg:w-[100px] sm:w-[70px] w-[50px]">
             <p>Оголошення на карті</p>
           </div>
           <div class = "lg:text-xl sm:text-base text-[12px] text-center">
-            <img src="@/img/shopping.png" alt="" class = "mx-auto sm:w-1/4 w-[50px]">
+            <img src="@/img/shopping.png" alt="" class = "mx-auto lg:w-[100px] sm:w-[70px] w-[50px]">
             <p class = "md:w-48"><span class = "hidden sm:inline">Лише</span> перевірені онлайн-магазини</p>
           </div>
         </div>

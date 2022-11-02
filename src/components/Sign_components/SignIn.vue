@@ -68,7 +68,7 @@
           <img src="@/img/boxes.svg" alt="" class = "absolute -bottom-9 -left-20 hidden lg:block w-[279px] h-[168px]">
         </div>
       </div>
-      <p class = "w-[70%] mx-auto text-center mt-6 text-sm hidden lg:block">Авторизуючись на сайті, Ви приймаєте умови <router-link to="/ugoda" class = "text-blue">Угоди користувача,</router-link> <router-link to="/politika" class = "text-blue">Політики конфіденційності та</router-link> підтверджуєте згоду на передачу та обробку своїх даних</p>
+      <p class = "w-[70%] mx-auto text-center mt-6 text-sm hidden lg:block">Авторизуючись на сайті, Ви приймаєте умови <router-link to="/agree" class = "text-blue">Угоди користувача,</router-link> <router-link to="/politika" class = "text-blue">Політики конфіденційності та</router-link> підтверджуєте згоду на передачу та обробку своїх даних</p>
     </div>
   </section>
 </template>
