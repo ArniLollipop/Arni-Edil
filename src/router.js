@@ -19,6 +19,9 @@ import Create from './components/Create_components/Create.vue'
 import Create1 from './components/Create_components/Create_1.vue'
 import Create2 from './components/Create_components/Create_2.vue'
 import Create3 from './components/Create_components/Create_3.vue'
+import Login from './components/Sign_components/Login.vue'
+import Login_error from './components/Sign_components/Login_error.vue'
+import Sign from './components/Sign_components/SignIn.vue'
 
 export default createRouter({
   history: createWebHashHistory(), 
@@ -43,5 +46,8 @@ export default createRouter({
     {path: '/create/create1', component: Create1},
     {path: '/create/create2', component: Create2},
     {path: '/create/create2/create3', component: Create3},
+    {path: '/login', component: Login},
+    {path: '/login_error', component: Login_error},
+    {path: '/sign', component: Sign},
   ]
 })
