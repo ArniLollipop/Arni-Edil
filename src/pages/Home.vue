@@ -5,7 +5,7 @@
     <Recomendation></Recomendation>
     <Advan></Advan>
     <Magazini></Magazini>
-    <RecCards></RecCards>
+    <RecCards :cards="cards"></RecCards>
     <Information></Information>
   </section>
   <MobileMenu></MobileMenu>
@@ -35,7 +35,80 @@ export default {
     MobileMenu,
   },
   data() {
-    return {};
+    return {
+      cards: [
+        {
+          id: 1,
+          pretitle: "",
+          title: "Тест",
+          image: "p1.png",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+        },
+        {
+          id: 2,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          image: "p2.png",
+          subtitle: "Під замовлення",
+          subtitleColor: true,
+          price: "8000",
+          lastPrice: "10000",
+          status: "Б/У",
+          map: "Одесса",
+          btnText: "Б/У",
+          date: "27.07.2022",
+        },
+        {
+          id: 3,
+          pretitle: "",
+          title: "Стеллаж с полками, в стиле лофт",
+          image: "p3.svg",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+        },
+        {
+          id: 4,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          image: "p4.svg",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+        },
+        {
+          id: 5,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          image: "p2.png",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+        },
+      ],
+    };
   },
 };
 </script>
