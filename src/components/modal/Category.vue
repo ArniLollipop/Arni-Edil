@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex h-max border rounded-xl bg-white absolute top-36 z-20"
+    class="w-[97%] flex h-max border rounded-xl bg-white absolute top-36 z-20"
   >
     <div class="w-1/3 border-r border-accent pl-10 py-4">
       <div
