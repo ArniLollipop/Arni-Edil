@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 pb-4 mt-10">
+  <section class="px-4 pb-4 lg:mt-10 sm:mt-6 mt-4">
     <div class="flex">
       <div class="lg:w-[85%] lg:pr-9 w-full">
         <div class="relative">
@@ -94,41 +94,41 @@
           </button>
         </div>
         <div
-          class="flex lg:gap-x-28 md:gap-x-10 sm:gap-x-5 lg:mt-16 sm:mt-10 mt-9 sm:w-full gap-x-2 mx-auto w-[95%]"
+          class="flex lg:gap-x-28 md:gap-x-10 sm:gap-x-5 lg:mt-16 sm:mt-10 mt-9 sm:w-full gap-x-2 mx-auto"
         >
-          <div class="lg:text-xl sm:text-base text-[12px] text-center">
+          <div class="sm:text-base text-[12px] text-center">
             <img
               src="@/img/document.png"
               alt=""
-              class="mx-auto sm:w-1/4 w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
             />
             <p class="">Безпечні угоди</p>
           </div>
-          <div class="lg:text-xl sm:text-base text-[12px] text-center">
+          <div class="sm:text-base text-[12px] text-center">
             <img
               src="@/img/Sale.png"
               alt=""
-              class="mx-auto sm:w-1/4 w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
             />
             <p class="sm:block hidden">Турбопродаж</p>
             <p class="sm:hidden">Турбо <br />продаж</p>
           </div>
-          <div class="lg:text-xl sm:text-base text-[12px] text-center">
+          <div class="sm:text-base text-[12px] text-center">
             <img
               src="@/img/iphone.png"
               alt=""
-              class="mx-auto sm:w-1/4 w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
             />
             <p>Оголошення на карті</p>
           </div>
-          <div class="lg:text-xl sm:text-base text-[12px] text-center">
+          <div class="sm:text-base text-[12px] text-center lg:w-[160px]">
             <img
               src="@/img/shopping.png"
               alt=""
-              class="mx-auto sm:w-1/4 w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
             />
-            <p class="md:w-48">
-              <span class="hidden sm:block"> Лише</span> перевірені
+            <p class="w-full">
+              <span class="hidden sm:inline-block"> Лише</span> перевірені
               онлайн-магазини
             </p>
           </div>

@@ -1,5 +1,5 @@
-<template>
-  <section class="text-dark 2xl:max-w-[1440px] 2xl:mx-auto">
+<template class = "">
+  <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
     <Head></Head>
     <Banner></Banner>
     <Recomendation></Recomendation>
