@@ -38,17 +38,20 @@
       </div>
     </div>
   </section>
+  <MobileMenu></MobileMenu>
   <Footer></Footer>
 </template>
 <script>
   import Head from '@/components/Head.vue';
   import Banner from '@/components/Banner.vue';
   import Footer from '@/components/Footer.vue';
+  import MobileMenu from '@/components/MobileMenu.vue';
   export default{
     components:{
       Head,
       Banner,
       Footer,
+      MobileMenu
     },
     data(){
       return{

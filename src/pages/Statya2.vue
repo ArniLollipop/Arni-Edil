@@ -63,6 +63,7 @@
       </div>
     </div>
   </section>
+  <MobileMenu></MobileMenu>
   <Footer></Footer>
 </template>
 
@@ -70,11 +71,13 @@
   import Head from '@/components/Head.vue';
   import Banner from '@/components/Banner.vue';
   import Footer from '@/components/Footer.vue';
+  import MobileMenu from '@/components/MobileMenu.vue';
   export default{
     components:{
       Head,
       Banner,
       Footer,
+      MobileMenu
     }
   }
 </script>
