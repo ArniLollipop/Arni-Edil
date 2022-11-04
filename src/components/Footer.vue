@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-dark text-white">
+  <footer class="bg-dark text-white sticky">
     <div class="container mx-auto px-5 h-full">
       <div class="hidden lg:flex justify-between gap-x-10 pt-14 pb-12 h-full">
         <div class="flex flex-col justify-between">
@@ -31,9 +31,17 @@
         <div class="space-y-2.5">
           <div><router-link to="/aboutUs">Про нас</router-link></div>
           <div><router-link to="/ugoda">Безпечна угода</router-link></div>
-          <div><router-link to="rules">Правила подання оголошеннь</router-link></div>
-          <div><router-link to="/suggest">Пропозиції для покаращення сайту</router-link></div>
-          <div><router-link to="/politika">Політики конфіденційності</router-link></div>
+          <div>
+            <router-link to="rules">Правила подання оголошеннь</router-link>
+          </div>
+          <div>
+            <router-link to="/suggest"
+              >Пропозиції для покаращення сайту</router-link
+            >
+          </div>
+          <div>
+            <router-link to="/politika">Політики конфіденційності</router-link>
+          </div>
         </div>
         <div class="space-y-2.5">
           <div><router-link to="/blog">Блог</router-link></div>

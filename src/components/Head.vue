@@ -1,35 +1,29 @@
 <template>
   <header class="container mx-auto px-5 pt-4 xl:pt-6 relative">
     <div class="lg:hidden">
+      <mobileMenu
+        v-if="isMobileMenuOpen"
+        @mobileModalStatus="acceptMobileModalStatus"
+      ></mobileMenu>
       <div class="flex items-center justify-between">
         <div
+          @click="isMobileMenuOpen = true"
           class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
         >
-          <CIcon
-            :icon="icon.cilHamburgerMenu"
-            size="sm"
-            custom-class-name="w-5 hover:text-accent"
-          />
+          <img src="../img/mobilemenu/burger.svg" alt="" class="w-5 h-5" />
         </div>
         <div class="font-semibold text-lg text-accent ml-8">VamBeri</div>
         <div class="flex item-center space-x-1 shrink-0">
           <div
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
+            @click="isTruckOpen = true"
           >
-            <CIcon
-              :icon="icon.cilCart"
-              size="sm"
-              custom-class-name="w-4 hover:text-accent"
-            />
+            <img src="../img/mobilemenu/korzina.svg" alt="" class="w-5 h-5" />
           </div>
           <div
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
           >
-            <CIcon
-              :icon="icon.cilEnvelopeClosed"
-              size="sm"
-              custom-class-name="w-4 hover:text-accent -mt-0.5"
-            />
+            <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5" />
           </div>
         </div>
       </div>
@@ -86,6 +80,7 @@
           </button>
           <button
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+            @click="isTruckOpen = !isTruckOpen"
           >
             <CIcon
               :icon="icon.cilCart"
@@ -133,6 +128,7 @@
       </div>
       <Category v-if="isCategoryOpen"></Category>
     </div>
+    <Truck v-if="isTruckOpen" @modalStatus="acceptModalStatus"></Truck>
   </header>
 </template>
 
@@ -140,11 +136,15 @@
 import { CIcon } from "@coreui/icons-vue";
 import * as icon from "@coreui/icons";
 import Category from "@/components/modal/Category.vue";
+import Truck from "@/components/modal/Truck.vue";
+import mobileMenu from "@/components/modal/mobileMenu.vue";
 
 export default {
   components: {
     CIcon,
     Category,
+    Truck,
+    mobileMenu,
   },
   setup() {
     return {
@@ -154,7 +154,17 @@ export default {
   data() {
     return {
       isCategoryOpen: false,
+      isTruckOpen: false,
+      isMobileMenuOpen: false,
     };
+  },
+  methods: {
+    acceptModalStatus(data) {
+      this.isTruckOpen = data;
+    },
+    acceptMobileModalStatus(data) {
+      this.isMobileMenuOpen = data;
+    },
   },
 };
 </script>
