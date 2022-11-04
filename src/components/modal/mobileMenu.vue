@@ -1,10 +1,10 @@
 <template>
   <div class="fixed inset-0 z-50 overflow-auto">
-    <div class="bg-[#e7e7e7] px-4 py-5">
+    <div class="bg-[#e7e7e7] px-4 pt-4 pb-5">
       <div class="flex items-center justify-between">
         <div
           @click="sendModalStatus"
-          class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+          class="flex items-center transition-all duration-500 justify-center w-8 h-8 rounded-full bg-white shrink-0"
         >
           <img src="../../img/mobilemenu/close.svg" alt="" class="w-5 h-5" />
         </div>
