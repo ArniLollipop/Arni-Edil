@@ -41,7 +41,7 @@
           <p class = "sm:mt-3 lg:mt-6 mt-3 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px] hidden md:block">Тут також можна віддати задарма зайві речі.</p>
           <button class = "text-[10px] sm:text-[12px] underline decoration-dashed underline-offset-4 block md:hidden float-right hover:text-accent">Читати далі</button>
           <h2 class = "font-medium lg:text-[26px] sm:text-xl text-[13px] mt-8">Коментарі</h2>
-          <div class = "w-full bg-pink px-2 py-2 relative flex mt-5">
+          <div class = "w-full bg-pink px-2 py-2 relative flex mt-5 rounded-[10px]">
             <input type="text" placeholder="Додавати коментарі можуть лише авторизовані користувачі" class = "h-fit w-full px-2 rounded-[10px] bg-pink py-2 md:text-sm sm:text-[12px] text-[10px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-[105px]">
             <button><img src="@/img/send.svg" alt=""></button>
           </div>

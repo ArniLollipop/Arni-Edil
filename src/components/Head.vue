@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="flex mx-4 mt-2 px-3 py-2 bg-white rounded-xl space-x-3">
+      <div class="flex mt-2 lg:px-3 px-2 py-3 bg-white rounded-xl space-x-2 relative">
         <CIcon
           :icon="icon.cilSearch"
           size="sm"
@@ -35,9 +35,12 @@
         />
         <input
           type="text"
-          class="focus:ring-0 focus:outline-none placeholder:text-sm text-sm w-11/12"
+          class="focus:ring-0 focus:outline-none placeholder:text-sm text-sm w-[80%]"
           placeholder="Пошук по оголошенням... "
         />
+        <button class = "flex absolute top-2 right-2 top items-center justify-center rounded-full bg-accent w-[30px] h-[30px] lg:hidden">
+          <img src="@/img/category.svg" alt="">
+        </button>
       </div>
     </div>
     <div class="hidden lg:block">

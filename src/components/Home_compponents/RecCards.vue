@@ -4,8 +4,8 @@
     <div
       class="mt-4 lg:mt-11 grid grid-cols-2 gap-x-1.5 gap-y-4 lg:gap-y-8 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 auto-rows-[minmax(0px, auto)]"
     >
-      <div v-for="item in cards" v-show="item.id >= 1" class="flex flex-col overflow-hidden">
-        <div v-if="item.id==2||item.id==4" class = "w-full h-full px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative">
+      <router-link to="/cardView" v-for="item in cards" v-show="item.id >= 1" class="flex flex-col overflow-hidden">
+        <div v-if="item.id==2||item.id==5" class = "w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative">
           <swiper
           :slides-per-view="1"
           :loop="true"
@@ -35,16 +35,16 @@
           />
         </div>
         <div
-          class="px-3 pt-2 pb-7 lg:p-3 lg:pb-3 xl:pb-5 rounded-2xl bg-white grow"
+          class="px-3 pb-9 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
         >
           <div class="h-1/3">
-            <div class="text-green text-xs lg:text-sm">
+            <div class="text-green text-[12px] lg:text-[14px] mb-3 absolute top-0">
               {{ item.pretitle }}
             </div>
             <div
               :class="[
-                'text-xs lg:text-sm',
-                { 'pt-2': item.pretitle.length === 0 },
+                'text-xs lg:text-sm mt-2',
+                { '': item.pretitle.length === 0 },
               ]"
             >
               {{ item.title }}
@@ -60,7 +60,7 @@
               {{ item.subtitle }}
             </div>
             <div class="flex justify-between items-center mt-1">
-              <div class="text-sm lg:text-base">{{ item.price }}.грн</div>
+              <div class="md:text-sm text-xs lg:text-base">{{ item.price }}.грн</div>
               <div
                 class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
               >
@@ -69,7 +69,7 @@
             </div>
             <div
               :class="[
-                'text-sm lg:text-base text-red line-through',
+                'md:text-sm text-xs lg:text-base text-red line-through mb-4',
                 { 'text-green invisible': item.lastPrice.length === 0 },
               ]"
             >
@@ -80,9 +80,9 @@
               <div class="text-xs text-gray">{{ item.map }}</div>
             </div>
             <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
-            <div class="flex mt-1 items-center">
+            <div class="flex mt-1 items-center lg:pr-2">
               <div
-                class="w-[98px] lg:w-[114px] border border-accent rounded-xl text-xs text-center shrink"
+                class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
               >
                 {{ item.btnText }}
               </div>
@@ -108,6 +108,11 @@
             </div>
           </div>
         </div>
+      </router-link>
+    </div>
+    <div class = "w-full mt-3">
+      <div class = "flex items-center justify-center mx-auto w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[60px] lg:h-[60px] bg-accent rounded-full">
+        <img src="@/img/white_down.svg" alt="" class = "px-1 py-1">
       </div>
     </div>
   </div>
@@ -142,6 +147,4 @@ export default {
 };
 </script>
 <style>
-.swiper-button-next{
-}
 </style>
