@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-dark text-white sticky">
-    <div class="container mx-auto px-5 h-full">
+    <div class="container mx-auto px-5 w-full h-full">
       <div class="hidden lg:flex justify-between gap-x-10 pt-14 pb-12 h-full">
         <div class="flex flex-col justify-between">
           <div class="text-accent font-semibold text-2xl">VamBeri</div>

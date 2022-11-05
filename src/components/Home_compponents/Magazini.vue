@@ -72,7 +72,8 @@
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
   import 'swiper/css/navigation';
-  import { Navigation } from 'swiper';
+  import 'swiper/css/pagination'
+  import { Navigation, Pagination } from 'swiper';
   export default{
     components: {
       Swiper,
@@ -82,7 +83,7 @@
       const prev = ref(null);
       const next = ref(null);
       return {
-        modules: [Navigation],
+        modules: [Navigation,Pagination],
         prev,
         next,
       };
