@@ -1,5 +1,5 @@
 <template>
-  <header class="container mx-auto px-5 pt-4 xl:pt-6 relative">
+  <header class="container mx-auto px-4 pt-4 xl:pt-6 relative">
     <div class="lg:hidden">
       <mobileMenu
         v-if="isMobileMenuOpen"

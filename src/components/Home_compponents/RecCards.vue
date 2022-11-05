@@ -4,8 +4,30 @@
     <div
       class="mt-4 lg:mt-11 grid grid-cols-2 gap-x-1.5 gap-y-4 lg:gap-y-8 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 auto-rows-[minmax(0px, auto)]"
     >
-      <div v-for="item in cards" v-show="item.id >= 1" class="flex flex-col">
-        <div class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white">
+      <div v-for="item in cards" v-show="item.id >= 1" class="flex flex-col overflow-hidden">
+        <div v-if="item.id==2||item.id==4" class = "w-full h-full px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative">
+          <swiper
+          :slides-per-view="1"
+          :loop="true"
+          :navigation="{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }"
+          :space-between="20"
+          :modules="modules"
+            class = "w-full h-full relative">
+            <swiper-slide class="">
+              <img
+                :src="require('../../img/RecCards/' + item.image)"
+                alt=""
+                class="w-full"
+              />
+            </swiper-slide>
+            <button class = "swiper-button-prev invisible"><img src="@/img/mini_left.svg" alt="" class = "visible bg-white px-1 py-1 absolute -left-2 rounded-full"></button>
+            <button class = "swiper-button-next invisible"><img src="@/img/mini_right.svg" alt="" class = "visible bg-white px-1 py-1 absolute -right-2 rounded-full"></button>
+          </swiper>
+        </div>
+        <div v-else class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white">
           <img
             :src="require('../../img/RecCards/' + item.image)"
             alt=""
@@ -92,7 +114,23 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
 export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const prev = ref(null);
+    const next = ref(null);
+    return {
+      modules: [Navigation],
+    };
+  },
   props: {
     cards: {},
   },
@@ -103,3 +141,7 @@ export default {
   },
 };
 </script>
+<style>
+.swiper-button-next{
+}
+</style>

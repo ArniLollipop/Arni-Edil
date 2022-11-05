@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between">
         <div
           @click="sendModalStatus"
-          class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+          class="flex items-center transition-all duration-500 justify-center w-8 h-8 rounded-full bg-white shrink-0"
         >
           <img src="../../img/mobilemenu/close.svg" alt="" class="w-5 h-5" />
         </div>
