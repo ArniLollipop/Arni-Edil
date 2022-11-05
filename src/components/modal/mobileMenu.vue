@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed inset-0 z-50 overflow-auto">
+  <div class="fixed inset-0 z-50 overflow-auto flex flex-col">
     <div class="bg-[#e7e7e7] px-4 py-5">
       <div class="flex items-center justify-between">
         <div
@@ -79,7 +79,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-white px-5 py-2.5 -mt-1">
+    <div class="bg-white px-5 py-2.5 -mt-1 grow">
       <div class="text-sm border-b border-gray w-max">Правила сервісу</div>
       <div class="text-sm border-b border-gray w-max">Угода користувача</div>
       <div class="text-sm border-b border-gray w-max">Служба підтримки</div>
