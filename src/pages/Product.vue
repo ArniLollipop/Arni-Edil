@@ -1,6 +1,6 @@
 <template>
   <Head></Head>
-  <div class="container mx-auto px-5">
+  <div class="container mx-auto px-2">
     <div class="hidden lg:block mt-10 pb-20">
       <div class="flex items-center">
         <div class="text-sm flex items-center">
@@ -24,18 +24,38 @@
       <div class="grid grid-cols-6 gap-x-[50px] xl:gap-x-[74px] mt-3">
         <div class="col-span-4">
           <div class="grid grid-cols-3 gap-x-3 w-full">
-            <div class="col-span-2 relative">
-              <img src="../img/productp1.png" alt="" class="w-full" />
-              <div
-                class="absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
+            <div class="col-span-2 relative overflow-hidden">
+              <swiper
+                :slides-per-view="1"
+                :loop="true"
+                :navigation="{
+                  prevEl: prev,
+                  nextEl: next,
+                }"
+                
+                :space-between="20"
+                :modules="modules" class = "h-fit"
+                >
+                <swiper-slide>
+                  <img src="../img/productp1.png" alt="" class="w-full" >
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="../img/productp2.png" alt="" class="w-full" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="../img/productp3.png" alt="" class="w-full" />
+                </swiper-slide>
+              </swiper>
+              <button ref="prev"
+                class="z-50 absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-left.svg" alt="" class="w-4" />
-              </div>
-              <div
-                class="absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
+              </button>
+              <button ref="next"
+                class="z-50 absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-right.svg" alt="" class="w-4" />
-              </div>
+              </button>
             </div>
             <div class="col-span-1">
               <div>
@@ -46,7 +66,6 @@
               </div>
             </div>
           </div>
-
           <div
             class="bg-white rounded-2xl pt-8 pl-8 pr-14 2xl:pr-20 pb-10 mt-14"
           >
@@ -234,20 +253,42 @@
         <div class="flex items-center justify-center">
           <div class="text-xs flex items-center shrink-0">
             <a href="">Україна</a>
-            <img src="../img/arrowRight.svg" alt="" class="w-2.5 ml-1" />
+            <img src="../img/arrowRight.svg" alt="" class="w-2.5" />
           </div>
-          <div class="text-xs ml-1 flex items-center shrink-0">
+          <div class="text-xs flex items-center shrink-0">
             <a href="">Електроніка</a>
-            <img src="../img/arrowRight.svg" alt="" class="w-2.5 ml-1" />
+            <img src="../img/arrowRight.svg" alt="" class="w-2.5" />
           </div>
-          <div class="text-xs ml-1 shrink-0">
+          <div class="text-xs shrink-0">
             <a href="">Комп’ютери і комплект...</a>
           </div>
         </div>
       </div>
 
       <div class="relative mt-6">
-        <img src="../img/product-mob.png" alt="" class="w-full" />
+        <swiper
+          :slides-per-view="1"
+          :loop="true"
+          :pagination="{
+            clickable: true,
+          }"
+          :navigation="{
+            prevEl: prev,
+            nextEl: next,
+          }"
+          :space-between="20"
+          :modules="modules"
+          class = "z-0">
+          <swiper-slide>  
+            <img src="../img/product-mob.png" alt="" class="w-full" />
+          </swiper-slide>
+          <swiper-slide>  
+            <img src="../img/product-mob.png" alt="" class="w-full" />
+          </swiper-slide>
+          <swiper-slide>  
+            <img src="../img/product-mob.png" alt="" class="w-full" />
+          </swiper-slide>
+        </swiper>
         <div class="absolute top-2 left-2">
           <img src="../img/chevronn-left-white.svg" alt="" class="w-3.5" />
         </div>
@@ -437,11 +478,28 @@
 import Head from "@/components/Head.vue";
 import Footer from "@/components/Footer.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
+import { ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination'
+import { Navigation, Pagination } from 'swiper';
 export default {
   components: {
     Head,
     Footer,
     MobileMenu,
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const prev = ref(null);
+    const next = ref(null);
+    return {
+      modules: [Navigation,Pagination],
+      prev,
+      next,
+    };
   },
   data() {
     return {};
