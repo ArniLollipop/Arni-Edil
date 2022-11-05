@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed inset-0 z-50 overflow-auto flex flex-col">
+  <div class="fixed inset-0 z-10 overflow-auto flex flex-col">
     <div class="bg-[#e7e7e7] px-4 py-5">
       <div class="flex items-center justify-between">
         <div
@@ -39,11 +39,13 @@
           </div>
           <div class="mt-2.5 text-sm font-medium">Софія Смірнова</div>
           <div class="mt-4 flex items-center">
-            <div
-              class="px-6 py-1.5 bg-accent rounded-full text-white text-xs font-medium"
-            >
-              Профіль
-            </div>
+            <router-link to="/account" @click="sendModalStatus">
+              <div
+                class="px-6 py-1.5 bg-accent rounded-full text-white text-xs font-medium"
+              >
+                Профіль
+              </div>
+            </router-link>
             <div class="ml-2.5">
               <img src="../../img/mobilemenu/exit.svg" alt="" class="w-5" />
             </div>
@@ -57,11 +59,13 @@
         <a href="#" class="ml-px"> RU</a>
       </div>
       <div class="mt-3 grid grid-cols-2 gap-x-1.5 gap-y-3">
-        <div
-          class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
-        >
-          Головна
-        </div>
+        <router-link to="/" @click="sendModalStatus">
+          <div
+            class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+          >
+            Головна
+          </div>
+        </router-link>
         <div
           class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
         >
@@ -72,26 +76,40 @@
         >
           Магазини
         </div>
-        <div
-          class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
-        >
-          Додати оголошення
-        </div>
+        <router-link to="/agree" @click="sendModalStatus">
+          <div
+            class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+          >
+            Додати оголошення
+          </div>
+        </router-link>
       </div>
     </div>
     <div class="bg-white px-5 py-2.5 -mt-1 grow">
-      <div class="text-sm border-b border-gray w-max">Правила сервісу</div>
-      <div class="text-sm border-b border-gray w-max">Угода користувача</div>
-      <div class="text-sm border-b border-gray w-max">Служба підтримки</div>
-      <div class="text-sm border-b border-gray w-max">
-        Політика конфіденційності
-      </div>
-      <div class="text-sm border-b border-gray w-max">
-        Пропозиції для покращення сайту
-      </div>
-      <div class="text-sm border-b border-gray w-max">
-        Правила подання оголошення
-      </div>
+      <router-link to="/agree" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">Правила сервісу</div>
+      </router-link>
+      <router-link to="/ugoda" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">Угода користувача</div>
+      </router-link>
+      <router-link to="/support" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">Служба підтримки</div>
+      </router-link>
+      <router-link to="/politika" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">
+          Політика конфіденційності
+        </div>
+      </router-link>
+      <router-link to="/suggest" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">
+          Пропозиції для покращення сайту
+        </div>
+      </router-link>
+      <router-link to="/rules" @click="sendModalStatus">
+        <div class="text-sm border-b border-gray w-max">
+          Правила подання оголошення
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

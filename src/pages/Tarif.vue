@@ -4,10 +4,10 @@
     <div class = "flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class = "font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class = "w-[10] h-[10]">
-      <p class = "font-normal sm:text-sm text-[11px] lg:block hidden">Гаманець</p>
+      <p class = "font-normal sm:text-sm text-[11px] lg:block hidden">Налаштування тирифу</p>
       <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Софія Смирнова</p>
       <img src="@/img/Blog_right.svg" alt="" class = "w-[10] h-[10] lg:hidden">
-      <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Акаунт</p>
+      <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Налаштування тар...</p>
     </div>
     <div class = "lg:flex lg:space-x-10 mb-4">
       <SofiaVue></SofiaVue>
@@ -142,7 +142,10 @@
                 </div>
               </div>
             </div>
-            <div class = "w-full relative">
+            <button class = "text-white bg-accent rounded-full sm:block mx-auto hidden mt-6 px-4 py-2">
+              <p class = "text-sm">Мої оголошення</p>
+            </button>
+            <div class = "w-full sm:hidden relative">
               <swiper 
                 :slides-per-view="1"
                 :loop="true"
@@ -153,7 +156,7 @@
                 
                 :space-between="20"
                 :modules="modules"
-                class = "sm:hidden w-[80%]">
+                class = " w-[80%]">
                 <swiper-slide class = "bg-white h-fit py-4 px-4 rounded-[10px] border border-accent">
                   <div class = "border-b border-gray pb-4 border-opacity-60">
                     <p class = "text-sm font-medium">Магазин - Тестовий</p>

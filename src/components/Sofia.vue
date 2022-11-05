@@ -41,11 +41,11 @@
               <img src="@/img/acc_magazine.svg" alt="">
               <p class = "text-sm hover:text-accent">Магазин та послуги</p>
             </router-link>
-            <router-link to="/account" class = "flex mt-3 hover:text-accent items-center space-x-2">
+            <router-link to="/purse" class = "flex mt-3 hover:text-accent items-center space-x-2">
               <img src="@/img/acc_wallet.svg" alt="">
               <p class = "text-sm hover:text-accent">Гаманець [0 грн.]</p>
             </router-link>
-            <router-link to="/account" class = "flex mt-3 hover:text-accent items-center space-x-2">
+            <router-link to="/settings" class = "flex mt-3 hover:text-accent items-center space-x-2">
               <img src="@/img/acc_settings.svg" alt="">
               <p class = "text-sm hover:text-accent">Налаштування</p>
             </router-link>

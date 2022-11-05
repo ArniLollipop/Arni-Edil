@@ -7,7 +7,7 @@
       <p class = "font-normal sm:text-sm text-[11px] lg:block hidden">Гаманець</p>
       <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Софія Смирнова</p>
       <img src="@/img/Blog_right.svg" alt="" class = "w-[10] h-[10] lg:hidden">
-      <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Акаунт</p>
+      <p class = "font-normal sm:text-sm text-[11px] lg:hidden">Мої замовлення</p>
     </div>
     <div class = "lg:flex lg:space-x-10 mb-4">
       <SofiaVue></SofiaVue>

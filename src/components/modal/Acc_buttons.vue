@@ -23,13 +23,13 @@
         <p class = "text-xs">Мої замовлення</p>
       </button>
     </router-link>
-    <router-link to="/account">
+    <router-link to="/chat">
       <button class = "w-[95%] mt-2 mx-auto flex items-center space-x-4 px-4 rounded-[10px] border border-accent py-2 hover:shadow-sm hover:shadow-accent">
         <img src="@/img/acc_notifications.svg" alt="" class = "w-[15px]">
         <p class = "text-xs">Повідомлення</p>
       </button>
     </router-link>
-    <router-link to="/account">
+    <router-link to="/tarif">
       <button class = "w-[95%] mt-2 mx-auto flex items-center space-x-4 px-4 rounded-[10px] border border-accent py-2 hover:shadow-sm hover:shadow-accent">
         <img src="@/img/acc_magazine.svg" alt="" class = "w-[15px]">
         <p class = "text-xs">Магазин та послуги</p>

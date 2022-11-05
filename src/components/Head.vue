@@ -15,15 +15,15 @@
         <div class="font-semibold text-lg text-accent ml-8">VamBeri</div>
         <div class="flex item-center space-x-1 shrink-0">
           <div
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white z-100"
             @click="isTruckOpen = true"
           >
             <img src="../img/mobilemenu/korzina.svg" alt="" class="w-5 h-5" />
           </div>
           <div
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white"
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-white z-100"
           >
-            <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5" />
+            <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5 " />
           </div>
         </div>
       </div>
@@ -63,24 +63,28 @@
           </div>
         </div>
         <div class="flex items-center space-x-3">
-          <a
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0 cursor-pointer"
-          >
-            <CIcon
-              :icon="icon.cilUser"
-              size="sm"
-              custom-class-name="w-5 hover:text-accent"
-            />
-          </a>
-          <button
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
-          >
-            <CIcon
-              :icon="icon.cilEnvelopeClosed"
-              size="sm"
-              custom-class-name="w-5 -mt-1 hover:text-accent"
-            />
-          </button>
+          <router-link to="/account">
+            <a
+              class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0 cursor-pointer"
+            >
+              <CIcon
+                :icon="icon.cilUser"
+                size="sm"
+                custom-class-name="w-5 hover:text-accent"
+              />
+            </a>
+          </router-link>
+          <router-link to="/chat">
+            <button
+              class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
+            >
+              <CIcon
+                :icon="icon.cilEnvelopeClosed"
+                size="sm"
+                custom-class-name="w-5 -mt-1 hover:text-accent"
+              />
+            </button>
+          </router-link>
           <button
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0"
             @click="isTruckOpen = !isTruckOpen"
