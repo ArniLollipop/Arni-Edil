@@ -4,7 +4,7 @@
     <div
       class="mt-4 lg:mt-11 grid grid-cols-2 gap-x-1.5 gap-y-4 lg:gap-y-8 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 auto-rows-[minmax(0px, auto)]"
     >
-      <router-link to="/cardView" v-for="item in cards" v-show="item.id >= 1" class="flex flex-col overflow-hidden">
+      <router-link to="/product" v-for="item in cards" v-show="item.id >= 1" class="flex flex-col overflow-hidden">
         <div v-if="item.id==2||item.id==5" class = "w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative">
           <swiper
           :slides-per-view="1"

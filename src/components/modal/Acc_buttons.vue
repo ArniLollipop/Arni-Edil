@@ -1,5 +1,5 @@
 <template>
-  <div class = "w-[100%] rounded-[10px] py-2 px-4 bg-white h-fit ">
+  <div class = "w-[100%] rounded-[10px] py-4 px-4 bg-white h-fit ">
     <router-link to="/create">
       <button class = "w-[70%] mx-auto flex justify-center items-center rounded-full bg-accent py-3">
         <p class = "text-white text-xs">Створити оголошення</p>

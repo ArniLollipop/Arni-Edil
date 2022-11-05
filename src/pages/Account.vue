@@ -44,7 +44,7 @@
               <img src="@/img/acc_zamovleni.svg" alt="">
               <p class = "text-sm hover:text-accent">Мої замовлення</p>
             </router-link>
-            <router-link to="/account" class = "flex mt-3 hover:text-accent items-center space-x-2">
+            <router-link to="/chat" class = "flex mt-3 hover:text-accent items-center space-x-2">
               <img src="@/img/acc_notifications.svg" alt="">
               <p class = "text-sm hover:text-accent">Повідомлення</p>
             </router-link>
