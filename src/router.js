@@ -24,6 +24,8 @@ import Login_error from "./components/Sign_components/Login_error.vue";
 import Sign from "./components/Sign_components/SignIn.vue";
 import Product from "./pages/Product.vue";
 import Catalog from "./pages/Catalog.vue";
+import Subscription from "./pages/Subscription.vue";
+import Favorites from "./pages/Favorites.vue";
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -53,5 +55,7 @@ export default createRouter({
     { path: "/sign", component: Sign },
     { path: "/product", component: Product },
     { path: "/catalog", component: Catalog },
+    { path: "/subscription", component: Subscription },
+    { path: "/favorites", component: Favorites },
   ],
 });
