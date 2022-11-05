@@ -23,12 +23,12 @@ import Login from "./components/Sign_components/Login.vue";
 import Login_error from "./components/Sign_components/Login_error.vue";
 import Sign from "./components/Sign_components/SignIn.vue";
 import Product from "./pages/Product.vue";
-import Account from './pages/Account.vue'
-import Orders from './pages/Orders.vue'
-import Orders_card from './components/Orders_card.vue'
-import Chat from './pages/Chat.vue'
-import Chat2 from './pages/Chat2.vue'
-import Tarif from './pages/Tarif.vue'
+import Account from "./pages/Account.vue"
+import Tarif from "./pages/Tarif.vue"
+import Orders from "./pages/Orders.vue"
+import Orders_card from "./components/Orders_card"
+import Chat from "./pages/Chat.vue"
+import Chat2 from "./pages/Chat2.vue"
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -56,12 +56,11 @@ export default createRouter({
     { path: "/login", component: Login },
     { path: "/login_error", component: Login_error },
     { path: "/sign", component: Sign },
-    { path: "/product", component: Product },
-    {path: '/account', component: Account},
-    {path: '/orders', component: Orders},
-    {path: '/orders/card', component: Orders_card},
-    {path: '/chat', component: Chat},
-    {path: '/chat2', component: Chat2},
-    {path: '/tarif', component: Tarif},
+    { path: "/account", component: Account },
+    { path: "/orders", component: Orders },
+    { path: "/orderCard", component: Orders_card },
+    { path: "/chat", component: Chat },
+    { path: "/chat2", component: Chat2 },
+    { path: "/tarif", component: Tarif },
   ],
 });
