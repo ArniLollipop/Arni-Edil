@@ -328,12 +328,16 @@ import Footer from "@/components/Footer.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
 import Banner from "@/components/Banner.vue";
 import CatalogMenu from "@/components/modal/CatalogMenu.vue";
+import CategoryMob from "@/components/modal/CategoryMob.vue";
+import SearchMob from "@/components/modal/SearchMob.vue";
 export default {
   components: {
     Head,
     Footer,
     MobileMenu,
     CatalogMenu,
+    CategoryMob,
+    SearchMob,
   },
   data() {
     return {

@@ -1,8 +1,6 @@
 <template>
   <Head></Head>
-  <section
-    class="container mx-auto px-4 pt-4 xl:pt-6 text-main pb-8 lg-pb[100px]"
-  >
+  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main pb-8 lg:pb-20">
     <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
@@ -209,7 +207,7 @@
                 />
               </div>
               <div
-                class="px-3 pb-9 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
+                class="px-3 pb-10 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-10 rounded-2xl bg-white grow relative pt-4"
               >
                 <div class="h-1/3">
                   <div
@@ -331,7 +329,7 @@
                 />
               </div>
               <div
-                class="px-3 pb-9 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
+                class="px-3 pb-10 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-10 rounded-2xl bg-white grow relative pt-4"
               >
                 <div class="h-1/3">
                   <div

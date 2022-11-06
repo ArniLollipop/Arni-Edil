@@ -1,6 +1,6 @@
 <template>
   <Head></Head>
-  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main">
+  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main pb-8 lg:pb-20">
     <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
@@ -181,7 +181,105 @@
           @mobileModalStatus="acceptMobileModalStatus"
         ></div>
 
-        <div>qwe</div>
+        <div>
+          <div class="flex items-center gap-x-2.5 lg:gap-x-6">
+            <div
+              @click="isButton = false"
+              :class="[
+                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-full py-1 lg:py-1.5',
+                { 'shadow-md shadow-accent': !isButton },
+              ]"
+            >
+              Пошуки
+            </div>
+            <div
+              @click="isButton = true"
+              :class="[
+                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-full py-1 lg:py-1.5',
+                { 'shadow-md shadow-accent': isButton },
+              ]"
+            >
+              Магазини
+            </div>
+          </div>
+          <div
+            class="mt-4 lg:mt-8 flex flex-col gap-y-4 lg:gap-y-8"
+            v-if="!isButton"
+          >
+            <div
+              v-for="item in poshuki"
+              class="p-2 pb-3.5 relative lg:px-3 lg:py-6 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[40%] bg-white border border-accent rounded-xl"
+            >
+              <div class="absolute bottom-3 right-3">
+                <img
+                  :src="require('../img/last2P/' + item.image)"
+                  alt=""
+                  class="w-3.5"
+                />
+              </div>
+              <div class="lg:text-center">
+                <div class="text-sm font-medium">{{ item.title }}</div>
+                <div class="text-xs">{{ item.date }}</div>
+              </div>
+              <div class="mt-1 lg:mt-0 space-y-1">
+                <div v-for="checkItem in item.check">
+                  <input type="checkbox" id="{{ checkItem.id }}" />
+                  <label
+                    for="{{checkItem.id}}"
+                    class="text-xs lg:text-sm ml-1"
+                    >{{ checkItem.text }}</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-4 lg:mt-8 flex flex-col gap-y-6 lg:gap-y-8 relative"
+            v-if="isButton"
+          >
+            <div
+              v-for="item in magazini"
+              class="p-2 lg:px-2.5 flex items-end justify-between w-full bg-white border border-accent rounded-xl"
+            >
+              <div class="absolute lg:hidden top-2 right-2">
+                <img src="../img/last2P/X.svg" alt="" class="w-3.5" />
+              </div>
+              <div class="flex gap-x-4 lg:gap-x-10">
+                <div>
+                  <img
+                    :src="require('../img/last2P/' + item.image)"
+                    alt=""
+                    class="h-[70px] lg:h-[180px]"
+                  />
+                </div>
+                <div
+                  class="py-2 lg:py-5 flex flex-col items-start justify-between"
+                >
+                  <div class="flex flex-col items-center">
+                    <div class="text-xs lg:text-lg">{{ item.title }}</div>
+                    <div class="lg:mt-1 text-xs lg:text-sm">{{ item.col }}</div>
+                    <div class="hidden lg:block mt-1">
+                      <img
+                        :src="require('../img/last2P/' + item.stars)"
+                        alt=""
+                        class="h-4"
+                      />
+                    </div>
+                  </div>
+                  <div class="hidden lg:block text-sm">{{ item.subtitle }}</div>
+                </div>
+              </div>
+              <div class="flex flex-col items-center lg:gap-y-3.5">
+                <div class="text-[11px] lg:text-sm">{{ item.date }}</div>
+                <div
+                  class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-xl"
+                >
+                  Відписатися
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -206,6 +304,86 @@ export default {
       isCategoryOpen: false,
       isTruckOpen: false,
       isMobileMenuOpen: false,
+      isButton: false,
+      magazini: [
+        {
+          id: 1,
+          title: "Анна",
+          col: "114 оголошення",
+          stars: "stars.png",
+          subtitle: "Производство торгового оборудования",
+          date: "сьогодні в 16:01",
+          image: "magp1.png",
+        },
+        {
+          id: 2,
+          title: "Анна",
+          col: "114 оголошення",
+          stars: "stars.png",
+          subtitle: "Производство торгового оборудования",
+          date: "сьогодні в 16:01",
+          image: "magp1.png",
+        },
+        {
+          id: 3,
+          title: "Анна",
+          col: "114 оголошення",
+          stars: "stars.png",
+          subtitle: "Производство торгового оборудования",
+          date: "сьогодні в 16:01",
+          image: "magp1.png",
+        },
+      ],
+      poshuki: [
+        {
+          id: 1,
+          title: "Lenovo",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 1,
+              text: "Раз в день",
+            },
+            {
+              id: 2,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+        {
+          id: 2,
+          title: "Lenovo",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 1,
+              text: "Раз в день",
+            },
+            {
+              id: 2,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+        {
+          id: 3,
+          title: "Lenovo",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 1,
+              text: "Раз в день",
+            },
+            {
+              id: 2,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+      ],
     };
   },
   methods: {

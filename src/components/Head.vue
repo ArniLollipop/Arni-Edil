@@ -23,11 +23,13 @@
           <div
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white z-100"
           >
-            <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5 " />
+            <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5" />
           </div>
         </div>
       </div>
-      <div class="flex mt-2 lg:px-3 px-2 py-3 bg-white rounded-xl space-x-2 relative">
+      <div
+        class="flex mt-2 lg:px-3 px-2 py-3 bg-white rounded-xl space-x-2 relative"
+      >
         <CIcon
           :icon="icon.cilSearch"
           size="sm"
@@ -38,8 +40,10 @@
           class="focus:ring-0 focus:outline-none placeholder:text-sm text-sm w-[80%]"
           placeholder="Пошук по оголошенням... "
         />
-        <button class = "flex absolute top-2 right-2 top items-center justify-center rounded-full bg-accent w-[30px] h-[30px] lg:hidden">
-          <img src="@/img/category.svg" alt="">
+        <button
+          class="flex absolute top-2 right-2 top items-center justify-center rounded-full bg-accent w-[30px] h-[30px] lg:hidden"
+        >
+          <img src="@/img/category.svg" alt="" />
         </button>
       </div>
     </div>
@@ -124,6 +128,7 @@
           />
           <button
             class="px-5 py-3 rounded-3xl bg-accent flex items-center ml-auto"
+            @click="isSearchOpen = !isSearchOpen"
           >
             <div class="text-sm text-white">Пошук</div>
           </button>
@@ -133,6 +138,7 @@
           <div class="text-sm text-white">Створити оголошення</div>
         </button>
       </div>
+      <Search v-if="isSearchOpen"></Search>
       <Category v-if="isCategoryOpen"></Category>
     </div>
     <Truck v-if="isTruckOpen" @modalStatus="acceptModalStatus"></Truck>
@@ -143,6 +149,7 @@
 import { CIcon } from "@coreui/icons-vue";
 import * as icon from "@coreui/icons";
 import Category from "@/components/modal/Category.vue";
+import Search from "@/components/modal/Search.vue";
 import Truck from "@/components/modal/Truck.vue";
 import mobileMenu from "@/components/modal/mobileMenu.vue";
 
@@ -152,6 +159,7 @@ export default {
     Category,
     Truck,
     mobileMenu,
+    Search,
   },
   setup() {
     return {
@@ -163,6 +171,7 @@ export default {
       isCategoryOpen: false,
       isTruckOpen: false,
       isMobileMenuOpen: false,
+      isSearchOpen: false,
     };
   },
   methods: {
