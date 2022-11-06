@@ -56,10 +56,16 @@
           <a href="#">RU</a>
         </div>
         <div class="flex space-x-16">
-          <a href="#" class="flex">
+          <div
+            :class="[
+              'ml-0.5 flex w-max cursor-pointer',
+              { 'border-b border-accent': isSearchOpen },
+            ]"
+            @click="isSearchOpen = !isSearchOpen"
+          >
             <CIcon :icon="icon.cilLocationPin" custom-class-name="w-4" />
             <div class="ml-0.5">Україна</div>
-          </a>
+          </div>
           <a href="#" class="">Магазини</a>
           <a href="#" class="">Пошук на мапі</a>
           <div>
@@ -129,7 +135,6 @@
           />
           <button
             class="px-5 py-3 rounded-3xl bg-accent flex items-center ml-auto"
-            @click="isSearchOpen = !isSearchOpen"
           >
             <div class="text-sm text-white">Пошук</div>
           </button>
