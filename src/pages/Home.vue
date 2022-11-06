@@ -1,4 +1,4 @@
-<template class = "">
+<template class="">
   <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
     <Head></Head>
     <Banner></Banner>
@@ -50,6 +50,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 2,
@@ -64,6 +65,7 @@ export default {
           map: "Одесса",
           btnText: "Б/У",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 3,
@@ -78,6 +80,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 4,
@@ -92,6 +95,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 5,
@@ -106,6 +110,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
       ],
     };

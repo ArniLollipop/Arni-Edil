@@ -117,17 +117,22 @@
               >
                 {{ item.date }}
               </div>
-              
-              <button type="checkbox" value="qwe" class = "ml-auto lg:-mr-2" @click="isLike = !isLike">
+
+              <button
+                type="checkbox"
+                value="qwe"
+                class="ml-auto lg:-mr-2"
+                @click="item.isLike = !item.isLike"
+              >
                 <img
                   src="../../img/RecCards/heart.svg"
                   alt=""
-                  :class="['w-3 xl:w-5', { 'w-3 hidden': isLike }]"
+                  :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
                 />
                 <img
                   src="../../img/RecCards/heartFill.svg"
                   alt=""
-                  :class="['w-3 xl:w-5', { 'w-3 hidden': !isLike }]"
+                  :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
                 />
               </button>
             </div>
@@ -167,9 +172,7 @@ export default {
     cards: {},
   },
   data() {
-    return {
-      isLike: false,
-    };
+    return {};
   },
 };
 </script>

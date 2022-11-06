@@ -262,16 +262,19 @@
                     {{ item.date }}
                   </div>
 
-                  <div class="ml-auto lg:-mr-2" @click="isLike = !isLike">
+                  <div
+                    class="ml-auto lg:-mr-2"
+                    @click="item.isLike = !item.isLike"
+                  >
                     <img
                       src="../img/RecCards/heart.svg"
                       alt=""
-                      :class="['w-3 xl:w-5', { 'w-3 hidden': isLike }]"
+                      :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
                     />
                     <img
                       src="../img/RecCards/heartFill.svg"
                       alt=""
-                      :class="['w-3 xl:w-5', { 'w-3 hidden': !isLike }]"
+                      :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
                     />
                   </div>
                 </div>
@@ -375,6 +378,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 2,
@@ -389,6 +393,7 @@ export default {
           map: "Одесса",
           btnText: "Б/У",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 3,
@@ -403,6 +408,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 4,
@@ -417,6 +423,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
         {
           id: 5,
@@ -431,6 +438,7 @@ export default {
           map: "Одесса",
           btnText: "Бізнес",
           date: "27.07.2022",
+          isLike: false,
         },
       ],
     };
