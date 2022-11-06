@@ -14,7 +14,7 @@
         <img src="../img/catalogMenu.svg" alt="" class="w-5" />
       </div>
     </div>
-    <CatalogMenu v-if="qwe"></CatalogMenu>
+    <SearchMob v-if="qwe"></SearchMob>
   </div>
   <div class="container mx-auto px-5 pb-10 lg:pb-20">
     <div class="mt-3 lg:mt-5 text-sm lg:text-2xl">

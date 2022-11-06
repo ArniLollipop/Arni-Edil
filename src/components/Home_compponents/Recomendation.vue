@@ -1,5 +1,5 @@
 <template>
-  <section class="md:mt-10 sm:mt-6 mt-4 px-4 md:pb-9 pb-4 relative">
+  <section class="md:mt-10 sm:mt-6 mt-4 px-4 md:pb-9 pb-4 relative z-0">
     <div
       class="xl:mt-16 sm:mt-9 sm:grid gap-y-3 xl:gap-x-[4%] lg:gap-x-4 lg:grid-cols-9 sm:grid-cols-6 sm:gap-x-5 hidden mx-auto"
     >
