@@ -20,11 +20,12 @@
           >
             <img src="../img/mobilemenu/korzina.svg" alt="" class="w-5 h-5" />
           </div>
-          <div
+          <router-link
+            to="/chat"
             class="flex items-center justify-center w-8 h-8 rounded-full bg-white z-100"
           >
             <img src="../img/mobilemenu/message.svg" alt="" class="w-5 h-5" />
-          </div>
+          </router-link>
         </div>
       </div>
       <div

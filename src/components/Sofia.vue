@@ -49,11 +49,11 @@
               <img src="@/img/acc_settings.svg" alt="">
               <p class = "text-sm hover:text-accent">Налаштування</p>
             </router-link>
-            <router-link to="/account" class = "flex mt-3 hover:text-accent items-center space-x-2">
+            <router-link to="/favorites" class = "flex mt-3 hover:text-accent items-center space-x-2">
               <img src="@/img/acc_like.svg" alt="">
               <p class = "text-sm hover:text-accent">Вибране</p>
             </router-link>
-            <router-link to="/account" class = "flex mt-3 hover:text-accent items-center space-x-2">
+            <router-link to="/subscription" class = "flex mt-3 hover:text-accent items-center space-x-2">
               <img src="@/img/acc_podpiski.svg" alt="">
               <p class = "text-sm hover:text-accent">Мої підписки</p>
             </router-link>

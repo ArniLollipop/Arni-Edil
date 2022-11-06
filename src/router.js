@@ -34,6 +34,7 @@ import Chat from "./pages/Chat.vue";
 import Chat2 from "./pages/Chat2.vue";
 import Purse from "./pages/Purse.vue";
 import Settings from "./pages/Settings.vue";
+import MobileShop from "./pages/MobileShop.vue";
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -73,5 +74,6 @@ export default createRouter({
     { path: "/tarif", component: Tarif },
     { path: "/purse", component: Purse },
     { path: "/settings", component: Settings },
+    { path: "/mobileshop", component: MobileShop },
   ],
 });

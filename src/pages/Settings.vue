@@ -44,14 +44,14 @@
                 </label>
               </div>
               <div  class = "sm:flex hidden">
-                <input type="radio" id = "biznec1" name = "biznec" class = "peer w-0">
-                <label for = "biznec1" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
+                <input type="radio" id = "biznec3" name = "biznes" class = "peer w-0">
+                <label for = "biznec3" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Приватна особа</p>
                 </label>
               </div>
               <div class = "sm:flex hidden">
-                <input type="radio" id = "biznec2" name = "biznec" class = "peer  w-0">
-                <label for="biznec2" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
+                <input type="radio" id = "biznec4" name = "biznes" class = "peer  w-0">
+                <label for="biznec4" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Бізнес</p>
                 </label>
               </div>
@@ -114,7 +114,7 @@
                 <p class = "mx-auto block md:text-base sm:text-sm text-xs">Коротоке ім’я</p>
               </div>
               <div class = "sm:w-1/2 w-full">
-                <input type="text" class = "bg-pink mt-1 text-xs sm:py-2 py-1 px-4 w-full sm:w-1/2 rounded-[10px] outline-none">
+                <input type="text" class = "bg-pink mt-1 text-xs sm:py-2 py-1 px-4 w-full rounded-[10px] outline-none">
                 <p class = "md:text-sm text-xs text-gray mt-1">Вкажіть коротку адресу вашої сторінки, щоб вона стала зручнішою і запам'ятовується</p>
               </div>
             </div>
@@ -122,7 +122,7 @@
           <p class = "sm:text-2xl text-sm font-medium sm:my-8 my-3">Загальні налаштування</p>
           <div class = "md:bg-white rounded-[10px] w-full md:px-10 sm:px-4 px-2 py-6">
             <div class = "sm:flex items-center sm:space-x-5 border-b border-gray border-opacity-60 sm:pb-6 pb-4 sm:mt-6 relative">
-              <div class = "sm:w-[30%] sm:text-center w-[90%]">
+              <div class = "sm:w-[28%] sm:text-center w-[90%]">
                 <p class = "mx-auto block md:text-base sm:text-sm text-xs">Показувати мій телефон в оголошеннях</p>
               </div>
               <label for="checked-toggle1" class="inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
@@ -131,7 +131,7 @@
               </label>
             </div>
             <div class = "sm:flex items-center justify-between w-full border-b border-gray border-opacity-60 sm:pb-6 sm:mt-6 pb-2 mt-2 relative">
-              <div class = "sm:w-[30%] sm:text-center">
+              <div class = "sm:w-[26%] sm:text-center">
                 <p class = "mx-auto block md:text-base sm:text-sm text-xs">Безпечні угоди</p>
               </div>
               <label for="checked-toggle2" class="inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
@@ -143,7 +143,7 @@
               </div>
             </div>
             <div class = "sm:flex items-center space-x-5 w-full border-b border-gray border-opacity-60 sm:pb-6 sm:mt-6 pb-2 mt-2 relative">
-              <div class = "sm:w-[30%] sm:text-center">
+              <div class = "sm:w-[28%] sm:text-center">
                 <p class = "mx-auto block md:text-base sm:text-sm text-xs">Коментарі в оголошеннях</p>
               </div>
               <label for="checked-toggle3" class="inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
