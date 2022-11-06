@@ -5,7 +5,11 @@
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
       <p class="font-normal sm:text-sm text-[11px] lg:block hidden">
-        Мої оголошення
+        Мої підписки
+      </p>
+      <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
+      <p class="font-normal sm:text-sm text-[11px] lg:block hidden">
+        Магазины
       </p>
       <p class="font-normal sm:text-sm text-[11px] lg:hidden">Софія Смирнова</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10] lg:hidden" />

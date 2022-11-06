@@ -141,15 +141,15 @@
         <button class ="absolute top-3 right-3 rounded-full"><img src="@/img/full.svg" alt="" class = "md:w-fit"></button>
         <div class = "md:flex absolute bottom-3 right-3 gap-x-2 hidden">
           <button><img class = "w-fit" src="@/img/minus.svg" alt=""></button>
-          <button><img class = "w-fit" src="@/img/plus.svg" alt=""></button>
+          <button><img class = "w-fit" src="@/img/create_plus.svg" alt=""></button>
         </div>
       </div>
       <div class = "flex items-center sm:mt-4 gap-x-3">
         <p class = "font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 mt-[19px]">Автопублікація</p>
         
-          <label for="default-toggle" class="inline-flex mt-[18px] relative items-center cursor-pointer">
-            <input type="checkbox" value="" id="default-toggle" class="sr-only peer">
-            <div class="w-11 h-6 bg-gray peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white peer-checked:after:bg-white after:border-gray after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-white"></div>
+          <label for="checked-toggle1" class="inline-flex mt-[18px] relative items-center cursor-pointer">
+            <input type="checkbox" value="" id="checked-toggle1" class="sr-only peer" checked>
+            <div class="sm:w-11 w-8 sm:h-6 h-4 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-3 after:w-3 after:transition-all peer-checked:bg-pink"></div>
           </label>
 
       </div>

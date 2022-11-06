@@ -5,7 +5,7 @@
       class="mt-4 lg:mt-11 grid grid-cols-2 gap-x-1.5 gap-y-4 lg:gap-y-8 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 auto-rows-[minmax(0px, auto)]"
     >
       <router-link
-        to="/cardView"
+        to="/"
         v-for="item in cards"
         v-show="item.id >= 1"
         class="flex flex-col overflow-hidden"
@@ -117,8 +117,8 @@
               >
                 {{ item.date }}
               </div>
-
-              <div class="ml-auto lg:-mr-2" @click="isLike = !isLike">
+              
+              <button type="checkbox" value="qwe" class = "ml-auto lg:-mr-2" @click="isLike = !isLike">
                 <img
                   src="../../img/RecCards/heart.svg"
                   alt=""
@@ -129,7 +129,7 @@
                   alt=""
                   :class="['w-3 xl:w-5', { 'w-3 hidden': !isLike }]"
                 />
-              </div>
+              </button>
             </div>
           </div>
         </div>
