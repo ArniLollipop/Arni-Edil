@@ -1,6 +1,6 @@
 <template>
   <HeadVue></HeadVue>
-  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main">
+  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main pb-10 lg:pb-20">
     <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
@@ -39,7 +39,7 @@
           <p
             class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main"
           >
-            Мої замовлення
+            Планувальник завдань
           </p>
           <input
             type="radio"
@@ -71,42 +71,40 @@
           class="text-main"
           v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus"
-        >
-          <div class="flex space-x-4">
-            <button
-              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 border border-accent shadow-md shadow-accent"
-            >
-              <p class="sm:text-sm text-xs">Покупки</p>
-              <p class="text-xs px-[5px] bg-accent rounded-full text-white">
-                1
-              </p>
-            </button>
-            <button
-              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-8 px-5 border border-accent"
-            >
-              <p class="sm:text-sm text-xs">Продажі</p>
-            </button>
+        ></div>
+
+        <div class="">
+          <div class="flex bg-accentLight rounded-xl p-2 lg:p-4">
+            <div class="basis-1/2 text-sm font-medium">Оголошення</div>
+            <div class="basis-1/2 text-sm font-medium">
+              Найближче продовження
+            </div>
           </div>
-          <router-link to="/orders/card">
+
+          <div class="mt-4 lg:mt-6 p-2 lg-p4 space-y-4">
             <div
-              class="bg-white w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
+              :class="[
+                'flex justify-between items-center',
+                { 'hidden text-center': !item.isBe },
+              ]"
+              v-for="item in task"
             >
-              <img
-                src="@/img/RecCards/p1.png"
-                alt=""
-                class="sm:w-fit sm:h-full w-[117px] h-[68px]"
-              />
-              <div class="sm:pb-9 sm:pt-8 ml-4">
-                <div class="bg-pink px-2 py-1 rounded-full w-fit">
-                  <p class="sm:text-xs text-[10px]">Новий</p>
-                </div>
-                <p class="text-blue sm:text-sm sm:mt-2 text-xs">
-                  Замовлення №11211749
-                </p>
-                <p class="text-xs">створено сьогодні в 16:30</p>
+              <div class="text-[#5477E7] basis-1/2 text-sm font-medium">
+                {{ item.text1 }}
+              </div>
+              <div
+                class="flex justify-between items-center basis-1/2 text-sm font-medium"
+              >
+                <div>{{ item.text2 }}</div>
+                <button
+                  @click="item.isBe = false"
+                  class="w-5 h-5 rounded-full bg-accent flex items-center justify-center shrink-0"
+                >
+                  <img src="../img/new7/X.svg" alt="" class="w-2.5" />
+                </button>
               </div>
             </div>
-          </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -136,6 +134,23 @@ export default {
       isCategoryOpen: false,
       isTruckOpen: false,
       isMobileMenuOpen: false,
+      task: [
+        {
+          text1: "Домик стеллаж ЭКО",
+          text2: "24 листопада 2022, 16:58",
+          isBe: true,
+        },
+        {
+          text1: "Домик стеллаж ЭКО",
+          text2: "24 листопада 2022, 16:58",
+          isBe: true,
+        },
+        {
+          text1: "Домик стеллаж ЭКО",
+          text2: "24 листопада 2022, 16:58",
+          isBe: true,
+        },
+      ],
     };
   },
   methods: {

@@ -8,62 +8,19 @@
         <div>
           <img src="../img/arrowRight.svg" alt="" class="w-2 lg:w-2.5" />
         </div>
-        <div class="text-[11px] lg:text-sm">Дитячі товари</div>
+        <div class="text-[11px] lg:text-sm">Оголошення - Україна</div>
       </div>
       <div class="lg:hidden" @click="qwe = !qwe">
         <img src="../img/catalogMenu.svg" alt="" class="w-5" />
       </div>
     </div>
-    <SearchMob v-if="qwe"></SearchMob>
+    <CatalogMenu v-if="qwe"></CatalogMenu>
   </div>
   <div class="container mx-auto px-5 pb-10 lg:pb-20">
-    <div class="mt-3 lg:mt-5 text-sm lg:text-2xl">
-      Продаж дитячих товарів на сайті оголошень Vamberi. 41
-    </div>
-    <div class="mt-4 lg:mt-10 bg-accentLight rounded-xl">
-      <div
-        class="flex items-center justify-center gap-x-1 lg:gap-x-2.5 py-2 lg:py-5"
-        @click="isCatalogOpen = !isCatalogOpen"
-      >
-        <div class="text-[13px] lg:text-2xl">Категорії</div>
-        <div class="">
-          <div v-if="isCatalogOpen">
-            <img src="../img/arrowDown.svg" alt="" class="w-[7px] lg:w-3.5" />
-          </div>
-          <div v-if="!isCatalogOpen">
-            <img src="../img/arrowUp.svg" alt="" class="w-[7px] lg:w-3.5" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="grid lg:grid-cols-4 gap-y-2.5 lg:gap-7 px-6 lg:px-10 mt-3 lg:mt-8 pb-3 lg:pb-8"
-        v-if="isCatalogOpen"
-      >
-        <div
-          class="col-span-1 bg-white text-center rounded-full py-1 text-xs lg:text-sm"
-          v-for="item in catalog"
-        >
-          {{ item }}
-        </div>
-      </div>
-    </div>
-
     <div class="flex gap-x-10 mt-6 xl:mt-12">
       <div class="hidden lg:block w-[25%]">
         <div class="p-4 bg-accentLight rounded-xl">
           <div class="flex flex-col gap-y-2">
-            <div class="flex items-center">
-              <input type="checkbox" id="1" class="" />
-              <label for="1" class="ml-2 text-sm">Безпечна угода</label>
-            </div>
-            <div class="flex items-center">
-              <input type="checkbox" id="2" class="" />
-              <label for="2" class="ml-2 text-sm">Аукціонні товари</label>
-            </div>
-            <div class="flex items-center">
-              <input type="checkbox" id="3" class="" />
-              <label for="3" class="ml-2 text-sm">Онлайн-показ</label>
-            </div>
             <div class="flex items-center">
               <input type="checkbox" id="4" class="" />
               <label for="4" class="ml-2 text-sm">VIP оголошення</label>
@@ -152,7 +109,7 @@
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm shadow-md shadow-accent"
               >
                 Всі оголошення
               </div>
@@ -297,26 +254,6 @@
     </div>
 
     <div class="mt-6 lg:mt-12">
-      <div class="text-sm font-medium lg:text-xl">Товари для дітей</div>
-      <div class="mt-2 lg:mt-3 text-xs lg:text-sm">
-        На Vаmberi представлен огромный выбор товаров для детей всех возрастов.
-        На нашей доске объявлений можно выбрать и приобрести одежду, игрушки,
-        канцтовары, смеси и кашки, детский транспорт и многое другое по
-        доступным ценам. Вы можете не только покупать, но и размещать свои
-        объявления о продаже на платформе Vamberi.
-      </div>
-      <div class="lg:mt-1 text-xs lg:text-sm">
-        Большой ассортимент товаров для детей.
-      </div>
-    </div>
-
-    <div class="mt-2 lg:mt-2.5 flex justify-end">
-      <div class="w-max border-b border-dotted text-xs lg:text-sm">
-        Докладніше
-      </div>
-    </div>
-
-    <div class="mt-6 lg:mt-12">
       <img src="../img/categoryImage.png" alt="" class="w-full" />
     </div>
   </div>
@@ -346,24 +283,6 @@ export default {
     return {
       isCatalogOpen: false,
       qwe: false,
-      catalog: [
-        "Дитячі мебелі",
-        "Дитячі автокрісла",
-        "Товари для навчання",
-        "Облаштування дитячої",
-        "Дитячий одяг",
-        "Іграшки та ігри",
-        "Прогулянки та активний відпочинок",
-        "Радіо- та відеоняні",
-        "Дитяче взуття",
-        "Дитячий транспорт ",
-        "Здоров’я та догляд ",
-        "Товари для мам",
-        "Дитячі коляски ",
-        "Дитяче харчування та годування ",
-        "Розвиток та творчість ",
-        "Дитячі товари, інше",
-      ],
       cards: [
         {
           id: 1,
@@ -434,6 +353,51 @@ export default {
           subtitleColor: false,
           price: "400,000",
           lastPrice: "600,000 ",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 6,
+          pretitle: "",
+          title: "Тест",
+          image: "p1.png",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 7,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          image: "p2.png",
+          subtitle: "Під замовлення",
+          subtitleColor: true,
+          price: "8000",
+          lastPrice: "10000",
+          status: "Б/У",
+          map: "Одесса",
+          btnText: "Б/У",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 8,
+          pretitle: "",
+          title: "Стеллаж с полками, в стиле лофт",
+          image: "p3.svg",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
           status: "Нове",
           map: "Одесса",
           btnText: "Бізнес",

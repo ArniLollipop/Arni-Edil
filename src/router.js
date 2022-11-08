@@ -35,6 +35,13 @@ import Chat2 from "./pages/Chat2.vue";
 import Purse from "./pages/Purse.vue";
 import Settings from "./pages/Settings.vue";
 import MobileShop from "./pages/MobileShop.vue";
+import Search from "./pages/Search.vue";
+import Search2 from "./pages/Search2.vue";
+import Ads from "./pages/Ads.vue";
+import Task from "./pages/Task.vue";
+import Shops from "./pages/Shops.vue";
+import Shop from "./pages/Shop.vue";
+import Statis from "./pages/Statis.vue";
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -75,5 +82,12 @@ export default createRouter({
     { path: "/purse", component: Purse },
     { path: "/settings", component: Settings },
     { path: "/mobileshop", component: MobileShop },
+    { path: "/search", component: Search },
+    { path: "/search2", component: Search2 },
+    { path: "/ads", component: Ads },
+    { path: "/task", component: Task },
+    { path: "/shops", component: Shops },
+    { path: "/shop", component: Shop },
+    { path: "/statis", component: Statis },
   ],
 });
