@@ -1,10 +1,11 @@
 {
-  "name": "freelance",
+  "name": "vamberi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "@coreui/icons": "^2.1.0",
