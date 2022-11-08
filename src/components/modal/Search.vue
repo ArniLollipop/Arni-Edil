@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[98%] h-max border rounded-xl bg-white absolute top-36 z-20 px-1 pb-4"
+    class="w-[70%] h-max border rounded-xl bg-white absolute top-36 z-20 px-1 pb-4 left-1/2 -translate-x-1/2"
   >
     <div
       class="py-4 px-4 flex items-center justify-between w-full"
