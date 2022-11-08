@@ -1,5 +1,5 @@
 <template>
-  <section class = "px-6 md:py-6">
+  <section class = "px-6 md:py-6 mt-4">
     <div class = "w-full min-h-[230px] sm:min-h-[300px] sm:flex relative">
       <img src="@/img/boxes.svg" alt="" class = "absolute md:top-2 bottom-6 xl:right-[10%] lg:right-[5%] z-0 xl:w-[35%] md:h-[95%] md:w-[50%] md:right-[3%] -right-2 w-[162px] h-[105px]">
       <div class = "sm:pt-4 relative">
@@ -26,23 +26,23 @@
         <div class = "flex flex-col sm:gap-y-2 gap-y-1">
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
-            <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Безпечні угоди</p>
+            <p class ="md:ml-4 md:text-center w-full md:border border-gray rounded-xl py-[6px] text-xs underline underline-offset-4 decoration-dashed md:text-sm md:no-underline">Безпечні угоди</p>
           </div>
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
-            <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Онлайн-магазини</p>
+            <p class ="md:ml-4 md:text-center w-full md:border border-gray rounded-xl py-[6px] text-xs underline underline-offset-4 decoration-dashed md:text-sm md:no-underline">Онлайн-магазини</p>
           </div>
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
-            <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Турбо продаж</p>
+            <p class ="md:ml-4 md:text-center w-full md:border border-gray rounded-xl py-[6px] text-xs underline underline-offset-4 decoration-dashed md:text-sm md:no-underline">Турбо продаж</p>
           </div>
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
-            <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Оголошення на карті</p>
+            <p class ="md:ml-4 md:text-center w-full md:border border-gray rounded-xl py-[6px] text-xs underline underline-offset-4 decoration-dashed md:text-sm md:no-underline">Оголошення на карті</p>
           </div>
           <div class = "flex w-full">
             <img src="@/img/galochka.svg" alt="" class = "w-5 h-8 hidden lg:block">
-            <p class ="md:ml-4 md:text-center w-full md:border border-black rounded-xl py-1 text-[12px] underline underline-offset-4 decoration-dashed sm:text-[12px] xl:text-base md:no-underline">Допомога ЗСУ</p>
+            <p class ="md:ml-4 md:text-center w-full md:border border-gray rounded-xl py-[6px] text-xs underline underline-offset-4 decoration-dashed md:text-sm md:no-underline">Допомога ЗСУ</p>
           </div>
           <div class = "absolute bottom-4 right-6 bg-accent w-[52px] h-[52px] rounded-full xl:flex items-center justify-center hidden">
             <img src="@/img/like.svg" alt="" class = "w-[26px] h-[26px] fill-white">

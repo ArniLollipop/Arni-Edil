@@ -34,7 +34,6 @@ import Chat from "./pages/Chat.vue";
 import Chat2 from "./pages/Chat2.vue";
 import Purse from "./pages/Purse.vue";
 import Settings from "./pages/Settings.vue";
-import MobileShop from "./pages/MobileShop.vue";
 import Search from "./pages/Search.vue";
 import Search2 from "./pages/Search2.vue";
 import Ads from "./pages/Ads.vue";
@@ -81,7 +80,6 @@ export default createRouter({
     { path: "/tarif", component: Tarif },
     { path: "/purse", component: Purse },
     { path: "/settings", component: Settings },
-    { path: "/mobileshop", component: MobileShop },
     { path: "/search", component: Search },
     { path: "/search2", component: Search2 },
     { path: "/ads", component: Ads },

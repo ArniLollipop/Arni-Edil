@@ -1,10 +1,10 @@
 <template>
   <section class="md:mt-10 sm:mt-6 mt-4 px-4 md:pb-9 pb-4 relative z-0">
     <div
-      class="xl:mt-16 sm:mt-9 sm:grid gap-y-3 xl:gap-x-[4%] lg:gap-x-4 lg:grid-cols-9 sm:grid-cols-6 sm:gap-x-5 hidden mx-auto"
+      class="xl:mt-16 sm:mt-9 sm:grid gap-x-5 gap-y-3 lg:grid-cols-9 sm:grid-cols-6 hidden mx-auto"
     >
       <div
-        class="xl:text-base sm:w-[100px] text-center lg:text-[14px] sm:text-[12px] text-[11px] w-fit"
+        class="xl:text-base xl:w-[135px] sm:w-[100px] text-center lg:text-sm text-xs w-fit"
         v-for="rec in recomendation"
         v-show="rec.id >= 1"
       >
@@ -42,7 +42,7 @@
           <img
             :src="require('../../img/' + rec.image)"
             alt=""
-            class="h-[70%] w-[70%]"
+            class="h-[60%] w-[60%]"
           />
         </div>
         <div
@@ -52,7 +52,7 @@
           <img
             :src="require('../../img/' + rec.image)"
             alt=""
-            class="h-[70%] w-[70%]"
+            class="h-[65%] w-[65%]"
           />
         </div>
         <div class="h-1/2 px-4 flex items-end justify-center">
@@ -86,13 +86,13 @@ export default {
         { id: 0, title: "Всі категорії", image: "category.svg" },
         { id: 1, title: "Дитячі товари", image: "Medved.png" },
         { id: 2, title: "Нерухомість", image: "dom.svg" },
-        { id: 3, title: "Для дому та комерції ", image: "krovat.svg" },
+        { id: 3, title: "Дому та комерції ", image: "krovat.svg" },
         { id: 4, title: "Робота", image: "rabota.png" },
-        { id: 5, title: "Послуги та фріланс", image: "freelance.png" },
+        { id: 5, title: "Послуги фріланс", image: "freelance.png" },
         { id: 6, title: "Авто", image: "avto.png" },
         {
           id: 7,
-          title: "Запчастини для транспорту",
+          title: "Запчастини транспорту",
           image: "zapchasti.png",
         },
         { id: 8, title: "Тварини", image: "tvari.png" },
@@ -102,10 +102,10 @@ export default {
         { id: 12, title: "Обладнання та сировина", image: "sirovina.png" },
         {
           id: 13,
-          title: "Будматеріали та інструменти",
+          title: "Будматеріали інструменти",
           image: "instrumenti.png",
         },
-        { id: 14, title: "Мода та стиль", image: "stil.png" },
+        { id: 14, title: "Мода i стиль", image: "stil.png" },
         { id: 15, title: "Краса і здоров’я", image: "kosmetika.png" },
         { id: 16, title: "Обмін", image: "obmen.png" },
         { id: 17, title: "Для бізнесу", image: "biznes.png" },
