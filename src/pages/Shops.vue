@@ -33,65 +33,66 @@
         />
       </label>
     </div>
-    <Acc_buttons
+    <MobileCategoryVue
       v-if="isMobileMenuOpen"
       @mobileModalStatus="acceptMobileModalStatus"
-      class=""
-    ></Acc_buttons>
+      class="mt-4"
+    ></MobileCategoryVue>
     <div
       class="text-main"
       v-show="!isMobileMenuOpen"
       @mobileModalStatus="acceptMobileModalStatus"
-    ></div>
+    >
 
-    <div class="mt-3 lg:mt-10 flex flex-col items-strech gap-y-5 lg:gap-y-7">
-      <div
-        class="lg:bg-white lg:rounded-xl lg:px-8 lg:py-5 flex flex-col lg:flex-row lg:items-end w-full"
-        v-for="item in shops"
-      >
-        <div class="flex flex-col items-center">
-          <div>
-            <img :src="require('../img/new7/' + item.image)" alt="" />
-          </div>
-          <div class="mt-1">
-            <img :src="require('../img/new7/' + item.stars)" alt="" />
-          </div>
-        </div>
-
-        <div class="lg:ml-5 w-full">
-          <div class="text-xs lg:text-sm hidden lg:block">{{ item.text }}</div>
-          <div
-            class="flex flex-col lg:flex-row lg:items-end justify-between mt-4"
-          >
+      <div class="mt-3 lg:mt-10 flex flex-col items-strech gap-y-5 lg:gap-y-7">
+        <div
+          class="lg:bg-white lg:rounded-xl lg:px-8 lg:py-5 flex flex-col lg:flex-row lg:items-end w-full"
+          v-for="item in shops"
+        >
+          <div class="flex flex-col items-center">
             <div>
-              <div class="text-sm lg:text-base lg:font-medium">
-                {{ item.title }}
-              </div>
-              <div class="text-xs lg:text-sm mt-1 lg:mt-2">
-                {{ item.subtitle }}
-              </div>
-              <div class="text-xs mt-1 lg:hidden">{{ item.text }}</div>
+              <img :src="require('../img/new7/' + item.image)" alt="" />
             </div>
+            <div class="mt-1">
+              <img :src="require('../img/new7/' + item.stars)" alt="" />
+            </div>
+          </div>
 
+          <div class="lg:ml-5 w-full">
+            <div class="text-xs lg:text-sm hidden lg:block">{{ item.text }}</div>
             <div
-              class="border border-accent w-full lg:w-max mt-5 lg:mt-0 text-center lg:px-10 py-1 text-sm rounded-full"
+              class="flex flex-col lg:flex-row lg:items-end justify-between mt-4"
             >
-              Перейти
+              <div>
+                <div class="text-sm lg:text-base lg:font-medium">
+                  {{ item.title }}
+                </div>
+                <div class="text-xs lg:text-sm mt-1 lg:mt-2">
+                  {{ item.subtitle }}
+                </div>
+                <div class="text-xs mt-1 lg:hidden">{{ item.text }}</div>
+              </div>
+
+              <div
+                class="border border-accent w-full lg:w-max mt-5 lg:mt-0 text-center lg:px-10 py-1 text-sm rounded-full"
+              >
+                Перейти
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="mt-6 lg:mt-10">
-      <div
-        class="mx-auto w-[30px] h-[30px] lg:w-[60px] lg:h-[60px] rounded-full bg-accent flex items-center justify-center"
-      >
-        <img
-          src="../img/arrowDownWhite.svg"
-          alt=""
-          class="h-[14px] lg:h-[30px]"
-        />
+      <div class="mt-6 lg:mt-10">
+        <div
+          class="mx-auto w-[30px] h-[30px] lg:w-[60px] lg:h-[60px] rounded-full bg-accent flex items-center justify-center"
+        >
+          <img
+            src="../img/arrowDownWhite.svg"
+            alt=""
+            class="h-[14px] lg:h-[30px]"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -106,6 +107,7 @@ import FooterVue from "@/components/Footer.vue";
 import Acc_buttons from "@/components/modal/Acc_buttons.vue";
 import Orders_card from "@/components/Orders_card.vue";
 import SofiaVue from "@/components/Sofia.vue";
+import MobileCategoryVue from "@/components/modal/MobileCategory.vue";
 export default {
   components: {
     HeadVue,
@@ -114,6 +116,7 @@ export default {
     Acc_buttons,
     Orders_card,
     SofiaVue,
+    MobileCategoryVue
   },
   data() {
     return {

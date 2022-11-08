@@ -12,7 +12,7 @@
           <div class = "ml-2 text-xs flex items-center justify-center">
             <p>{{ rec.title }}</p>
           </div>
-          <p class = "text-xs ml-1">{{rec.id}}</p>
+          <p class = "text-xs font-medium ml-1">{{rec.id}}</p>
         </button>
       </div>
     </section>
