@@ -1,13 +1,9 @@
 <template>
   <div
-<<<<<<< HEAD
     :class="[
       'w-[70%] h-max rounded-xl bg-white absolute top-36 z-20 px-1 pb-4 left-1/2 -translate-x-1/2',
       { 'py-2': !oblast },
     ]"
-=======
-    class="w-[60%] h-max border rounded-xl bg-white absolute top-36 z-20 px-1 pb-4"
->>>>>>> 4779bb5e5356d4574077d32f4226445e4a4a0062
   >
     <div
       class="py-4 px-4 flex items-center justify-between w-full"

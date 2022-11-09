@@ -103,9 +103,13 @@
       <div class="w-full lg:w-[72%]">
         <div class="flex items-center justify-between">
           <div>
-            <div class="lg:hidden flex items-center gap-x-1">
+            <div
+              class="lg:hidden flex items-center gap-x-1 relative"
+              @click="ogol = !ogol"
+            >
               <div class="text-sm">Всі оголошення</div>
               <div><img src="../img/arrowDown.svg" alt="" class="w-2" /></div>
+              <Vseogol v-if="ogol"></Vseogol>
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
@@ -325,6 +329,7 @@ import Banner from "@/components/Banner.vue";
 import CatalogMenu from "@/components/modal/CatalogMenu.vue";
 import CategoryMob from "@/components/modal/CategoryMob.vue";
 import SearchMob from "@/components/modal/SearchMob.vue";
+import Vseogol from "@/components/modal/Vseogol.vue";
 export default {
   components: {
     Head,
@@ -333,10 +338,12 @@ export default {
     CatalogMenu,
     CategoryMob,
     SearchMob,
+    Vseogol,
   },
   data() {
     return {
       qwe: false,
+      ogol: false,
       cards: [
         {
           id: 1,

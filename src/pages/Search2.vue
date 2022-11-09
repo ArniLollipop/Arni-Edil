@@ -103,9 +103,13 @@
       <div class="w-full lg:w-[72%]">
         <div class="flex items-center justify-between">
           <div>
-            <div class="lg:hidden flex items-center gap-x-1">
+            <div
+              class="lg:hidden flex items-center gap-x-1 relative"
+              @click="ogol = !ogol"
+            >
               <div class="text-sm">Всі оголошення</div>
               <div><img src="../img/arrowDown.svg" alt="" class="w-2" /></div>
+              <Vseogol v-if="ogol"></Vseogol>
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
@@ -148,8 +152,56 @@
         <div
           class="grid grid-cols-2 gap-x-1.5 gap-y-4 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-5 mt-4 lg:mt-10 auto-rows-[minmax(0px, auto)"
         >
-          <div class="flex flex-col" v-for="item in cards">
-            <div class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white">
+          <router-link
+            to="/"
+            v-for="item in cards"
+            v-show="item.id >= 1"
+            class="flex flex-col"
+          >
+            <div
+              v-if="item.id == 2 || item.id == 5"
+              class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative"
+            >
+              <swiper
+                :slides-per-view="1"
+                :loop="true"
+                :navigation="{
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                }"
+                :space-between="20"
+                :modules="modules"
+                class="w-full h-full relative"
+              >
+                <swiper-slide class="">
+                  <img
+                    :src="require('../img/RecCards/' + item.image)"
+                    alt=""
+                    class="w-full"
+                  />
+                </swiper-slide>
+                <button
+                  class="swiper-button-prev invisible shadow-md shadow-accent"
+                >
+                  <img
+                    src="@/img/mini_left.svg"
+                    alt=""
+                    class="visible bg-white px-1 py-1 absolute -left-2 rounded-full"
+                  />
+                </button>
+                <button class="swiper-button-next invisible">
+                  <img
+                    src="@/img/mini_right.svg"
+                    alt=""
+                    class="visible bg-white px-1 py-1 absolute -right-2 rounded-full"
+                  />
+                </button>
+              </swiper>
+            </div>
+            <div
+              v-else
+              class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-xl"
+            >
               <img
                 :src="require('../img/RecCards/' + item.image)"
                 alt=""
@@ -157,9 +209,9 @@
               />
             </div>
             <div
-              class="px-3 pb-9 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
+              class="px-3 shadow-xl pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
             >
-              <div class="h-1/3">
+              <div class="">
                 <div
                   class="text-green text-[12px] lg:text-[14px] mb-3 absolute top-0"
                 >
@@ -174,7 +226,7 @@
                   {{ item.title }}
                 </div>
               </div>
-              <div class="mt-1 lg:mt-3">
+              <div class="mt-1 lg:mt-3 flex flex-col justify-between">
                 <div
                   :class="{
                     'text-xs text-red': item.subtitleColor,
@@ -201,7 +253,7 @@
                 >
                   {{ item.lastPrice }}.грн
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center mt-auto">
                   <img src="../img/RecCards/map.svg" alt="" class="h-3" />
                   <div class="text-xs text-gray">{{ item.map }}</div>
                 </div>
@@ -219,7 +271,9 @@
                     {{ item.date }}
                   </div>
 
-                  <div
+                  <button
+                    type="checkbox"
+                    value="qwe"
                     class="ml-auto lg:-mr-2"
                     @click="item.isLike = !item.isLike"
                   >
@@ -233,11 +287,11 @@
                       alt=""
                       :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
                     />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
         <div class="flex justify-center mt-4 lg:mt-10">
           <div
@@ -270,6 +324,12 @@ import Banner from "@/components/Banner.vue";
 import CatalogMenu from "@/components/modal/CatalogMenu.vue";
 import CategoryMob from "@/components/modal/CategoryMob.vue";
 import SearchMob from "@/components/modal/SearchMob.vue";
+import Vseogol from "@/components/modal/Vseogol.vue";
+import { ref } from "vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 export default {
   components: {
     Head,
@@ -278,11 +338,22 @@ export default {
     CatalogMenu,
     CategoryMob,
     SearchMob,
+    Vseogol,
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    const prev = ref(null);
+    const next = ref(null);
+    return {
+      modules: [Navigation],
+    };
   },
   data() {
     return {
       isCatalogOpen: false,
       qwe: false,
+      ogol: false,
       cards: [
         {
           id: 1,

@@ -32,12 +32,12 @@
                   prevEl: prev,
                   nextEl: next,
                 }"
-                
                 :space-between="20"
-                :modules="modules" class = "h-fit"
-                >
+                :modules="modules"
+                class="h-fit"
+              >
                 <swiper-slide>
-                  <img src="../img/productp1.png" alt="" class="w-full" >
+                  <img src="../img/productp1.png" alt="" class="w-full" />
                 </swiper-slide>
                 <swiper-slide>
                   <img src="../img/productp2.png" alt="" class="w-full" />
@@ -46,12 +46,14 @@
                   <img src="../img/productp3.png" alt="" class="w-full" />
                 </swiper-slide>
               </swiper>
-              <button ref="prev"
+              <button
+                ref="prev"
                 class="z-50 absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-left.svg" alt="" class="w-4" />
               </button>
-              <button ref="next"
+              <button
+                ref="next"
                 class="z-50 absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-right.svg" alt="" class="w-4" />
@@ -278,14 +280,15 @@
           }"
           :space-between="20"
           :modules="modules"
-          class = "z-0">
-          <swiper-slide>  
+          class="z-0"
+        >
+          <swiper-slide>
             <img src="../img/product-mob.png" alt="" class="w-full" />
           </swiper-slide>
-          <swiper-slide>  
+          <swiper-slide>
             <img src="../img/product-mob.png" alt="" class="w-full" />
           </swiper-slide>
-          <swiper-slide>  
+          <swiper-slide>
             <img src="../img/product-mob.png" alt="" class="w-full" />
           </swiper-slide>
         </swiper>
@@ -407,7 +410,7 @@
               На Дошка оголошень Vamberi з 24.06.2022
             </div>
             <div class="flex items-center mt-1">
-              <div class="p-px px-1 border border-accent rounded-full text-xs">
+              <div class="p-px px-2 border border-accent rounded-full text-xs">
                 Приватна особа
               </div>
               <div class="ml-2">
@@ -478,12 +481,12 @@
 import Head from "@/components/Head.vue";
 import Footer from "@/components/Footer.vue";
 import MobileMenu from "@/components/MobileMenu.vue";
-import { ref } from 'vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination'
-import { Navigation, Pagination } from 'swiper';
+import { ref } from "vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper";
 export default {
   components: {
     Head,
@@ -496,7 +499,7 @@ export default {
     const prev = ref(null);
     const next = ref(null);
     return {
-      modules: [Navigation,Pagination],
+      modules: [Navigation, Pagination],
       prev,
       next,
     };
