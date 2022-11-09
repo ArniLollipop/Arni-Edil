@@ -1,12 +1,9 @@
 <template>
   <div
-    :class="[
-      'w-[70%] h-max rounded-xl bg-white absolute top-36 z-20 px-1 pb-4 left-1/2 -translate-x-1/2',
-      { 'py-2': !oblast },
-    ]"
+    class="w-[60%] h-max border rounded-xl overflow-hidden pt-2 bg-white absolute top-36 z-20 px-1 pb-4"
   >
-    <div
-      class="py-4 px-4 flex items-center justify-between w-full"
+    <div 
+      class="py-4 px-4 border-x border-accent flex items-center justify-between w-full"
       v-if="oblast"
     >
       <div
