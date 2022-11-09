@@ -152,7 +152,7 @@
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm shadow-md shadow-accent"
               >
                 Всі оголошення
               </div>
@@ -191,7 +191,10 @@
         <div
           class="grid grid-cols-2 gap-x-1.5 gap-y-4 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-5 mt-4 lg:mt-10 auto-rows-[minmax(0px, auto)"
         >
-          <div class="flex flex-col" v-for="item in cards">
+          <div
+            class="flex flex-col shadow-2xl bg-transparent"
+            v-for="item in cards"
+          >
             <div class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white">
               <img
                 :src="require('../img/RecCards/' + item.image)"

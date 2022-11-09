@@ -8,7 +8,7 @@
         to="/"
         v-for="item in cards"
         v-show="item.id >= 1"
-        class="flex flex-col overflow-hidden"
+        class="flex flex-col"
       >
         <div
           v-if="item.id == 2 || item.id == 5"
@@ -32,7 +32,9 @@
                 class="w-full"
               />
             </swiper-slide>
-            <button class="swiper-button-prev invisible">
+            <button
+              class="swiper-button-prev invisible shadow-md shadow-accent"
+            >
               <img
                 src="@/img/mini_left.svg"
                 alt=""
@@ -48,7 +50,10 @@
             </button>
           </swiper>
         </div>
-        <div v-else class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white">
+        <div
+          v-else
+          class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-xl"
+        >
           <img
             :src="require('../../img/RecCards/' + item.image)"
             alt=""
@@ -56,9 +61,9 @@
           />
         </div>
         <div
-          class="px-3 pb-9 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
+          class="px-3 shadow-xl pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
         >
-          <div class="h-1/3">
+          <div class="">
             <div
               class="text-green text-[12px] lg:text-[14px] mb-3 absolute top-0"
             >
@@ -73,7 +78,7 @@
               {{ item.title }}
             </div>
           </div>
-          <div class="mt-1 lg:mt-3">
+          <div class="mt-1 lg:mt-3 flex flex-col justify-between">
             <div
               :class="{
                 'text-xs text-red': item.subtitleColor,
@@ -100,7 +105,7 @@
             >
               {{ item.lastPrice }}.грн
             </div>
-            <div class="flex items-center">
+            <div class="flex items-center mt-auto">
               <img src="../../img/RecCards/map.svg" alt="" class="h-3" />
               <div class="text-xs text-gray">{{ item.map }}</div>
             </div>
@@ -144,7 +149,7 @@
       <div
         class="flex items-center justify-center mx-auto w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[60px] lg:h-[60px] bg-accent rounded-full"
       >
-        <img src="@/img/white_down.svg" alt="" class="px-1 py-1" />
+        <img src="@/img/white_down.svg" alt="" class="lg:w-[30px] w-[14px]" />
       </div>
     </div>
   </div>

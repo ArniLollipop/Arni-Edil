@@ -73,7 +73,7 @@
             <router-link to="/sign" class="">Реєстрація</router-link>
           </div>
         </div>
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center space-x-3 mr-5">
           <router-link to="/account">
             <a
               class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0 cursor-pointer"

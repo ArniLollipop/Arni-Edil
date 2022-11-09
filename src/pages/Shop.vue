@@ -119,7 +119,7 @@
               />
             </div>
             <div
-              class="px-3 pb-9 md:pb-10 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-8 rounded-2xl bg-white grow relative pt-4"
+              class="px-3 pb-9 md:pb-11 max-h-[300px] xl:max-h-[1000px] lg:p-3 lg:pb-9 xl:pb-10 rounded-2xl bg-white grow relative pt-4"
             >
               <div class="h-1/3">
                 <div
