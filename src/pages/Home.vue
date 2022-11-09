@@ -1,6 +1,6 @@
 <template class="">
   <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
-    <Head></Head>
+    <Head :kolMessage="kolMessage"></Head>
     <Banner></Banner>
     <Recomendation></Recomendation>
     <Advan></Advan>
@@ -36,6 +36,7 @@ export default {
   },
   data() {
     return {
+      kolMessage: "2",
       cards: [
         {
           id: 1,

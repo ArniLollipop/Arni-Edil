@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      xsm: "300px",
+    },
     extend: {
       colors: {
         main: "#212529",
@@ -22,7 +25,7 @@ module.exports = {
       backgroundImage: {
         send: 'url("@/img/send.svg")',
         map: 'url("@/img/map.svg")',
-        banner: 'linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)',
+        banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
       },
     },
   },

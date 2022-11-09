@@ -61,24 +61,24 @@
       <div class="mt-3 grid grid-cols-2 gap-x-1.5 gap-y-3">
         <router-link to="/" @click="sendModalStatus">
           <div
-            class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+            class="bg-accentLight text-center text-xs border-[0.25px] border-accent rounded-xl py-px"
           >
             Головна
           </div>
         </router-link>
         <div
-          class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+          class="bg-accentLight text-center text-xs border-[0.25px] border-accent rounded-xl py-px"
         >
           Пошук на мапі
         </div>
         <div
-          class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+          class="bg-accentLight text-center text-xs border-[0.25px] border-accent rounded-xl py-px"
         >
           Магазини
         </div>
         <router-link to="/agree" @click="sendModalStatus">
           <div
-            class="bg-accentLight text-center text-xs border border-accent rounded-xl py-px"
+            class="bg-accentLight text-center text-xs border-[0.25px] border-accent rounded-xl py-px"
           >
             Додати оголошення
           </div>

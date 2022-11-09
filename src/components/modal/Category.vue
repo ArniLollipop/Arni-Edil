@@ -15,7 +15,9 @@
             class="h-full"
           />
         </div>
-        <div class="ml-3">{{ item.title }}</div>
+        <div :class="['ml-3', { 'text-accent': item.active }]">
+          {{ item.title }}
+        </div>
         <div class="ml-2 text-sm font-medium">{{ item.kol }}</div>
       </div>
     </div>
@@ -41,7 +43,7 @@ export default {
     return {
       category: [
         { id: 1, title: "Дитячі товари", image: "Medved.png", kol: 45 },
-        { id: 2, title: "Нерухомість", image: "dom.svg" },
+        { id: 2, title: "Нерухомість", image: "dom.svg", active: true },
         {
           id: 3,
           title: "Для дому та комерції ",
