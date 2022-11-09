@@ -1,6 +1,6 @@
 <template>
   <div class="fixed inset-0 z-50 overflow-auto flex flex-col">
-    <div class="bg-[#e7e7e7] px-4 py-5">
+    <div class="bg-[#e7e7e7] px-4 py-4">
       <div class="flex items-center justify-between">
         <div
           @click="sendModalStatus"
