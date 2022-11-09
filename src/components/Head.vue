@@ -85,11 +85,7 @@
             >
           </div>
         </div>
-<<<<<<< HEAD
-        <div class="flex items-center space-x-3 pr-5">
-=======
         <div class="flex items-center space-x-3 mr-5">
->>>>>>> 428a0f7386132d220b850d927681d5c8a20e1de1
           <router-link to="/account">
             <a
               class="flex items-center justify-center w-8 h-8 rounded-full bg-white shrink-0 cursor-pointer"

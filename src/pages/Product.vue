@@ -46,7 +46,6 @@
                   <img src="../img/productp3.png" alt="" class="w-full" />
                 </swiper-slide>
               </swiper>
-<<<<<<< HEAD
               <button ref="prev"
                 class="z-10 absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
@@ -54,17 +53,6 @@
               </button>
               <button ref="next"
                 class="z-10 absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
-=======
-              <button
-                ref="prev"
-                class="z-50 absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
-              >
-                <img src="../img/chevron-left.svg" alt="" class="w-4" />
-              </button>
-              <button
-                ref="next"
-                class="z-50 absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
->>>>>>> 428a0f7386132d220b850d927681d5c8a20e1de1
               >
                 <img src="../img/chevron-right.svg" alt="" class="w-4" />
               </button>
