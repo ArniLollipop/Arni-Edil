@@ -409,12 +409,14 @@
             <div class="mt-1 text-[11px]">
               На Дошка оголошень Vamberi з 24.06.2022
             </div>
-            <div class="flex items-center mt-1">
-              <div class="p-px px-2 border border-accent rounded-full text-xs">
+            <div class="flex items-center mt-1 shrink-0">
+              <div
+                class="p-px px-1.5 border border-accent rounded-full text-[11px] shrink-0"
+              >
                 Приватна особа
               </div>
-              <div class="ml-2">
-                <img src="../img/stars.png" alt="" class="h-4" />
+              <div class="ml-2 shrink-0">
+                <img src="../img/stars.png" alt="" class="h-4 shrink-0" />
               </div>
               <div class="ml-1 text-sm">(0)</div>
             </div>
