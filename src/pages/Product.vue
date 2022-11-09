@@ -46,12 +46,14 @@
                   <img src="../img/productp3.png" alt="" class="w-full" />
                 </swiper-slide>
               </swiper>
-              <button ref="prev"
+              <button
+                ref="prev"
                 class="z-10 absolute top-[45%] xl:top-1/2 left-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-left.svg" alt="" class="w-4" />
               </button>
-              <button ref="next"
+              <button
+                ref="next"
                 class="z-10 absolute top-[45%] xl:top-1/2 right-1 bg-white rounded-full w-8 h-8 flex items-center justify-center"
               >
                 <img src="../img/chevron-right.svg" alt="" class="w-4" />
@@ -414,7 +416,7 @@
                 Приватна особа
               </div>
               <div class="ml-2 shrink-0">
-                <img src="../img/stars.png" alt="" class="h-4 shrink-0" />
+                <img src="../img/stars.png" alt="" class="h-3 shrink-0" />
               </div>
               <div class="ml-1 text-sm">(0)</div>
             </div>
