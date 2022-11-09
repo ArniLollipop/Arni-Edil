@@ -1,9 +1,9 @@
 <template>
   <div
-    class="w-[60%] h-max border rounded-xl bg-white absolute top-36 z-20 px-1 pb-4"
+    class="w-[60%] h-max border rounded-xl overflow-hidden pt-2 bg-white absolute top-36 z-20 px-1 pb-4"
   >
-    <div
-      class="py-4 px-4 flex items-center justify-between w-full"
+    <div 
+      class="py-4 px-4 border-x border-accent flex items-center justify-between w-full"
       v-if="oblast"
     >
       <div
