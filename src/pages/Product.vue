@@ -414,7 +414,7 @@
                 Приватна особа
               </div>
               <div class="ml-2 shrink-0">
-                <img src="../img/stars.png" alt="" class="h-4 shrink-0" />
+                <img src="../img/stars.png" alt="" class="h-3 shrink-0" />
               </div>
               <div class="ml-1 text-sm">(0)</div>
             </div>
