@@ -1,6 +1,6 @@
 <template>
   <div class="lg:hidden mt-3 relative z-50">
-    <div class="px-10 py-3 bg-white">
+    <div class="lg:px-10 sm:px-4 px-2 py-3 bg-white">
       <div class="text-center text-accent text-sm">Всі категорії</div>
       <div class="flex flex-col gap-y-2 mt-3.5 w-full">
         <div
@@ -14,8 +14,8 @@
               class="h-full"
             />
           </div>
-          <div class="ml-3 text-sm">{{ item.title }}</div>
-          <div class="ml-2 text-sm font-medium">{{ item.kol }}</div>
+          <div class="ml-3"><p class = "text-sm">{{ item.title }}</p></div>
+          <div class="ml-2"><p class = "text-sm font-semibold">{{ item.kol }}</p></div>
         </div>
       </div>
     </div>

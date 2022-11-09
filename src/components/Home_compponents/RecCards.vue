@@ -149,7 +149,7 @@
       <div
         class="flex items-center justify-center mx-auto w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] lg:w-[60px] lg:h-[60px] bg-accent rounded-full"
       >
-        <img src="@/img/white_down.svg" alt="" class="lg:w-[30px] w-[14px]" />
+        <img src="@/img/white_down.svg" alt="" class="w-[60%] h-[70%]" />
       </div>
     </div>
   </div>

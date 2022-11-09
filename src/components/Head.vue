@@ -58,19 +58,19 @@
         <div class="flex space-x-16">
           <div
             :class="[
-              'ml-0.5 flex w-max cursor-pointer',
-              { 'border-b border-accent': isSearchOpen },
+              'ml-0.5 flex w-max cursor-pointer hover:text-accent focus:text-accent',
+              { 'underline underline-offset-4 decoration-accent text-accent transition-all duration-500': isSearchOpen },
             ]"
             @click="isSearchOpen = !isSearchOpen"
           >
             <CIcon :icon="icon.cilLocationPin" custom-class-name="w-4" />
             <div class="ml-0.5">Україна</div>
           </div>
-          <a href="#" class="">Магазини</a>
-          <a href="#" class="">Пошук на мапі</a>
+          <a href="#" class="hover:text-accent focus:text-accent">Магазини</a>
+          <a href="#" class="hover:text-accent focus:text-accent">Пошук на мапі</a>
           <div>
-            <router-link to="/login" class="">Увійти</router-link> |
-            <router-link to="/sign" class="">Реєстрація</router-link>
+            <router-link to="/login" class="hover:text-accent focus:text-accent">Увійти</router-link> |
+            <router-link to="/sign" class="hover:text-accent focus:text-accent">Реєстрація</router-link>
           </div>
         </div>
         <div class="flex items-center space-x-3 mr-5">
@@ -144,7 +144,9 @@
           <div class="text-sm text-white">Створити оголошення</div>
         </button>
       </div>
-      <Search v-if="isSearchOpen"></Search>
+      <div class = "w-full flex justify-center">
+        <Search v-if="isSearchOpen"></Search>
+      </div>
       <Category v-if="isCategoryOpen"></Category>
     </div>
     <Truck v-if="isTruckOpen" @modalStatus="acceptModalStatus"></Truck>

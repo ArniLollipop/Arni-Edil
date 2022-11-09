@@ -2,7 +2,7 @@
   <section class="px-4 pb-4 lg:mt-10 sm:mt-6 mt-4">
     <div class="flex">
       <div class="lg:w-[85%] lg:pr-9 w-full">
-        <div class="relative">
+        <div class="relative pb-4">
           <h2 class="font-medium lg:text-[26px] sm:text-xl text-[13px]">
             Сервіс оголошень Vamberi - надійний посередник вдалих угод
           </h2>
@@ -88,7 +88,7 @@
             фінансів. З Vamberi надійно!
           </p>
           <button
-            class="sm:block absolute -bottom-6 right-0 underline decoration-dashed underline-offset-4 text-dark hover:text-accent sm:text-base text-[12px]"
+            class="sm:relative underline absolute right-0 decoration-dashed underline-offset-4 text-dark hover:text-accent sm:text-base text-xs"
           >
             Читати повністю
           </button>
@@ -100,7 +100,7 @@
             <img
               src="@/img/document.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <p class="">Безпечні угоди</p>
           </div>
@@ -108,7 +108,7 @@
             <img
               src="@/img/Sale.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <p class="sm:block hidden">Турбопродаж</p>
             <p class="sm:hidden">Турбо <br />продаж</p>
@@ -117,7 +117,7 @@
             <img
               src="@/img/iphone.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <p>Оголошення на карті</p>
           </div>
@@ -125,7 +125,7 @@
             <img
               src="@/img/shopping.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px]"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <p class="w-full">
               <span class="hidden sm:inline-block"> Лише</span> перевірені
@@ -136,7 +136,7 @@
       </div>
       <div class="lg:w-[15%] lg:block hidden">
         <p
-          class="text-center underline decoration-dashed underline-offset-4 mb-4"
+          class="text-center md:text-base sm:text-sm text-xs absolute right-0 underline decoration-dashed underline-offset-4 mb-4"
         >
           Також читайте
         </p>

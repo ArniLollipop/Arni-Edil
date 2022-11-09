@@ -1,6 +1,6 @@
 <template>
   <Head></Head>
-  <div class="container mx-auto px-2">
+  <div class="container mx-auto px-4">
     <div class="hidden lg:block mt-10 pb-20">
       <div class="flex items-center">
         <div class="text-sm flex items-center">
@@ -245,21 +245,21 @@
         </div>
       </div>
     </div>
-    <div class="lg:hidden pb-10">
+    <div class="lg:hidden pb-10 px-2">
       <div class="mt-4">
         <img src="../img/mob-banner.png" alt="" class="w-full" />
       </div>
       <div class="mt-4">
         <div class="flex items-center justify-center">
-          <div class="text-xs flex items-center shrink-0">
+          <div class="text-[11px] flex items-center shrink-0">
             <a href="">Україна</a>
             <img src="../img/arrowRight.svg" alt="" class="w-2.5" />
           </div>
-          <div class="text-xs flex items-center shrink-0">
+          <div class="text-[11px] flex items-center shrink-0">
             <a href="">Електроніка</a>
             <img src="../img/arrowRight.svg" alt="" class="w-2.5" />
           </div>
-          <div class="text-xs shrink-0">
+          <div class="text-[11px] shrink-0">
             <a href="">Комп’ютери і комплект...</a>
           </div>
         </div>
