@@ -12,12 +12,7 @@
         </div>
         <div class="text-[11px] lg:text-sm">Магазини</div>
       </div>
-      <input
-        type="radio"
-        id="qwe"
-        @click="isMobileMenuOpen = !isMobileMenuOpen"
-        class="w-0 peer"
-      />
+      <button id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
       <label for="qwe" class="" v-show="!isMobileMenuOpen">
         <img
           src="@/img/catalog.svg"

@@ -104,15 +104,15 @@
         <input type="text" class = "bg-white rounded-[10px] max-w-[403px] h-[45px] sm:my-2 px-4 py-3 w-full sm:text-sm text-xs flex items-center justify-between outline-none">
         <div class = "flex items-center sm:mt-0 mt-2 gap-x-1">
           <input type="checkbox" name = "btn" id="price" class = "w-4 h-4 peer">
-          <label for="price" class = "cursor-pointer sm:text-sm text-xs">Віддам даром</label>
+          <label for="price" class = "cursor-pointer sm:text-sm text-xs pt-[2px]">Віддам даром</label>
         </div>
       </div>
       <p class = "font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 mt-4">В наявності</p>
       <div class = "sm:flex items-center gap-x-2">
         <input type="text" class = "bg-white rounded-[10px] max-w-[403px] h-[45px] sm:my-2 px-4 py-3 w-full sm:text-sm text-xs flex items-center justify-between outline-none">
         <div class = "flex items-center sm:mt-0 mt-2 gap-x-1">
-          <input type="checkbox" name = "btn" id="price" class = "w-4 h-4 peer">
-          <label for="price" class = "cursor-pointer sm:text-sm text-xs">Не обмежено</label>
+          <input type="checkbox" name = "btn1" id="price1" class = "w-4 h-4 peer">
+          <label for="price1" class = "cursor-pointer sm:text-sm text-xs pt-[2px]">Не обмежено</label>
         </div>
       </div>
       <p class = "font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 mt-4">Можливий онлайн-показ</p>
@@ -121,8 +121,8 @@
         <p class = "md:text-sm sm:text-xs text-[11px] ml-5">Виберіть, якщо готові показати товароб'єкт за допомогою відеодзвінка - наприклад, через WhatsApp, Viber, Skype або інший сервіс </p>
       </div>
       <div class = "flex items-center gap-x-1 sm:my-1">
-        <input type="checkbox" name = "btn" id="price" class = "w-4 h-4 peer">
-        <label for="price" class = "cursor-pointer sm:text-sm text-xs peer-[]: peer-checked:">Готові показати онлайн</label>
+        <input type="checkbox" name = "btn2" id="price2" class = "w-4 h-4 peer">
+        <label for="price2" class = "cursor-pointer sm:text-sm text-xs pt-[2px]">Готові показати онлайн</label>
       </div>
       <p class = "font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 mt-4">Місто</p>
       <input type="text" class = "outline-none bg-white h-[45px] rounded-[10px] placeholder:sm:text-sm placeholder:text-xs sm:text-sm text-xs placeholder:text-dark px-2 py-3 sm:my-2 my-1 w-full">
