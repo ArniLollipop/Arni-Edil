@@ -129,7 +129,7 @@
             <div class="flex justify-between items-center mt-7">
               <div class="font-medium text-2xl">8,000 грн.</div>
               <div
-                class="w-[66px] py-1 text-center bg-accent rounded-xl text-white text-sm"
+                class="w-[66px] py-1 text-center bg-accent rounded-[10px] text-white text-sm"
               >
                 Б/У
               </div>

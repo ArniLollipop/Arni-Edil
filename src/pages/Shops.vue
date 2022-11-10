@@ -43,10 +43,9 @@
       v-show="!isMobileMenuOpen"
       @mobileModalStatus="acceptMobileModalStatus"
     >
-
       <div class="mt-3 lg:mt-10 flex flex-col items-strech gap-y-5 lg:gap-y-7">
         <div
-          class="lg:bg-white lg:rounded-xl lg:px-8 lg:py-5 flex flex-col lg:flex-row lg:items-end w-full"
+          class="lg:bg-white lg:rounded-[10px] lg:px-8 lg:py-5 flex flex-col lg:flex-row lg:items-end w-full"
           v-for="item in shops"
         >
           <div class="flex flex-col items-center">
@@ -59,7 +58,9 @@
           </div>
 
           <div class="lg:ml-5 w-full">
-            <div class="text-xs lg:text-sm hidden lg:block">{{ item.text }}</div>
+            <div class="text-xs lg:text-sm hidden lg:block">
+              {{ item.text }}
+            </div>
             <div
               class="flex flex-col lg:flex-row lg:items-end justify-between mt-4"
             >
@@ -116,7 +117,7 @@ export default {
     Acc_buttons,
     Orders_card,
     SofiaVue,
-    MobileCategoryVue
+    MobileCategoryVue,
   },
   data() {
     return {

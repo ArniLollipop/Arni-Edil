@@ -50,7 +50,7 @@
 
     <div class="flex gap-x-10 mt-6 xl:mt-12">
       <div class="hidden lg:block w-[25%]">
-        <div class="p-4 bg-accentLight rounded-xl">
+        <div class="p-4 bg-accentLight rounded-[10px]">
           <div class="flex flex-col gap-y-2">
             <div class="flex items-center">
               <input type="checkbox" id="1" class="" />
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-        <div class="mt-14 bg-white rounded-xl px-3 py-6">
+        <div class="mt-14 bg-white rounded-[10px] px-3 py-6">
           <div class="flex justify-center">
             <div><img src="../img/kolokol.svg" alt="" class="w-[94px]" /></div>
           </div>
@@ -156,22 +156,22 @@
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm shadow-md shadow-accent"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm shadow-md shadow-accent"
               >
                 Всі оголошення
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За замовчуванням
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За новизною
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За вартістю
               </div>
@@ -283,7 +283,7 @@
                     {{ item.price }}.грн
                   </div>
                   <div
-                    class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                    class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
                   >
                     {{ item.status }}
                   </div>
@@ -303,7 +303,7 @@
                 <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
                 <div class="flex mt-1 items-center lg:pr-2">
                   <div
-                    class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                    class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-xs text-center shrink"
                   >
                     {{ item.btnText }}
                   </div>

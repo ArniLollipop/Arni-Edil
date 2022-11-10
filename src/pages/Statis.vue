@@ -77,7 +77,7 @@
             class="flex flex-col lg:flex-row gap-y-2 items-center justify-between w-full lg:w-[60%]"
           >
             <div
-              class="basis-1 lg:basis-[45%] bg-white w-full py-1 text-center border border-accent rounded-xl relative"
+              class="basis-1 lg:basis-[45%] bg-white w-full py-1 text-center border border-accent rounded-[10px] relative"
             >
               <div class="text-sm">За місяць</div>
               <div class="absolute right-2 top-2.5">
@@ -85,7 +85,7 @@
               </div>
             </div>
             <div
-              class="basis-1 lg:basis-[45%] bg-white w-full py-1 text-center border border-accent rounded-xl relative"
+              class="basis-1 lg:basis-[45%] bg-white w-full py-1 text-center border border-accent rounded-[10px] relative"
             >
               <div class="text-sm">Загальна статистика</div>
               <div class="absolute right-2 top-2.5">
@@ -145,7 +145,7 @@
               class="mt-3 lg:mt-8 flex flex-wrap lg:w-2/3 gap-x-2 gap-y-2 lg:gap-x-6"
             >
               <div
-                class="basis-[30%] bg-white rounded-xl flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
+                class="basis-[30%] bg-white rounded-[10px] flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
               >
                 <div class="mx-auto">
                   <img src="../img/new7/emptyAva.png" alt="" />
@@ -154,13 +154,13 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-full py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>
               </div>
               <div
-                class="basis-[30%] bg-white rounded-xl flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
+                class="basis-[30%] bg-white rounded-[10px] flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
               >
                 <div class="mx-auto">
                   <img src="../img/new7/emptyAva.png" alt="" />
@@ -169,13 +169,13 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-full py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>
               </div>
               <div
-                class="basis-[30%] bg-white rounded-xl flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
+                class="basis-[30%] bg-white rounded-[10px] flex flex-col py-1 lg:py-2.5 px-3 lg:px-6"
               >
                 <div class="mx-auto">
                   <img src="../img/new7/emptyAva.png" alt="" />
@@ -184,7 +184,7 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-full py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>

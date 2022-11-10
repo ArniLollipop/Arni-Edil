@@ -5,7 +5,7 @@
       <img src="../img/mob-banner.png" alt="" class="w-full" />
     </div>
     <div
-      class="mt-6 lg:mt-14 bg-accentLight py-4 px-3 lg:pt-10 lg:pb-8 lg:pl-8 lg:pr-6 flex flex-col lg:flex-row"
+      class="mt-6 lg:mt-14 bg-accentLight rounded-[10px] border-[0.5px] border-gray py-4 px-3 lg:pt-10 lg:pb-8 lg:pl-8 lg:pr-6 flex flex-col lg:flex-row"
     >
       <div class="flex items-start gap-x-3 lg:gap-x-5">
         <div class="basis-[45%]">
@@ -28,7 +28,7 @@
       </div>
 
       <div
-        class="flex items-center justify-between mt-1 lg:ml-auto lg:-mb-6 lg:mt-auto gap-x-2 lg:gap-x-5"
+        class="flex items-center justify-between mt-1 lg:ml-auto lg:-mb-4 lg:mt-auto gap-x-2 lg:gap-x-5"
       >
         <div class="text-xs lg:text-sm">
           <span class="font-medium mr-1">0</span>відгуків
@@ -96,22 +96,22 @@
       <div class="lg:col-span-4">
         <div class="hidden lg:flex items-center w-[80%] justify-between">
           <div
-            class="basis-[22%] bg-white rounded-xl w-full py-1 text-center text-sm shadow-md shadow-accent"
+            class="basis-[22%] bg-white rounded-[10px] w-full py-1 text-center text-sm shadow-md shadow-accent"
           >
             Всі оголошення
           </div>
           <div
-            class="basis-[22%] bg-white rounded-xl w-full py-1 text-center text-sm"
+            class="basis-[22%] bg-white rounded-[10px] w-full py-1 text-center text-sm"
           >
             За замовчуванням
           </div>
           <div
-            class="basis-[22%] bg-white rounded-xl w-full py-1 text-center text-sm"
+            class="basis-[22%] bg-white rounded-[10px] w-full py-1 text-center text-sm"
           >
             За новизною
           </div>
           <div
-            class="basis-[22%] bg-white rounded-xl w-full py-1 text-center text-sm"
+            class="basis-[22%] bg-white rounded-[10px] w-full py-1 text-center text-sm"
           >
             За вартістю
           </div>
@@ -208,7 +208,7 @@
                     {{ item.price }}.грн
                   </div>
                   <div
-                    class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                    class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
                   >
                     {{ item.status }}
                   </div>
@@ -228,7 +228,7 @@
                 <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
                 <div class="flex mt-1 items-center lg:pr-2">
                   <div
-                    class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                    class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-xs text-center shrink"
                   >
                     {{ item.btnText }}
                   </div>
@@ -263,7 +263,7 @@
         </div>
       </div>
       <div class="hidden lg:block lg:col-span-1">
-        <div class="p-4 bg-accentLight rounded-xl">
+        <div class="p-4 bg-accentLight rounded-[10px]">
           <div class="flex flex-col gap-y-2">
             <div class="flex items-center">
               <input type="checkbox" id="4" class="" />

@@ -19,7 +19,7 @@
   <div class="container mx-auto px-5 pb-10 lg:pb-20">
     <div class="flex gap-x-10 mt-6 xl:mt-12">
       <div class="hidden lg:block w-[25%]">
-        <div class="p-4 bg-accentLight rounded-xl">
+        <div class="p-4 bg-accentLight rounded-[10px]">
           <div class="flex flex-col gap-y-2">
             <div class="flex items-center">
               <input type="checkbox" id="4" class="" />
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div class="mt-14 bg-white rounded-xl px-3 py-6">
+        <div class="mt-14 bg-white rounded-[10px] px-3 py-6">
           <div class="flex justify-center">
             <div><img src="../img/kolokol.svg" alt="" class="w-[94px]" /></div>
           </div>
@@ -113,22 +113,22 @@
             </div>
             <div class="hidden lg:flex items-center gap-x-6">
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm shadow-md shadow-accent"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm shadow-md shadow-accent"
               >
                 Всі оголошення
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За замовчуванням
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За новизною
               </div>
               <div
-                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-full text-center text-xs xl:text-sm"
+                class="w-[125px] xl:w-[163px] bg-white py-1 rounded-[10px] text-center text-xs xl:text-sm"
               >
                 За вартістю
               </div>
@@ -151,7 +151,7 @@
         </div>
         <div class="space-y-10 mt-8">
           <div
-            class="flex flex-row p-4 items-stretch bg-white rounded-xl"
+            class="flex flex-row p-4 items-stretch bg-white rounded-[10px]"
             v-for="item in cards"
           >
             <div class="h-full">
@@ -171,7 +171,7 @@
                   <div class="font-medium">{{ item.title }}</div>
                   <div class="flex items-center mt-1 gap-x-6">
                     <div
-                      class="bg-accent w-[66px] rounded-full text-center text-white text-sm"
+                      class="bg-accent lg:py-1 w-[66px] rounded-full text-center text-white text-sm"
                     >
                       {{ item.status }}
                     </div>
@@ -200,7 +200,7 @@
                 <div class="mt-1 flex items-center justify-between shrink-0">
                   <div class="flex items-center">
                     <div
-                      class="w-[122px] py-[3px] text-center border border-accent rounded-lg text-xs"
+                      class="w-[122px] py-[3px] text-center border-0.5 border-accent rounded-lg text-xs"
                     >
                       {{ item.btnText }}
                     </div>
@@ -247,7 +247,7 @@
                   <div class="text-gray text-sm">{{ item.map }}</div>
                   <div class="text-gray text-sm">{{ item.date }}</div>
                   <div
-                    class="mt-1 w-[110px] py-[3px] text-center border border-accent rounded-lg text-xs"
+                    class="mt-1 w-[110px] py-[3px] text-center border-[0.5px] border-accent rounded-lg text-xs"
                   >
                     {{ item.btnText }}
                   </div>

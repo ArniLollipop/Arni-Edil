@@ -74,7 +74,7 @@
         ></div>
 
         <div class="">
-          <div class="flex bg-accentLight rounded-xl p-2 lg:p-4">
+          <div class="flex bg-accentLight rounded-[10px] p-2 lg:p-4">
             <div class="basis-1/2 text-sm font-medium">Оголошення</div>
             <div class="basis-1/2 text-sm font-medium">
               Найближче продовження

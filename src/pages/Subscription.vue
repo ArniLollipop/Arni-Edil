@@ -8,9 +8,7 @@
         Мої підписки
       </p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
-      <p class="font-normal sm:text-sm text-[11px] lg:block hidden">
-        Магазины
-      </p>
+      <p class="font-normal sm:text-sm text-[11px] lg:block hidden">Магазины</p>
       <p class="font-normal sm:text-sm text-[11px] lg:hidden">Софія Смирнова</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10] lg:hidden" />
       <p class="font-normal sm:text-sm text-[11px] lg:hidden">Акаунт</p>
@@ -84,7 +82,7 @@
             <div
               @click="isButton = false"
               :class="[
-                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-full py-1 lg:py-1.5',
+                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-[10px] py-1 lg:py-1.5',
                 { 'shadow-md shadow-accent': !isButton },
               ]"
             >
@@ -93,7 +91,7 @@
             <div
               @click="isButton = true"
               :class="[
-                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-full py-1 lg:py-1.5',
+                'w-[40%] sm:w-[30%] lg:w-[152px] text-center text-xs lg:text-sm border border-accent bg-white rounded-[10px] py-1 lg:py-1.5',
                 { 'shadow-md shadow-accent': isButton },
               ]"
             >
@@ -106,7 +104,7 @@
           >
             <div
               v-for="item in poshuki"
-              class="p-2 pb-3.5 relative lg:px-3 lg:py-6 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[40%] bg-white border border-accent rounded-xl"
+              class="p-2 pb-3.5 relative lg:px-3 lg:py-6 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[40%] bg-white border border-accent rounded-[10px]"
             >
               <div class="absolute bottom-3 right-3">
                 <img
@@ -137,7 +135,7 @@
           >
             <div
               v-for="item in magazini"
-              class="p-2 lg:px-2.5 flex items-end justify-between w-full bg-white border border-accent rounded-xl"
+              class="p-2 lg:px-2.5 flex items-end justify-between w-full bg-white border border-accent rounded-[10px]"
             >
               <div class="absolute lg:hidden top-2 right-2">
                 <img src="../img/last2P/X.svg" alt="" class="w-3.5" />
@@ -170,7 +168,7 @@
               <div class="flex flex-col items-center lg:gap-y-3.5">
                 <div class="text-[11px] lg:text-sm">{{ item.date }}</div>
                 <div
-                  class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-xl"
+                  class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-[20px]"
                 >
                   Відписатися
                 </div>
@@ -197,7 +195,7 @@ export default {
     MobileMenuVue,
     Footer,
     Acc_buttons,
-    SofiaVue
+    SofiaVue,
   },
   data() {
     return {

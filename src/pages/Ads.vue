@@ -74,7 +74,7 @@
         >
           <div class="flex space-x-4 w-full lg:w-[60%] xl:w-[50%]">
             <button
-              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 basis-1/3 border border-accent shadow-md shadow-accent"
+              class="shrink-0 flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 basis-1/3 border border-accent shadow-md shadow-accent"
             >
               <p class="sm:text-sm text-xs">У продажу</p>
               <p class="text-xs px-[5px] bg-accent rounded-full text-white">
@@ -99,7 +99,7 @@
             >
               <div
                 v-for="item in cards"
-                class="bg-white hidden lg:flex relative rounded-xl flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2 lg:basis-full"
+                class="bg-white hidden lg:flex relative rounded-[10px] flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2 lg:basis-full"
               >
                 <div
                   class="hidden absolute top-4 right-4 lg:flex justify-end items-center"
@@ -128,7 +128,7 @@
                   Інформація<span class="lg:hidden">:</span>
                 </div>
                 <div
-                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:justify-between lg:items-center gap-x-3"
+                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3"
                 >
                   <div
                     class="font-semibold text-sm lg:text-base hidden lg:block"
@@ -136,25 +136,27 @@
                     Інформація<span class="lg:hidden">:</span>
                   </div>
 
-                  <div class="text-[#70CAF1] text-sm">
-                    {{ item.i1 }}
-                  </div>
-                  <div class="text-sm font-semibold">
-                    {{ item.i2 }}
-                  </div>
-                  <div class="text-sm">{{ item.i3 }}</div>
-                  <div class="text-sm flex gap-x-0.5 text-gray items-center">
-                    <div>
-                      <img src="../img/new7/map.svg" alt="" class="w-3" />
+                  <div class="space-y-3 mt-3">
+                    <div class="text-[#70CAF1] text-sm">
+                      {{ item.i1 }}
                     </div>
-                    <div>{{ item.i4 }}</div>
+                    <div class="text-sm font-semibold">
+                      {{ item.i2 }}
+                    </div>
+                    <div class="text-sm">{{ item.i3 }}</div>
+                    <div class="text-sm flex gap-x-0.5 text-gray items-center">
+                      <div>
+                        <img src="../img/new7/map.svg" alt="" class="w-3" />
+                      </div>
+                      <div>{{ item.i4 }}</div>
+                    </div>
                   </div>
                 </div>
                 <div class="lg:hidden ont-semibold text-sm lg:text-base mt-2">
                   Статистика<span class="lg:hidden">:</span>
                 </div>
                 <div
-                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:justify-between lg:items-center gap-x-3"
+                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3"
                 >
                   <div
                     class="font-semibold text-sm lg:text-base hidden lg:block"
@@ -162,29 +164,31 @@
                     Статистика<span class="lg:hidden">:</span>
                   </div>
 
-                  <div
-                    class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
-                  >
-                    <div><img src="../img/new7/eye.svg" alt="" /></div>
-                    <div>{{ item.s1 }}</div>
-                  </div>
-                  <div
-                    class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
-                  >
-                    <div><img src="../img/new7/up.svg" alt="" /></div>
-                    <div>{{ item.s2 }}</div>
-                  </div>
-                  <div
-                    class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
-                  >
-                    <div><img src="../img/new7/heart.svg" alt="" /></div>
-                    <div>{{ item.s3 }}</div>
-                  </div>
-                  <div
-                    class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
-                  >
-                    <div><img src="../img/new7/cal.svg" alt="" /></div>
-                    <div>{{ item.s4 }}</div>
+                  <div class="space-y-[17px] mt-3.5">
+                    <div
+                      class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                    >
+                      <div><img src="../img/new7/eye.svg" alt="" /></div>
+                      <div>{{ item.s1 }}</div>
+                    </div>
+                    <div
+                      class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                    >
+                      <div><img src="../img/new7/up.svg" alt="" /></div>
+                      <div>{{ item.s2 }}</div>
+                    </div>
+                    <div
+                      class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                    >
+                      <div><img src="../img/new7/heart.svg" alt="" /></div>
+                      <div>{{ item.s3 }}</div>
+                    </div>
+                    <div
+                      class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                    >
+                      <div><img src="../img/new7/cal.svg" alt="" /></div>
+                      <div>{{ item.s4 }}</div>
+                    </div>
                   </div>
                 </div>
 
@@ -328,7 +332,7 @@
                     </div>
                     <div class="flex mt-1 items-center lg:pr-2">
                       <div
-                        class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                        class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-[10px] text-xs text-center shrink"
                       >
                         {{ item.btnText }}
                       </div>

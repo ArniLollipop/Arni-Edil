@@ -92,7 +92,7 @@
                 {{ item.price }}.грн
               </div>
               <div
-                class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
               >
                 {{ item.status }}
               </div>
@@ -107,12 +107,12 @@
             </div>
             <div class="flex items-center mt-auto">
               <img src="../../img/RecCards/map.svg" alt="" class="h-3" />
-              <div class="text-xs text-gray">{{ item.map }}</div>
+              <div class="text-xs text-gray shrink-0">{{ item.map }}</div>
             </div>
             <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
             <div class="flex mt-1 items-center lg:pr-2">
               <div
-                class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-xl text-xs text-center shrink"
               >
                 {{ item.btnText }}
               </div>
@@ -126,18 +126,24 @@
               <button
                 type="checkbox"
                 value="qwe"
-                class="ml-auto lg:-mr-2"
+                class="ml-auto lg:-mr-3 shrink-0"
                 @click="item.isLike = !item.isLike"
               >
                 <img
                   src="../../img/RecCards/heart.svg"
                   alt=""
-                  :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
+                  :class="[
+                    'w-3 xl:w-[22px] shrink-0',
+                    { 'w-3 hidden': item.isLike },
+                  ]"
                 />
                 <img
                   src="../../img/RecCards/heartFill.svg"
                   alt=""
-                  :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
+                  :class="[
+                    'w-3 xl:w-[22px] shrink-0',
+                    { 'w-3 hidden': !item.isLike },
+                  ]"
                 />
               </button>
             </div>

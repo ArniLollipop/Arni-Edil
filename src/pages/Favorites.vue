@@ -180,7 +180,7 @@
                       {{ item.price }}.грн
                     </div>
                     <div
-                      class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                      class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
                     >
                       {{ item.status }}
                     </div>
@@ -200,7 +200,7 @@
                   <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
                   <div class="flex mt-1 items-center lg:pr-2">
                     <div
-                      class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                      class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-xs text-center shrink"
                     >
                       {{ item.btnText }}
                     </div>
@@ -355,7 +355,7 @@
                       {{ item.price }}.грн
                     </div>
                     <div
-                      class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                      class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
                     >
                       {{ item.status }}
                     </div>
@@ -375,7 +375,7 @@
                   <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
                   <div class="flex mt-1 items-center lg:pr-2">
                     <div
-                      class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-xl text-xs text-center shrink"
+                      class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-xs text-center shrink"
                     >
                       {{ item.btnText }}
                     </div>
