@@ -184,3 +184,63 @@
     }
   }
 </script>
+<style>
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  margin-left: 13px;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 0.25px solid #000;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-image: url('@/img/checkbox.png');
+  background-size: cover;
+  border: none;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  margin-left: 12px;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -6px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 100%;
+  margin-left: -20px;
+  margin-right: 8px;
+}
+
+input[type="radio"]:checked + label:before {
+  background-image: url('@/img/radio.jpeg');
+  background-size: cover;
+}
+
+</style>
