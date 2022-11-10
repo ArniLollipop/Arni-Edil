@@ -23,7 +23,7 @@
         </div>
         <div class = "flex items-center justify-between">
           <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium sm:mt-10 mt-4 text-main">Налаштування тарифу</p>
-          <input type="radio" id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 peer" >
+          <button id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
           <label for="qwe" class = "" v-show="!isMobileMenuOpen">
             <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
           </label>

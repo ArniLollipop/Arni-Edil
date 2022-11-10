@@ -213,6 +213,7 @@
                 </div>
                 <div class="md:w-[70%] w-full">
                   <textarea
+                    type="text"
                     class="bg-pink outline-none p-2 w-full h-28 rounded-[10px] relative"
                   >
                   </textarea>

@@ -175,7 +175,7 @@
         />
         <div class="flex items-center sm:mt-0 mt-2 gap-x-1">
           <input type="checkbox" name="btn" id="price" class="w-4 h-4 peer" />
-          <label for="price" class="cursor-pointer sm:text-sm text-xs"
+          <label for="price" class="cursor-pointer sm:text-sm text-xs pt-[2px]"
             >Віддам даром</label
           >
         </div>
@@ -191,8 +191,8 @@
           class="bg-white rounded-[10px] max-w-[403px] h-[45px] sm:my-2 px-4 py-3 w-full sm:text-sm text-xs flex items-center justify-between outline-none"
         />
         <div class="flex items-center sm:mt-0 mt-2 gap-x-1">
-          <input type="checkbox" name="btn" id="price" class="w-4 h-4 peer" />
-          <label for="price" class="cursor-pointer sm:text-sm text-xs"
+          <input type="checkbox" name="btn1" id="price1" class="w-4 h-4 peer" />
+          <label for="price1" class="cursor-pointer sm:text-sm text-xs pt-[2px]"
             >Не обмежено</label
           >
         </div>
@@ -216,10 +216,8 @@
         </p>
       </div>
       <div class="flex items-center gap-x-1 sm:my-1">
-        <input type="checkbox" name="btn" id="price" class="w-4 h-4 peer" />
-        <label
-          for="price"
-          class="cursor-pointer sm:text-sm text-xs peer-[]: peer-checked:"
+        <input type="checkbox" name="btn2" id="price2" class="w-4 h-4 peer" />
+        <label for="price2" class="cursor-pointer sm:text-sm text-xs pt-[2px]"
           >Готові показати онлайн</label
         >
       </div>

@@ -23,11 +23,11 @@
         </div>
         <div class = "flex items-center justify-between">
           <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main">Гаманець</p>
-          <input type="radio" id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 peer" >
-          <label for="qwe" class = "" v-show="!isMobileMenuOpen">
+          <button id="qwe123" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
+          <label for="qwe123" class = "" v-show="!isMobileMenuOpen">
             <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
           </label>
-          <label for="qwe" class = "" v-show="isMobileMenuOpen">
+          <label for="qwe123" class = "" v-show="isMobileMenuOpen">
             <img src="@/img/modal_x.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
           </label>
         </div>
@@ -77,7 +77,7 @@
               <div class = "sm:w-[220px] sm:h-[110px] bg-white border text-center py-6 border-accent rounded-[10px] relative">
                 <p class = "lg:text-2xl sm:text-base text-sm font-medium">1000 грн</p>
                 <p class = "sm:text-base text-sm text-green">+ 300 грн. бонус</p>
-                <p class = "text-white text-xs bg-green px-[6px] sm:py-0.5 w-fit rounded-[5px] absolute top-0 left-3">Популярний вибір</p>
+                <p class = "text-white text-xs bg-green px-[6px] sm:py-0.5 w-fit rounded-[5px] absolute top-0 sm:left-3 right-3">Популярний вибір</p>
               </div>
               <div class = "sm:w-[220px] sm:h-[110px] bg-white border text-center  py-8 border-accent rounded-[10px]">
                 <p class = "lg:text-2xl sm:text-base text-sm font-medium">Довільна сума</p>

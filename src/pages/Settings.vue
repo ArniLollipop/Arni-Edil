@@ -14,7 +14,7 @@
       <div class = "lg:w-[75%] w-full relative">
         <div class = "flex items-center justify-between">
           <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium my-4 ml-1 text-main">Особисті дані</p>
-          <input type="radio" id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 peer" >
+          <button id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
           <label for="qwe" class = "" v-show="!isMobileMenuOpen">
             <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
           </label>
@@ -38,19 +38,19 @@
                 </label>
               </div>
               <div class = "sm:hidden flex mt-2">
-                <input type="radio" id = "biznec2" name = "biznec" class = "peer  w-0">
+                <input type="radio" id = "biznec2" name = "biznec" class = "peer w-0">
                 <label for="biznec2" class = "flex  before:w-4 before:h-4 before:p-1 before:bg-white before:border cursor-pointer peer-checked:after:opacity-100 after:opacity-0 after:transition-all after:duration-150 before:border-accent before:rounded-full after:absolute after:rounded-full after:bg-accent after:w-[10px]  after:h-[10px] after:top-[3px] after:left-[3px] relative">
                   <p class = "text-xs ml-2 cursor-pointer">Приватна особа</p>
                 </label>
               </div>
               <div  class = "sm:flex hidden">
-                <input type="radio" id = "biznec3" name = "biznes" class = "peer w-0" checked>
+                <input type="radio" id = "biznec3" name = "biznes" class = "peer absolute top-0 w-0" checked>
                 <label for = "biznec3" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Приватна особа</p>
                 </label>
               </div>
               <div class = "sm:flex hidden">
-                <input type="radio" id = "biznec4" name = "biznes" class = "peer  w-0">
+                <input type="radio" id = "biznec4" name = "biznes" class = "peer absolute top-0  w-0">
                 <label for="biznec4" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Бізнес</p>
                 </label>
