@@ -97,10 +97,10 @@
                 class="sm:w-fit sm:h-full w-[117px] h-[68px]"
               />
               <div class="sm:pb-9 sm:pt-8 ml-4">
-                <div class="bg-pink px-2 py-1 rounded-full w-fit">
+                <div class="bg-pink px-3 py-1 rounded-full w-fit">
                   <p class="sm:text-xs text-[10px]">Новий</p>
                 </div>
-                <p class="text-blue sm:text-sm sm:mt-2 text-xs">
+                <p class="text-blueText sm:text-sm sm:mt-2 text-xs">
                   Замовлення №11211749
                 </p>
                 <p class="text-xs">створено сьогодні в 16:30</p>

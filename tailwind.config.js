@@ -25,6 +25,8 @@ module.exports = {
       backgroundImage: {
         send: 'url("@/img/send.svg")',
         map: 'url("@/img/map.svg")',
+        strelka_up: 'url("@/img/strelka_up.svg")',
+        strelka_down: 'url("@/img/strelka_down.svg")',
         banner: "linear-gradient(90.77deg, #FFE6E6 1.76%, #F7CCC8 92.9%)",
       },
     },

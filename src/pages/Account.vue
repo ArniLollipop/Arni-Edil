@@ -16,7 +16,7 @@
           <div class = "w-[65%]">
             <p class = "sm:text-xl text-[13px] font-medium">Не дайте себе обдурити!</p>
             <p class = "sm:text-sm text-xs font-medium mt-5">Дізнайтеся, як уберегти свій гамаанець від зловмисників</p>
-            <p class = "text-blue text-xs font-medium sm:text-sm lg:mt-10 mt-2">Поради з безпеки</p>
+            <p class = " text-blueText text-xs font-medium sm:text-sm lg:mt-10 mt-2">Поради з безпеки</p>
           </div>
           <img src="@/img/acc_banner_img.svg" alt="" class = "sm:w-fit sm:h-[90%] sm:block absolute top-3 right-3 w-[125px] h-[114px]">
           <button class = "absolute top-4 right-3"><img src="@/img/banner_x.svg" alt="" class = "w-fit"></button>

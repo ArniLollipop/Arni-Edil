@@ -3,7 +3,7 @@
     class="w-[97%] flex h-max border rounded-xl bg-white absolute top-36 z-50"
   >
     <div class="w-1/3 border-r border-accent pl-10 py-4">
-      <div
+      <button
         class="flex items-center py-2"
         v-for="(item, key) in category"
         :key="item.id"
@@ -20,7 +20,7 @@
           {{ item.title }}
         </div>
         <div class="ml-2 text-sm font-medium">{{ item.kol }}</div>
-      </div>
+      </button>
     </div>
     <div class="p-4">
       <div class="text-lg font-medium">

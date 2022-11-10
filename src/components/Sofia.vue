@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class = "w-full lg:block hidden bg-white h-[340px] pb-4 px-10 rounded-t-[25px] rounded-b-[15px]">
-          <div class = "-translate-y-10 hidden lg:block">
+          <div class = "-translate-y-6 hidden lg:block">
             <router-link to="/account" class = "flex items-center space-x-2">
               <img src="@/img/person_acc.svg" alt="" class = "w-fit">
               <p class = "text-sm hover:text-accent">Акаунт [Базовий]</p>

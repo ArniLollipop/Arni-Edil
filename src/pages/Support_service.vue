@@ -93,26 +93,13 @@
           <div class = "md:text-sm text-xs w-full md:my-9 sm:my-6 my-3">
             <div class = "w-full md:px-12 md:py-8 sm:px-6 sm:py-4 md:bg-white rounded-[10px]">
               <p class = "lg:text-xl sm:text-base text-sm mb-4">Часто задавані питання</p>
-              <div class = "bg-pink rounded-[10px] px-3 py-5 relative">
-                <p class = "font-medium mb-2">Як найшвидше продати товар?</p>
-                <p>Виділити своє оголошення із загальної  маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <span class = "text-blue"> Турбо продаж </span> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</p>
-                <img src="@/img/strelka_up.svg" alt="" class = "w-fit absolute top-5 right-3">
-              </div>
-              <div class = "bg-pink rounded-[10px] px-3 py-4 relative my-5">
-                <p class = "font-medium">Моє оголошення заблоковане</p>
-                <img src="@/img/strelka_down.svg" alt="" class = "w-fit absolute top-5 right-3">
-              </div>
-              <div class = "bg-pink rounded-[10px] px-3 py-4 relative my-5">
-                <p class = "font-medium">Мій обліковий запис заблокований адміністрацією</p>
-                <img src="@/img/strelka_down.svg" alt="" class = "w-fit absolute top-5 right-3">
-              </div>
-              <div class = "bg-pink rounded-[10px] px-3 py-4 relative my-5">
-                <p class = "font-medium">Чому для мого товару недоступна безпечна угода?</p>
-                <img src="@/img/strelka_down.svg" alt="" class = "w-fit absolute top-5 right-3">
-              </div>
-              <div class = "bg-pink rounded-[10px] px-3 py-4 relative my-5">
-                <p class = "font-medium">Протягом якого часу здійснюється повернення коштів за безпечною угодою?</p>
-                <img src="@/img/strelka_down.svg" alt="" class = "w-fit absolute top-5 right-3">
+              <div v-for="index in indexes" class = "my-4">
+                <div class = "bg-pink rounded-[10px] px-3 py-5 relative h-fit">
+                  <p class = "font-medium">{{index.title}}</p>
+                  <p v-show="index.VisibleOrNot" class = "mt-2">Виділити своє оголошення із загальної  маси дуже просто, для цього ви можете підкоючити до свого оголошення платну послугу або пакет послуг <span class = "text-blue"> Турбо продаж </span> ваше оголошення буде піднято у стрічці та виділено маркером, ви точно не пропустите свого покупця!</p>
+                  <button v-show="index.VisibleOrNot" @click="index.VisibleOrNot = !index.VisibleOrNot" class = "w-fit absolute top-6 right-3"><img src="@/img/strelka_up.svg" alt="" class = ""></button>
+                  <button v-show="!index.VisibleOrNot" @click="index.VisibleOrNot = !index.VisibleOrNot" class = "w-fit absolute top-6 right-3"><img src="@/img/strelka_down.svg" alt="" class = ""></button>
+                </div>
               </div>
               <p class = "lg:text-xl sm:text-base text-sm mb-4">Не знайшли відповідь? Напишіть нам!</p>
               <div class = "md:flex block md:w-[70%] w-full items-center gap-x-2">
@@ -120,9 +107,15 @@
                   <p>Виберіть тему звернення (повідомлення)</p>
                 </div>
                 <div class = "md:w-[70%] w-full ">
-                  <div class = "bg-pink w-full px-3 py-4 rounded-[10px] relative">
-                    <p class = "text-gray">Не обрано</p>
+                  <div class = "w-full bg-pink px-3 z-50 overflow-hidden hover:overflow-visible py-4 rounded-[10px] relative">
+                    <p v-show="choiceVisible" class = "text-gray">Не обрано</p>
                     <img src="@/img/strelka_down.svg" alt="" class = "w-fit absolute top-5 right-3">
+                    <div class = "absolute top-full flex flex-col rounded-[10px] overflow-hidden">
+                      <div class = "h-fit" v-for="choice in choices">
+                        <input type="radio" :id="choice.title" name="choice" class = "peer">
+                        <label :for="choice.title" @click="Checked(choice.TrueOrFalse)" class = "px-3 bg-pink mt-2 cursor-pointer">{{choice.title}}</label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,10 +186,30 @@
       return{
         isCategoryOpen: false,
         isTruckOpen: false,
-        isMobileMenuOpen: false
+        isMobileMenuOpen: false,
+        choiceVisible: true,
+        indexes:[
+          {id:1,title:'Як найшвидше продати товар?', VisibleOrNot: true},
+          {id:2,title:'Моє оголошення заблоковане', VisibleOrNot: false},
+          {id:3,title:'Мій обліковий запис заблокований адміністрацією', VisibleOrNot: false},
+          {id:4,title:'Чому для мого товару недоступна безпечна угода?', VisibleOrNot: false},
+          {id:5,title:'Протягом якого часу здійснюється повернення коштів за безпечною угодою?', VisibleOrNot: false},
+        ],
+        choices:[
+          {id:1, title:'first', TrueOrFalse: false},
+          {id:2, title:'second', TrueOrFalse: false},
+          {id:3, title:'third', TrueOrFalse: false}
+        ],
       };
     },
     methods: {
+      Visible(VisibleOrNot){
+        VisibleOrNot = !VisibleOrNot;
+      },
+      Checked(TrueOrFalse){
+        TrueOrFalse = !TrueOrFalse;
+        this.choiceVisible = false;
+      },
       acceptModalStatus(data) {
         this.isTruckOpen = data;
       },

@@ -22,7 +22,7 @@
           <button class = "absolute top-4 right-3"><img src="@/img/banner_x.svg" alt="" class = "w-fit"></button>
         </div>
         <div class = "flex items-center justify-between">
-          <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main">Налаштування тарифу</p>
+          <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium sm:mt-10 mt-4 text-main">Налаштування тарифу</p>
           <input type="radio" id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 peer" >
           <label for="qwe" class = "" v-show="!isMobileMenuOpen">
             <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
@@ -36,7 +36,7 @@
         <div class = "text-main " v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus">
           <div>
-            <p class = "text-xl my-8">Виберіть  тариф</p>
+            <p class = "text-xl my-5">Виберіть  тариф</p>
             <div class = "sm:grid grid-cols-3 hidden gap-x-10">
               <div class = "bg-white h-fit py-4 px-4 rounded-[10px] border border-accent">
                 <div class = "border-b border-gray pb-4 border-opacity-60">

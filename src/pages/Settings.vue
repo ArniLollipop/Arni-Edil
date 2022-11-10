@@ -26,7 +26,7 @@
           @mobileModalStatus="acceptMobileModalStatus" class = ""></Acc_buttons>
         <div class = "text-main " v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus">
-          <div class = "md:bg-white rounded-[10px] w-full lg:px-10 sm:px-6 px-2 sm:py-6 py-2">
+          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full lg:px-10 sm:px-6 px-2 sm:py-6 py-2">
             <div class = "sm:flex items-center sm:space-x-5 border-b border-gray border-opacity-60 sm:pb-6 pb-2">
               <div class = "sm:w-[20%] w-full sm:text-center">
                 <p class = "sm:w-[50%] sm:mx-auto block">Я</p>
@@ -44,14 +44,14 @@
                 </label>
               </div>
               <div  class = "sm:flex hidden">
-                <input type="radio" id = "biznec3" name = "biznes" class = "peer w-0">
-                <label for = "biznec3" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
+                <input type="radio" id = "biznec3" name = "biznes" class = "peer w-0" checked>
+                <label for = "biznec3" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Приватна особа</p>
                 </label>
               </div>
               <div class = "sm:flex hidden">
                 <input type="radio" id = "biznec4" name = "biznes" class = "peer  w-0">
-                <label for="biznec4" class = "border border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
+                <label for="biznec4" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Бізнес</p>
                 </label>
               </div>
@@ -120,7 +120,7 @@
             </div>
           </div>
           <p class = "sm:text-2xl text-sm font-medium sm:my-8 my-3">Загальні налаштування</p>
-          <div class = "md:bg-white rounded-[10px] w-full md:px-10 sm:px-4 px-2 py-6">
+          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full md:px-10 sm:px-4 px-2 py-6">
             <div class = "sm:flex items-center sm:space-x-5 border-b border-gray border-opacity-60 sm:pb-6 pb-4 sm:mt-6 relative">
               <div class = "sm:w-[28%] sm:text-center w-[90%]">
                 <p class = "mx-auto block md:text-base sm:text-sm text-xs">Показувати мій телефон в оголошеннях</p>

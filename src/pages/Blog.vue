@@ -20,7 +20,7 @@
     </div>
     <Acc_buttonsVue v-if="isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus" class = ""></Acc_buttonsVue>
-        <div class = "md:flex md:space-x-10 text-main " v-show="!isMobileMenuOpen"
+        <div class = "text-main " v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus">
       <div class = "sm:flex items-center md:gap-x-7 sm:gap-x-3 hidden">
         <button class = "w-[210px] h-[34px] rounded-[10px] bg-white text-sm text-center border border-accent shadow-md shadow-accent">Всі категорії</button>

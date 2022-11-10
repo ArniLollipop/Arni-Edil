@@ -56,9 +56,9 @@
             <div class = "sm:flex items-center mt-4 pb-4 border-b-[0.5px] border-gray">
               <p class = "sm:text-sm text-xs w-[20%] sm:mb-0 mb-1">Продавець</p>
               <div class = "flex items-center space-x-3">
-                <img src="@/img/slider_img2.svg" alt="" class = "w-[50px] h-[50px] rounded-full">
+                <img src="@/img/slider_img2.svg" alt="" class = "w-[57px] h-[36px] rounded-full">
                 <div >
-                  <p class = "text-blue font-medium sm:text-sm text-xs">Анна</p>
+                  <p class = "text-blueText sm:text-sm text-xs">Анна</p>
                   <p class = "sm:text-sm text-xs">На Дошка оголошень Vamberi з 13.02.2022</p>
                 </div>
               </div>
@@ -68,7 +68,7 @@
               <div class = "flex items-center space-x-3">
                 <img src="@/img/RecCards/p1.png" alt="" class = "w-[57px] h-[36px] rounded-[10px]">
                 <div >
-                  <p class = "text-blue font-medium sm:text-sm text-xs">Тест</p>
+                  <p class = "text-blueText sm:text-sm text-xs">Тест</p>
                   <div class = "flex space-x-5">
                   <p class = "sm:text-sm text-xs">Кількість: 1</p>
                   <p class = "sm:text-sm text-xs">Сумма: 1 грн.</p>

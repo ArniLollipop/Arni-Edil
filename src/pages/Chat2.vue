@@ -24,7 +24,7 @@
             </label>
           </div>
           <div class = "bg-white rounded-[10px] border px-4 py-2 border-accent w-full my-8">
-            <input type="text" placeholder="Пошук по повідомленням" class = "bg-white placeholder:text-gray outline-none">
+            <input type="text" placeholder="Пошук по повідомленням" class = "bg-white w-full placeholder:text-sm text-sm placeholder:text-gray outline-none">
           </div>
           <router-link to="/support">
             <div class="bg-accent w-full py-4 my-10 rounded-[10px] text-white text-center">
@@ -146,8 +146,8 @@
             <div class = "bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Софія Смірнова</p>
               <p class = "sm:text-base text-xs">Здравствуйте! Скажите,пожалуйста, выдвижные ли нижние полочки и можете прислать еще фото?</p>
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-2">
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-3">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-3">
             </div>
           </div>
           <div class = "flex mt-4">
@@ -158,8 +158,8 @@
             <div class = "bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Иван Семенов</p>
               <p class="sm:text-base text-xs">Добрый день! Да, шкафчики выдвижные. Фото прикрепил. </p>
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-2">
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-3">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-3">
               <img src="@/img/chat_img.png" alt="" class = "mt-1 sm:w-[157px] sm:h-[108px] w-1/2 h-[71px]">
             </div>
             <div class = "ml-2">
@@ -175,8 +175,8 @@
             <div class = "bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Софія Смірнова</p>
               <p class="sm:text-base text-xs">Спасибо, поняла. Буду думать)</p>
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-2">
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-3">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-3">
             </div>
           </div>
           <div class = "flex mt-4">
@@ -187,7 +187,7 @@
             <div class = "bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Иван Семенов</p>
               <p class="sm:text-base text-xs">Буду ждать ответа</p>
-              <img src="@/img/chat_galochka.svg" alt="" class = "lg:hidden absolute top-3 right-2">
+              <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
             </div>
             <div class = "ml-2">
               <img src="@/img/anonymus.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">

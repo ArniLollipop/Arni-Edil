@@ -77,7 +77,7 @@
               <div class = "sm:w-[220px] sm:h-[110px] bg-white border text-center py-6 border-accent rounded-[10px] relative">
                 <p class = "lg:text-2xl sm:text-base text-sm font-medium">1000 грн</p>
                 <p class = "sm:text-base text-sm text-green">+ 300 грн. бонус</p>
-                <p class = "text-white text-xs bg-green px-2 sm:py-1 w-fit rounded-[10px] absolute top-0">Популярний вибір</p>
+                <p class = "text-white text-xs bg-green px-[6px] sm:py-0.5 w-fit rounded-[5px] absolute top-0 left-3">Популярний вибір</p>
               </div>
               <div class = "sm:w-[220px] sm:h-[110px] bg-white border text-center  py-8 border-accent rounded-[10px]">
                 <p class = "lg:text-2xl sm:text-base text-sm font-medium">Довільна сума</p>
