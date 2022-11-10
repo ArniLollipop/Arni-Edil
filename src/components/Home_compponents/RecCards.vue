@@ -133,7 +133,7 @@
                   src="../../img/RecCards/heart.svg"
                   alt=""
                   :class="[
-                    'w-3 xl:w-[22px] shrink-0',
+                    'w-3 lg:w-[22px] shrink-0',
                     { 'w-3 hidden': item.isLike },
                   ]"
                 />
@@ -141,7 +141,7 @@
                   src="../../img/RecCards/heartFill.svg"
                   alt=""
                   :class="[
-                    'w-3 xl:w-[22px] shrink-0',
+                    'w-3 lg:w-[22px] shrink-0',
                     { 'w-3 hidden': !item.isLike },
                   ]"
                 />

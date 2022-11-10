@@ -214,18 +214,24 @@
                     <button
                       type="checkbox"
                       value="qwe"
-                      class="ml-auto lg:-mr-2"
+                      class="ml-auto lg:-mr-2 shrink-0"
                       @click="item.isLike = !item.isLike"
                     >
                       <img
                         src="../img/RecCards/heart.svg"
                         alt=""
-                        :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
+                        :class="[
+                          'w-3 lg:w-[22px] shrink-0',
+                          { 'w-3 hidden': item.isLike },
+                        ]"
                       />
                       <img
                         src="../img/RecCards/heartFill.svg"
                         alt=""
-                        :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
+                        :class="[
+                          'w-3 lg:w-[22px] shrink-0',
+                          { 'w-3 hidden': !item.isLike },
+                        ]"
                       />
                     </button>
                   </div>
@@ -389,18 +395,24 @@
                     <button
                       type="checkbox"
                       value="qwe"
-                      class="ml-auto lg:-mr-2"
+                      class="ml-auto lg:-mr-2 shrink-0"
                       @click="item.isLike = !item.isLike"
                     >
                       <img
                         src="../img/RecCards/heart.svg"
                         alt=""
-                        :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
+                        :class="[
+                          'w-3 lg:w-[22px] shrink-0',
+                          { 'w-3 hidden': item.isLike },
+                        ]"
                       />
                       <img
                         src="../img/RecCards/heartFill.svg"
                         alt=""
-                        :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
+                        :class="[
+                          'w-3 lg:w-[22px] shrink-0',
+                          { 'w-3 hidden': !item.isLike },
+                        ]"
                       />
                     </button>
                   </div>

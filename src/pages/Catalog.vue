@@ -53,7 +53,7 @@
         <div class="p-4 bg-accentLight rounded-[10px]">
           <div class="flex flex-col gap-y-2">
             <div class="flex items-center">
-              <input type="checkbox" id="1" class="" />
+              <input type="checkbox" id="1" class="text-green bg-green" />
               <label for="1" class="ml-2 text-sm">Безпечна угода</label>
             </div>
             <div class="flex items-center">
@@ -317,18 +317,24 @@
                   <button
                     type="checkbox"
                     value="qwe"
-                    class="ml-auto lg:-mr-2"
+                    class="ml-auto lg:-mr-2 shrink-0"
                     @click="item.isLike = !item.isLike"
                   >
                     <img
                       src="../img/RecCards/heart.svg"
                       alt=""
-                      :class="['w-3 xl:w-5', { 'w-3 hidden': item.isLike }]"
+                      :class="[
+                        'w-3 lg:w-[22px] shrink-0',
+                        { 'w-3 hidden': item.isLike },
+                      ]"
                     />
                     <img
                       src="../img/RecCards/heartFill.svg"
                       alt=""
-                      :class="['w-3 xl:w-5', { 'w-3 hidden': !item.isLike }]"
+                      :class="[
+                        'w-3 lg:w-[22px] shrink-0',
+                        { 'w-3 hidden': !item.isLike },
+                      ]"
                     />
                   </button>
                 </div>
