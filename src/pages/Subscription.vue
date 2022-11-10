@@ -103,7 +103,7 @@
             v-if="!isButton"
           >
             <div
-              v-for="item in poshuki"
+              v-for="(item, key) in poshuki"
               class="p-2 pb-3.5 relative lg:px-3 lg:py-6 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[40%] bg-white border border-accent rounded-[10px]"
             >
               <div class="absolute bottom-3 right-3">
@@ -117,14 +117,12 @@
                 <div class="text-sm font-medium">{{ item.title }}</div>
                 <div class="text-xs">{{ item.date }}</div>
               </div>
-              <div class="mt-1 lg:mt-0 space-y-1">
+              <div class="mt-1 ml-3 lg:ml-0 lg:mt-0 space-y-1">
                 <div v-for="checkItem in item.check">
-                  <input type="checkbox" id="{{ checkItem.id }}" />
-                  <label
-                    for="{{checkItem.id}}"
-                    class="text-xs lg:text-sm ml-1"
-                    >{{ checkItem.text }}</label
-                  >
+                  <input type="checkbox" :id="checkItem.id" />
+                  <label :for="checkItem.id" class="text-xs lg:text-sm ml-1">{{
+                    checkItem.text
+                  }}</label>
                 </div>
               </div>
             </div>
@@ -255,11 +253,11 @@ export default {
           date: "сьогодні в 16:01",
           check: [
             {
-              id: 1,
+              id: 3,
               text: "Раз в день",
             },
             {
-              id: 2,
+              id: 4,
               text: "Відразу під час публікації",
             },
           ],
@@ -271,11 +269,11 @@ export default {
           date: "сьогодні в 16:01",
           check: [
             {
-              id: 1,
+              id: 5,
               text: "Раз в день",
             },
             {
-              id: 2,
+              id: 6,
               text: "Відразу під час публікації",
             },
           ],
