@@ -291,7 +291,7 @@
 
         <label
           for="checked-toggle1"
-          class="inline-flex mt-[18px] relative items-center cursor-pointer"
+          class="inline-flex mt-[15px] relative items-center cursor-pointer"
         >
           <input
             type="checkbox"
@@ -301,7 +301,7 @@
             checked
           />
           <div
-            class="sm:w-11 w-8 sm:h-6 h-4 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-3 after:w-3 after:transition-all peer-checked:bg-pink"
+            class="sm:w-8 w-6 sm:h-4 h-3 cols-span-1 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 sm:peer-checked:after:left-[2px] sm:after:-left-[8px] after:-left-1 after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-4 after:w-4 after:transition-all peer-checked:bg-pink"
           ></div>
         </label>
       </div>
