@@ -38,7 +38,10 @@
           <div class = "md:w-[30%] w-full mb-4 bg-white rounded-[10px] px-4 py-4 h-fit relative border border-accent md:border-none">
             <p class = "sm:text-xl text-sm font-medium">Базовий</p>
             <p class = "sm:text-sm text-xs mt-3">Оголошення додаються з оплатою за розміщення</p>
-            <p class = "text-sm text-green absolute top-4 right-4">активний</p>
+            <div class = "flex items-center gap-x-1 absolute top-2 right-4">
+              <img src="@/img/chat_galochka.svg" alt="" >
+              <p class = "text-sm text-green">активний</p>
+            </div>
           </div>
           <div class = "md:w-[50%] w-full bg-white rounded-[10px] px-4 py-4 h-fit relative border border-accent md:border-none">
             <p class = "sm:text-xl text-sm font-medium">Бізнес</p>

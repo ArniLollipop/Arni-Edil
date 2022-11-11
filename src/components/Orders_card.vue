@@ -23,7 +23,7 @@
         </div>
         <div class = "flex items-center justify-between">
           <p class = "lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main">Мої замовлення</p>
-          <input type="radio" id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 peer" >
+          <button id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
           <label for="qwe" class = "" v-show="!isMobileMenuOpen">
             <img src="@/img/catalog.svg" alt="" class = "w-[18px] h-[18px] lg:hidden cursor-pointer">
           </label>
@@ -36,15 +36,15 @@
         <div class = "text-main " v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus">
           <div class = "flex space-x-4">
-            <button class = "flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 border border-accent shadow-md shadow-accent">
+            <button class = "flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 sm:border border-accent shadow-md shadow-accent">
               <p class = "sm:text-sm text-xs">Покупки</p>
               <p class = "text-xs px-[5px] bg-accent rounded-full text-white">1</p>
             </button>
-            <button class = "flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-8 px-5 border border-accent">
+            <button class = "flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-8 px-5 sm:border border-accent">
               <p class = "sm:text-sm text-xs">Продажі</p>
             </button>
           </div>
-          <div class = "bg-white rounded-[10px] sm:px-10 sm:py-10 sm:mt-10 px-3 py-4 mt-4">
+          <div class = "sm:bg-white rounded-[10px] sm:px-10 sm:py-10 sm:mt-10 px-1 py-2 mt-4">
             <p class = "sm:text-xl text-xs font-medium">Замовлення №11211749 </p>
             <div class = "sm:flex items-center mt-4 pb-4 sm:border-b-[0.5px] border-gray">
               <p class = "sm:text-sm  mt-1 sm:mt-0 text-xs w-[20%]">Статус</p>

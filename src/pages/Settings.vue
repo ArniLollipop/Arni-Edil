@@ -43,7 +43,7 @@
                   <p class = "text-xs ml-2 cursor-pointer">Приватна особа</p>
                 </label>
               </div>
-              <div  class = "sm:flex hidden">
+              <div class = "sm:flex hidden">
                 <input type="radio" id = "biznec3" name = "biznes" class = "peer absolute top-0 w-0" checked>
                 <label for = "biznec3" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
                   <p class = "text-sm text-center">Приватна особа</p>
