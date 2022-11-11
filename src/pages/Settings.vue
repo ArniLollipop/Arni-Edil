@@ -178,7 +178,7 @@
                   <input
                     type="text"
                     id="text"
-                    class="peer hidden active:block focus:block outline-none text-xs py-1 mt-1"
+                    class="peer pl-1 bg-transparent hidden active:block focus:block outline-none text-xs py-1 mt-1"
                   />
                   <p
                     class="text-gray text-xs z-10 peer-active:hidden peer-focus:hidden cursor-pointer"
