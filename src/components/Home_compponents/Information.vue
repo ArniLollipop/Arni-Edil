@@ -106,7 +106,7 @@
           </div>
           <div class="sm:text-base text-[12px] text-center">
             <img
-              src="@/img/Sale.png"
+              src="@/img/information.svg"
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
@@ -136,7 +136,7 @@
       </div>
       <div class="lg:w-[15%] lg:block hidden">
         <p
-          class="text-center md:text-base sm:text-sm text-xs absolute right-0 underline decoration-dashed underline-offset-4 mb-4"
+          class="text-center md:text-base sm:text-sm text-xs sm:relative absolute right-0 underline decoration-dashed underline-offset-4 mb-4"
         >
           Також читайте
         </p>
