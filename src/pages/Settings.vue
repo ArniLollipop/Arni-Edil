@@ -87,7 +87,7 @@
               <div
                 @click="isButton = false"
                 :class="[
-                  'md:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
+                  'sm:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
                   { 'shadow-sm shadow-accent': !isButton },
                 ]"
               >
@@ -96,7 +96,7 @@
               <div
                 @click="isButton = true"
                 :class="[
-                  'md:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
+                  'sm:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
                   { 'shadow-sm shadow-accent': isButton },
                 ]"
               >
@@ -250,10 +250,10 @@
               <div class = "sm:col-span-3 w-[90%] sm:text-center">
                 <p class = "md:text-base sm:text-sm text-xs">Показувати мій телефон в оголошеннях</p>
               </div>
-              <div class = "col-span-1 flex justify-center">
+              <div class = "col-span-1 flex justify-center items-center">
                 <label for="checked-toggle1" class=" inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
                   <input type="checkbox" value="" id="checked-toggle1" class="sr-only peer" checked>
-                  <div class="sm:w-8 w-6 h-4  sm:translate-y-1 cols-span-1 translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 peer-checked:after:left-[2px] after:-left-[8px] after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-pink"></div>
+                  <div class="sm:w-8 w-6 sm:h-4 h-3  sm:translate-y-1 cols-span-1 translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 sm:peer-checked:after:left-[2px] sm:after:-left-[8px] after:-left-1 after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-4 after:w-4 after:transition-all peer-checked:bg-pink"></div>
                 </label>
               </div>
             </div>
@@ -264,7 +264,7 @@
               <div class = "col-span-1 flex justify-center">
                 <label for="checked-toggle2" class="sm:translate-y-0 cols-span-1 -translate-y-1 inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
                   <input type="checkbox" value="" id="checked-toggle2" class="sr-only peer" checked>
-                  <div class="sm:w-8 w-6 h-4 sm:translate-y-1 translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 peer-checked:after:left-[2px] after:-left-[8px] after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-3 after:w-3 after:transition-all peer-checked:bg-pink"></div>
+                  <div class="sm:w-8 w-6 sm:h-4 h-3  sm:translate-y-1 cols-span-1 translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 sm:peer-checked:after:left-[2px] sm:after:-left-[8px] after:-left-1 after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-4 after:w-4 after:transition-all peer-checked:bg-pink"></div>
                 </label>
               </div>
               <div class=" w-full mt-2 ml-2 sm:col-span-5">
@@ -290,7 +290,7 @@
               <div class = "col-span-1 flex justify-center">
                 <label for="checked-toggle3" class="sm:translate-y-0  -translate-y-1 inline-flex w-fit sm:relative items-center cursor-pointer sm:block absolute top-0 right-0">
                   <input type="checkbox" value="" id="checked-toggle3" class="sr-only peer" checked>
-                  <div class="sm:w-8 w-6 h-4 sm:translate-y-1translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 peer-checked:after:left-[2px] after:-left-[8px] after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-3 after:w-3 after:transition-all peer-checked:bg-pink"></div>
+                  <div class="sm:w-8 w-6 sm:h-4 h-3  sm:translate-y-1 cols-span-1 translate-y-2 bg-gray bg-opacity-40 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-accent after:content-[''] after:absolute after:-top-0.5 sm:peer-checked:after:left-[2px] sm:after:-left-[8px] after:-left-1 after:bg-white peer-checked:after:bg-accent after:border-gray after:border after:rounded-full sm:after:h-5 sm:after:w-5 after:h-4 after:w-4 after:transition-all peer-checked:bg-pink"></div>
                 </label>
               </div>
             </div>
