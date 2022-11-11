@@ -171,7 +171,7 @@
                   <div class="font-medium">{{ item.title }}</div>
                   <div class="flex items-center mt-1 gap-x-6">
                     <div
-                      class="bg-accent lg:py-1 w-[66px] rounded-full text-center text-white text-sm"
+                      class="bg-accent lg:py-1 w-[66px] rounded-full text-center text-white text-sm shrink-0"
                     >
                       {{ item.status }}
                     </div>
@@ -272,7 +272,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-accent w-[42px] rounded-full text-center text-white text-[11px]"
+                  class="bg-accent w-[42px] rounded-full text-center text-white text-[11px] shrink-0"
                 >
                   {{ item.status }}
                 </div>

@@ -17,92 +17,99 @@
         Кошик товарів
       </div>
       <div class="w-full">
-        <div
-          v-if="card1"
-          class="flex p-2 bg-accentLight rounded-lg items-center"
-        >
+        <div class="space-y-2.5 w-full">
           <div
-            class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            v-if="card1"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
           >
-            <img
-              src="../../img/RecCards/p2.png"
-              alt=""
-              class="object-cover h-full"
-            />
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card1 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs xl:text-sm font-medium">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="ml-2 w-full">
-            <div class="flex justify-between items-center">
-              <div class="font-medium text-xs xl:text-sm">
-                Lenovo ideapad 330-15ikb
-              </div>
-              <button class="" @click="card1 = false">
-                <img src="../../img/X.svg" alt="" class="w-2.5" />
-              </button>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
             </div>
-            <div class="mt-1.5 text-blueText text-xs xl:text-sm font-medium">
-              Макс
-            </div>
-            <div class="mt-2 flex justify-between items-end">
-              <div class="flex items-center space-x-1">
-                <button
-                  class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
-                >
-                  <div>-</div>
-                </button>
-                <div class="text-xs">1</div>
-                <button
-                  class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
-                >
-                  <div>+</div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
                 </button>
               </div>
-              <div class="text-xs font-medium xl:text-sm">Итого: 8000 грн.</div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          v-if="card2"
-          class="flex p-2 bg-accentLight rounded-lg items-center mt-2.5"
-        >
-          <div
-            class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
-          >
-            <img
-              src="../../img/RecCards/p2.png"
-              alt=""
-              class="object-cover h-full"
-            />
-          </div>
-          <div class="ml-2 w-full">
-            <div class="flex justify-between items-center">
-              <div class="font-medium text-xs xl:text-sm">
-                Lenovo ideapad 330-15ikb
-              </div>
-              <button class="" @click="card2 = false">
-                <img src="../../img/X.svg" alt="" class="w-2.5" />
-              </button>
-            </div>
-            <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
-              Макс
-            </div>
-            <div class="mt-2 flex justify-between items-end">
-              <div class="flex items-center space-x-1">
-                <button
-                  class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
-                >
-                  <div>-</div>
-                </button>
-                <div class="text-xs">1</div>
-                <button
-                  class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
-                >
-                  <div>+</div>
-                </button>
-              </div>
-              <div class="text-xs font-medium xl:text-sm">Итого: 8000 грн.</div>
-            </div>
-          </div>
-        </div>
+
         <div
           v-if="card1 || card2"
           class="mx-auto mt-10 py-2.5 px-6 bg-accent rounded-3xl text-xs text-white font-medium w-max xl:text-sm xl:py-3.5 xl:px-11"

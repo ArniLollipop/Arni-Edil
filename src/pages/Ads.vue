@@ -306,7 +306,7 @@
                         {{ item.price }}.грн
                       </div>
                       <div
-                        class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px]"
+                        class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
                       >
                         {{ item.status }}
                       </div>

@@ -1,9 +1,9 @@
 <template>
   <div
-    class="w-[60%] h-max border rounded-xl overflow-hidden pt-2 bg-white absolute top-36 z-20 px-1 pb-4"
+    class="w-[60%] h-max rounded-xl overflow-hidden pt-2 bg-white absolute top-36 z-20 px-1 pb-4"
   >
-    <div 
-      class="py-4 px-4 border-x border-accent flex items-center justify-between w-full"
+    <div
+      class="py-4 px-4 flex items-center justify-between w-full"
       v-if="oblast"
     >
       <div
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="border-x border-accent flex items-center" v-if="oblast">
-      <div class="w-1/3 space-y-[18px] px-3 py-3 border-r border-accent">
+      <div class="w-1/3 space-y-[18px] px-3 border-r border-accent">
         <div
           class="flex items-center justify-between"
           v-for="(item, key) in city1"
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="w-1/3 space-y-[18px] px-3 py-3 border-r border-accent">
+      <div class="w-1/3 space-y-[18px] px-3 border-r border-accent">
         <div class="flex items-center justify-between" v-for="item in city2">
           <div class="text-sm cursor-pointer">{{ item }}</div>
           <div class="">
@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      <div class="w-1/3 space-y-[18px] px-3 py-3">
+      <div class="w-1/3 space-y-[18px] px-3">
         <div class="flex items-center justify-between" v-for="item in city3">
           <div class="text-sm cursor-pointer">{{ item }}</div>
           <div class="">
