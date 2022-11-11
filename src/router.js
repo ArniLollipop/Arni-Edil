@@ -41,6 +41,7 @@ import Task from "./pages/Task.vue";
 import Shops from "./pages/Shops.vue";
 import Shop from "./pages/Shop.vue";
 import Statis from "./pages/Statis.vue";
+import Test from "./pages/Test.vue";
 
 export default createRouter({
   history: createWebHashHistory(),
