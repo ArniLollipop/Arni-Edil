@@ -59,21 +59,22 @@
           <div><img src="../img/arrowDown.svg" alt="" class="w-2" /></div>
           <Vseogol v-if="ogol"></Vseogol>
         </div>
-        <button id="qwe" @click="isMobileMenuOpen = !isMobileMenuOpen" class = "w-0 invisible" ></button>
-        <label for="qwe" class="" v-show="!isMobileMenuOpen">
-          <img
-            src="@/img/catalog.svg"
-            alt=""
-            class="w-[18px] h-[18px] lg:hidden cursor-pointer"
-          />
-        </label>
-        <label for="qwe" class="" v-show="isMobileMenuOpen">
-          <img
-            src="@/img/modal_x.svg"
-            alt=""
-            class="w-[18px] h-[18px] lg:hidden cursor-pointer"
-          />
-        </label>
+        <div @click="isMobileMenuOpen = !isMobileMenuOpen">
+          <div v-if="!isMobileMenuOpen">
+            <img
+              src="@/img/catalog.svg"
+              alt=""
+              class="w-[18px] h-[18px] lg:hidden cursor-pointer"
+            />
+          </div>
+          <div v-if="isMobileMenuOpen">
+            <img
+              src="@/img/modal_x.svg"
+              alt=""
+              class="w-[18px] h-[18px] lg:hidden cursor-pointer"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <Acc_buttons
