@@ -81,9 +81,9 @@
       >
         Опис
       </p>
-      <div
+      <textarea
         class="lg:h-[300px] md:h-[260px] sm:h-[200px] h-[160px] px-4 py-2 bg-transparent outline-none w-full border border-gray rounded-[10px] my-2"
-      ></div>
+      ></textarea>
       <p class="mt-1 mb-4 text-gray sm:text-xs text-[10px]">
         Символів 0 з 2000
       </p>
