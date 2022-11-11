@@ -56,29 +56,51 @@
               <div class="sm:w-[20%] w-full sm:text-center">
                 <p class="sm:w-[50%] sm:mx-auto block">Я</p>
               </div>
-              <div class = "sm:hidden flex mt-2 ml-3">
-                <input type="radio" id = "biznec1" name = "biznec" class = "peer w-0">
-                <label for="biznec1" class = "flex cursor-pointer">
-                  <p class = "text-xs cursor-pointer mt-[2px]">Приватна особа</p>
+              <div class="sm:hidden flex mt-2">
+                <input
+                  type="radio"
+                  id="biznec1"
+                  name="biznec"
+                  class=""
+                />
+                <label
+                  for="biznec1"
+                  class="text-xs cursor-pointer"
+                >
+                  <p class="mt-[3px]">Приватна особа</p>
                 </label>
               </div>
-              <div class = "sm:hidden flex my-2 ml-3">
-                <input type="radio" id = "biznec2" name = "biznec" class = "peer w-0">
-                <label for="biznec2" class = "flex cursor-pointer">
-                  <p class = "text-xs cursor-pointer mt-[2px]">Приватна особа</p>
+              <div class="sm:hidden flex mt-2">
+                <input
+                  type="radio"
+                  id="biznec2"
+                  name="biznec"
+                  class=""
+                />
+                <label
+                  for="biznec2"
+                  class=" text-xs cursor-pointer"
+                >
+                  <p class="mt-[3px]">Приватна особа</p>
                 </label>
               </div>
-              <div  class = "sm:flex hidden">
-                <input type="radio" id = "biznec3" name = "biznes" class = "peer absolute w-0" checked>
-                <label for = "biznec3" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
-                  <p class = "text-sm text-center">Приватна особа</p>
-                </label>
+              <div
+                @click="isButton = false"
+                :class="[
+                  'md:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
+                  { 'shadow-sm shadow-accent': !isButton },
+                ]"
+              >
+                Приватна особа
               </div>
-              <div class = "sm:flex hidden">
-                <input type="radio" id = "biznec4" name = "biznes" class = "peer absolute w-0">
-                <label for="biznec4" class = "border-[0.5px] border-accent py-1 w-[135px] rounded-[10px] peer-checked:shadow-md peer-checked:shadow-accent cursor-pointer">
-                  <p class = "text-sm text-center">Бізнес</p>
-                </label>
+              <div
+                @click="isButton = true"
+                :class="[
+                  'md:block hidden border-[0.5px] border-accent py-1 w-[135px] rounded-[10px]  cursor-pointer text-sm text-center',
+                  { 'shadow-sm shadow-accent': isButton },
+                ]"
+              >
+                Бізнес
               </div>
             </div>
             <div
@@ -338,6 +360,7 @@ export default {
       isCategoryOpen: false,
       isTruckOpen: false,
       isMobileMenuOpen: false,
+      isButton: false,
     };
   },
   methods: {
