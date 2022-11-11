@@ -138,7 +138,7 @@
           </div>
           <div
             @click="item.isOpen = !item.isOpen"
-            class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative z-0"
+            class="bg-white rounded-[10px] z-[90] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
           >
             <div class="md:text-sm text-xs">{{ item.mas[copy[key]] }}</div>
             <div class="">
