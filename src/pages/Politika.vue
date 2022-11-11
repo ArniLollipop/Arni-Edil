@@ -128,13 +128,8 @@
             </button>
           </router-link>
           <router-link to="/support">
-<<<<<<< HEAD
             <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto sm:block hidden">
               <img src="@/img/support_accent.svg" alt="" class="w-fit mx-auto sm:hidden">
-=======
-            <button class="w-full py-3">
-              <img src="@/img/support.svg" alt="" class="w-fit mx-auto" />
->>>>>>> c9e056ff35523e652c9102fc34b44f008bc597b6
             </button>
           </router-link>
         </div>

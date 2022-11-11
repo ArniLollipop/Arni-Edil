@@ -33,29 +33,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <Acc_buttonsVue v-if="isMobileMenuOpen"
-          @mobileModalStatus="acceptMobileModalStatus" class = ""></Acc_buttonsVue>
-        <div class = "md:flex md:space-x-10 text-main" v-show="!isMobileMenuOpen"
-          @mobileModalStatus="acceptMobileModalStatus">
-      <div class = "lg:flex">
-        <div class = "lg:w-[80%] lg:pr-9 w-full">
-          <div class = "relative">
-            <h2 class = "font-medium lg:text-[26px] sm:text-xl text-[13px]">Як купити авто, транспорт на Vamberi?</h2>
-            <h2 class = "font-medium lg:text-[26px] sm:text-xl text-[13px] mt-8">Купівля авто на Vamberi</h2>
-            <p class = "sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]">Автомобіль - це засіб пересування, який може прослужити не один рік і не одному господареві. До купівлі особистого транспортного засобу варто підходити відповідально та ґрунтовно. Купити авто б/в чи нове в Україні можна на багатьох автобазарах, салонах і навіть за допомогою соцмереж.</p>          
-            <h2 class = "font-medium lg:text-[26px] sm:text-xl text-[13px]">Як вибрати старий  автомобіль</h2>
-            <p class = "sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]">При покупці машини автолюбителі радять дотримуватися кількох простих правил серфінгу сайтів авто-оголошень.</p>
-            <ol type="1" class = "sm:my-4 lg:my-6 my-2 sm:text-base text-[12px] list-decimal ml-3">
-              <li class = "md:my-3 my-1">Визначтеся, навіщо вам потрібна машина і скільки ви готові за неї заплатити.</li>
-              <li class = "md:my-3 my-1">Знайдіть сумлінного продавця.</li>
-              <li class = "md:my-3 my-1">Ретельно вивчіть середню вартість ринку, пробіг і фотографії.</li>
-            </ol>
-            <p class = "sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]"> Це допоможе не купити мотлох[1], а повністю насолодитися покупкою в майбутньому.</p>
-            <h2 class = "font-medium lg:text-[26px] sm:text-xl text-[13px] mt-8">Де придбати авто в Україні</h2>
-            <p class = "sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]">Інтернет-майданчик Vamberi — найкраще місце для пошуку нового або старого транспортного засобу. На нашому сайті ви можете швидко і недорого купити машину б/у або підібрати для себе автомобіль із салону.</p>
-            <p class = "sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]">Дошка оголошень про продаж авто Vamberi пропонує широкий асортимент нового транспорту та з пробігом:</p>
-=======
     <Acc_buttonsVue
       v-if="isMobileMenuOpen"
       @mobileModalStatus="acceptMobileModalStatus"
@@ -122,7 +99,6 @@
               Дошка оголошень про продаж авто Vamberi пропонує широкий
               асортимент нового транспорту та з пробігом:
             </p>
->>>>>>> c9e056ff35523e652c9102fc34b44f008bc597b6
             <ul>
               <li
                 class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
