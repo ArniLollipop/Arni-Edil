@@ -45,7 +45,7 @@
               </button>
             </div>
             <router-link to="/chat2">
-              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[20px] border-opacity-60 lg:mt-6 mt-3 hover:bg-pink focus:bg-pink">
+              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[10px] sm:rounded-[20px] border-opacity-60 lg:mt-6 mt-3 hover:bg-pink focus:bg-pink">
                 <div class = "flex items-center">
                   <div class = "w-fit relative">
                     <img src="@/img/anonymus.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
@@ -63,7 +63,7 @@
               </div>
             </router-link>
             <router-link to="/chat2">
-              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
+              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[10px] sm:rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
                 <div class = "flex items-center">
                   <div class = "w-fit relative">
                     <img src="@/img/anonymus.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
@@ -78,7 +78,7 @@
               </div>
             </router-link>
             <router-link to="/chat2">
-              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
+              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[10px] sm:rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
                 <div class = "flex items-center">
                   <div class = "w-fit relative">
                     <img src="@/img/anonymus.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
@@ -93,7 +93,7 @@
               </div>
             </router-link>
             <router-link to="/chat2">
-              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
+              <div class = "w-full pl-3 sm:pt-4 pt-2 pb-2 border-[0.25px] relative bg-white border-gray rounded-[10px] sm:rounded-[20px] border-opacity-60 lg:mt-8 sm:mt-4 mt-2 hover:bg-pink focus:bg-pink">
                 <div class = "flex items-center">
                   <div class = "w-fit relative">
                     <img src="@/img/anonymus.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">

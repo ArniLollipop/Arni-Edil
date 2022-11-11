@@ -69,7 +69,7 @@
         >
           <div class="flex space-x-4">
             <button
-              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 border border-accent shadow-md shadow-accent"
+              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 sm:border border-accent shadow-md shadow-accent"
             >
               <p class="sm:text-sm text-xs">Покупки</p>
               <p class="text-xs px-[5px] bg-accent rounded-full text-white">
@@ -77,14 +77,14 @@
               </p>
             </button>
             <button
-              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-8 px-5 border border-accent"
+              class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-8 px-5 sm:border border-accent"
             >
               <p class="sm:text-sm text-xs">Продажі</p>
             </button>
           </div>
           <router-link to="/orders/card">
             <div
-              class="bg-white w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
+              class="sm:bg-white w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
             >
               <img
                 src="@/img/RecCards/p1.png"
