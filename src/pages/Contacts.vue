@@ -85,12 +85,14 @@
             </button>
           </router-link>
           <router-link to="/support">
-            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto"></button>
+            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto sm:block hidden">
+              <img src="@/img/support_accent.svg" alt="" class="w-fit mx-auto sm:hidden">
+            </button>
           </router-link>
         </div>
         <div class = "lg:w-[85%] w-full lg:pt-2">
           <h1 class = "lg:text-3xl md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0">Наші телефони, наш кол-центр завжди на зв'язку</h1>
-          <div class = "md:text-sm text-[12px] w-[94%]">
+          <div class = "md:text-sm text-[12px] sm:w-[94%] w-fit mx-auto block">
             <div class = "flex items-center lg:mt-6 mt-0">
               <img src="@/img/geo.svg" alt="" class = "w-fit mr-2">
               <p>Україна,Одеська область, Одеса. </p>

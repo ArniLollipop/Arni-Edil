@@ -138,15 +138,17 @@
           </div>
           <div
             @click="item.isOpen = !item.isOpen"
-            class="bg-white rounded-[10px] z-[90] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
+            class="bg-white cursor-pointer rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
           >
             <div class="md:text-sm text-xs">{{ item.mas[copy[key]] }}</div>
             <div class="">
               <img src="@/img/strelka_down.svg" alt="" class="w-fit" />
             </div>
             <div
-              v-if="item.isOpen"
-              class="absolute z-[5000] top-full -mt-3 inset-x-0 py-3 bg-white rounded-b-[10px]"
+              :class="[
+                'absolute z-[5000] top-full -mt-3 inset-x-0 py-3  rounded-b-[10px]',
+                item.isOpen ? 'block bg-white' : 'hidden bg-black',
+              ]"
             >
               <div
                 class="md:text-sm text-xs p-3 hover:bg-slate-400"

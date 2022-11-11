@@ -55,7 +55,7 @@
                   </div>
                   <div class = "ml-2">
                     <p class = "sm:text-base text-sm font-medium">Иван Семенов</p>
-                    <p class = "sm:text-base text-xs mt-1">Здравствйте! Да, решили не меня...</p>
+                    <p class = "sm:text-base text-xs mt-1 mr-2">Здравствйте! Да, решили не меня...</p>
                   </div>
                 </div>
                 <p class = "text-sm text-gray lg:block hidden">Шкаф кровать трансформер</p>
@@ -70,7 +70,7 @@
                   </div>
                   <div class = "ml-2">
                     <p class = "sm:text-base text-sm font-medium">TVShop</p>
-                    <p class = "sm:text-base text-xs mt-1">Здравствйте! Да, решили не меня...</p>
+                    <p class = "sm:text-base text-xs mt-1 mr-2">Здравствйте! Да, решили не меня...</p>
                   </div>
                 </div>
                 <p class = "text-sm text-gray lg:block hidden">Шкаф кровать трансформер</p>
@@ -85,7 +85,7 @@
                   </div>
                   <div class = "ml-2">
                     <p class = "sm:text-base text-sm font-medium">Семен Петров</p>
-                    <p class = "sm:text-base text-xs mt-1">Здравствйте! Да, решили не меня...</p>
+                    <p class = "sm:text-base text-xs mt-1 mr-2">Здравствйте! Да, решили не меня...</p>
                   </div>
                 </div>
                 <p class = "text-sm text-gray lg:block hidden">Шкаф кровать трансформер</p>
@@ -100,7 +100,7 @@
                   </div>
                   <div class = "ml-2">
                     <p class = "sm:text-base text-sm font-medium">Ирина Дмитрова</p>
-                    <p class = "sm:text-base text-xs mt-1">Здравствйте! Да, решили не меня...</p>
+                    <p class = "sm:text-base text-xs mt-1 mr-2">Здравствйте! Да, решили не меня...</p>
                   </div>
                 </div>
                 <p class = "text-sm text-gray lg:block hidden">Шкаф кровать трансформер</p>

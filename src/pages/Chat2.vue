@@ -107,7 +107,7 @@
         <div class = "text-main h-full" v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus">
         <div class = "lg:bg-pink h-full mt-1 lg:w-[58%] w-full lg:px-4 lg:float-right lg:py-4 rounded-[10px] relative">
-          <div class = "bg-white w-full block mx-auto py-2 sm:px-4 px-2 sm:rounded-[20px] rounded-[10px]">
+          <div class = "bg-white w-full block mx-auto py-2 sm:px-4 px-2 sm:rounded-[20px] rounded-[10px] border-[0.25px] border-gray sm:border-none">
             <div class = "flex items-center">
               <div class = "w-fit relative">
                 <img src="@/img/anonymus.svg" alt="">
@@ -143,7 +143,7 @@
               <img src="@/img/Sofia.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
               <p class = "text-sm text-center">14:30</p>
             </div>
-            <div class = "bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
+            <div class = "bg-white border-[0.25px] border-gray sm:border-none lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Софія Смірнова</p>
               <p class = "sm:text-base text-xs">Здравствуйте! Скажите,пожалуйста, выдвижные ли нижние полочки и можете прислать еще фото?</p>
               <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
@@ -155,7 +155,7 @@
               <img src="@/img/Sofia.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
               <p class = "text-sm text-center">14:30</p>
             </div>
-            <div class = "bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
+            <div class = "bg-white border-[0.25px] border-gray sm:border-none lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Иван Семенов</p>
               <p class="sm:text-base text-xs">Добрый день! Да, шкафчики выдвижные. Фото прикрепил. </p>
               <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
@@ -172,7 +172,7 @@
               <img src="@/img/Sofia.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
               <p class = "text-sm text-center">19:00</p>
             </div>
-            <div class = "bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
+            <div class = "bg-white border-[0.25px] border-gray sm:border-none lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Софія Смірнова</p>
               <p class="sm:text-base text-xs">Спасибо, поняла. Буду думать)</p>
               <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
@@ -184,7 +184,7 @@
               <img src="@/img/Sofia.svg" alt="" class = "sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]">
               <p class = "text-sm text-center">14:30</p>
             </div>
-            <div class = "bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
+            <div class = "bg-white border-[0.25px] border-gray sm:border-none lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative">
               <p class = "sm:text-base text-sm font-medium">Иван Семенов</p>
               <p class="sm:text-base text-xs">Буду ждать ответа</p>
               <img src="@/img/chat_galochka.svg" alt="" class = " absolute top-3 right-2">
@@ -194,7 +194,7 @@
               <p class = "text-sm text-center">20:40</p>
             </div>
           </div>
-          <div class = "bg-white flex border-accent sm:border-2 border lg:w-[95%] w-full rounded-[10px] mt-2 lg:absolute sm:py-2 sm:px-4 px-2 bottom-4">
+          <div class = "bg-white flex border-accent sm:border-2 border lg:w-[95%] w-full rounded-[10px] mt-4 lg:absolute sm:py-2 sm:px-4 px-2 bottom-4">
             <button><img src="@/img/file.svg" alt="" class = "sm:w-fit w-[15px]"></button>
             <input type="text" placeholder="Ваше повідомлення..." class = "h-fit w-full px-2 rounded-[10px] bg-white py-2 md:text-sm sm:text-[12px] text-[10px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-[105px]">
             <button><img src="@/img/send.svg" alt="" class = "sm:w-fit w-[15px]"></button>

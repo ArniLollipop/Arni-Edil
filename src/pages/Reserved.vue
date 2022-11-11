@@ -86,7 +86,9 @@
             </button>
           </router-link>
           <router-link to="/support">
-            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto"></button>
+            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto sm:block hidden">
+              <img src="@/img/support_accent.svg" alt="" class="w-fit mx-auto sm:hidden">
+            </button>
           </router-link>
         </div>
         <div class = "lg:w-[85%] w-full lg:pt-2">

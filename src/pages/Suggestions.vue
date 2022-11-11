@@ -85,7 +85,9 @@
             </button>
           </router-link>
           <router-link to="/support">
-            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto"></button>
+            <button class = "w-full py-3"><img src="@/img/support.svg" alt="" class="w-fit mx-auto sm:block hidden">
+              <img src="@/img/support_accent.svg" alt="" class="w-fit mx-auto sm:hidden">
+            </button>
           </router-link>
         </div>
         <div class = "lg:w-[85%] w-full lg:pt-2">
@@ -97,8 +99,11 @@
             <p class = "my-4">Ми прагнемо до вдосконалення кожен день, для цього відкрили новий канал зв'язку для ПРОПОЗИЦІЙ (посилання), де Ви можете запропонувати додати нову функцію, нові групи або фільтри, щоб Ваша робота з VAMBERI стала ще комфортнішою та продуктивнішою!</p>
             <p class = "my-1">Ми чекаємо на Ваші коментарі та пропозиції, і хочемо стати не просто вибором №1 для Вас, а єдиними!</p>
             <div class = "pt-4 flex items-end">
-              <p class = "w-[80%] float-left">Почта для предложений:  <span class = "text-blue"> vamberi.sms@gmail.com</span></p>
-              <img src="@/img/thankYou.svg" alt="" class="w-[20%] float-right translate-y-3 lg:translate-y-6 xl:translate-y-9">
+              <div class = "w-[60%] sm:w-[80%] float-left">
+                <span class = "mb-2 sm:mb-0">Почта для предложений:</span>
+                <span class = "text-blue mt-2"> vamberi.sms@gmail.com</span>
+              </div>
+              <img src="@/img/thankYou.svg" alt="" class="sm:w-[20%] w-[42px] sm:float-right translate-y-2 lg:translate-y-6 xl:translate-y-9">
             </div>
           </div>
         </div>
