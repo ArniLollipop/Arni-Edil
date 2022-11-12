@@ -226,7 +226,7 @@
                 <p class="text-sm text-center">14:30</p>
               </div>
               <div
-                class="bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
+                class="bg-white sm:border-none border-[0.25px] border-accent lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
               >
                 <p class="sm:text-base text-sm font-medium">Софія Смірнова</p>
                 <p class="sm:text-base text-xs">
@@ -255,7 +255,7 @@
                 <p class="text-sm text-center">14:30</p>
               </div>
               <div
-                class="bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
+                class="bg-white sm:border-none border-[0.25px] border-accent lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
               >
                 <p class="sm:text-base text-sm font-medium">Иван Семенов</p>
                 <p class="sm:text-base text-xs">
@@ -296,7 +296,7 @@
                 <p class="text-sm text-center">19:00</p>
               </div>
               <div
-                class="bg-white lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
+                class="bg-white sm:border-none border-[0.25px] border-accent lg:py-4 py-2 lg:px-5 px-2 rounded-b-[10px] rounded-r-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
               >
                 <p class="sm:text-base text-sm font-medium">Софія Смірнова</p>
                 <p class="sm:text-base text-xs">
@@ -324,7 +324,7 @@
                 <p class="text-sm text-center">14:30</p>
               </div>
               <div
-                class="bg-white lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
+                class="bg-white mb-4 sm:border-none border-[0.25px] border-accent lg:py-4 py-2 lg:px-5 pl-4 rounded-b-[10px] rounded-l-[10px] mt-3 ml-1 lg:w-[78%] w-full relative"
               >
                 <p class="sm:text-base text-sm font-medium">Иван Семенов</p>
                 <p class="sm:text-base text-xs">Буду ждать ответа</p>
@@ -344,7 +344,7 @@
               </div>
             </div>
             <div
-              class="bg-white flex border-accent sm:border-2 border lg:w-[95%] w-full rounded-[10px] mt-2 lg:absolute sm:py-2 sm:px-4 px-2 bottom-4"
+              class="bg-white my-4 flex border-accent sm:border-2 border lg:w-[95%] w-full rounded-[10px] mt-2 lg:absolute sm:py-2 sm:px-4 px-2 bottom-4"
             >
               <button>
                 <img src="@/img/file.svg" alt="" class="sm:w-fit w-[15px]" />
