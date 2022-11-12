@@ -229,13 +229,23 @@
               <p class="text-sm text-center">14:30</p>
             </div>
             <div
-              class="bg-white py-4 px-5 rounded-b-[20px] rounded-r-[20px] mt-3 ml-1 w-[78%]"
+              class="bg-white py-4 px-5 rounded-b-[20px] rounded-r-[20px] mt-3 ml-1 w-[78%] relative"
             >
               <p class="text-base font-medium">Софія Смірнова</p>
               <p>
                 Здравствуйте! Скажите,пожалуйста, выдвижные ли нижние полочки и
                 можете прислать еще фото?
               </p>
+              <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-2"
+                />
+                <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-3"
+                />
             </div>
           </div>
           <div class="flex mt-4">
@@ -244,11 +254,21 @@
               <p class="text-sm text-center">14:30</p>
             </div>
             <div
-              class="bg-white py-4 px-5 rounded-b-[20px] rounded-l-[20px] mt-3 ml-1 w-[78%]"
+              class="bg-white py-4 px-5 rounded-b-[20px] rounded-l-[20px] mt-3 ml-1 w-[78%] relative"
             >
               <p class="text-base font-medium">Иван Семенов</p>
               <p>Добрый день! Да, шкафчики выдвижные. Фото прикрепил.</p>
               <img src="@/img/chat_img.png" alt="" class="mt-1" />
+              <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-2"
+                />
+                <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-3"
+                />
             </div>
             <div class="ml-2">
               <img src="@/img/anonymus.svg" alt="" class="w-[50px] h-[50px]" />
@@ -261,10 +281,20 @@
               <p class="text-sm text-center">19:00</p>
             </div>
             <div
-              class="bg-white py-4 px-5 rounded-b-[20px] rounded-r-[20px] mt-3 ml-1 w-[78%]"
+              class="bg-white py-4 px-5 rounded-b-[20px] rounded-r-[20px] mt-3 ml-1 w-[78%] relative"
             >
               <p class="text-base font-medium">Софія Смірнова</p>
               <p>Спасибо, поняла. Буду думать)</p>
+              <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-2"
+                />
+                <img
+                  src="@/img/chat_galochka.svg"
+                  alt=""
+                  class="absolute top-3 right-3"
+                />
             </div>
           </div>
           <div class="flex mt-4">
@@ -273,10 +303,15 @@
               <p class="text-sm text-center">14:30</p>
             </div>
             <div
-              class="bg-white py-4 px-5 rounded-b-[20px] rounded-l-[20px] mt-3 ml-1 w-[78%]"
+              class="bg-white py-4 px-5 rounded-b-[20px] rounded-l-[20px] mt-3 ml-1 w-[78%] relative"
             >
               <p class="text-base font-medium">Иван Семенов</p>
               <p>Буду ждать ответа</p>
+              <img
+                src="@/img/chat_galochka.svg"
+                alt=""
+                class="absolute top-3 right-2"
+              />
             </div>
             <div class="ml-2">
               <img src="@/img/anonymus.svg" alt="" class="w-[50px] h-[50px]" />

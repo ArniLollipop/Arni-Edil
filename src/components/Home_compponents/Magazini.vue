@@ -40,7 +40,7 @@
         :space-between="10"
         :modules="modules"
         class = "xl:w-[95%] lg:w-[90%] md:w-[85%] w-[85%] relative">
-        <swiper-slide class = "bg-white rounded-xl w-fit flex sm:py-2 py-1 px-2 items-center min-h-[132px] sm:min-h-[156px]" 
+        <swiper-slide class = "bg-white sm:border border-accent rounded-xl w-fit flex sm:py-2 py-1 px-2 items-center min-h-[132px] sm:min-h-[156px]" 
           v-for="slide in slides"
         >
           <div class = "w-fit flex-col items-center pl-[1%]">
@@ -61,8 +61,8 @@
         
       
       </swiper>
-      <button ref="prev" class = "px-[0.7%] py-[3%] md:px-2 md:py-6 bg-white rounded-full z-10 absolute left-0  top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_left.png" alt=""  class = "w-[7px] h-[7px]"></button>
-      <button ref="next" class = "px-[0.7%] py-[3%] md:px-2 md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_right.png" alt="" class = "w-[7px] h-[7px]"></button> 
+      <button ref="prev" class = "px-[0.7%] py-[3%] sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute left-0  top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_left.png" alt=""  class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button>
+      <button ref="next" class = "px-[0.7%] py-[3%] sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_right.png" alt="" class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button> 
     </div>
   </section>
 </template>
