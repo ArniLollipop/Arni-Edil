@@ -308,9 +308,14 @@
       <div class="text-[10px] mt-1">27.07.2022, 17:54</div>
 
       <div class="mt-1 flex items-center justify-between">
-        <div class="text-sm font-medium">Lenovo ideapad 330-15ikb</div>
+        <div class="text-sm font-medium">
+          Lenovo ideapad 330-15ikbLenovo ideapad 330-15ikbLenovo ideapad
+          330-15ikbLenovo ideapad 330-15ikbLenovo ideapad 330-15ikbLenovo
+          ideapad 330-15ikbLenovo ideapad 330-15ikbLenovo ideapad
+          330-15ikbLenovo ideapad 330-15ikb
+        </div>
         <div
-          class="w-[60px] py-px bg-accent rounded-full text-center text-white text-xs"
+          class="w-[60px] py-px bg-accent rounded-full text-center text-white text-xs shrink-0"
         >
           Б/У
         </div>
