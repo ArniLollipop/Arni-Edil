@@ -11,11 +11,11 @@
           </div></a
         >
       </router-link>
-      <a href="" class="shrink-0"
+      <router-link to="/favorites" class="shrink-0"
         ><div class="flex flex-col items-center shrink-0">
           <img src="@/img/like2.svg" alt="" />
           <div class="text-dark text-xs">Вибране</div>
-        </div></a
+        </div></router-link
       >
       <router-link to="/create">
         <a href="" class="shrink-0"
