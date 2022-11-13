@@ -30,7 +30,7 @@
                 class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-4 sm:before:h-4 before:rounded-full before:absolute before:bg-accent before:translate-y-1 before:left-0"
+                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
               >
                 можливість здійснювати безпечні покупки завдяки спеціальному
                 сервісу "Безпечні угоди";
@@ -41,7 +41,7 @@
                 class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-4 sm:before:h-4 before:rounded-full before:absolute before:bg-accent before:translate-y-1 before:left-0"
+                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
               >
                 наявність функції "Турбопродажу" - терміново продамо навіть
                 торішній сніг; жарт, звичайно, ми розміщуємо лише якісні товари;
@@ -52,7 +52,7 @@
                 class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-4 sm:before:h-4 before:rounded-full before:absolute before:bg-accent before:translate-y-1 before:left-0"
+                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
               >
                 можливість вивчити каталог онлайн-магазинів – лише перевірені
                 шопи до ваших послуг.
@@ -63,7 +63,7 @@
                 class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-4 sm:before:h-4 before:rounded-full before:absolute before:bg-accent before:translate-y-1 before:left-0"
+                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
               >
                 сервіс «Оголошення на карті» - не любите онлайн-покупок, ну і не
                 любите; у нас можна знайти необхідні послуги та товари поруч із
