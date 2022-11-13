@@ -1,11 +1,11 @@
 <template>
   <div class="fixed inset-0 z-50">
     <div
-      class="fixed inset-0 bg-slate-800 opacity-50"
+      class="fixed inset-0 bg-slate-800 opacity-50 "
       @click="sendModalStatus"
     ></div>
     <div
-      class="fixed overflow-scroll p-4 pt-[26px] pb-12 lg:px-[80px] xl:px-[135px] inset-x-0 h-[100vh] lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-1/2 lg:h-max bg-white lg:rounded-xl flex flex-col items-center lg:gap-y-8 justify-between"
+      class="fixed overflow-y-scroll z-50 p-4 pt-[26px] pb-12 lg:px-[80px] xl:px-[135px] inset-x-0 h-[100vh] lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-1/2 lg:min-h-[200px] lg:h-[560px] bg-white lg:rounded-xl flex flex-col items-center lg:gap-y-8 justify-between"
     >
       <button
         class="absolute top-5 left-5 bg-[#f5f5f5] rounded-full flex items-center justify-center lg:hidden w-8 h-8"
