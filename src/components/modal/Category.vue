@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[98%] flex h-max border-[0.25px] border-gray rounded-xl bg-white absolute top-[139px] -ml-1 z-50"
+    class="w-[98%] flex h-max border-[0.25px] border-black rounded-xl bg-white absolute top-[139px] -ml-1 z-50"
   >
     <div class="w-1/3 border-r border-accent pl-10 py-4">
       <button
