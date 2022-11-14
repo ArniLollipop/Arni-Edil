@@ -5,41 +5,41 @@
     </router-link>
     <div class = "float-right sm:mt-4 mt-3">
       <div class="ml-11 flex">
-        <CIcon :icon="icon.cifUa" custom-class-name="w-5" />
+        <img src="@/img/ukraine.png" alt="" class = "w-5 h-3">
         <a href="#" class="ml-2">UA</a>|
         <a href="#">RU</a>
       </div>
     </div>
-    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 mt-8  xl:px-40 lg:px-32 md:px-20 px-[5%] ">
-      <div class = "sm:bg-pink pt-14 rounded-[10px] sm:border border-gray">
+    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 mt-8  xl:px-40 lg:px-32 md:px-20 px-[5%]  ">
+      <div class = "sm:bg-pink pt-14 rounded-[10px] sm:border border-gray sm:mx-0 sm:w-full w-fit mx-auto block" >
         <div class = "flex w-full justify-between relative overflow-hidden">
-          <div class = "w-[50%] pl-10 xl:block hidden">
+          <div class = "w-[60%] pl-10 xl:block hidden">
             <p class="text-2xl ">Доска объявлений vamberi.com.ua</p>
             <p class = "mt-11 text-sm w-[80%]">Зручний сервіс, який дозволяє швидко та безпечно продавати та купувати товари онлайн.</p>
             <div class = "grid grid-cols-2">
               <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="">
+                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Спілкуйтесь</p>
                   <p>за оголошеннями в чатах</p>
                 </div>
               </div>
               <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="">
+                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Продавайте товари</p>
                   <p>Просто та безпечно</p>
                 </div>
               </div>
               <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="">
+                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Розміщуйте</p>
                   <p>объявления в топ</p>
                 </div>
               </div>
               <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="">
+                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Купуйте зі знижкою</p>
                   <p>з безпечної угоди</p>
@@ -57,8 +57,8 @@
               </router-link>
             </div>
             <p class = "text-sm sm:mt-7 my-4 text-center">Вкажіть дані для входу на сайт</p>
-            <input type="text" placeholder="Телефон або електронна пошта" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-[10px] px-4 py-3 w-full mt-2">
-            <input type="password" placeholder="Пароль" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-[10px] px-4 py-3 w-full mt-2">
+            <input type="text" placeholder="Телефон або електронна пошта" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-xs sm:px-4 px-2 py-3 w-full mt-2">
+            <input type="password" placeholder="Пароль" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-xs sm:px-4 px-2 py-3 w-full mt-2">
             <router-link to="/login_error" class = "w-[180px] py-3 bg-accent rounded-full block mx-auto mt-6"><p class = "text-white text-sm font-medium text-center">Увійти</p></router-link>
             <button class = "w-[180px] py-3 bg-white rounded-full block mx-auto mt-3 border border-gray"><p class = "text-dark text-sm">Відновити пароль</p></button>
             <p class = "text-xs mt-5 text-center">або через соцмережу </p>
