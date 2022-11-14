@@ -10,7 +10,7 @@
         <a href="#">RU</a>
       </div>
     </div>
-    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 mt-8 md:px-40 sm:px-32">
+    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 mt-8  xl:px-40 lg:px-32 md:px-20 px-[5%] ">
       <div class = "sm:bg-pink pt-14 rounded-[10px] sm:border border-gray">
         <div class = "flex w-full justify-between relative overflow-hidden">
           <div class = "w-[50%] pl-10 xl:block hidden">
