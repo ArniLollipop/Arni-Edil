@@ -102,7 +102,7 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="">Безпечні угоди</p>
+            <span class="">Безпечні угоди</span>
           </div>
           <div class="sm:text-base text-[12px] text-center">
             <img
@@ -110,8 +110,8 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="sm:block hidden">Турбопродаж</p>
-            <p class="sm:hidden">Турбо <br />продаж</p>
+            <span class="sm:block hidden">Турбопродаж</span>
+            <span class="sm:hidden">Турбо <br />продаж</span>
           </div>
           <div class="sm:text-base text-[12px] text-center">
             <img
@@ -119,7 +119,7 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p>Оголошення на карті</p>
+            <span>Оголошення на карті</span>
           </div>
           <div class="sm:text-base text-[12px] text-center lg:w-[160px]">
             <img
@@ -127,10 +127,10 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="w-full">
+            <div>
               <span class="hidden sm:inline-block"> Лише</span> перевірені
               онлайн-магазини
-            </p>
+            </div>
           </div>
         </div>
       </div>

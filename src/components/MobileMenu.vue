@@ -2,7 +2,7 @@
   <div
     class="sticky z-20 inset-x-0 bottom-0 lg:hidden bg-white pb-1 pt-1.5 px-4 md:px-5"
   >
-    <div class="flex items-center gap-x-5 justify-between">
+    <div class="flex items-center gap-x-3 justify-between">
       <router-link to="/">
         <a href="" class="shrink-0"
           ><div class="flex flex-col items-center shrink-0">

@@ -4,7 +4,7 @@
 
 @layer base{
   p{
-    @apply sm:text-base text-sm;
+    @apply md:text-base sm:text-sm text-xs;
   }
   h2{
     @apply font-medium lg:text-[26px] sm:text-xl text-[13px];
