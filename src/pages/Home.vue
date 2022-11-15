@@ -1,15 +1,17 @@
 <template class="">
-  <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
-    <Head :kolMessage="kolMessage"></Head>
-    <Banner></Banner>
-    <Recomendation></Recomendation>
-    <Advan></Advan>
-    <Magazini></Magazini>
-    <RecCards :cards="cards"></RecCards>
-    <Information></Information>
-  </section>
-  <MobileMenu></MobileMenu>
-  <Footer></Footer>
+  <div class = "bg-back">
+    <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
+      <Head :kolMessage="kolMessage"></Head>
+      <Banner></Banner>
+      <Recomendation></Recomendation>
+      <Advan></Advan>
+      <Magazini></Magazini>
+      <RecCards :cards="cards"></RecCards>
+      <Information></Information>
+    </section>
+    <MobileMenu></MobileMenu>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
