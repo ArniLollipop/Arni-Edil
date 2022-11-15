@@ -17,29 +17,29 @@
             <p class="text-2xl ">Доска объявлений vamberi.com.ua</p>
             <p class = "mt-11 text-sm w-[80%]">Зручний сервіс, який дозволяє швидко та безпечно продавати та купувати товари онлайн.</p>
             <div class = "grid grid-cols-2">
-              <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
+              <div class ="w-full flex items-center gap-x-2 mt-11">
+                <img src="@/img/galochka.svg" alt="" class = "w-[20px] h-[18px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Спілкуйтесь</p>
                   <p>за оголошеннями в чатах</p>
                 </div>
               </div>
-              <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
+              <div class ="w-full flex items-center gap-x-2 mt-11">
+                <img src="@/img/galochka.svg" alt="" class = "w-[20px] h-[18px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Продавайте товари</p>
                   <p>Просто та безпечно</p>
                 </div>
               </div>
-              <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
+              <div class ="w-full flex items-center gap-x-2 mt-11">
+                <img src="@/img/galochka.svg" alt="" class = "w-[20px] h-[18px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Розміщуйте</p>
                   <p>объявления в топ</p>
                 </div>
               </div>
-              <div class ="w-full flex gap-x-2 mt-11">
-                <img src="@/img/galochka.svg" alt="" class = "w-[16px] h-[16px] mt-1">
+              <div class ="w-full flex items-center gap-x-2 mt-11">
+                <img src="@/img/galochka.svg" alt="" class = "w-[20px] h-[18px] mt-1">
                 <div class = "text-sm">
                   <p class = "font-medium">Купуйте зі знижкою</p>
                   <p>з безпечної угоди</p>
