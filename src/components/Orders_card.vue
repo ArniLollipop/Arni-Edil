@@ -79,9 +79,9 @@
             <div class = "sm:flex items-center mt-5 relative">
               <p class = "sm:text-sm text-xs w-[20%]">Всього</p>
               <div>
-                <p class = "font-medium sm:text-sm sm:block text-xs  absolute">1 грн.</p>
+                <p class = "font-medium sm:text-sm sm:block text-xs ">1 грн.</p>
               </div>
-              <p class = "text-red sm:text-sm text-xs underline underline-offset-2 absolute right-0">Видалити замовлення</p>
+              <button class = "text-red sm:text-sm text-xs underline underline-offset-2 absolute right-0">Видалити замовлення</button>
             </div>
             <p class = "sm:text-base text-xs font-medium sm:mt-10 mt-10">Повідомлення</p>
             <div class = "w-full bg-pink px-2 py-2 relative flex items-center mt-5 rounded-[10px]">

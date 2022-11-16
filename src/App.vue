@@ -1,5 +1,5 @@
 <template>
-   <div id="App" class = "max-h-[100vh] overflow-hidden">
+   <div id="App" class = "">
     <div>
       <router-view />
     </div>

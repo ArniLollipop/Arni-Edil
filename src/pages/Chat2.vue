@@ -344,7 +344,7 @@
               </div>
             </div>
             <div
-              class="bg-white my-4 flex border-accent sm:border-2 border lg:w-[95%] w-full rounded-[10px] mt-2 lg:absolute sm:py-2 sm:px-4 px-2 bottom-4"
+              class="bg-white my-4 flex sm:border-gray border-accent border lg:w-[95%] w-full rounded-[10px] mt-2 lg:absolute sm:py-2 py-1 sm:px-4 px-2 bottom-4"
             >
               <button>
                 <img src="@/img/file.svg" alt="" class="sm:w-fit w-[15px]" />
@@ -352,7 +352,7 @@
               <input
                 type="text"
                 placeholder="Ваше повідомлення..."
-                class="h-fit w-full px-2 rounded-[10px] bg-white py-2 md:text-sm sm:text-[12px] text-[10px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-[105px]"
+                class="h-fit w-full px-2 rounded-[10px] bg-white py-2 md:text-sm text-[12px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-full"
               />
               <button>
                 <img src="@/img/send.svg" alt="" class="sm:w-fit w-[15px]" />
