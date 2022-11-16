@@ -8,8 +8,6 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
-    "@coreui/icons": "^2.1.0",
-    "@coreui/icons-vue": "^2.0.0",
     "@splidejs/vue-splide": "^0.6.12",
     "core-js": "^3.8.3",
     "install": "^0.13.0",

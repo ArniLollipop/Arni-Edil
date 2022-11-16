@@ -1,5 +1,5 @@
 <template>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto h-max px-4 py-4 text-dark sm:bg-transparent min-h-[100vh] bg-pink">
+  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark sm:bg-transparent min-h-[100vh] bg-pink">
     <router-link to="/" class="font-semibold text-4xl text-accent float-left">
       Vamberi
     </router-link>
@@ -10,7 +10,7 @@
         <a href="#">RU</a>
       </div>
     </div>
-    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 mt-8  xl:px-40 lg:px-32 md:px-20 px-[5%]  ">
+    <div class = "xl:mt-40 lg:mt-32 sm:mt-16 pt-[10%]  xl:px-40 lg:px-32 md:px-20 px-[5%]  ">
       <div class = "sm:bg-pink pt-14 rounded-[10px] sm:border border-gray sm:mx-0 sm:w-full w-fit mx-auto block" >
         <div class = "flex w-full justify-between relative overflow-hidden">
           <div class = "w-[60%] pl-10 xl:block hidden">

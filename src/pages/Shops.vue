@@ -105,6 +105,7 @@ import Acc_buttons from "@/components/modal/Acc_buttons.vue";
 import Orders_card from "@/components/Orders_card.vue";
 import SofiaVue from "@/components/Sofia.vue";
 import MobileCategoryVue from "@/components/modal/MobileCategory.vue";
+
 export default {
   components: {
     HeadVue,
