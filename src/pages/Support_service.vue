@@ -44,83 +44,83 @@
           class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 lg:py-3 pb-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px]"
         >
           <router-link to="/blog">
-            <button class="bg-white rounded-[10px] border-main border w-full">
+            <button class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border w-full">
               <p class="px-1">Блог</p>
             </button>
           </router-link>
           <router-link to="/aboutUs">
             <button
-              class="bg-white rounded-[10px] border-main border my-2 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-2 w-full"
             >
               <p class="px-1">Про нас</p>
             </button>
           </router-link>
           <router-link to="/contacts">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Контакти</p>
             </button>
           </router-link>
           <router-link to="/agree">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Безпечна угода</p>
             </button>
           </router-link>
           <router-link to="/ugoda">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Угода користувача</p>
             </button>
           </router-link>
           <router-link to="/dogovor">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Договір-оферта</p>
             </button>
           </router-link>
           <router-link to="/dropshipping">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Дропшипінг</p>
             </button>
           </router-link>
           <router-link to="/politika">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Політика конфіденційності</p>
             </button>
           </router-link>
           <router-link to="/rules">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Правила подання оголошень</p>
             </button>
           </router-link>
           <router-link to="/suggest">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Пропозиції для покращення сайту</p>
             </button>
           </router-link>
           <router-link to="/reserved">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Заборонені публікації та товари</p>
             </button>
           </router-link>
           <router-link to="/coockie">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-gray py-0.5 text-main sm:opacity-100 opacity-90 border my-1 w-full"
             >
               <p class="px-1">Політика використання файлів cookie</p>
             </button>

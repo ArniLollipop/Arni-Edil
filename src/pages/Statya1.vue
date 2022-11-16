@@ -101,29 +101,29 @@
               Дошка оголошень про продаж авто Vamberi пропонує широкий
               асортимент нового транспорту та з пробігом:
             </p>
-            <ul class = "">
+            <ul class = "sm:my-0 my-6 mx-2">
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 легкові автомобілі;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 мототехніку;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 спецтехніку;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 автобуси та вантажівки;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 водний транспорт.
               </li>

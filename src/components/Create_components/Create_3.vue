@@ -52,11 +52,12 @@
           Максимальний розмір фото — 25mb.
         </p>
       </div>
-      <button
-        class="xl:py-11 lg:py-9 py-7 w-full text-center border border-dashed border-dark rounded-[10px] my-4 text-gray md:text-sm sm:text-xs text-[10px] hover:opacity-60"
-      >
-        Виберіть або перетягніть зображення
-      </button>
+      <input type="file" id="file" class = "w-0">
+      <label for = "file">
+        <div class="xl:py-11 lg:py-9 py-7 w-full cursor-pointer text-center border border-dashed border-dark rounded-[10px] my-4 text-gray md:text-sm sm:text-xs text-[10px] hover:opacity-60">
+          Виберіть або перетягніть зображення
+        </div>
+      </label>
       <p class="font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2">
         Відео
       </p>

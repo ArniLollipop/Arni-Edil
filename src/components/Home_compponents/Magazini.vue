@@ -40,7 +40,7 @@
         :space-between="10"
         :modules="modules"
         class = "xl:w-[95%] lg:w-[90%] md:w-[85%] w-[85%] relative">
-        <swiper-slide class = "bg-white sm:border border-accent rounded-xl w-fit flex sm:py-2 py-1 px-2 items-center min-h-[132px] sm:min-h-[156px]" 
+        <swiper-slide class = "bg-white border sm:border-accent border-gray rounded-xl w-fit flex sm:py-2 py-1 px-2 items-center min-h-[132px] sm:min-h-[156px]" 
           v-for="slide in slides"
         >
           <div class = "w-fit flex-col items-center pl-[1%]">

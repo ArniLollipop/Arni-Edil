@@ -1,5 +1,5 @@
 <template>
-    <div class = "lg:w-[25%]">
+    <div class = "xl:w-[35%] lg:w-[30%]">
         <div class = "w-full px-5 h-[275px] lg:bg-white bg-transparent pt-4 rounded-t-[15px] rounded-b-[25px]">
           <img src="@/img/Sofia.svg" alt="" class = "w-fit mx-auto">
           <p class = "text-xl text-center mt-4">Софія Смірнова</p>
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class = "w-full lg:block hidden bg-white h-[340px] pb-4 px-10 rounded-t-[25px] rounded-b-[15px]">
-          <div class = "-translate-y-6 hidden lg:block">
+          <div class = "-translate-y-6 hidden lg:block ml-5">
             <router-link to="/account" class = "flex items-center space-x-2">
               <img src="@/img/person_acc.svg" alt="" class = "w-fit">
               <p class = "text-sm hover:text-accent">Акаунт [Базовий]</p>

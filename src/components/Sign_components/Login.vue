@@ -1,5 +1,5 @@
 <template>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark sm:bg-transparent min-h-[100vh] bg-pink">
+  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto h-max px-4 py-4 text-dark sm:bg-transparent min-h-[100vh] bg-pink">
     <router-link to="/" class="font-semibold text-4xl text-accent float-left">
       Vamberi
     </router-link>
