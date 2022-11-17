@@ -27,10 +27,10 @@
           <ul class="sm:my-4 lg:my-6 my-2 sm:text-base text-[12px]">
             <div class="relative">
               <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
+                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
+                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
               >
                 можливість здійснювати безпечні покупки завдяки спеціальному
                 сервісу "Безпечні угоди";
@@ -38,10 +38,10 @@
             </div>
             <div class="relative">
               <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
+                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
+                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
               >
                 наявність функції "Турбопродажу" - терміново продамо навіть
                 торішній сніг; жарт, звичайно, ми розміщуємо лише якісні товари;
@@ -49,10 +49,10 @@
             </div>
             <div class="relative">
               <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
+                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
+                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
               >
                 можливість вивчити каталог онлайн-магазинів – лише перевірені
                 шопи до ваших послуг.
@@ -60,10 +60,10 @@
             </div>
             <div class="relative">
               <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-2 sm:hidden"
+                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
               ></div>
               <li
-                class="md:my-3 my-1 ml-5 sm:before:w-3 sm:before:h-3 before:rounded-full before:absolute before:bg-accent before:translate-y-2 before:left-0"
+                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
               >
                 сервіс «Оголошення на карті» - не любите онлайн-покупок, ну і не
                 любите; у нас можна знайти необхідні послуги та товари поруч із
@@ -102,7 +102,7 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="">Безпечні угоди</p>
+            <span class="">Безпечні угоди</span>
           </div>
           <div class="sm:text-base text-[12px] text-center">
             <img
@@ -110,8 +110,8 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="sm:block hidden">Турбопродаж</p>
-            <p class="sm:hidden">Турбо <br />продаж</p>
+            <span class="sm:block hidden">Турбопродаж</span>
+            <span class="sm:hidden">Турбо <br />продаж</span>
           </div>
           <div class="sm:text-base text-[12px] text-center">
             <img
@@ -119,7 +119,7 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p>Оголошення на карті</p>
+            <span>Оголошення на карті</span>
           </div>
           <div class="sm:text-base text-[12px] text-center lg:w-[160px]">
             <img
@@ -127,10 +127,10 @@
               alt=""
               class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
-            <p class="w-full">
+            <div>
               <span class="hidden sm:inline-block"> Лише</span> перевірені
               онлайн-магазини
-            </p>
+            </div>
           </div>
         </div>
       </div>

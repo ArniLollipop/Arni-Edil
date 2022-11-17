@@ -57,10 +57,10 @@
         </button>
       </div>
       <div class = "sm:grid grid-cols-1 md:pt-10 sm:pt-5 gap-y-6">
-        <div class = "sm:bg-white bg-transparent w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[260px]" v-for="text in texts">
+        <div class = "sm:bg-white bg-transparent w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[260px] mt-8 sm:mt-4" v-for="text in texts">
           <div class = "w-full h-full sm:grid sm:grid-cols-5 relative sm:gap-x-6 pb-20 md:pb-0 block">
             <div class = "lg:col-span-1 sm:col-span-2 overflow-hidden sm:pt-0 pt-11">
-              <img :src="require('../img/' + text.img)" alt="" class = "w-full sm:h-full sm:min-h-[190px] h-[160px] rounded-[10px] ">
+              <img :src="require('../img/' + text.img)" alt="" class = "w-full sm:h-full sm:min-h-[190px] h-[190px] rounded-[10px] ">
             </div>
             <div class="lg:col-span-4 sm:col-span-3 md:relative">
               <h2

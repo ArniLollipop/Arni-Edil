@@ -64,24 +64,26 @@
             <h2 class="font-medium lg:text-[26px] sm:text-xl text-[13px]">
               Як вибрати старий автомобіль
             </h2>
-            <ol type="1" class="sm:my-4 lg:my-6 my-2 sm:text-base text-[12px]">
-              <li class="md:my-3 my-1">
+            <div type="1" class="sm:my-4 lg:my-6 my-2 sm:text-base text-[12px]">
+              <p class="md:my-3 my-1">
                 При покупці машини автолюбителі радять дотримуватися кількох
                 простих правил серфінгу сайтів авто-оголошень.
-              </li>
-              <li class="md:my-3 my-1">
-                1. Визначтеся, навіщо вам потрібна машина і скільки ви готові за
-                неї заплатити.
-              </li>
-              <li class="md:my-3 my-1">2. Знайдіть сумлінного продавця.</li>
-              <li class="md:my-3 my-1">
-                3. Ретельно вивчіть середню вартість ринку, пробіг і фотографії.
-              </li>
-              <li class="md:my-3 my-1">
+              </p>
+              <ol class = "list-decimal sm:ml-5 ml-[14px]">
+                <li class="md:my-3 my-2">
+                  Визначтеся, навіщо вам потрібна машина і скільки ви готові за
+                  неї заплатити.
+                </li>
+                <li class="md:my-3 my-2">Знайдіть сумлінного продавця.</li>
+                <li class="md:my-3 my-2">
+                  Ретельно вивчіть середню вартість ринку, пробіг і фотографії.
+                </li>
+              </ol>
+              <p class="md:my-3 my-1">
                 Це допоможе не купити мотлох[1], а повністю насолодитися
                 покупкою в майбутньому.
-              </li>
-            </ol>
+              </p>
+            </div>
             <h2 class="font-medium lg:text-[26px] sm:text-xl text-[13px] mt-8">
               Де придбати авто в Україні
             </h2>
@@ -99,29 +101,29 @@
               Дошка оголошень про продаж авто Vamberi пропонує широкий
               асортимент нового транспорту та з пробігом:
             </p>
-            <ul>
+            <ul class = "sm:my-0 my-6 mx-2">
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 легкові автомобілі;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 мототехніку;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 спецтехніку;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 автобуси та вантажівки;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-3 before:top-2 before:md:-left-3 before:-left-[6px] before:w-1 before:h-1 before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 водний транспорт.
               </li>

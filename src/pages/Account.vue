@@ -1,6 +1,6 @@
 <template>
   <HeadVue></HeadVue>
-  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main">
+  <section class="xl:max-w-[1400px] mx-auto px-4 pt-4 xl:pt-6 text-main">
     <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />

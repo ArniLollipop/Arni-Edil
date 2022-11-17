@@ -5,7 +5,7 @@
         <p class = "text-sm text-center text-accent">Всі категорії</p>
       </div>
       <div class="mt-6 w-full text-center">
-        <button class="w-full flex items-center rounded-[10px] border border-accent px-2 py-1 mt-2" v-for="rec in recomendation" :key="rec.id">
+        <button class="w-full flex items-center rounded-[10px] border border-opacity-60 border-accent px-2 py-1 mt-2" v-for="rec in recomendation" :key="rec.id">
           <div class="w-[30px] h-[30px] sm:h-[40px] sm:w-[40px]">
             <img :src="require('../../img/' + rec.image)" alt="" class="w-full h-full" />
           </div>

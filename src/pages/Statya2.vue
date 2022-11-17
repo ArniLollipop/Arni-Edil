@@ -96,39 +96,39 @@
               ви самі хотіли б знати про товар, якби збиралися його купити.
               Людям часто цікаво:
             </p>
-            <ul>
+            <ul class = "my-6 sm:my-0">
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 стан товару;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 термін потенційної служби;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 дефекти (якщо вони є);
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 вигоди, які товар принесе;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 причина продажу;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 повний функціонал;
               </li>
               <li
-                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-2 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-[6px] before:w-[3px] before:h-[3px] before:bg-dark before:rounded-full"
+                class="md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-4 relative before:absolute before:md:top-[10px] before:top-2 before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-black before:rounded-full"
               >
                 візуалізація.
               </li>

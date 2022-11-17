@@ -319,7 +319,7 @@
             </div>
           </div>
           <div
-            class="bg-white flex border-accent border-2 w-[95%] rounded-[10px] absolute py-2 px-4 bottom-4"
+            class="bg-white flex sm:border-gray border-accent border w-[95%] rounded-[10px] absolute py-2 px-4 bottom-4"
           >
             <button>
               <img src="@/img/file.svg" alt="" class="sm:w-fit w-7" />

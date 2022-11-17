@@ -22,54 +22,54 @@
   </div>
   <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
     <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
-    <div class = "sm:w-[70%] md:w-[65%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-4 sm:gap-y-2 lg:py-8 md:my-6 sm:my-4 my-2">
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитячі мебелі</p>
+    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитячі автокрісла</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Товари для навчання</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Облаштування дитячої</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитячий одяг</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Іграшки та ігри</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитяче взуття</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитячий транспорт</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Здоров’я та догляд</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Товари для мам</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитячі коляски</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-2 sm:border-0 border-t border-gray">Розвиток та творчість </p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
       </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs sm:text-center py-2 sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
       </router-link>
     </div>
   </section>
