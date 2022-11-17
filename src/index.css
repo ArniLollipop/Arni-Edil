@@ -27,11 +27,16 @@ input[type="checkbox"] + label:before {
   height: 16px;
   background-color: transparent;
   border: 0.25px solid #000;
-  border-radius: 3px;
 }
 
 input[type="checkbox"]:checked + label:before {
-  background-image: url(../src/img/checkbox.png);
+  content: "";
+  display: inline-block;
+  top: 0.5px;
+  left: -26px;
+  width: 20px;
+  height: 18.5px;
+  background-image: url(../src/img/checkboxfig3.png);
   background-size: cover;
   border: none;
 }
