@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  p{
+@layer base {
+  p {
     @apply md:text-base sm:text-sm text-xs;
   }
-  h2{
+  h2 {
     @apply font-medium lg:text-[26px] sm:text-xl text-[13px];
   }
-  ol{
+  ol {
     @apply list-decimal sm:ml-5 ml-[14px];
   }
-  ul + li{
+  ul + li {
     @apply md:mt-3 md:text-sm text-[12px] my-1 md:ml-3 ml-3 relative before:absolute before:md:top-[10px] before:top-[7px] before:md:-left-3 before:-left-3 before:w-1 before:h-1 before:bg-dark before:rounded-full;
   }
 }
 
 body {
   font-family: "Montserrat";
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 input[type="checkbox"] {
@@ -46,12 +46,13 @@ input[type="checkbox"] + label:before {
 
 input[type="checkbox"]:checked + label:before {
   content: "";
+  position: absolute;
+  top: -3px;
+  left: -25px;
   display: inline-block;
-  top: 0.5px;
-  left: -26px;
   width: 20px;
-  height: 18.5px;
-  background-image: url(../src/img/checkboxfig3.png);
+  height: 21px;
+  background-image: url(../src/img/checkboxfig.svg);
   background-size: cover;
   border: none;
 }

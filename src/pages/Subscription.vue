@@ -113,11 +113,7 @@
                 <div class="text-sm font-medium">{{ item.title }}</div>
                 <div class="text-xs">{{ item.date }}</div>
               </div>
-<<<<<<< HEAD
               <div class="mt-1 ml-3 lg:ml-0 lg:-mt-3 xl:-mt-5 -space-y-3">
-=======
-              <div class="ml-3 lg:ml-0 lg:mt-0">
->>>>>>> 3b9312177ecbf4f95ea9e239bdda58fe9089fe4e
                 <div v-for="checkItem in item.check">
                   <input type="checkbox" :id="checkItem.id" />
                   <label :for="checkItem.id" class="text-xs lg:text-sm ml-1">{{
