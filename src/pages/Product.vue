@@ -412,7 +412,7 @@
               </div>
               <div class="flex items-center mt-1 shrink-0">
                 <div
-                  class="p-px px-1.5 border border-accent rounded-full text-[11px] shrink-0"
+                  class="p-px px-1.5 border border-accent rounded-full text-[11px] shrink-0 "
                 >
                   Приватна особа
                 </div>
