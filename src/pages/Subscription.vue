@@ -109,11 +109,17 @@
                   class="w-3.5"
                 />
               </div>
-              <div class="lg:text-center">
-                <div class="text-sm font-medium">{{ item.title }}</div>
+              <div class="lg:text-center lg:w-[40%]">
+                <div class="text-sm font-medium h-full hidden lg:block">
+                  <div v-if="item.title.length > 14 ? probel(key) : null"></div>
+                  {{ item.title }}
+                </div>
+                <div class="text-sm font-medium h-full lg:hidden">
+                  <span>{{ poshuki2[key].title }} </span>
+                </div>
                 <div class="text-xs">{{ item.date }}</div>
               </div>
-              <div class="mt-1 ml-3 lg:ml-0 lg:-mt-3 xl:-mt-5 -space-y-3">
+              <div class="mt-1 ml-3 lg:ml-5 lg:-mt-3 xl:-mt-5 -space-y-3">
                 <div v-for="checkItem in item.check">
                   <input type="checkbox" :id="checkItem.id" />
                   <label :for="checkItem.id" class="text-xs lg:text-sm ml-1">{{
@@ -229,7 +235,57 @@ export default {
       poshuki: [
         {
           id: 1,
+          title: "sdkfjlbgldskjfbvlsdkjfbvldsf bvdlskf jbvls dkfjb",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 1,
+              text: "Раз в день",
+            },
+            {
+              id: 2,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+        {
+          id: 2,
           title: "Lenovo",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 3,
+              text: "Раз в день",
+            },
+            {
+              id: 4,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+        {
+          id: 3,
+          title: "Lenovo",
+          date: "сьогодні в 16:01",
+          check: [
+            {
+              id: 5,
+              text: "Раз в день",
+            },
+            {
+              id: 6,
+              text: "Відразу під час публікації",
+            },
+          ],
+          image: "basket.svg",
+        },
+      ],
+      poshuki2: [
+        {
+          id: 1,
+          title: "sdkfjlbgldskjfbvlsdkjfbvldsfbvdlskfjbvls dkfjb",
           date: "сьогодні в 16:01",
           check: [
             {
@@ -284,6 +340,15 @@ export default {
     },
     acceptMobileModalStatus(data) {
       this.isMobileMenuOpen = data;
+    },
+    probel(data) {
+      let str = this.poshuki[data].title;
+      let res = "";
+      for (let i = 0; i < str.length; i++) {
+        if (i % 15 === 0 && i !== 0 && str[i] !== " ") res += " ";
+        res += str[i];
+      }
+      this.poshuki[data].title = res;
     },
   },
 };
