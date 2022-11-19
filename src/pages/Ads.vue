@@ -95,7 +95,7 @@
             >
               <div
                 v-for="item in cards"
-                class="bg-white hidden lg:flex relative rounded-[10px] flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2 lg:basis-full"
+                class="bg-white flex relative rounded-[10px] flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2 lg:basis-full"
               >
                 <div
                   class="hidden absolute top-4 right-4 lg:flex justify-end items-center"
@@ -132,7 +132,9 @@
                     Інформація<span class="lg:hidden">:</span>
                   </div>
 
-                  <div class="space-y-3 mt-3">
+                  <div
+                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-3.5 lg:gap-x-0 gap-x-5"
+                  >
                     <div class="text-[#70CAF1] text-sm">
                       {{ item.i1 }}
                     </div>
@@ -160,7 +162,9 @@
                     Статистика<span class="lg:hidden">:</span>
                   </div>
 
-                  <div class="space-y-[17px] mt-3.5">
+                  <div
+                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-3.5 lg:gap-x-0 gap-x-3"
+                  >
                     <div
                       class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
                     >
@@ -189,183 +193,42 @@
                 </div>
 
                 <div
-                  class="flex lg:flex-col self-strech lg:justify-end lg:items-center"
+                  class="flex lg:flex-col shrink-0 self-strech lg:justify-end lg:items-center"
                 >
-                  <div class="hidden lg:block">
+                  <div class="hidden lg:block shrink-0">
                     <div
-                      class="bg-accent py-2 w-full text-center text-white rounded-full text-sm"
+                      class="bg-accent py-2 w-full text-center text-white rounded-full text-[13px]"
                     >
                       Редагувати
                     </div>
                     <div
-                      class="bg-pink2 mt-2 py-2 px-3 w-full shrink-0 text-center text-white rounded-full text-sm"
+                      class="bg-pink2 mt-2 py-2 px-3 w-full shrink-0 text-center text-white rounded-full text-[13px]"
                     >
                       Продати швидше
                     </div>
                   </div>
                   <div
-                    class="flex lg:hidden w-full mt-2 justify-between items-center"
+                    class="flex lg:hidden w-full mt-3 justify-between items-end"
                   >
-                    <div
-                      class="bg-pink2 px-1 text-center text-white rounded-full text-[10px] sm:text-xs sm:py-px"
-                    >
-                      Продати швидше
+                    <div class="space-y-2">
+                      <div
+                        class="bg-accent px-1.5 py-1 w-full text-center text-white rounded-full text-[10px]"
+                      >
+                        Редагувати
+                      </div>
+                      <div
+                        class="bg-pink2 px-1.5 py-1 text-center text-white rounded-full text-[10px]"
+                      >
+                        Продати швидше
+                      </div>
                     </div>
+
                     <div class="w-3">
                       <img src="../img/new7/pen.svg" alt="" class="w-3.5" />
                     </div>
                   </div>
                 </div>
               </div>
-
-              <router-link
-                to="/"
-                v-for="item in cards2"
-                v-show="item.id >= 1"
-                class="flex flex-col lg:hidden"
-              >
-                <div
-                  v-if="item.id == 2 || item.id == 5"
-                  class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative"
-                >
-                  <swiper
-                    :slides-per-view="1"
-                    :loop="true"
-                    :navigation="{
-                      nextEl: '.swiper-button-next',
-                      prevEl: '.swiper-button-prev',
-                    }"
-                    :space-between="20"
-                    :modules="modules"
-                    class="w-full h-full relative"
-                  >
-                    <swiper-slide class="">
-                      <img
-                        :src="require('../img/RecCards/' + item.image)"
-                        alt=""
-                        class="w-full"
-                      />
-                    </swiper-slide>
-                    <button
-                      class="swiper-button-prev invisible shadow-md shadow-accent"
-                    >
-                      <img
-                        src="@/img/mini_left.svg"
-                        alt=""
-                        class="visible bg-white px-1 py-1 absolute -left-2 rounded-full"
-                      />
-                    </button>
-                    <button class="swiper-button-next invisible">
-                      <img
-                        src="@/img/mini_right.svg"
-                        alt=""
-                        class="visible bg-white px-1 py-1 absolute -right-2 rounded-full"
-                      />
-                    </button>
-                  </swiper>
-                </div>
-                <div
-                  v-else
-                  class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-gray shadow-md"
-                >
-                  <img
-                    :src="require('../img/RecCards/' + item.image)"
-                    alt=""
-                    class="w-full"
-                  />
-                </div>
-                <div
-                  class="px-3 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
-                >
-                  <div class="">
-                    <div
-                      class="text-green text-[12px] lg:text-[14px] mb-3 absolute top-0"
-                    >
-                      {{ item.pretitle }}
-                    </div>
-                    <div
-                      :class="[
-                        'text-xs lg:text-sm mt-2',
-                        { '': item.pretitle.length === 0 },
-                      ]"
-                    >
-                      {{ item.title }}
-                    </div>
-                  </div>
-                  <div class="mt-1 lg:mt-3 flex flex-col justify-between">
-                    <div
-                      :class="{
-                        'text-xs text-red': item.subtitleColor,
-                        'text-xs text-green': !item.subtitleColor,
-                      }"
-                    >
-                      {{ item.subtitle }}
-                    </div>
-                    <div class="flex justify-between items-center mt-1">
-                      <div class="md:text-sm text-xs lg:text-base">
-                        {{ item.price }}.грн
-                      </div>
-                      <div
-                        class="w-[42px] text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
-                      >
-                        {{ item.status }}
-                      </div>
-                    </div>
-                    <div
-                      :class="[
-                        'md:text-sm text-xs lg:text-base text-red line-through mb-4',
-                        { 'text-green invisible': item.lastPrice.length === 0 },
-                      ]"
-                    >
-                      {{ item.lastPrice }}.грн
-                    </div>
-                    <div class="flex items-center mt-auto">
-                      <img src="../img/RecCards/map.svg" alt="" class="h-3" />
-                      <div class="text-xs text-gray">{{ item.map }}</div>
-                    </div>
-                    <div class="text-xs text-gray lg:hidden">
-                      {{ item.date }}
-                    </div>
-                    <div class="flex mt-1 items-center lg:pr-2">
-                      <div
-                        class="w-[98px] lg:w-[114px] md:py-1 border border-accent rounded-[10px] text-xs text-center shrink"
-                      >
-                        {{ item.btnText }}
-                      </div>
-
-                      <div
-                        class="hidden ml-1.5 lg:block text-[10px] 2xl:text-xs text-gray"
-                      >
-                        {{ item.date }}
-                      </div>
-
-                      <button
-                        type="checkbox"
-                        value="qwe"
-                        class="ml-auto lg:-mr-2 shrink-0"
-                        @click="item.isLike = !item.isLike"
-                      >
-                        <img
-                          src="../img/RecCards/heart.svg"
-                          alt=""
-                          :class="[
-                            'w-3 lg:w-[22px] shrink-0',
-                            { 'w-3 hidden': item.isLike },
-                          ]"
-                        />
-                        <img
-                          src="../img/RecCards/heartFill.svg"
-                          alt=""
-                          :class="[
-                            'w-3 xl:w-5',
-                            { 'w-3 hidden lg:w-[22px] shrink-0': !item.isLike },
-                          ]"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </router-link>
             </div>
           </router-link>
         </div>
