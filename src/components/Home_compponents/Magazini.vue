@@ -61,8 +61,8 @@
         
       
       </swiper>
-      <button ref="prev" class = "px-[0.7%] py-[3%] sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute left-0  top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_left.png" alt=""  class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button>
-      <button ref="next" class = "px-[0.7%] py-[3%] sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_right.png" alt="" class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button> 
+      <button ref="prev" class = "px-1 py-1 sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute left-0  top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_left.png" alt=""  class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button>
+      <button ref="next" class = "px-1 py-1 sm:px-0.5 sm:py-5 md:px-1 md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"><img src="@/img/Стрелка_right.png" alt="" class = "sm:w-[14px] sm:h-[14px] w-[7px] h-[7px]"></button> 
     </div>
   </section>
 </template>
