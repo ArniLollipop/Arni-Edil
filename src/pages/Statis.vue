@@ -150,7 +150,7 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 px-3 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>
@@ -165,7 +165,7 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 px-3 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>
@@ -180,7 +180,7 @@
                   Ольга
                 </div>
                 <div
-                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 text-white text-xs lg:text-sm text-center"
+                  class="mt-2 lg:mt-4 w-full bg-accent rounded-[20px] py-1 px-3 text-white text-xs lg:text-sm text-center"
                 >
                   Докладніше
                 </div>

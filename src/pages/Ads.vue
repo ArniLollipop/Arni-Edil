@@ -39,7 +39,7 @@
           <p
             class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main"
           >
-            Мої замовлення
+            Мої оголошення
           </p>
           <div @click="isMobileMenuOpen = !isMobileMenuOpen">
             <div v-if="!isMobileMenuOpen">
