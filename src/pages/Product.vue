@@ -1,6 +1,6 @@
 <template>
   <div class = " bg-back2">
-    <div class="container mx-auto px-4 z-0">
+    <div class="container mx-auto z-0">
       <Head></Head>
       <div class="hidden lg:block mt-10 pb-20">
         <div class="flex items-center">
@@ -248,7 +248,7 @@
           </div>
         </div>
       </div>
-      <div class="lg:hidden pb-10 px-2">
+      <div class="lg:hidden pb-10 px-4">
         <div class="mt-4">
           <img src="../img/mob-banner.png" alt="" class="w-full" />
         </div>
@@ -283,14 +283,14 @@
             :modules="modules"
             class="z-0"
           >
-            <swiper-slide>
-              <img src="../img/product-mob.png" alt="" class="w-full" />
+            <swiper-slide class = "rounded-[10px] overflow-hidden">
+              <img src="../img/productp1.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
-            <swiper-slide>
-              <img src="../img/product-mob.png" alt="" class="w-full" />
+            <swiper-slide class = "rounded-[10px] overflow-hidden">
+              <img src="../img/productp2.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
-            <swiper-slide>
-              <img src="../img/product-mob.png" alt="" class="w-full" />
+            <swiper-slide class = "rounded-[10px] overflow-hidden">
+              <img src="../img/productp3.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
           </swiper>
           <div class="absolute top-2 left-2">

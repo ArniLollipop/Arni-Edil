@@ -1,6 +1,6 @@
 <template>
   <section class = "px-6 md:py-6 mt-4">
-    <div class = "w-full min-h-[230px] sm:min-h-[300px] sm:flex relative">
+    <div class = "w-full min-h-[180px] sm:min-h-[300px] sm:flex relative">
       <img src="@/img/boxes.svg" alt="" class = "absolute md:top-2 bottom-6 xl:right-[10%] lg:right-[5%] z-0 xl:w-[35%] md:h-[95%] md:w-[50%] md:right-[3%] -right-2 w-[162px] h-[105px]">
       <div class = "sm:pt-4 relative">
         <div class = "md:w-[70%] w-full min-h-[50px]">
