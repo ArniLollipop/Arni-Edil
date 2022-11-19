@@ -52,7 +52,7 @@
         </div>
         <div
           v-else
-          class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white sm:shadow-xl shadow-md"
+          class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white sm:shadow-lg shadow-md"
         >
           <img
             :src="require('../../img/RecCards/' + item.image)"
@@ -61,7 +61,7 @@
           />
         </div>
         <div
-          class="px-3 sm:shadow-xl shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
+          class="px-3 sm:shadow-lg shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
         >
           <div class="">
             <div
