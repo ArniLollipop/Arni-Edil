@@ -45,84 +45,84 @@
         >
           <router-link to="/blog">
             <button class="bg-white rounded-[10px] border-main border w-full">
-              <p class="px-1">Блог</p>
+              <span class="px-1">Блог</span>
             </button>
           </router-link>
           <router-link to="/aboutUs">
             <button
               class="bg-white rounded-[10px] border-main border my-2 w-full"
             >
-              <p class="px-1">Про нас</p>
+              <span class="px-1">Про нас</span>
             </button>
           </router-link>
           <router-link to="/contacts">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Контакти</p>
+              <span class="px-1">Контакти</span>
             </button>
           </router-link>
           <router-link to="/agree">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full shadow-md shadow-accent"
             >
-              <p class="px-1">Безпечна угода</p>
+              <span class="px-1">Безпечна угода</span>
             </button>
           </router-link>
           <router-link to="/ugoda">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Угода користувача</p>
+              <span class="px-1">Угода користувача</span>
             </button>
           </router-link>
           <router-link to="/dogovor">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Договір-оферта</p>
+              <span class="px-1">Договір-оферта</span>
             </button>
           </router-link>
           <router-link to="/dropshipping">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Дропшипінг</p>
+              <span class="px-1">Дропшипінг</span>
             </button>
           </router-link>
           <router-link to="/politika">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Політика конфіденційності</p>
+              <span class="px-1">Політика конфіденційності</span>
             </button>
           </router-link>
           <router-link to="/rules">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Правила подання оголошень</p>
+              <span class="px-1">Правила подання оголошень</span>
             </button>
           </router-link>
           <router-link to="/suggest">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Пропозиції для покращення сайту</p>
+              <span class="px-1">Пропозиції для покращення сайту</span>
             </button>
           </router-link>
           <router-link to="/reserved">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Заборонені публікації та товари</p>
+              <span class="px-1">Заборонені публікації та товари</span>
             </button>
           </router-link>
           <router-link to="/coockie">
             <button
               class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
-              <p class="px-1">Політика використання файлів cookie</p>
+              <span class="px-1">Політика використання файлів cookie</span>
             </button>
           </router-link>
           <router-link to="/support">
