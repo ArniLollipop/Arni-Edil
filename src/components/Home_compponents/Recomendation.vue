@@ -55,7 +55,7 @@
             class="h-[65%] w-[65%]"
           />
         </div>
-        <div class="h-1/2 px-4 flex items-end justify-center">
+        <div class="h-[40%] px-4 flex items-end justify-center">
           <a href="#" class="hover:text-accent">{{ rec.title }}</a>
         </div>
       </swiper-slide>
