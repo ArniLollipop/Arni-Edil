@@ -100,7 +100,7 @@
           >
             <div
               v-for="(item, key) in poshuki"
-              class="p-2 pb-3.5 relative lg:px-3 lg:py-6 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[40%] bg-white border border-accent rounded-[10px]"
+              class="p-2 pb-3.5 relative lg:px-3 lg:py-6 xl:py-10 lg:pr-8 flex flex-col lg:flex-row lg:items-center lg:justify-between w-full lg:w-1/2 xl:w-[45%] bg-white border border-accent rounded-[10px]"
             >
               <div class="absolute bottom-3 right-3">
                 <img
