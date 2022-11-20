@@ -1,5 +1,5 @@
 <template>
-  <div class = " bg-back2">
+  <div class="bg-back2">
     <div class="container mx-auto z-0">
       <Head></Head>
       <div class="hidden lg:block mt-10 pb-20">
@@ -12,7 +12,9 @@
             <a href="">Електроніка</a>
             <img src="../img/arrowRight.svg" alt="" class="w-2.5 ml-1" />
           </div>
-          <div class="text-sm ml-1"><a href="">Комп’ютери і комплектуючі</a></div>
+          <div class="text-sm ml-1">
+            <a href="">Комп’ютери і комплектуючі</a>
+          </div>
         </div>
 
         <div class="mt-3 flex justify-end items-center">
@@ -75,30 +77,24 @@
               <div class="text-2xl font-bold">Характеристики</div>
               <div class="flex mt-8 items-start justify-between">
                 <div class="flex flex-col gap-y-4 text-sm">
-                  <div>Приватне-бізнес</div>
-                  <div>Стан товару</div>
-                  <div>Наявність товару</div>
-                  <div>Країна виробника</div>
-                  <div>Термін використання</div>
+                  <div v-for="item in harNormal1">
+                    {{ item }}
+                  </div>
                 </div>
                 <div class="flex flex-col gap-y-4 text-sm font-bold">
-                  <div>Приватне</div>
-                  <div>Б/У</div>
-                  <div>В наявності</div>
-                  <div>Китай</div>
-                  <div>4 роки і більше</div>
+                  <div v-for="item in harBold1">
+                    {{ item }}
+                  </div>
                 </div>
                 <div class="flex flex-col gap-y-4 text-sm">
-                  <div>Торг</div>
-                  <div>Марка</div>
-                  <div>Діагональ екрану</div>
-                  <div>Оперативна пам’ять</div>
+                  <div v-for="item in harNormal2">
+                    {{ item }}
+                  </div>
                 </div>
                 <div class="flex flex-col gap-y-4 text-sm font-bold">
-                  <div>Ноутбуки</div>
-                  <div>Lenovo</div>
-                  <div>від 15” до 16.4”</div>
-                  <div>від 15” до 16.4”</div>
+                  <div v-for="item in harBold2">
+                    {{ item }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,8 +102,7 @@
             <div class="mt-8 p-8 bg-white rounded-2xl">
               <div class="font-bold text-xl">Опис товару</div>
               <div class="mt-5 text-sm">
-                Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет.
-                Продаю за бесценок так как срочно.
+                {{ description }}
               </div>
             </div>
 
@@ -125,17 +120,17 @@
           </div>
           <div class="col-span-2">
             <div class="bg-white rounded-3xl px-6 pt-3 pb-8">
-              <div class="font-medium text-2xl">Lenovo ideapad 330-15ikb</div>
-              <div class="text-sm mt-7">Опубліковано 27.07.2022, 17:54</div>
+              <div class="font-medium text-2xl">{{ title }}</div>
+              <div class="text-sm mt-7">Опубліковано {{ date }}</div>
               <div class="flex justify-between items-center mt-7">
-                <div class="font-medium text-2xl">8,000 грн.</div>
+                <div class="font-medium text-2xl">{{ price }}</div>
                 <div
                   class="w-[66px] py-1 text-center bg-accent rounded-[10px] text-white text-sm"
                 >
-                  Б/У
+                  {{ status }}
                 </div>
               </div>
-              <div class="mt-1 text-green text-xs">У наявності</div>
+              <div class="mt-1 text-green text-xs">{{ text }}</div>
             </div>
             <div class="bg-white rounded-3xl px-6 pb-5 pt-10">
               <div class="w-[220px] xl:w-[264px] mx-auto">
@@ -159,7 +154,7 @@
               </div>
               <div class="flex justify-between mt-8 xl:mt-14">
                 <div class="p-1 px-2 border border-accent rounded-lg text-xs">
-                  Приватна особа
+                  {{ btnText }}
                 </div>
                 <div class="flex items-center">
                   <div><img src="../img/podelit.svg" alt="" class="w-4" /></div>
@@ -178,8 +173,10 @@
               </div>
               <div class="mt-4 text-sm">Спосіб доставки:</div>
               <div class="mt-2.5 flex items-center gap-x-1.5">
-                <div class=""><img src="../img/H.svg" alt="" class="h-8" /></div>
-                <div class="text-sm">Нова пошта - от 40 грн.</div>
+                <div class="">
+                  <img src="../img/H.svg" alt="" class="h-8" />
+                </div>
+                <div class="text-sm">{{ delivery }}</div>
               </div>
             </div>
 
@@ -189,9 +186,9 @@
                   <img src="../img/maks.png" alt="" class="h-[92px] shrink-0" />
                 </div>
                 <div class="">
-                  <div class="font-medium text-xl">Макс</div>
+                  <div class="font-medium text-xl">{{ name }}</div>
                   <div class="mt-2 text-sm">
-                    На Дошка оголошень Vamberi з 24.06.2022
+                    {{ personText }}
                   </div>
                   <div class="flex items-center">
                     <div><img src="../img/stars.png" alt="" class="h-4" /></div>
@@ -207,7 +204,7 @@
             <div class="mt-10 bg-white rounded-2xl py-3 px-5">
               <div class="font-bold text-xl">Розташування</div>
               <div class="mt-3 text-sm">
-                Одесса, 7C7H+2M Овидиополь, Одесская область, Украина
+                {{ adres }}
               </div>
               <div class="mt-3">
                 <img src="../img/2gis.png" alt="" class="w-full" />
@@ -283,13 +280,13 @@
             :modules="modules"
             class="z-0"
           >
-            <swiper-slide class = "rounded-[10px] overflow-hidden">
+            <swiper-slide class="rounded-[10px] overflow-hidden">
               <img src="../img/productp1.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
-            <swiper-slide class = "rounded-[10px] overflow-hidden">
+            <swiper-slide class="rounded-[10px] overflow-hidden">
               <img src="../img/productp2.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
-            <swiper-slide class = "rounded-[10px] overflow-hidden">
+            <swiper-slide class="rounded-[10px] overflow-hidden">
               <img src="../img/productp3.png" alt="" class="w-full h-[200px]" />
             </swiper-slide>
           </swiper>
@@ -306,20 +303,20 @@
           </div>
         </div>
 
-        <div class="text-[10px] mt-1">27.07.2022, 17:54</div>
+        <div class="text-[10px] mt-1">{{ date }}</div>
 
         <div class="mt-1 flex items-center justify-between">
-          <div class="text-sm font-medium">Lenovo ideapad 330-15ikb</div>
+          <div class="text-sm font-medium">{{ title }}</div>
           <div
             class="w-[60px] py-px bg-accent rounded-full text-center text-white text-xs shrink-0"
           >
-            Б/У
+            {{ status }}
           </div>
         </div>
 
         <div class="flex items-center gap-x-2.5 mt-2">
-          <div class="text-sm font-medium">8,000 грн.</div>
-          <div class="text-green text-xs">У наявності</div>
+          <div class="text-sm font-medium">{{ price }}</div>
+          <div class="text-green text-xs">{{ text }}</div>
         </div>
 
         <div
@@ -350,15 +347,14 @@
           <div class="text-xs">Спосіб доставки:</div>
           <div class="mt-2.5 flex items-center gap-x-1.5">
             <div class=""><img src="../img/H.svg" alt="" class="h-5" /></div>
-            <div class="text-xs">Нова пошта - от 40 грн.</div>
+            <div class="text-xs">{{ delivery }}</div>
           </div>
         </div>
 
         <div class="mt-6 p-4 bg-white rounded-2xl">
           <div class="font-bold text-sm">Опис товару</div>
           <div class="mt-5 text-xs">
-            Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю
-            за бесценок так как срочно.
+            {{ description }}
           </div>
         </div>
 
@@ -366,26 +362,20 @@
           <div class="font-bold text-sm">Характеристики</div>
           <div class="flex justify-between mt-2.5">
             <div class="flex flex-col space-y-2.5 text-xs">
-              <div>Приватне-бізнес</div>
-              <div>Стан товару</div>
-              <div>Наявність товару</div>
-              <div>Країна виробника</div>
-              <div>Термін використання</div>
-              <div>Торг</div>
-              <div>Марка</div>
-              <div>Діагональ екрану</div>
-              <div>Оперативна пам’ять</div>
+              <div v-for="item in harNormal1">
+                {{ item }}
+              </div>
+              <div v-for="item in harNormal2">
+                {{ item }}
+              </div>
             </div>
             <div class="flex flex-col space-y-2.5 text-xs font-bold ml-1.5">
-              <div>Приватне</div>
-              <div>Б/У</div>
-              <div>В наявності</div>
-              <div>Китай</div>
-              <div>4 роки і більше</div>
-              <div>Ноутбуки</div>
-              <div>Lenovo</div>
-              <div>від 15” до 16.4”</div>
-              <div>8 ГБ</div>
+              <div v-for="item in harBold1">
+                {{ item }}
+              </div>
+              <div v-for="item in harBold2">
+                {{ item }}
+              </div>
             </div>
           </div>
         </div>
@@ -393,7 +383,7 @@
         <div class="mt-4 bg-white rounded-2xl p-4">
           <div class="font-bold text-sm">Розташування</div>
           <div class="mt-2.5 text-xs">
-            Одесса, 7C7H+2M Овидиополь, Одесская область, Украина
+            {{ adres }}
           </div>
           <div class="mt-2.5">
             <img src="../img/2gis.png" alt="" class="w-full" />
@@ -406,15 +396,15 @@
               <img src="../img/maks.png" alt="" class="h-[60px] shrink-0" />
             </div>
             <div class="">
-              <div class="font-medium text-[13px]">Макс</div>
+              <div class="font-medium text-[13px]">{{ name }}</div>
               <div class="mt-1 text-[11px]">
-                На Дошка оголошень Vamberi з 24.06.2022
+                {{ personText }}
               </div>
               <div class="flex items-center mt-1 shrink-0">
                 <div
-                  class="p-px px-1.5 border border-accent rounded-full text-[11px] shrink-0 "
+                  class="p-px px-1.5 border border-accent rounded-full text-[11px] shrink-0"
                 >
-                  Приватна особа
+                  {{ btnText }}
                 </div>
                 <div class="ml-2 shrink-0">
                   <img src="../img/stars.png" alt="" class="h-3 shrink-0" />
@@ -509,7 +499,30 @@ export default {
     };
   },
   data() {
-    return {};
+    return {
+      title: "Lenovo ideapad 330-15ikb",
+      date: "27.07.2022, 17:54",
+      price: "8,000 грн.",
+      status: "Б/У",
+      text: "У наявності",
+      btnText: "Приватна особа",
+      description:
+        "Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю за бесценок так как срочно.",
+      adres: "Одесса, 7C7H+2M Овидиополь, Одесская область, Украина",
+      name: "Макс",
+      personText: "На Дошка оголошень Vamberi з 24.06.2022",
+      delivery: "Нова пошта - от 40 грн.",
+      harNormal1: [
+        "Приватне-бізнес",
+        "Стан товару",
+        "Наявність товару",
+        "Країна виробника",
+        "Термін використання",
+      ],
+      harNormal2: ["Торг", "Марка", "Діагональ екрану", "Оперативна пам’ять"],
+      harBold1: ["Приватне", "Б/У", "В наявності", "Китай", "4 роки і більше"],
+      harBold2: ["Ноутбуки", "Lenovo", "від 15” до 16.4”", "8 ГБ"],
+    };
   },
 };
 </script>
