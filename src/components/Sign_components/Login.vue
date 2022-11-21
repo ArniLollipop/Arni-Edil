@@ -60,10 +60,10 @@
               <p class = "text-sm sm:mt-7 my-4 text-center">Вкажіть дані для входу на сайт</p>
               <input type="text" placeholder="Телефон або електронна пошта" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-xs sm:px-4 px-2 py-3 w-full mt-2">
               <input type="password" placeholder="Пароль" class = "outline-none bg-white rounded-[10px] placeholder:sm:text-sm placeholder:text-gray placeholder:text-sm sm:text-sm text-xs sm:px-4 px-2 py-3 w-full mt-2">
-              <router-link to="/login_error" class = "w-[180px] py-3 bg-accent rounded-full block mx-auto mt-6"><p class = "text-white text-sm font-medium text-center">Увійти</p></router-link>
-              <button class = "w-[180px] py-3 bg-white rounded-full block mx-auto mt-3 border border-gray"><p class = "text-dark text-sm">Відновити пароль</p></button>
+              <router-link to="/login_error" class = "w-[180px] py-2 bg-accent rounded-full block mx-auto mt-6"><p class = "text-white text-sm font-medium text-center">Увійти</p></router-link>
+              <button class = "w-[180px] py-2 bg-white rounded-full block mx-auto mt-3 border border-gray"><p class = "text-dark text-sm">Відновити пароль</p></button>
               <p class = "text-xs mt-5 text-center">або через соцмережу </p>
-              <button class = "w-[150px] py-3 bg-white rounded-full mx-auto mt-3 flex items-center justify-between px-7">
+              <button class = "w-[150px] py-2 border border-accent border-opacity-80 bg-white rounded-full mx-auto mt-3 flex items-center justify-between px-7">
                 <img src="@/img/google_icon.svg" alt="">
                 <p class = "text-sm">Google</p>
               </button>

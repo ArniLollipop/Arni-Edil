@@ -100,7 +100,7 @@
             <img
               src="@/img/document.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] sm:mb-3 mb-1"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <span class="">Безпечні угоди</span>
           </div>
@@ -108,7 +108,7 @@
             <img
               src="@/img/information.svg"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] sm:mb-3 mb-1"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <span class="sm:block hidden">Турбопродаж</span>
             <span class="sm:hidden">Турбо <br />продаж</span>
@@ -117,7 +117,7 @@
             <img
               src="@/img/iphone.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] sm:mb-3 mb-1"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <span>Оголошення на карті</span>
           </div>
@@ -125,7 +125,7 @@
             <img
               src="@/img/shopping.png"
               alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] sm:mb-3 mb-1"
+              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
             />
             <div>
               <span class="hidden sm:inline-block"> Лише</span> перевірені
