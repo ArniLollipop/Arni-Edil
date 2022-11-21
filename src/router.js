@@ -23,6 +23,8 @@ import Login from "./components/Sign_components/Login.vue";
 import Login_error from "./components/Sign_components/Login_error.vue";
 import Sign from "./components/Sign_components/SignIn.vue";
 import Product from "./pages/Product.vue";
+import Product2 from "./pages/Product2.vue";
+import Product3 from "./pages/Product3.vue";
 import Catalog from "./pages/Catalog.vue";
 import Subscription from "./pages/Subscription.vue";
 import Favorites from "./pages/Favorites.vue";
@@ -88,5 +90,7 @@ export default createRouter({
     { path: "/shops", component: Shops },
     { path: "/shop", component: Shop },
     { path: "/statis", component: Statis },
+    { path: "/product2", component: Product2 },
+    { path: "/product3", component: Product3 },
   ],
 });
