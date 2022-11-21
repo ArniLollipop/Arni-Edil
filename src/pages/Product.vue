@@ -1,6 +1,6 @@
 <template>
   <div class = " bg-back2">
-    <div class="container mx-auto z-0">
+    <div class="container mx-auto md:px-4 z-0">
       <Head></Head>
       <div class="hidden lg:block mt-10 pb-20">
         <div class="flex items-center">

@@ -1,11 +1,11 @@
 <template>
   <div class="mt-10 lg:mt-20 container mx-auto px-5">
-    <div class="font-semibold lg:text-3xl">Рекомендации для вас</div>
+    <h1 class="font-semibold lg:text-3xl">Рекомендации для вас</h1>
     <div
       class="mt-4 lg:mt-11 grid grid-cols-2 gap-x-1.5 gap-y-4 lg:gap-y-8 md:grid-cols-3 md:gap-x-10 lg:grid-cols-5 lg:gap-x-6 auto-rows-[minmax(0px, auto)]"
     >
       <router-link
-        to="/"
+        to="/product"
         v-for="item in cards"
         v-show="item.id >= 1"
         class="flex flex-col"
