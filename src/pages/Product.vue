@@ -153,7 +153,9 @@
                 </div>
               </div>
               <div class="flex justify-between mt-8 xl:mt-14">
-                <div class="p-1 px-2 border-[0.25px] border-accent rounded-lg text-xs">
+                <div
+                  class="p-1 px-2 border-[0.25px] border-accent rounded-lg text-xs"
+                >
                   {{ btnText }}
                 </div>
                 <div class="flex items-center">
@@ -343,7 +345,7 @@
           Додати у кошик
         </div>
 
-        <div class="mt-4">
+        <div class="mt-6 ml-4">
           <div class="text-xs">Спосіб доставки:</div>
           <div class="mt-2.5 flex items-center gap-x-1.5">
             <div class=""><img src="../img/H.svg" alt="" class="h-5" /></div>
@@ -353,7 +355,7 @@
 
         <div class="mt-6 p-4 bg-white rounded-2xl">
           <div class="font-bold text-sm">Опис товару</div>
-          <div class="mt-5 text-xs">
+          <div class="mt-2.5 text-xs">
             {{ description }}
           </div>
         </div>
@@ -402,7 +404,7 @@
               </div>
               <div class="flex items-center mt-1 shrink-0">
                 <div
-                  class=" px-2 border border-accent rounded-full text-[11px] shrink-0"
+                  class="px-2 border border-accent rounded-full text-[11px] shrink-0"
                 >
                   {{ btnText }}
                 </div>

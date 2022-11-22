@@ -200,7 +200,7 @@
                 <div class="mt-1 flex items-center justify-between shrink-0">
                   <div class="flex items-center">
                     <div
-                      class="w-[122px] py-[3px] text-center border-0.5 border-accent rounded-lg text-xs"
+                      class="w-[122px] py-[3px] text-center border-0.5 border-accent rounded-lg text-[10px] lg:text-xs"
                     >
                       {{ item.btnText }}
                     </div>
@@ -381,7 +381,7 @@ export default {
           lastPrice: "",
           status: "Нове",
           map: "Одесса",
-          btnText: "Приватна особа",
+          btnText: "Бізнес",
           date: "27.07.2022",
           isLike: false,
           text: "Тест платежной системы",

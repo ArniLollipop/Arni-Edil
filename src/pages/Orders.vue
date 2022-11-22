@@ -37,7 +37,7 @@
         </div>
         <div class="flex items-center justify-between">
           <p
-            class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main"
+            class="lg:text-[28px] text-[13px] font-medium sm:my-10 my-4 ml-1 text-main"
           >
             Мої замовлення
           </p>
@@ -85,7 +85,7 @@
           </div>
           <router-link to="/orders/card">
             <div
-              class="sm:bg-white w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
+              class="bg-white border-[0.5] w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
             >
               <img
                 src="@/img/RecCards/p1.png"

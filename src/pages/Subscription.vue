@@ -109,12 +109,15 @@
                   class="w-3.5"
                 />
               </div>
-              <div class="lg:text-center lg:w-[40%]">
+              <div class="lg:text-center lg:w-[50%]">
                 <div class="text-sm font-medium h-full hidden lg:block">
                   <div v-if="item.title.length > 14 ? probel(key) : null"></div>
                   {{ item.title }}
                 </div>
                 <div class="text-sm font-medium h-full lg:hidden">
+                  <div
+                    v-if="item.title.length > 28 ? probelsm(key) : null"
+                  ></div>
                   <span>{{ poshuki2[key].title }} </span>
                 </div>
                 <div class="text-xs">{{ item.date }}</div>
@@ -140,37 +143,47 @@
               <div class="absolute lg:hidden top-2 right-2">
                 <img src="../img/last2P/X.svg" alt="" class="w-3.5" />
               </div>
-              <div class="flex gap-x-4 lg:gap-x-10">
-                <div>
+              <div class="flex gap-x-3 lg:gap-x-10 w-full">
+                <div class="shrink-0">
                   <img
                     :src="require('../img/last2P/' + item.image)"
                     alt=""
                     class="h-[70px] lg:h-[180px]"
                   />
                 </div>
-                <div
-                  class="py-2 lg:py-5 flex flex-col items-start justify-between"
-                >
-                  <div class="flex flex-col items-center">
-                    <div class="text-xs lg:text-lg">{{ item.title }}</div>
-                    <div class="lg:mt-1 text-xs lg:text-sm">{{ item.col }}</div>
-                    <div class="hidden lg:block mt-1">
-                      <img
-                        :src="require('../img/last2P/' + item.stars)"
-                        alt=""
-                        class="h-4"
-                      />
+                <div class="flex flex-col justify-between w-full">
+                  <div
+                    class="py-2 lg:py-5 flex flex-col items-start justify-between"
+                  >
+                    <div class="flex flex-col items-start lg:items-center">
+                      <div class="text-xs lg:text-lg">{{ item.title }}</div>
+                      <div class="lg:mt-1 text-xs lg:text-sm">
+                        {{ item.col }}
+                      </div>
+                      <div class="hidden lg:block mt-1">
+                        <img
+                          :src="require('../img/last2P/' + item.stars)"
+                          alt=""
+                          class="h-4"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div class="hidden lg:block text-sm">{{ item.subtitle }}</div>
-                </div>
-              </div>
-              <div class="flex flex-col items-center lg:gap-y-3.5">
-                <div class="text-[11px] lg:text-sm">{{ item.date }}</div>
-                <div
-                  class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-[20px]"
-                >
-                  Відписатися
+                  <div class="flex justify-between items-end w-full">
+                    <div class="hidden lg:block text-sm">
+                      {{ item.subtitle }}
+                    </div>
+                    <div
+                      class="flex flex-col items-center lg:gap-y-3.5 ml-auto lg:ml-0"
+                    >
+                      <div class="text-[11px] lg:text-sm">{{ item.date }}</div>
+                      <div
+                        class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-[20px]"
+                      >
+                        Відписатися
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -349,6 +362,15 @@ export default {
         res += str[i];
       }
       this.poshuki[data].title = res;
+    },
+    probelsm(data) {
+      let str = this.poshuki2[data].title;
+      let res = "";
+      for (let i = 0; i < str.length; i++) {
+        if (i % 28 === 0 && i !== 0 && str[i] !== " ") res += " ";
+        res += str[i];
+      }
+      this.poshuki2[data].title = res;
     },
   },
 };

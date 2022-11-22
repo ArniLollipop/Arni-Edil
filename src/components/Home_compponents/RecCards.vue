@@ -61,7 +61,7 @@
           />
         </div>
         <div
-          class="px-3 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
+          class="px-1.5 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
         >
           <div class="">
             <div
@@ -112,7 +112,7 @@
             <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
             <div class="flex mt-1 items-center lg:pr-2">
               <div
-                class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-xl text-xs text-center shrink"
+                class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-xl text-[10px] lg:text-xs text-center shrink"
               >
                 {{ item.btnText }}
               </div>
@@ -133,7 +133,7 @@
                   src="../../img/RecCards/heart.svg"
                   alt=""
                   :class="[
-                    'w-3 lg:w-[22px] shrink-0',
+                    'w-4 lg:w-[22px] shrink-0',
                     { 'w-3 hidden': item.isLike },
                   ]"
                 />
@@ -141,7 +141,7 @@
                   src="../../img/RecCards/heartFill.svg"
                   alt=""
                   :class="[
-                    'w-3 lg:w-[22px] shrink-0',
+                    'w-4 lg:w-[22px] shrink-0',
                     { 'w-3 hidden': !item.isLike },
                   ]"
                 />

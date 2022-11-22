@@ -1,5 +1,5 @@
 <template class="">
-  <div class = "bg-back2" >
+  <div class="bg-back2">
     <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
       <Head :kolMessage="kolMessage"></Head>
       <Banner></Banner>
@@ -81,7 +81,7 @@ export default {
           lastPrice: "",
           status: "Нове",
           map: "Одесса",
-          btnText: "Бізнес",
+          btnText: "Приватна особа",
           date: "27.07.2022",
           isLike: false,
         },

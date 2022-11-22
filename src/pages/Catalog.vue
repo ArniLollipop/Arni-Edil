@@ -1,5 +1,5 @@
 <template>
-  <div class = "bg-back2">
+  <div class="bg-back2">
     <Head></Head>
     <Banner></Banner>
     <div class="mt-3 lg:mt-10">
@@ -129,7 +129,9 @@
 
           <div class="mt-14 bg-white rounded-[10px] px-3 py-6">
             <div class="flex justify-center">
-              <div><img src="../img/kolokol.svg" alt="" class="w-[94px]" /></div>
+              <div>
+                <img src="../img/kolokol.svg" alt="" class="w-[94px]" />
+              </div>
             </div>
 
             <div class="mt-3 text-center text-sm">
@@ -253,7 +255,7 @@
                 />
               </div>
               <div
-                class="px-3 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
+                class="px-1.5 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
               >
                 <div class="">
                   <div
@@ -304,7 +306,7 @@
                   <div class="text-xs text-gray lg:hidden">{{ item.date }}</div>
                   <div class="flex mt-1 items-center lg:pr-2">
                     <div
-                      class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-xs text-center shrink"
+                      class="w-[98px] lg:w-[114px] md:py-1 border-[0.5px] border-accent rounded-[10px] text-[10px] lg:text-xs text-center shrink"
                     >
                       {{ item.btnText }}
                     </div>
@@ -318,14 +320,14 @@
                     <button
                       type="checkbox"
                       value="qwe"
-                      class="ml-auto lg:-mr-2 shrink-0"
+                      class="ml-auto lg:-mr-3 shrink-0"
                       @click="item.isLike = !item.isLike"
                     >
                       <img
                         src="../img/RecCards/heart.svg"
                         alt=""
                         :class="[
-                          'w-3 lg:w-[22px] shrink-0',
+                          'w-4 lg:w-[22px] shrink-0',
                           { 'w-3 hidden': item.isLike },
                         ]"
                       />
@@ -333,7 +335,7 @@
                         src="../img/RecCards/heartFill.svg"
                         alt=""
                         :class="[
-                          'w-3 lg:w-[22px] shrink-0',
+                          'w-4 lg:w-[22px] shrink-0',
                           { 'w-3 hidden': !item.isLike },
                         ]"
                       />
@@ -360,11 +362,11 @@
       <div class="mt-6 lg:mt-12">
         <div class="text-sm font-medium lg:text-xl">Товари для дітей</div>
         <div class="mt-2 lg:mt-3 text-xs lg:text-sm">
-          На Vаmberi представлен огромный выбор товаров для детей всех возрастов.
-          На нашей доске объявлений можно выбрать и приобрести одежду, игрушки,
-          канцтовары, смеси и кашки, детский транспорт и многое другое по
-          доступным ценам. Вы можете не только покупать, но и размещать свои
-          объявления о продаже на платформе Vamberi.
+          На Vаmberi представлен огромный выбор товаров для детей всех
+          возрастов. На нашей доске объявлений можно выбрать и приобрести
+          одежду, игрушки, канцтовары, смеси и кашки, детский транспорт и многое
+          другое по доступным ценам. Вы можете не только покупать, но и
+          размещать свои объявления о продаже на платформе Vamberi.
         </div>
         <div class="lg:mt-1 text-xs lg:text-sm">
           Большой ассортимент товаров для детей.
