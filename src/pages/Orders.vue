@@ -22,7 +22,7 @@
             <p class="sm:text-sm text-xs font-medium mt-5">
               Дізнайтеся, як уберегти свій гамаанець від зловмисників
             </p>
-            <p class="text-blue text-xs font-medium sm:text-sm lg:mt-10 mt-2">
+            <p class="text-blueText text-xs font-medium sm:text-sm lg:mt-10 mt-2">
               Поради з безпеки
             </p>
           </div>
@@ -99,7 +99,8 @@
                 <p class="text-blueText sm:text-sm sm:mt-2 text-xs">
                   Замовлення №11211749
                 </p>
-                <p class="text-xs">створено сьогодні в 16:30</p>
+                <p class="text-xs sm:block hidden">створено сьогодні в 16:30</p>
+                <p class = "text-xs sm:hidden">створено<br> сьогодні в 16:30</p>
               </div>
             </div>
           </router-link>

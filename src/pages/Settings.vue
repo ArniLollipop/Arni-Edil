@@ -1,6 +1,6 @@
 <template>
   <HeadVue></HeadVue>
-  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main">
+  <section class="container mx-auto px-4 pt-4 pb-4 xl:pt-6 text-main">
     <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
       <p class="font-normal sm:text-sm text-[11px]">Головна</p>
       <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
@@ -48,7 +48,7 @@
           @mobileModalStatus="acceptMobileModalStatus"
         >
           <div
-            class="md:bg-white md:border-[1px] border-accent rounded-[10px] w-full lg:px-10 sm:px-6 px-2 sm:py-6 py-2"
+            class="md:bg-white md:border-[1px] border-accent rounded-[10px] w-full lg:px-10 sm:px-6 sm:py-6 pt-2"
           >
             <div
               class="sm:flex items-center sm:space-x-5 border-b border-gray border-opacity-60 sm:pb-6 pb-2"
@@ -244,8 +244,8 @@
               </div>
             </div>
           </div>
-          <p class = "sm:text-2xl text-sm font-medium sm:my-8 my-3 sm:px-0 px-2">Загальні налаштування</p>
-          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full md:px-10 sm:px-4 px-2 py-6">
+          <p class = "sm:text-2xl text-sm font-medium sm:my-8 mt-6 sm:px-0 text-main">Загальні налаштування</p>
+          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full md:px-10 sm:px-4 py-2">
             <div class = "sm:grid grid-cols-10 items-center justify-between w-full border-b border-gray border-opacity-60 sm:pb-6 sm:mt-6 pb-2 mt-2 relative">
               <div class = "sm:col-span-3 w-[90%] sm:text-center">
                 <p class = "md:text-base sm:text-sm text-xs">Показувати мій телефон в оголошеннях</p>
@@ -304,7 +304,7 @@
               </div>
               <div class = "sm:col-span-1 sm:text-center">
                 <button
-                  class="text-accent text-sm sm:text-xs underline decoration-dashed underline-offset-4 sm:relative absolute top-0 right-0"
+                  class="text-accent sm:text-sm text-xs underline decoration-dashed underline-offset-4 sm:relative absolute top-0 right-0"
                 >
                   Додати
                 </button>
@@ -325,7 +325,7 @@
               </div>
               <div>
                 <button
-                  class="text-accent text-sm sm:text-xs underline decoration-dashed underline-offset-4 sm:relative absolute top-0 right-0"
+                  class="text-accent sm:text-sm text-xs underline decoration-dashed underline-offset-4 sm:relative absolute top-0 right-0"
                 >
                   Змінити
                 </button>
@@ -333,7 +333,7 @@
             </div>
           </div>
           <button
-            class="bg-accent lg:py-4 sm:py-3 py-2 lg:px-14 sm:px-10 px-6 rounded-full text-sm text-white w-fit block mx-auto md:mt-10 sm:mt-6 mt-4"
+            class="bg-accent lg:py-4 sm:py-3 py-2 lg:px-14 sm:px-10  px-6 rounded-full text-sm text-white w-fit block mx-auto md:mt-10 sm:mt-6 mt-4 "
           >
             Зберегти
           </button>

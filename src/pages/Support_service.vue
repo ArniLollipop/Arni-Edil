@@ -41,8 +41,13 @@
     >
       <div class="lg:flex gap-x-5 relative">
         <div
-          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2 sm:pt-14 pt-12"
+          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2"
         >
+          <h1
+            class="lg:text-3xl md:text-[20px] sm:text-base text-[14px] font-medium text-start lg:relative lg:hidden lg:mb-5 mb-2 h-fit"
+          >
+            Питання до служби підтримки
+          </h1>
           <router-link to="/blog">
             <button class="bg-white rounded-[10px] border-main border w-full">
               <span class="px-1">Блог</span>
@@ -132,7 +137,7 @@
           </router-link>
         </div>
         <div class="lg:w-[85%] w-full lg:pt-2">
-          <h1 class="lg:text-3xl md:text-xl text-base font-medium">
+          <h1 class="lg:text-3xl md:text-xl text-base font-medium lg:block hidden">
             Питання до служби підтримки
           </h1>
           <div class="md:text-sm text-xs w-full md:my-9 sm:my-6 my-3">

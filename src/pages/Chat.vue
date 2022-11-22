@@ -14,7 +14,7 @@
     <div class="lg:flex lg:space-x-10 mb-4">
       <SofiaVue></SofiaVue>
       <div
-        class="lg:w-[75%] w-full relative text-main lg:bg-white lg:px-10 lg:py-10 sm:px-4 py-4 rounded-[10px]"
+        class="lg:w-[75%] w-full relative text-main lg:bg-white xl:px-6 lg:px-4 lg:py-10 sm:px-4 py-4 rounded-[10px]"
       >
         <div class="lg:w-[40%] lg:float-left w-full">
           <div class="flex items-center justify-between">
@@ -199,7 +199,7 @@
           class="mt-4"
         ></Acc_buttons>
         <div
-          class="lg:block hidden bg-pink h-full mt-1 pb-20 w-[58%] px-4 float-right py-4 rounded-[10px] relative"
+          class="lg:block hidden bg-pink h-full mt-1 pb-20 w-[58%] px-2 float-right py-4 rounded-[10px] relative"
         >
           <div class="bg-white w-full block mx-auto py-2 px-4 rounded-[20px]">
             <div class="flex items-center">
@@ -213,11 +213,11 @@
                 </div>
                 <div class="w-full flex items-center justify-between">
                   <p class="text-sm text-gray mt-2">Шкаф кровать трансформер</p>
-                  <div class="flex w-1/4 items-center gap-x-3 justify-center">
-                    <button><img src="@/img/chat_1.svg" alt="" /></button>
-                    <button><img src="@/img/chat_2.svg" alt="" /></button>
-                    <button><img src="@/img/chat_3.svg" alt="" /></button>
-                    <button><img src="@/img/chat_4.svg" alt="" /></button>
+                  <div class="flex w-1/2 items-center gap-x-3 justify-end">
+                    <button><img src="@/img/chat_1.svg" alt="" class= "w-4 h-4 "/></button>
+                    <button><img src="@/img/chat_2.svg" alt="" class= "w-4 h-4 "/></button>
+                    <button><img src="@/img/chat_3.svg" alt="" class= "w-4 h-4 "/></button>
+                    <button><img src="@/img/chat_4.svg" alt="" class= "w-4 h-4 "/></button>
                   </div>
                 </div>
               </div>
