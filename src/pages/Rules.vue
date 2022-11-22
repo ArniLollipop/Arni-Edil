@@ -43,8 +43,13 @@
     >
       <div class="lg:flex gap-x-5 relative w-full">
         <div
-          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2 sm:pt-14 pt-12"
+          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2"
         >
+          <h1
+            class="lg:text-3xl md:text-[20px] sm:text-base text-[14px] font-medium text-start lg:relative lg:hidden lg:mb-5 mb-2 h-fit"
+          >
+            Дотримуйтесь правил подачі оголошень. на сайті Vamberi
+          </h1>
           <router-link to="/blog">
             <button class="bg-white rounded-[10px] border-main border w-full">
               <span class="px-1">Блог</span>
@@ -135,7 +140,7 @@
         </div>
         <div class="lg:w-[85%] w-full lg:pt-2">
           <h1
-            class="lg:text-3xl md:text-[20px] sm:text-base text-[14px] font-medium text-center lg:text-start lg:relative absolute top-0 lg:mb-5 mb-2 h-fit"
+            class="lg:text-3xl md:text-[20px] sm:text-base text-[14px] font-medium text-center lg:text-start lg:relative absolute top-0 lg:mb-5 mb-2 h-fit lg:block hidden"
           >
             Дотримуйтесь правил подачі оголошень. на сайті Vamberi
           </h1>

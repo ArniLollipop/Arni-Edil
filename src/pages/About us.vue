@@ -1,7 +1,7 @@
 <template>
   <Head></Head>
   <Banner></Banner>
-  <section class="2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark">
+  <section class="2xl:w-[1400px] 2xl:mx-auto mx-auto sm:px-4 px-3 py-4 text-dark">
     <div
       class="flex items-center justify-between gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1"
     >
@@ -41,8 +41,13 @@
     >
       <div class="lg:flex gap-x-5 relative">
         <div
-          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2 sm:pt-14 pt-12"
+          class="lg:w-[25%] w-full sm:px-9 md:px-12 lg:px-2 py-3 lg:bg-pink rounded-[10px] h-fit xl:text-sm text-center sm:text-[14px] text-[12px] lg:pt-2"
         >
+          <h1
+            class="lg:text-3xl md:text-[20px] sm:text-base text-[14px] font-medium text-start lg:relative lg:hidden lg:mb-5 mb-2 h-fit"
+          >
+            Інформація про нашу компанію Vamberi, Ми працюємо для вас
+          </h1>
           <router-link to="/blog">
             <button class="bg-white rounded-[10px] border-main border w-full">
               <span class="px-1">Блог</span>
@@ -133,7 +138,7 @@
         </div>
         <div class="lg:w-[85%] w-full lg:pt-2">
           <h1
-            class="lg:text-3xl md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0"
+            class="lg:text-3xl md:text-[20px] text-[16px] font-medium lg:text-start text-center lg:relative absolute top-0 lg:block hidden"
           >
             Інформація про нашу компанію Vamberi, Ми працюємо для вас
           </h1>

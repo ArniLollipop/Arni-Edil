@@ -3,7 +3,7 @@
   <Banner></Banner>
   <section class="2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-4 text-dark">
     <div
-      class="flex items-center justify-between gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1"
+      class="flex items-center justify-between gap-x-1 sm:pb-4 relative lg:my-6 md:my-4 my-1"
     >
       <div class="flex items-center gap-x-1">
         <p class="font-normal sm:text-sm text-[11px]">Головна</p>
@@ -57,14 +57,19 @@
         </button>
       </div>
       <div class = "sm:grid grid-cols-1 md:pt-10 sm:pt-5 gap-y-6">
-        <div class = "sm:bg-white bg-transparent w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[260px] mt-8 sm:mt-4" v-for="text in texts">
-          <div class = "w-full h-full sm:grid sm:grid-cols-5 relative sm:gap-x-6 pb-20 md:pb-0 block">
-            <div class = "lg:col-span-1 sm:col-span-2 overflow-hidden sm:pt-0 pt-11">
-              <img :src="require('../img/' + text.img)" alt="" class = "w-[95%] sm:w-full mx-auto sm:h-full sm:min-h-[190px] h-[190px] rounded-[10px] ">
+        <div class = "sm:bg-white bg-transparent w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[150px] xl:mt-8 sm:mt-4" v-for="text in texts">
+          <div class = "w-full h-full sm:grid sm:grid-cols-5 relative sm:gap-x-6 pb-12 sm:pb-20 md:pb-0 block">
+            <h2
+              class="lg:text-[26px] sm:hidden sm:text-base text-[13px] font-medium mt-1"
+            >
+              {{ text.h2 }}
+            </h2>
+            <div class = "lg:col-span-1 sm:col-span-2 overflow-hidden sm:pt-0 pt-1">
+              <img :src="require('../img/' + text.img)" alt="" class = "w-full mx-auto sm:h-full sm:min-h-[190px] h-[190px] rounded-[10px] ">
             </div>
             <div class="lg:col-span-4 sm:col-span-3 md:relative">
               <h2
-                class="lg:text-[26px] sm:text-base text-[13px] font-medium lg:pb-6 sm:pb-3 pb-1 absolute top-0 sm:relative"
+                class="lg:text-[26px] sm:block hidden sm:text-base text-[13px] font-medium lg:pb-6 sm:pb-3 absolute top-0 sm:relative"
               >
                 {{ text.h2 }}
               </h2>
@@ -73,7 +78,7 @@
               </p>
               <div class="absolute left-0 sm:bottom-0 -bottom-[7px]">
                 <p
-                  class="text-gray lg:text-base sm:text-sm text-[11px] pb-4 lg:hidden"
+                  class="text-gray lg:text-base sm:text-sm text-[11px] pb-1 sm:pb-4 lg:hidden"
                 >
                   {{ text.b_title }}
                 </p>
@@ -91,7 +96,7 @@
               </div>
             </div>
             <button
-              class="sm:px-10 sm:py-3 px-6 py-1 bg-accent text-white hover:text-opacity-80 rounded-full absolute bottom-0 right-0"
+              class="sm:px-10 sm:py-3 px-6 py-1  bg-accent text-white hover:text-opacity-80 text-sm font-normal rounded-full absolute bottom-0 right-0"
             >
               Читати
             </button>

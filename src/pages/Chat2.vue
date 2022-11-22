@@ -14,7 +14,7 @@
     <div class="lg:flex lg:space-x-10 mb-4">
       <SofiaVue></SofiaVue>
       <div
-        class="lg:w-[75%] w-full relative text-main lg:bg-white lg:px-10 lg:py-10 rounded-[10px]"
+        class="lg:w-[75%] w-full relative text-main lg:bg-white lg:px-4 xl:px-6 lg:py-10 rounded-[10px]"
       >
         <div class="w-[40%] float-left lg:block hidden">
           <div class="flex items-center justify-between">
@@ -173,7 +173,7 @@
           @mobileModalStatus="acceptMobileModalStatus"
         >
           <div
-            class="lg:bg-pink h-full mt-1 lg:w-[58%] w-full lg:px-4 lg:float-right lg:py-4 rounded-[10px] relative"
+            class=" lg:bg-pink h-full mt-1 lg:pb-20 lg:w-[58%] w-full px-2 lg:float-right pt-4 rounded-[10px] relative"
           >
             <div
               class="bg-white w-full block mx-auto py-2 sm:px-4 px-2 sm:rounded-[20px] rounded-[10px]"
@@ -196,15 +196,15 @@
                       Шкаф кровать трансформер
                     </p>
                     <div
-                      class="sm:flex w-1/4 hidden items-center gap-x-3 justify-center"
+                      class="sm:flex w-1/2 hidden items-center gap-x-3 justify-end"
                     >
-                      <button><img src="@/img/chat_1.svg" alt="" /></button>
-                      <button><img src="@/img/chat_2.svg" alt="" /></button>
-                      <button><img src="@/img/chat_3.svg" alt="" /></button>
-                      <button><img src="@/img/chat_4.svg" alt="" /></button>
+                      <button><img src="@/img/chat_1.svg" alt="" class = "w-4 h-4"/></button>
+                      <button><img src="@/img/chat_2.svg" alt="" class = "w-4 h-4"/></button>
+                      <button><img src="@/img/chat_3.svg" alt="" class = "w-4 h-4"/></button>
+                      <button><img src="@/img/chat_4.svg" alt="" class = "w-4 h-4"/></button>
                     </div>
                   </div>
-                  <div class="w-full lg:hidden flex justify-between">
+                  <div class="w-full sm:hidden flex justify-between">
                     <p class="text-green sm:text-sm text-xs">Сейчас онлайн</p>
                     <div class="flex w-1/2 items-center gap-x-3 justify-end">
                       <button><img src="@/img/chat_1.svg" alt="" /></button>
@@ -352,7 +352,7 @@
               <input
                 type="text"
                 placeholder="Ваше повідомлення..."
-                class="h-fit w-full px-2 rounded-[10px] bg-white py-2 md:text-sm text-[12px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-full"
+                class="h-fit w-full px-2 rounded-[10px] bg-white py-2 md:text-sm sm:text-[12px] text-[10px] placeholder:text-gray focus:outline-none placeholder:sm:w-full placeholder:w-[105px]"
               />
               <button>
                 <img src="@/img/send.svg" alt="" class="sm:w-fit w-[15px]" />
