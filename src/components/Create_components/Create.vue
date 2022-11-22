@@ -5,7 +5,7 @@
       <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
       <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
     </div>
-    <div class = "flex items-center sm:justify-center relative lg:mt-32 md:mt-16 sm:mt-8 my-3">
+    <div class = "flex items-center sm:justify-center relative sm:mt-8 my-3">
       <router-link to="/" class = "text-blue text-sm absolute left-0 underline decoration-solid underline-offset-4 sm:block hidden">Вернуться на главную</router-link>
       <div>
         <h1 class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium">Публікація оголошення</h1>
