@@ -68,7 +68,7 @@
           v-show="!isMobileMenuOpen"
           @mobileModalStatus="acceptMobileModalStatus"
         >
-          <div class="flex space-x-4">
+          <div class="flex space-x-4 mb-10">
             <button
               class="flex items-center space-x-2 bg-white rounded-[10px] justify-center sm:py-2 py-1 sm:px-5 px-2 sm:border border-accent shadow-md shadow-accent"
             >
@@ -83,9 +83,9 @@
               <p class="sm:text-sm text-xs">Продажі</p>
             </button>
           </div>
-          <router-link to="/orders/card">
+          <router-link to="/orderCard">
             <div
-              class="bg-white border-[0.5] w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-10"
+              class="bg-white border border-gray border-opacity-60 sm:border-none w-full flex rounded-[10px] sm:px-4 pl-2 py-4 mt-4"
             >
               <img
                 src="@/img/RecCards/p1.png"

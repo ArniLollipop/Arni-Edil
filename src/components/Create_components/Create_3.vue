@@ -98,10 +98,10 @@
         class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
       >
         <div class = "bg-white w-full h-[45px] rounded-[10px] overflow-hidden">
-          <select id="countries" class="text-main text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
+          <select id="countries" class="text-main bg-white text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
             <option
               v-for="(item, key) in date"
-              class="text-xs sm:text-sm p-3 hover:bg-slate-400 cursor-pointer"            >
+              class="text-xs sm:text-sm p-3 cursor-pointer"            >
               {{ item }}
             </option>
           </select>
@@ -136,8 +136,8 @@
           <div
             class="bg-white cursor-pointer rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
           >
-            <select id="countries" class="text-main text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
-              <option class="md:text-sm text-xs" v-for="option in item.mas">{{option}}</option>
+            <select id="countries" class="text-main bg-white text-sm rounded-lg w-full h-[45px] focus:outline-none block overflow-hidden">
+              <option class="md:text-sm text-xs bg-white py-1 rounded-full" v-for="option in item.mas">{{option}}</option>
             </select>
           </div>
         </div>

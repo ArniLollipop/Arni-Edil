@@ -64,8 +64,8 @@
             >
               {{ text.h2 }}
             </h2>
-            <div class = "lg:col-span-1 sm:col-span-2 overflow-hidden sm:pt-0 pt-1">
-              <img :src="require('../img/' + text.img)" alt="" class = "w-full mx-auto sm:h-full sm:min-h-[190px] h-[190px] rounded-[10px] ">
+            <div class = "lg:col-span-1 sm:col-span-2 overflow-hidden rounded-[10px]  max-h-[230px] ">
+              <img :src="require('../img/' + text.img)" alt="" class = "w-full h-[300px]">
             </div>
             <div class="lg:col-span-4 sm:col-span-3 md:relative">
               <h2
@@ -73,10 +73,10 @@
               >
                 {{ text.h2 }}
               </h2>
-              <p class="sm:text-sm font-normal text-[12px] pb-0 mt-1">
-                {{ text.title }}
+              <p class="sm:text-sm font-normal text-[12px] lg:pb-20 mt-1">
+                {{ text.title }}               
               </p>
-              <div class="absolute left-0 sm:bottom-0 -bottom-[7px]">
+              <div class="absolute left-0 sm:bottom-0 -bottom-[7px] ">
                 <p
                   class="text-gray lg:text-base sm:text-sm text-[11px] pb-1 sm:pb-4 lg:hidden"
                 >
