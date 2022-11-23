@@ -134,10 +134,10 @@
             {{ item.title }}
           </div>
           <div
-            class="bg-white cursor-pointer rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
+            class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative outline-none focus:outline-blue "
           >
-            <select id="countries" class="text-main bg-white text-sm rounded-lg w-full h-[45px] focus:outline-none block overflow-hidden">
-              <option class="md:text-sm text-xs bg-white py-1 rounded-full" v-for="option in item.mas">{{option}}</option>
+            <select id="countries" class="text-main bg-white text-sm rounded-lg w-full  outline-none py-3">
+              <option class="md:text-sm text-xs mt-16" v-for="option in item.mas">{{option}}</option>
             </select>
           </div>
         </div>
