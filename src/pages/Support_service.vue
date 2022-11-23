@@ -182,27 +182,10 @@
                   <p>Виберіть тему звернення (повідомлення)</p>
                 </div>
                 <div class="md:w-[70%] w-full">
-                  <div
-                    @click="choiceVisible = !choiceVisible"
-                    class="w-full bg-pink pl-2.5 pr-5 z-50 py-4 rounded-[10px] relative flex items-center justify-between"
-                  >
-                    <div class="text-gray">{{ choices[index] }}</div>
-                    <div>
-                      <img src="@/img/strelka_down.svg" alt="" class="w-3.5" />
-                    </div>
-
-                    <div
-                      v-if="choiceVisible"
-                      class="absolute top-[70%] bg-pink inset-x-0 py-3 flex flex-col rounded-[10px] overflow-hidden"
-                    >
-                      <div
-                        class="p-3 hover:bg-slate-500"
-                        v-for="(choice, key) in choices"
-                        @click="setIndex(key)"
-                      >
-                        {{ choice }}
-                      </div>
-                    </div>
+                  <div class = "bg-pink w-full px-3 rounded-[10px] overflow-hidden">
+                    <select id="countries" class="text-main  bg-pink text-sm rounded-lg w-full h-[45px] focus:outline-none block overflow-hidden">
+                      <option v-for="choice in choices" :value="choice">{{choice}}</option>
+                    </select>
                   </div>
                 </div>
               </div>

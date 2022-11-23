@@ -57,7 +57,7 @@
         </button>
       </div>
       <div class = "sm:grid grid-cols-1 md:pt-10 sm:pt-5 gap-y-6">
-        <div class = "sm:bg-white bg-transparent w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[150px] xl:mt-8 sm:mt-4" v-for="text in texts">
+        <div class = "sm:bg-white  w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[150px] xl:mt-8 sm:mt-4" v-for="text in texts">
           <div class = "w-full h-full sm:grid sm:grid-cols-5 relative sm:gap-x-6 pb-12 sm:pb-20 md:pb-0 block">
             <h2
               class="lg:text-[26px] sm:hidden sm:text-base text-[13px] font-medium mt-1"
