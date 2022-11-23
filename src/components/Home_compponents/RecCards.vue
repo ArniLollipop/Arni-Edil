@@ -87,7 +87,7 @@
             >
               {{ item.subtitle }}
             </div>
-            <div class="flex justify-between items-center mt-1">
+            <div class="flex justify-between items-center mt-1 break-all">
               <div class="md:text-sm text-xs lg:text-base">
                 {{ item.price }}.грн
               </div>

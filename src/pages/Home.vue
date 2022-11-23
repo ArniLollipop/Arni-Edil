@@ -107,7 +107,7 @@ export default {
           image: "p_5.svg",
           subtitle: "У наявності",
           subtitleColor: false,
-          price: "400,000",
+          price: "400,0005001231231",
           lastPrice: "600,000 ",
           status: "Нове",
           map: "Одесса",
