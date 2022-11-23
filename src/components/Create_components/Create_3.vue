@@ -97,21 +97,17 @@
         @click="isDatetOpen = !isDatetOpen"
         class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
       >
-        <p class="sm:text-sm text-xs">{{ date[dateIndex] }}</p>
-        <img src="@/img/strelka_down.svg" alt="" class="w-fit" />
-        <div
-          v-if="isDatetOpen"
-          class="absolute z-[100] top-full -mt-3 inset-x-0 bg-white py-3 rounded-b-[10px] cursor-pointer"
-        >
-          <div
-            v-for="(item, key) in date"
-            class="text-xs sm:text-sm p-3 hover:bg-slate-400 cursor-pointer"
-            @click="setDateIndex(key)"
-          >
-            {{ item }}
-          </div>
+        <div class = "bg-white w-full h-[45px] rounded-[10px] overflow-hidden">
+          <select id="countries" class="text-main text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
+            <option
+              v-for="(item, key) in date"
+              class="text-xs sm:text-sm p-3 hover:bg-slate-400 cursor-pointer"            >
+              {{ item }}
+            </option>
+          </select>
         </div>
       </div>
+    
       <p
         class="font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 sm:mt-4"
       >
@@ -138,31 +134,11 @@
             {{ item.title }}
           </div>
           <div
-            @click="item.isOpen = !item.isOpen"
             class="bg-white cursor-pointer rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
           >
-            <div class="md:text-sm text-xs">{{ item.mas[copy[key]] }}</div>
-            <div class="">
-              <img src="@/img/strelka_down.svg" alt="" class="w-fit" />
-            </div>
-            <div
-              :class="[
-                'absolute z-[5000] top-full -mt-3 inset-x-0 py-3  rounded-b-[10px]',
-                item.isOpen ? 'block bg-white' : 'hidden bg-black',
-              ]"
-            >
-              <div
-                class="md:text-sm text-xs p-3 hover:bg-slate-400"
-                v-for="(el, ind) in item.mas"
-                @click="
-                  () => {
-                    copy[key] = ind;
-                  }
-                "
-              >
-                {{ el }}
-              </div>
-            </div>
+            <select id="countries" class="text-main text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
+              <option class="md:text-sm text-xs" v-for="option in item.mas">{{option}}</option>
+            </select>
           </div>
         </div>
       </div>
