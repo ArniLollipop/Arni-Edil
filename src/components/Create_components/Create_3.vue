@@ -52,9 +52,11 @@
           Максимальний розмір фото — 25mb.
         </p>
       </div>
-      <input type="file" id="file" class = "w-0">
-      <label for = "file">
-        <div class="xl:py-11 lg:py-9 py-7 w-full cursor-pointer text-center border border-dashed border-dark rounded-[10px] my-4 text-gray md:text-sm sm:text-xs text-[10px] hover:opacity-60">
+      <input type="file" id="file" class="w-0" />
+      <label for="file">
+        <div
+          class="xl:py-11 lg:py-9 py-7 w-full cursor-pointer text-center border border-dashed border-dark rounded-[10px] my-4 text-gray md:text-sm sm:text-xs text-[10px] hover:opacity-60"
+        >
           Виберіть або перетягніть зображення
         </div>
       </label>
@@ -97,17 +99,21 @@
         @click="isDatetOpen = !isDatetOpen"
         class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative"
       >
-        <div class = "bg-white w-full h-[45px] rounded-[10px] overflow-hidden">
-          <select id="countries" class="text-main bg-white text-sm rounded-lg w-full h-[45px]  focus:outline-none block overflow-hidden">
+        <div class="bg-white w-full h-[45px] rounded-[10px] overflow-hidden">
+          <select
+            id="countries"
+            class="text-main bg-white text-sm rounded-lg w-full h-[45px] focus:outline-none block overflow-hidden"
+          >
             <option
               v-for="(item, key) in date"
-              class="text-xs sm:text-sm p-3 cursor-pointer"            >
+              class="text-xs sm:text-sm p-3 block w-full px-5 cursor-pointer"
+            >
               {{ item }}
             </option>
           </select>
         </div>
       </div>
-    
+
       <p
         class="font-medium lg:text-2xl md:text-xl sm:text-base text-xs my-2 sm:mt-4"
       >
@@ -134,10 +140,18 @@
             {{ item.title }}
           </div>
           <div
-            class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative outline-none focus:outline-blue "
+            class="bg-white rounded-[10px] max-w-[403px] h-[45px] my-2 px-4 py-3 w-full flex items-center justify-between relative outline-none focus:outline-blue"
           >
-            <select id="countries" class="text-main bg-white text-sm rounded-lg w-full  outline-none py-3">
-              <option class="md:text-sm text-xs mt-16" v-for="option in item.mas">{{option}}</option>
+            <select
+              id="countries"
+              class="text-main bg-white text-sm rounded-lg w-full outline-none py-3"
+            >
+              <option
+                class="md:text-sm text-xs mt-16"
+                v-for="option in item.mas"
+              >
+                {{ option }}
+              </option>
             </select>
           </div>
         </div>

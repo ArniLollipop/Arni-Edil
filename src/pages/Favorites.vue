@@ -96,7 +96,7 @@
             >
               <div
                 v-if="item.id == 2 || item.id == 5"
-                class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative"
+                class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative shadow-gray shadow-sm"
               >
                 <swiper
                   :slides-per-view="1"
@@ -145,7 +145,7 @@
                 />
               </div>
               <div
-                class="px-3 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
+                class="px-1.5 pt-[14px] pb-1 lg:px-3 lg:pt-4 flex flex-col justify-between shadow-gray shadow-md bg-white rounded-2xl break-all grow overflow-hidden relative z-20"
               >
                 <div class="">
                   <div
@@ -171,12 +171,14 @@
                   >
                     {{ item.subtitle }}
                   </div>
-                  <div class="flex justify-between items-center mt-1">
-                    <div class="md:text-sm text-xs lg:text-base">
+                  <div class="relative mt-1">
+                    <div
+                      class="md:text-sm text-xs lg:text-base pr-[50px] lg:pr-[70px]"
+                    >
                       {{ item.price }}.грн
                     </div>
                     <div
-                      class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
+                      class="absolute top-0 right-0 w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
                     >
                       {{ item.status }}
                     </div>
@@ -202,7 +204,7 @@
                     </div>
 
                     <div
-                      class="hidden ml-1.5 lg:block text-[10px] 2xl:text-xs text-gray"
+                      class="hidden ml-1.5 lg:block text-[10px] 2xl:text-xs text-gray shrink-0"
                     >
                       {{ item.date }}
                     </div>
@@ -210,7 +212,7 @@
                     <button
                       type="checkbox"
                       value="qwe"
-                      class="ml-auto lg:-mr-2 shrink-0"
+                      class="ml-auto -mr-px lg:-mr-2 shrink-0"
                       @click="item.isLike = !item.isLike"
                     >
                       <img
@@ -277,7 +279,7 @@
             >
               <div
                 v-if="item.id == 2 || item.id == 5"
-                class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative"
+                class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative shadow-gray shadow-sm"
               >
                 <swiper
                   :slides-per-view="1"
@@ -326,7 +328,7 @@
                 />
               </div>
               <div
-                class="px-3 shadow-gray shadow-md pb-2 max-h-[300px] xl:max-h-[1000px] lg:p-3 xl:p4-8 rounded-2xl bg-white grow relative pt-4 flex flex-col justify-between"
+                class="px-1.5 pt-[14px] pb-1 lg:px-3 lg:pt-4 flex flex-col justify-between shadow-gray shadow-md bg-white rounded-2xl break-all grow overflow-hidden relative z-20"
               >
                 <div class="">
                   <div
@@ -352,12 +354,14 @@
                   >
                     {{ item.subtitle }}
                   </div>
-                  <div class="flex justify-between items-center mt-1">
-                    <div class="md:text-sm text-xs lg:text-base">
+                  <div class="relative mt-1">
+                    <div
+                      class="md:text-sm text-xs lg:text-base pr-[50px] lg:pr-[70px]"
+                    >
                       {{ item.price }}.грн
                     </div>
                     <div
-                      class="w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
+                      class="absolute top-0 right-0 w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
                     >
                       {{ item.status }}
                     </div>
@@ -383,7 +387,7 @@
                     </div>
 
                     <div
-                      class="hidden ml-1.5 lg:block text-[10px] 2xl:text-xs text-gray"
+                      class="hidden ml-1.5 lg:block text-[10px] 2xl:text-xs text-gray shrink-0"
                     >
                       {{ item.date }}
                     </div>
@@ -391,7 +395,7 @@
                     <button
                       type="checkbox"
                       value="qwe"
-                      class="ml-auto lg:-mr-2 shrink-0"
+                      class="ml-auto -mr-px lg:-mr-2 shrink-0"
                       @click="item.isLike = !item.isLike"
                     >
                       <img
