@@ -11,7 +11,7 @@
         class="flex flex-col"
       >
         <div
-          v-if="item.id == 2 || item.id == 5"
+          v-if="item.images.length > 1"
           class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative shadow-gray shadow-sm"
         >
           <swiper
@@ -25,9 +25,9 @@
             :modules="modules"
             class="w-full h-full relative"
           >
-            <swiper-slide class="">
+            <swiper-slide class="" v-for="image in item.images">
               <img
-                :src="require('../../img/RecCards/' + item.image)"
+                :src="require('../../img/RecCards/' + image)"
                 alt=""
                 class="w-full"
               />
@@ -52,10 +52,10 @@
         </div>
         <div
           v-else
-          class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-gray shadow-md"
+          class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-gray shadow-md" v-for="image in item.images"
         >
           <img
-            :src="require('../../img/RecCards/' + item.image)"
+            :src="require('../../img/RecCards/' + image)"
             alt=""
             class="w-full"
           />
@@ -78,7 +78,7 @@
               {{ item.title }}
             </div>
           </div>
-          <div class="mt-1 lg:mt-3 flex flex-col justify-between">
+          <div class="mt-1 lg:mt-3 flex flex-col justify-between ">
             <div
               :class="{
                 'text-xs text-red': item.subtitleColor,
@@ -87,7 +87,7 @@
             >
               {{ item.subtitle }}
             </div>
-            <div class="relative mt-1">
+            <div class="relative mt-1 flex items-center">
               <div
                 class="md:text-sm text-xs lg:text-base pr-[50px] lg:pr-[70px]"
               >
