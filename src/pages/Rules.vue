@@ -64,7 +64,7 @@
           </router-link>
           <router-link to="/contacts">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full shadow-md shadow-accent"
+              class="bg-white rounded-[10px] border-main border my-1 w-full"
             >
               <span class="px-1">Контакти</span>
             </button>
@@ -106,7 +106,7 @@
           </router-link>
           <router-link to="/rules">
             <button
-              class="bg-white rounded-[10px] border-main border my-1 w-full"
+              class="bg-white rounded-[10px] border-main border my-1 w-full shadow-md shadow-accent"
             >
               <span class="px-1">Правила подання оголошень</span>
             </button>

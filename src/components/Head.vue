@@ -124,7 +124,7 @@
 
         <div class="py-1 px-3 flex items-center rounded-3xl bg-white w-1/2">
           <button
-            class="px-5 py-3 rounded-3xl bg-accent flex items-center"
+            class="px-5 py-3 rounded-[20px] bg-accent flex items-center"
             @click="isCategoryOpen = !isCategoryOpen"
           >
             <img src="../img/header/category.svg" alt="" class="w-3.5" />
@@ -136,13 +136,13 @@
             placeholder="Пошук по оголошенням..."
           />
           <button
-            class="px-5 py-3 rounded-3xl bg-accent flex items-center ml-auto"
+            class="px-5 py-3 rounded-[20px] bg-accent flex items-center ml-auto"
           >
             <div class="text-sm text-white">Пошук</div>
           </button>
         </div>
 
-        <button class="px-5 py-3 rounded-3xl bg-accent flex items-center">
+        <button class="px-5 py-3 rounded-[20px] bg-accent flex items-center">
           <div class="text-sm text-white">Створити оголошення</div>
         </button>
       </div>
