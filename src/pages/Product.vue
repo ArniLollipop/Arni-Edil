@@ -434,7 +434,7 @@
           </div>
         </div>
 
-        <div class="mt-4 bg-white rounded-2xl p-4 w-full">
+        <div class="mt-4 bg-white rounded-2xl p-4">
           <div class="text-center font-medium text-xs">Онлайн-показ</div>
           <div
             class="mt-6 flex items-center gap-x-4 justify-center w-[85%] mx-auto"
