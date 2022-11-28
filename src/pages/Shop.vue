@@ -121,7 +121,7 @@
             to="/"
             v-for="item in cards"
             v-show="item.id >= 1"
-            class="flex flex-col"
+            class="flex flex-col items-center"
           >
             <div
               v-if="item.id == 2 || item.id == 5"
