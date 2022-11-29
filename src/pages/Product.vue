@@ -219,11 +219,11 @@
               <div class="text-center font-medium">Онлайн-показ</div>
               <div class="mt-6 flex items-center gap-x-5">
                 <div class="shrink-0">
-                  <img src="../img/on-pokaz.png" alt="" class="w-[64px]" />
+                  <img src="../img/on-pokaz.png" alt="" class="h-[64px]" />
                 </div>
                 <div>
                   <div class="text-sm">Можна переглянути по відеозв’язку</div>
-                  <div class="flex items-center gap-x-1.5 mt-2">
+                  <div class="flex items-center gap-x-1.5">
                     <div class="border-b border-dotted border-gray text-sm">
                       Докладніше
                     </div>
@@ -434,7 +434,7 @@
           </div>
         </div>
 
-        <div class="mt-4 bg-white rounded-[10px] p-4">
+        <div class="mt-4 bg-white rounded-[10px] p-4 pb-3">
           <div class="text-center font-medium text-xs">Онлайн-показ</div>
           <div
             class="mt-2.5 flex items-center gap-x-4 justify-center w-[85%] mx-auto"
