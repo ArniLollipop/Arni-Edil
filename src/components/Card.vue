@@ -1,5 +1,4 @@
 <template>
-  <div>ldjkfdlfjk</div>
   <div
     class="grid grid-cols-2 gap-x-1.5 gap-y-4 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-5 mt-4 lg:mt-10 auto-rows-[minmax(0px, auto)"
   >
@@ -84,7 +83,7 @@
           >
             {{ item.subtitle }}
           </div>
-          <div class="relative mt-1">
+          <div class="relative mt-1 flex items-center">
             <div class="md:text-sm text-xs lg:text-base pr-[50px] lg:pr-[70px]">
               {{ item.price }}.грн
             </div>

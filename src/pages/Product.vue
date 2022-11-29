@@ -214,7 +214,7 @@
             </div>
 
             <div
-              class="w-[85%] xl:w-2/3 mx-auto mt-10 bg-white rounded-2xl pt-5 pl-5 pb-8 pr-1.5"
+              class="w-[85%] xl:w-2/3 mx-auto mt-10 bg-white rounded-[10px] pt-5 pl-5 pb-8 pr-1.5"
             >
               <div class="text-center font-medium">Онлайн-показ</div>
               <div class="mt-6 flex items-center gap-x-5">
@@ -434,10 +434,10 @@
           </div>
         </div>
 
-        <div class="mt-4 bg-white rounded-2xl p-4">
+        <div class="mt-4 bg-white rounded-[10px] p-4">
           <div class="text-center font-medium text-xs">Онлайн-показ</div>
           <div
-            class="mt-6 flex items-center gap-x-4 justify-center w-[85%] mx-auto"
+            class="mt-2.5 flex items-center gap-x-4 justify-center w-[85%] mx-auto"
           >
             <div class="shrink-0">
               <img src="../img/on-pokaz.png" alt="" class="w-[50px]" />
