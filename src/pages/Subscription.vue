@@ -138,17 +138,20 @@
           >
             <div
               v-for="item in magazini"
-              class="p-2 lg:px-2.5 flex items-end justify-between w-full bg-white border border-accent rounded-[10px]"
+              :key="item.id"
+              class="p-2 lg:px-2.5 flex items-end justify-between w-full bg-white border border-accent rounded-[10px] relative"
             >
               <div class="absolute lg:hidden top-2 right-2">
                 <img src="../img/last2P/X.svg" alt="" class="w-3.5" />
               </div>
-              <div class="flex gap-x-3 lg:gap-x-10 w-full">
-                <div class="shrink-0">
+              <div
+                class="flex gap-x-3 lg:items-start lg:gap-x-10 w-full h-full"
+              >
+                <div class="h-full shrink-0">
                   <img
                     :src="require('../img/last2P/' + item.image)"
                     alt=""
-                    class="h-[70px] lg:h-[180px]"
+                    class="h-full shrink-0"
                   />
                 </div>
                 <div class="flex flex-col justify-between w-full">
@@ -170,7 +173,7 @@
                     </div>
                   </div>
                   <div class="flex justify-between items-end w-full">
-                    <div class="hidden lg:block text-sm">
+                    <div class="hidden lg:block lg:text-xs xl:text-sm lg:mb-3">
                       {{ item.subtitle }}
                     </div>
                     <div
@@ -178,7 +181,7 @@
                     >
                       <div class="text-[11px] lg:text-sm">{{ item.date }}</div>
                       <div
-                        class="hidden lg:block bg-[#E358A6] py-2 w-[200px] text-center text-white text-sm font-medium rounded-[20px]"
+                        class="hidden lg:block bg-[#E358A6] py-2 lg:py-3.5 lg:w-[160px] xl:w-[200px] text-center text-white text-sm font-medium rounded-[20px]"
                       >
                         Відписатися
                       </div>

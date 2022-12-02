@@ -90,12 +90,12 @@
                 <input
                   type="text"
                   placeholder="від"
-                  class="w-[45%] rounded-full placeholder:text-sm placeholder:text-gray px-2"
+                  class="w-[45%] rounded-full text-sm py-0.5 placeholder:text-sm placeholder:text-gray px-2"
                 />
                 <input
                   type="text"
                   placeholder="до"
-                  class="w-[45%] rounded-full placeholder:text-sm placeholder:text-gray px-2"
+                  class="w-[45%] rounded-full text-sm py-0.5 placeholder:text-sm placeholder:text-gray px-2"
                 />
               </div>
               <div class="mt-3 flex items-center">

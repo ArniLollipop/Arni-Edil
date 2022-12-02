@@ -95,10 +95,10 @@
             >
               <div
                 v-for="item in cards"
-                class="bg-white flex relative rounded-[10px] flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2 lg:basis-full"
+                class="bg-white flex relative rounded-[10px] flex-col lg:flex-row lg:justify-between py-2 px-1.5 lg:p-4 basis-1/2"
               >
                 <div
-                  class="hidden absolute top-4 right-4 lg:flex justify-end items-center"
+                  class="hidden absolute top-5 right-4 lg:flex justify-end items-center"
                 >
                   <div>
                     <img src="../img/new7/circle.svg" alt="" class="w-3.5" />
@@ -116,15 +116,17 @@
                 </div>
 
                 <div
-                  class="bg-green h-max rounded-full px-2 py-[3px] text-white text-xs lg:text-sm mt-2 lg:mt-0 w-max"
+                  class="bg-green h-max rounded-full px-2 py-[3px] text-white text-xs lg:text-sm mt-2 lg:mt-1 w-max xl:-ml-5"
                 >
                   {{ item.status }}
                 </div>
-                <div class="lg:hidden ont-semibold text-sm lg:text-base mt-2">
+                <div
+                  class="lg:hidden ont-semibold text-sm lg:text-base mt-2 lg:mt-1"
+                >
                   Інформація<span class="lg:hidden">:</span>
                 </div>
                 <div
-                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3"
+                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3 lg:mt-1"
                 >
                   <div
                     class="font-semibold text-sm lg:text-base hidden lg:block"
@@ -133,7 +135,7 @@
                   </div>
 
                   <div
-                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-3.5 lg:gap-x-0 gap-x-5"
+                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-3.5 lg:mt-3 lg:gap-x-0 gap-x-5"
                   >
                     <div class="text-[#70CAF1] text-sm">
                       {{ item.i1 }}
@@ -150,11 +152,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="lg:hidden ont-semibold text-sm lg:text-base mt-2">
+                <div
+                  class="lg:hidden ont-semibold text-sm lg:text-base mt-2 lg:mt-1"
+                >
                   Статистика<span class="lg:hidden">:</span>
                 </div>
                 <div
-                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3"
+                  class="flex flex-wrap lg:flex-col self-strech lg:gap-0 lg:items-center gap-x-3 lg:mt-1"
                 >
                   <div
                     class="font-semibold text-sm lg:text-base hidden lg:block"
@@ -163,7 +167,7 @@
                   </div>
 
                   <div
-                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-3.5 lg:gap-x-0 gap-x-3"
+                    class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-[19px] lg:mt-3 lg:gap-x-0 gap-x-3"
                   >
                     <div
                       class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"

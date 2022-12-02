@@ -45,12 +45,12 @@
               <input
                 type="text"
                 placeholder="від"
-                class="w-[45%] rounded-full placeholder:text-sm placeholder:text-gray px-2"
+                class="w-[45%] rounded-full text-sm py-0.5 placeholder:text-sm placeholder:text-gray px-2"
               />
               <input
                 type="text"
                 placeholder="до"
-                class="w-[45%] rounded-full placeholder:text-sm placeholder:text-gray px-2"
+                class="w-[45%] rounded-full text-sm py-0.5 placeholder:text-sm placeholder:text-gray px-2"
               />
             </div>
             <div class="mt-3 flex items-center">
@@ -151,18 +151,20 @@
         </div>
         <div class="space-y-10 mt-8">
           <div
-            class="flex flex-row p-4 items-stretch bg-white rounded-[10px]"
+            class="flex p-4 items-center bg-white rounded-[10px]"
             v-for="item in cards"
           >
-            <div class="h-full">
+            <div
+              class="h-full lg:shrink-0 rounded-[15px] overflow-hidden lg:rounded-[10px]"
+            >
               <img
                 :src="require('../img/new7/' + item.image)"
                 alt=""
-                class="h-full"
+                class="h-full lg:shrink-0"
               />
             </div>
             <div
-              class="ml-4 w-full self-stretch flex-col justify-between hidden lg:flex"
+              class="ml-4 w-full self-stretch flex-col justify-between hidden lg:flex grow-0"
             >
               <div
                 class="flex flex-col sm:flex-row items-start justify-between"
@@ -197,10 +199,13 @@
                 </div>
               </div>
               <div class="">
+                <div class="hidden lg:block text-sm xl:pr-20 break-words">
+                  {{ item.text }}
+                </div>
                 <div class="mt-1 flex items-center justify-between shrink-0">
                   <div class="flex items-center">
                     <div
-                      class="w-[122px] py-[3px] text-center border-0.5 border-accent rounded-lg text-[10px] lg:text-xs"
+                      class="w-[122px] py-[6px] text-center border-[0.5px] border-accent rounded-[10px] text-[10px] lg:text-xs"
                     >
                       {{ item.btnText }}
                     </div>
@@ -358,7 +363,7 @@ export default {
           id: 1,
           pretitle: "",
           title: "Тест",
-          image: "sp1.png",
+          image: "newnew.png",
           subtitle: "У наявності",
           subtitleColor: false,
           price: "1 грн.",
@@ -371,7 +376,7 @@ export default {
           text: "Тест платежной системы",
         },
         {
-          id: 1,
+          id: 2,
           pretitle: "",
           title: "Тест",
           image: "sp1.png",
@@ -384,10 +389,10 @@ export default {
           btnText: "Бізнес",
           date: "27.07.2022",
           isLike: false,
-          text: "Тест платежной системы",
+          text: "Ноутбук хороший звоните, пишите 0963465090 цена 8000 тора нет. Продаю за бесценок так как срочно",
         },
         {
-          id: 1,
+          id: 3,
           pretitle: "",
           title: "Тест",
           image: "sp1.png",
@@ -400,10 +405,10 @@ export default {
           btnText: "Приватна особа",
           date: "27.07.2022",
           isLike: false,
-          text: "Тест платежной системы",
+          text: "Розмір 2000х2000х400 Розміри можна змінювати відповідно до вимоги клієнта Матеріалчорнийметалпорошковимфарбуванням Полки ДСП 16мм, 18мм, 32мм або 36 мм в кромці ПВХ СТЕЙКИ. СТЕЛЛАЖИРозмір 2000х2000х400 Розміри можна змінювати відповідно до вимоги клієнта Матеріалчорнийметалпорошковимфарбуванням Полки ДСП 16мм, 18мм, 32мм або 36 мм в кромці ПВХ СТЕЙКИ. СТЕЛЛАЖИРозмір 2000х2000х400 Розміри можна змінювати відповідно до вимоги клієнта Матеріалчорнийметалпорошковимфарбуванням Полки ДСП 16мм, 18мм, 32мм або 36 мм в кромці ПВХ СТЕЙКИ. СТЕЛЛАЖИ",
         },
         {
-          id: 1,
+          id: 4,
           pretitle: "",
           title: "Тест",
           image: "sp1.png",

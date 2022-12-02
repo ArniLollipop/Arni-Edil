@@ -198,9 +198,9 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-5 text-center text-[#B73D25] text-sm">
+              <a href="#" class="block mt-5 text-center text-[#B73D25] text-sm">
                 Поскаржитись
-              </div>
+              </a>
             </div>
 
             <div class="mt-10 bg-white rounded-2xl py-3 px-5">
@@ -415,11 +415,12 @@
               </div>
             </div>
           </div>
-          <div
-            class="mt-1 w-max ml-auto text-[#B73D25] text-[11px] border-b border-dotted border-[#B73D25]"
+          <a
+            class="block mt-1 w-max ml-auto text-[#B73D25] text-[11px] border-b border-dotted border-[#B73D25]"
+            href="#"
           >
             Поскаржитись
-          </div>
+          </a>
         </div>
 
         <div class="mt-4 font-bold text-sm">Коментарі</div>
