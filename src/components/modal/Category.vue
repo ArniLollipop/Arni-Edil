@@ -1,91 +1,304 @@
 <template>
-  <div class = "sm:block hidden">
-    <Create></Create>
-  </div>
-  <div class = "sm:hidden">
-    <Head></Head>
-    <section class = "px-4 text-dark">
-      <div class = "w-full sm:hidden flex justify-between items-center my-2">
-          <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
-          <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
-      </div>
-      <p class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium sm:hidden my-2">Категорія</p>
-      <div to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full sm:shadow-md shadow-accent">
-        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
-          <img src="@/img/Medved.svg" alt="" class="h-[70%] w-[70%]" />
+  <div
+    class="w-[98%] flex h-max border-[0.25px] border-gray border-opacity-80 rounded-xl bg-white absolute top-[139px] -ml-1 z-50"
+  >
+    <div class="w-1/3 border-r border-accent pl-10 py-4">
+      <button
+        class="flex items-center py-2"
+        v-for="(item, key) in category"
+        :key="item.id"
+        @mouseover="setIndex(key)"
+      >
+        <div class="w-5 h-5">
+          <img
+            :src="require('../../img/' + item.image)"
+            alt=""
+            class="h-full"
+          />
         </div>
-        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
-          <p>Дитячі товари</p>
+        <div :class="['ml-3', { 'text-accent': index === key }]">
+          {{ item.title }}
         </div>
-      </div>
-    </section>
-  </div>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
-    <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
-    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
-      </router-link>
+        <div class="ml-2 text-sm font-medium">{{ item.kol }}</div>
+      </button>
     </div>
-  </section>
+    <div class="p-4">
+      <div class="text-lg font-medium">
+        {{ des[index].text }}
+      </div>
+      <div class="mt-5 w-2/3 grid grid-cols-2 gap-2">
+        <div v-for="item in des[index].mas">{{ item }}</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-  import Head from '@/components/Head.vue';
-  import Footer from '@/components/Footer.vue';
-  import Create from '@/components/Create_components/Create.vue';
-  import Create2 from '@/components/Create_components/Create_2.vue'
-  export default{
-    components:{
-      Head, 
-      Footer,
-      Create,
-      Create2
-    },
-  }
+import { useState } from "../../composables/state";
+export default {
+  setup() {
+    const [index, setIndex] = useState(1);
+    return {
+      index,
+      setIndex,
+    };
+  },
+  data() {
+    return {
+      category: [
+        { id: 1, title: "Дитячі товари", image: "Medved.png", kol: 45 },
+        { id: 2, title: "Нерухомість", image: "dom.svg", active: true },
+        {
+          id: 3,
+          title: "Для дому та комерції ",
+          image: "krovat.svg",
+          kol: 1,
+        },
+        { id: 4, title: "Робота", image: "rabota.png" },
+        { id: 5, title: "Послуги та фріланс", image: "freelance.png" },
+        { id: 6, title: "Авто", image: "avto.png" },
+        {
+          id: 7,
+          title: "Запчастини для транспорту",
+          image: "zapchasti.png",
+          kol: 23,
+        },
+        { id: 8, title: "Тварини", image: "tvari.png" },
+        { id: 9, title: "Електроніка", image: "electronica.png" },
+        { id: 10, title: "Допомога", image: "pomoch.png" },
+        { id: 11, title: "Спорт і відпочинок", image: "velik.png" },
+        { id: 12, title: "Обладнання та сировина", image: "sirovina.png" },
+        {
+          id: 13,
+          title: "Будматеріали та інструменти",
+          image: "instrumenti.png",
+          kol: 225,
+        },
+        { id: 14, title: "Мода та стиль", image: "stil.png" },
+        { id: 15, title: "Краса і здоров’я", image: "kosmetika.png" },
+        { id: 16, title: "Обмін", image: "obmen.png" },
+        { id: 17, title: "Для бізнесу", image: "biznes.png" },
+        { id: 18, title: "Хобі та розваги", image: "games.png" },
+      ],
+      des: [
+        {
+          id: 1,
+          text: "1Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "zxc",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 2,
+          text: "2Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "asd",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 3,
+          text: "3Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "qwe",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 4,
+          text: "4Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 5,
+          text: "5Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "tyu",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 6,
+          text: "6Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 7,
+          text: "7Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 8,
+          text: "8Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 9,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 10,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 11,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 12,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 13,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 14,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 15,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 16,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 17,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+        {
+          id: 18,
+          text: "Продаж, купівля та оренда нерухомості, в Украіні, Оголошення Vamberi",
+          mas: [
+            "Новобуди",
+            "Візьмемо до оренди",
+            "Продаж нерухомості",
+            "Оренда нерухомості",
+            "Агенство нерухомості",
+            "Ріэлтори",
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>

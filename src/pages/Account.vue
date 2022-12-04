@@ -1,91 +1,142 @@
 <template>
-  <div class = "sm:block hidden">
-    <Create></Create>
-  </div>
-  <div class = "sm:hidden">
-    <Head></Head>
-    <section class = "px-4 text-dark">
-      <div class = "w-full sm:hidden flex justify-between items-center my-2">
-          <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
-          <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
-      </div>
-      <p class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium sm:hidden my-2">Категорія</p>
-      <div to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full sm:shadow-md shadow-accent">
-        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
-          <img src="@/img/Medved.svg" alt="" class="h-[70%] w-[70%]" />
+  <HeadVue></HeadVue>
+  <section class="container mx-auto px-4 pt-4 xl:pt-6 text-main">
+    <div class="flex items-center gap-x-1 pb-4 relative lg:my-6 md:my-4 my-1">
+      <p class="font-normal sm:text-sm text-[11px]">Головна</p>
+      <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10]" />
+      <p class="font-normal sm:text-sm text-[11px] lg:block hidden">
+        Мої оголошення
+      </p>
+      <p class="font-normal sm:text-sm text-[11px] lg:hidden">Софія Смирнова</p>
+      <img src="@/img/Blog_right.svg" alt="" class="w-[10] h-[10] lg:hidden" />
+      <p class="font-normal sm:text-sm text-[11px] lg:hidden">Акаунт</p>
+    </div>
+    <div class="lg:flex lg:space-x-10 mb-4">
+      <SofiaVue></SofiaVue>
+      <div class="lg:w-[75%] w-full relative">
+        <div
+          class="w-full rounded-[10px] px-3 pt-4 pb-2 bg-banner text-main flex justify-between relative"
+        >
+          <div class="w-[65%]">
+            <p class="sm:text-xl text-[13px] font-medium">
+              Не дайте себе обдурити!
+            </p>
+            <p class="sm:text-sm text-xs font-medium mt-5">
+              Дізнайтеся, як уберегти свій гамаанець від зловмисників
+            </p>
+            <p
+              class="text-blueText text-xs font-medium sm:text-sm lg:mt-10 mt-2"
+            >
+              Поради з безпеки
+            </p>
+          </div>
+          <img
+            src="@/img/acc_banner_img.svg"
+            alt=""
+            class="sm:w-fit sm:h-[90%] sm:block absolute top-3 right-3 w-[125px] h-[114px]"
+          />
+          <button class="absolute top-4 right-3">
+            <img src="@/img/banner_x.svg" alt="" class="w-fit" />
+          </button>
         </div>
-        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
-          <p>Дитячі товари</p>
+        <div class="flex items-center justify-between">
+          <p
+            class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:my-10 my-4 ml-1 text-main"
+          >
+            Зміна облікового запису
+          </p>
+          <div @click="isMobileMenuOpen = !isMobileMenuOpen">
+            <div v-if="!isMobileMenuOpen">
+              <img
+                src="@/img/catalog.svg"
+                alt=""
+                class="w-[18px] h-[18px] lg:hidden cursor-pointer"
+              />
+            </div>
+            <div v-if="isMobileMenuOpen">
+              <img
+                src="@/img/modal_x.svg"
+                alt=""
+                class="w-[18px] h-[18px] lg:hidden cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+        <Acc_buttons
+          v-if="isMobileMenuOpen"
+          @mobileModalStatus="acceptMobileModalStatus"
+          class=""
+        ></Acc_buttons>
+        <div
+          class="md:flex md:space-x-10 text-main"
+          v-show="!isMobileMenuOpen"
+          @mobileModalStatus="acceptMobileModalStatus"
+        >
+          <div
+            class="md:w-[30%] w-full mb-4 bg-white rounded-[10px] px-4 py-4 h-fit relative border border-accent md:border-none"
+          >
+            <p class="sm:text-xl text-sm font-medium">Базовий</p>
+            <p class="sm:text-sm text-xs mt-3">
+              Оголошення додаються з оплатою за розміщення
+            </p>
+            <div class="flex items-center gap-x-1 absolute top-2 right-4">
+              <img src="@/img/chat_galochka.svg" alt="" />
+              <p class="text-sm text-green">активний</p>
+            </div>
+          </div>
+          <div
+            class="md:w-[50%] w-full bg-white rounded-[10px] px-4 py-4 h-fit relative border border-accent md:border-none"
+          >
+            <p class="sm:text-xl text-sm font-medium">Бізнес</p>
+            <p class="sm:text-sm text-xs mt-3">
+              Как работает тариф - Бизнес, в нем отсутствует плата за размещение
+              объявления и отсутствует плата за создание магазина, отличие
+              тарифа бизнес от базовый - тем, что у базового фиксированная цена
+              за объявление, а у тарифа бизнес % от продажи, в тарифе бизнес
+              будут скрыт номер телефона продавца, а также профиль покупателя до
+              момента оплаты, на переписку, между покупателем и продавцом в
+              тарифе бизнес, стоит фильтр на запрещенные слова и символы, чтобы
+              избежать передачи контактных данных. В момент заполнения
+              покупателем профиля перед оплатой, - он указывает свои данные для
+              отправки, и они сохраняются там, и не видны до проведения оплаты.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-  </div>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
-    <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
-    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
-      </router-link>
     </div>
   </section>
+  <MobileMenuVue></MobileMenuVue>
+  <FooterVue></FooterVue>
 </template>
 
 <script>
-  import Head from '@/components/Head.vue';
-  import Footer from '@/components/Footer.vue';
-  import Create from '@/components/Create_components/Create.vue';
-  import Create2 from '@/components/Create_components/Create_2.vue'
-  export default{
-    components:{
-      Head, 
-      Footer,
-      Create,
-      Create2
+import HeadVue from "@/components/Head.vue";
+import MobileMenuVue from "@/components/MobileMenu.vue";
+import FooterVue from "@/components/Footer.vue";
+import SofiaVue from "@/components/Sofia.vue";
+import Acc_buttons from "@/components/modal/Acc_buttons.vue";
+export default {
+  components: {
+    HeadVue,
+    MobileMenuVue,
+    FooterVue,
+    Acc_buttons,
+    SofiaVue,
+  },
+  data() {
+    return {
+      isCategoryOpen: false,
+      isTruckOpen: false,
+      isMobileMenuOpen: false,
+    };
+  },
+  methods: {
+    acceptModalStatus(data) {
+      this.isTruckOpen = data;
     },
-  }
+    acceptMobileModalStatus(data) {
+      this.isMobileMenuOpen = data;
+    },
+  },
+};
 </script>

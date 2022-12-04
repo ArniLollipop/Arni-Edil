@@ -1,91 +1,122 @@
-<template>
-  <div class = "sm:block hidden">
-    <Create></Create>
-  </div>
-  <div class = "sm:hidden">
-    <Head></Head>
-    <section class = "px-4 text-dark">
-      <div class = "w-full sm:hidden flex justify-between items-center my-2">
-          <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
-          <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
-      </div>
-      <p class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium sm:hidden my-2">Категорія</p>
-      <div to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full sm:shadow-md shadow-accent">
-        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
-          <img src="@/img/Medved.svg" alt="" class="h-[70%] w-[70%]" />
-        </div>
-        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
-          <p>Дитячі товари</p>
-        </div>
-      </div>
+<template class="">
+  <div class="bg-back2">
+    <section class="text-dark 2xl:max-w-[1400px] 2xl:mx-auto">
+      <Head :kolMessage="kolMessage"></Head>
+      <Banner></Banner>
+      <Recomendation></Recomendation>
+      <Advan></Advan>
+      <Magazini></Magazini>
+      <RecCards :cards="cards"></RecCards>
+      <Information></Information>
     </section>
+    <MobileMenu></MobileMenu>
+    <Footer></Footer>
   </div>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
-    <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
-    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
-      </router-link>
-    </div>
-  </section>
 </template>
 
 <script>
-  import Head from '@/components/Head.vue';
-  import Footer from '@/components/Footer.vue';
-  import Create from '@/components/Create_components/Create.vue';
-  import Create2 from '@/components/Create_components/Create_2.vue'
-  export default{
-    components:{
-      Head, 
-      Footer,
-      Create,
-      Create2
-    },
-  }
+import Advan from "@/components/Home_compponents/Advantages.vue";
+import Head from "@/components/Head.vue";
+import Footer from "@/components/Footer.vue";
+import MobileMenu from "@/components/MobileMenu.vue";
+import Magazini from "@/components/Home_compponents/Magazini.vue";
+import Recomendation from "@/components/Home_compponents/Recomendation.vue";
+import RecCards from "@/components/Home_compponents/RecCards.vue";
+import Information from "@/components/Home_compponents/Information.vue";
+import Banner from "@/components/Banner.vue";
+export default {
+  components: {
+    Head,
+    Footer,
+    Advan,
+    Magazini,
+    RecCards,
+    Recomendation,
+    Information,
+    Banner,
+    MobileMenu,
+  },
+  data() {
+    return {
+      kolMessage: "2",
+      cards: [
+        {
+          id: 1,
+          pretitle: "",
+          title: "Тест",
+          images: ["p1.png", "p2.png"],
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 2,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          images: ["p1.png", "p2.png"],
+          subtitle: "Під замовлення",
+          subtitleColor: true,
+          price: "8000",
+          lastPrice: "10000",
+          status: "Б/У",
+          map: "Одесса",
+          btnText: "Б/У",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 3,
+          pretitle: "",
+          title: "Стеллаж с полками, в стиле лофт",
+          images: ["p1.png", "p2.png"],
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Приватна особа",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 4,
+          pretitle: "Безпечна угода",
+          title: "Lenovo ideapad 330-15ikb",
+          images: ["p1.png", "p2.png"],
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+          isLike: false,
+        },
+        {
+          id: 5,
+          pretitle: "Безпечна угода",
+          title: "Продам дерево обрабатывающий центр чпу, ROVER 342",
+          images: ["p1.png"],
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "400,0005001231231",
+          lastPrice: "600,000 ",
+          status: "Нове",
+          map: "Одесса",
+          btnText: "Бізнес",
+          date: "27.07.2022",
+          isLike: false,
+        },
+      ],
+    };
+  },
+};
 </script>

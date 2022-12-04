@@ -1,91 +1,423 @@
 <template>
-  <div class = "sm:block hidden">
-    <Create></Create>
-  </div>
-  <div class = "sm:hidden">
-    <Head></Head>
-    <section class = "px-4 text-dark">
-      <div class = "w-full sm:hidden flex justify-between items-center my-2">
-          <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
-          <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
+  <div class="fixed inset-0 z-50">
+    <div
+      class="fixed inset-0 bg-slate-800 opacity-50 "
+      @click="sendModalStatus"
+    ></div>
+    <div
+      class="fixed overflow-y-scroll z-50 p-4 pt-[26px] pb-12 lg:px-[80px] xl:px-[135px] inset-x-0 h-[100vh] lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-1/2 lg:min-h-[200px] lg:h-[560px] bg-white lg:rounded-xl flex flex-col items-center lg:gap-y-8 justify-between"
+    >
+      <button
+        class="absolute top-5 left-5 bg-[#f5f5f5] rounded-full flex items-center justify-center lg:hidden w-8 h-8"
+        @click="sendModalStatus"
+      >
+        <img src="../../img/chevron-left.svg" alt="" class="w-4" />
+      </button>
+      <div class="text-sm font-semibold lg:text-2xl xl:text-3xl">
+        Кошик товарів
       </div>
-      <p class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium sm:hidden my-2">Категорія</p>
-      <div to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full sm:shadow-md shadow-accent">
-        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
-          <img src="@/img/Medved.svg" alt="" class="h-[70%] w-[70%]" />
+      <div class="w-full mt-4">
+        <div class="space-y-2.5 w-full">
+          <div
+            v-if="card1"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card1 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs xl:text-sm font-medium">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            v-if="card2"
+            class="flex p-2 bg-accentLight rounded-lg items-center"
+          >
+            <div
+              class="w-[76px] h-[56px] xl:w-[106px] xl:h-[70px] rounded-xl overflow-hidden"
+            >
+              <img
+                src="../../img/RecCards/p2.png"
+                alt=""
+                class="object-cover h-full"
+              />
+            </div>
+            <div class="ml-2 w-full">
+              <div class="flex justify-between items-center">
+                <div class="font-medium text-xs xl:text-sm">
+                  Lenovo ideapad 330-15ikb
+                </div>
+                <button class="" @click="card2 = false">
+                  <img src="../../img/X.svg" alt="" class="w-2.5" />
+                </button>
+              </div>
+              <div class="mt-1.5 text-blueText text-xs font-medium xl:text-sm">
+                Макс
+              </div>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex items-center space-x-1">
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>-</div>
+                  </button>
+                  <div class="text-xs">1</div>
+                  <button
+                    class="flex items-center justify-center border border-gray w-4 h-4 rounded-md"
+                  >
+                    <div>+</div>
+                  </button>
+                </div>
+                <div class="text-xs font-medium xl:text-sm">
+                  Итого: 8000 грн.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
-          <p>Дитячі товари</p>
+
+        <div
+          v-if="card1 || card2"
+          class="mx-auto mt-10 py-2.5 px-6 bg-accent rounded-3xl text-xs text-white font-medium w-max xl:text-sm xl:py-3.5 xl:px-11"
+        >
+          Оформити замовлення
+        </div>
+
+        <div v-if="card1 === false && card2 === false">
+          <div class="text-sm font-medium text-center">Кошик порожній</div>
+          <div class="mt-6 w-max mx-auto xl:mt-0">
+            <img
+              src="../../img/truck.svg"
+              alt=""
+              class="h-[120px] xl:h-[200px]"
+            />
+          </div>
+          <div class="mt-6 text-xs text-center">
+            Але це ніколи не пізно виправити:)
+          </div>
         </div>
       </div>
-    </section>
-  </div>
-  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
-    <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
-    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
-      </router-link>
-      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
-        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
-      </router-link>
+      <div></div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-  import Head from '@/components/Head.vue';
-  import Footer from '@/components/Footer.vue';
-  import Create from '@/components/Create_components/Create.vue';
-  import Create2 from '@/components/Create_components/Create_2.vue'
-  export default{
-    components:{
-      Head, 
-      Footer,
-      Create,
-      Create2
+export default {
+  methods: {
+    sendModalStatus() {
+      this.$emit("modalStatus", false);
     },
-  }
+  },
+  data() {
+    return {
+      card1: true,
+      card2: true,
+    };
+  },
+};
 </script>
