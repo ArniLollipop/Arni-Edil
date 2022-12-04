@@ -74,7 +74,7 @@
     </div>
   </section>
 </template>
-
+фывфывфывфы
 <script>
   import Head from '@/components/Head.vue';
   import Footer from '@/components/Footer.vue';
