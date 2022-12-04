@@ -1,154 +1,91 @@
 <template>
-  <section class="px-4 pb-4 lg:mt-10 sm:mt-6 mt-4">
-    <div class="flex">
-      <div class="lg:w-[85%] lg:pr-9 w-full">
-        <div class="relative pb-4">
-          <h2 class="font-medium lg:text-[26px] sm:text-xl text-[13px]">
-            Сервіс оголошень Vamberi - надійний посередник вдалих угод
-          </h2>
-          <p
-            class="sm:mt-3 lg:mt-4 mt-2 lg:mb-9 md:mb-6 sm:mb-4 mb-2 sm:text-base text-[12px]"
-          >
-            Дошка оголошень Vamberi — майданчик, який заощаджує час пошуку
-            необхідних спеціалістів, товарів, послуг. А ще це міс це, де пер
-            евірені магазини можуть знайти нових вдячних клієнтів.
-          </p>
-          <h2 class="font-medium lg:text-[26px] sm:text-xl text-[13px]">
-            Чому з вигідно з Вамбері?
-          </h2>
-          <p class="sm:my-4 lg:my-6 my-2 sm:text-base text-[12px]">
-            Створити умови, в яких шукати, вибирати, купувати та продавати
-            зручно та безпечно – ось початкова мета платформи Vamberi. Детальний
-            аналіз потреб покупців та продавців дозволив розробити сайт
-            оголошень, який відповідає всім вимогам та йде в ногу з часом. Адже
-            на першому місці сьогодні – безпека онлайн-покупок, гарантія якості
-            товарів. Наші переваги:
-          </p>
-          <ul class="sm:my-4 lg:my-6 my-2 sm:text-base text-[12px]">
-            <div class="relative">
-              <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
-              ></div>
-              <li
-                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
-              >
-                можливість здійснювати безпечні покупки завдяки спеціальному
-                сервісу "Безпечні угоди";
-              </li>
-            </div>
-            <div class="relative">
-              <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
-              ></div>
-              <li
-                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
-              >
-                наявність функції "Турбопродажу" - терміново продамо навіть
-                торішній сніг; жарт, звичайно, ми розміщуємо лише якісні товари;
-              </li>
-            </div>
-            <div class="relative">
-              <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
-              ></div>
-              <li
-                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
-              >
-                можливість вивчити каталог онлайн-магазинів – лише перевірені
-                шопи до ваших послуг.
-              </li>
-            </div>
-            <div class="relative">
-              <div
-                class="w-1 h-1 rounded-full bg-black absolute top-2 left-0 sm:hidden"
-              ></div>
-              <li
-                class="md:my-3 my-1 ml-3 sm:before:w-2 sm:before:h-2 before:rounded-full before:absolute before:bg-accent before:translate-y-[9px] before:left-0"
-              >
-                сервіс «Оголошення на карті» - не любите онлайн-покупок, ну і не
-                любите; у нас можна знайти необхідні послуги та товари поруч із
-                вами — просто скористайтесь нашим зручним пошуком по карті;
-              </li>
-            </div>
-          </ul>
-          <p
-            class="lg:mt-9 md:my-5 sm:my-3 my-2 sm:text-base text-[12px] sm:block hidden"
-          >
-            Неабияка перевага – можливість співпрацювати з нами за системою
-            дропшипінг – безкоштовне розміщення оголошень, немає необхідності
-            закуповувати товар. Оптимальний варіант старту бізнесу у сфері
-            онлайн-продажів. Ми завжди раді допомогти та підтримати
-          </p>
-          <p
-            class="lg:my-9 md:my-5 sm:my-3 my-2 sm:text-base text-[12px] sm:block hidden"
-          >
-            Ми подбали про те, щоб використання платформи Vamberi було зручним
-            та приносило користь усім гостям. Мінімальна витрата часу на пошук
-            потрібного товару, безпеку угод, гарантії повернення товару чи
-            фінансів. З Vamberi надійно!
-          </p>
-          <button
-            class="sm:relative underline absolute right-0 decoration-dashed underline-offset-4 text-dark hover:text-accent sm:text-base text-xs"
-          >
-            Читати повністю
-          </button>
+  <div class = "sm:block hidden">
+    <Create></Create>
+  </div>
+  <div class = "sm:hidden">
+    <Head></Head>
+    <section class = "px-4 text-dark">
+      <div class = "w-full sm:hidden flex justify-between items-center my-2">
+          <router-link to="/"><img src="@/img/strelka_left.svg" alt="" class = "w-fit"></router-link>
+          <router-link to="/" class = "text-sm underline underline-offset-4 decoration-dashed text-red">скасувати</router-link>
+      </div>
+      <p class = "lg:text-3xl md:text-2xl sm:text-lg text-sm font-medium sm:hidden my-2">Категорія</p>
+      <div to="/create/create1" class="relative hover:sm:text-accent sm:flex-col flex gap-x-3 my-2 sm:bg-transparent bg-pink px-2 py-1 rounded-[10px] items-center justify-start w-full sm:shadow-md shadow-accent">
+        <div class="xl:w-[100px] xl:h-[100px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[60px] sm:h-[60px] w-[50px] h-[50px] bg-white rounded-full flex items-center justify-center sm:mx-auto">
+          <img src="@/img/Medved.svg" alt="" class="h-[70%] w-[70%]" />
         </div>
-        <div
-          class="flex lg:gap-x-28 md:gap-x-10 sm:gap-x-5 lg:mt-16 sm:mt-10 mt-9 sm:w-full gap-x-2 mx-auto"
-        >
-          <div class="sm:text-base text-[12px] text-center">
-            <img
-              src="@/img/document.png"
-              alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
-            />
-            <span class="">Безпечні угоди</span>
-          </div>
-          <div class="sm:text-base text-[12px] text-center">
-            <img
-              src="@/img/information.svg"
-              alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
-            />
-            <span class="sm:block hidden">Турбопродаж</span>
-            <span class="sm:hidden">Турбо <br />продаж</span>
-          </div>
-          <div class="sm:text-base text-[12px] text-center">
-            <img
-              src="@/img/iphone.png"
-              alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
-            />
-            <span>Оголошення на карті</span>
-          </div>
-          <div class="sm:text-base text-[12px] text-center lg:w-[160px]">
-            <img
-              src="@/img/shopping.png"
-              alt=""
-              class="mx-auto xl:w-[120px] lg:w-[100px] w-[50px] mb-3"
-            />
-            <div>
-              <span class="hidden sm:inline-block"> Лише</span> перевірені
-              онлайн-магазини
-            </div>
-          </div>
+        <div class = "sm:mt-2 lg:text-base sm:text-sm text-xs flex items-center justify-center">
+          <p>Дитячі товари</p>
         </div>
       </div>
-      <div class="lg:w-[15%] lg:block hidden">
-        <p
-          class="text-center md:text-base sm:text-sm text-xs sm:relative absolute right-0 underline decoration-dashed underline-offset-4 mb-4"
-        >
-          Також читайте
-        </p>
-        <img src="@/img/right_section_1.png" alt="" class="w-full" />
-        <p class="my-2">Каталог оголошеннь - швидкий зручний пошук</p>
-        <img src="@/img/right_section_2.png" alt="" class="w-full" />
-        <p class="my-2">Як купити авто, транспорт на Vamberi?</p>
-        <img src="@/img/right_section_3.png" alt="" class="w-full" />
-        <p>Чому варто вибрати Вамбері.</p>
-      </div>
+    </section>
+  </div>
+  <section class = "2xl:w-[1400px] 2xl:mx-auto mx-auto px-4 py-2 text-dark">
+    <h2 class = "font-medium lg:text-2xl md:text-xl sm:text-base sm:block hidden">Виберіть підкатегорію</h2>
+    <div class = "sm:w-[75%] md:w-[70%] lg:w-[50%] w-full sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4 lg:py-4 md:my-4 sm:my-4 my-2">
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі мебелі</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі автокрісла</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для навчання</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Облаштування дитячої</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий одяг</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Іграшки та ігри</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Прогулянки та активний відпочинок</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Радіо- та відеоняні</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче взуття</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячий транспорт</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Здоров’я та догляд</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Товари для мам</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитячі коляски</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Дитяче харчування та годування</p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs hover:text-accent hover:sm:text-dark sm:text-center py-[10px] sm:border-0 border-t border-gray">Розвиток та творчість </p>
+      </router-link>
+      <router-link to="/create/create2" class = "w-full sm:bg-white sm:rounded-[10px] sm:border sm:border-opacity-60 sm:border-accent hover:shadow-sm hover:sm:shadow-accent">
+        <p class = "sm:text-sm text-xs sm:text-center py-[10px] sm:border-0 border-t border-b border-gray">Дитячі товари, інше</p>
+      </router-link>
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+  import Head from '@/components/Head.vue';
+  import Footer from '@/components/Footer.vue';
+  import Create from '@/components/Create_components/Create.vue';
+  import Create2 from '@/components/Create_components/Create_2.vue'
+  export default{
+    components:{
+      Head, 
+      Footer,
+      Create,
+      Create2
+    },
+  }
+</script>
