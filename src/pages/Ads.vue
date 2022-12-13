@@ -91,7 +91,7 @@
           </div>
           <router-link to="/orders/card">
             <div
-              class="grid grid-cols-2 lg:grid-cols-1 gap-y-4 gap-x-1.5 lg:gap-y-8 mt-4 lg:mt-10 pb-10 lg:pb-20"
+              class="hidden lg:grid grid-cols-2 lg:grid-cols-1 gap-y-4 gap-x-1.5 lg:gap-y-8 mt-4 lg:mt-10 pb-10 lg:pb-20"
             >
               <div
                 v-for="item in cards"
@@ -212,19 +212,12 @@
                     </div>
                   </div>
                   <div
-                    class="flex lg:hidden w-full mt-3 justify-between items-end"
+                    class="flex lg:hidden w-full mt-3 justify-between items-center"
                   >
-                    <div class="space-y-2">
-                      <div
-                        class="bg-accent px-1.5 py-1 w-full text-center text-white rounded-full text-[10px]"
-                      >
-                        Редагувати
-                      </div>
-                      <div
-                        class="bg-pink2 px-1.5 py-1 text-center text-white rounded-full text-[10px]"
-                      >
-                        Продати швидше
-                      </div>
+                    <div
+                      class="bg-pink2 px-1.5 py-1 text-center text-white rounded-full text-[10px]"
+                    >
+                      Продати швидше
                     </div>
 
                     <div class="w-3">
@@ -233,6 +226,161 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              class="lg:hidden grid grid-cols-2 gap-x-1.5 gap-y-4 lg:grid-cols-4 lg:gap-x-2 lg:gap-y-5 mt-4 lg:mt-10 auto-rows-[minmax(0px, auto)"
+            >
+              <router-link
+                to="/"
+                v-for="item in cards2"
+                v-show="item.id >= 1"
+                class="flex flex-col"
+              >
+                <div
+                  v-if="item.id == 2 || item.id == 5"
+                  class="w-full h-fit px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white overflow-hidden relative shadow-gray shadow-sm"
+                >
+                  <swiper
+                    :slides-per-view="1"
+                    :loop="true"
+                    :navigation="{
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    }"
+                    :space-between="20"
+                    :modules="modules"
+                    class="w-full h-full relative"
+                  >
+                    <swiper-slide class="">
+                      <img
+                        :src="require('../img/new7/' + item.image)"
+                        alt=""
+                        class="w-full"
+                      />
+                    </swiper-slide>
+                    <button
+                      class="swiper-button-prev invisible shadow-md shadow-accent"
+                    >
+                      <img
+                        src="@/img/mini_left.svg"
+                        alt=""
+                        class="visible bg-white px-1 py-1 absolute -left-2 rounded-full"
+                      />
+                    </button>
+                    <button class="swiper-button-next invisible">
+                      <img
+                        src="@/img/mini_right.svg"
+                        alt=""
+                        class="visible bg-white px-1 py-1 absolute -right-2 rounded-full"
+                      />
+                    </button>
+                  </swiper>
+                </div>
+                <div
+                  v-else
+                  class="px-1.5 py-2.5 lg:px-4 lg:py-3 rounded-2xl bg-white shadow-gray shadow-md"
+                >
+                  <img
+                    :src="require('../img/new7/' + item.image)"
+                    alt=""
+                    class="w-full"
+                  />
+                </div>
+                <div
+                  class="px-1.5 pt-[14px] pb-1 lg:px-3 lg:pt-4 flex flex-col justify-between shadow-gray shadow-md bg-white rounded-2xl break-all grow overflow-hidden relative z-20"
+                >
+                  <div class="">
+                    <div
+                      class="text-green text-[12px] lg:text-[14px] mb-3 absolute top-0"
+                    >
+                      {{ item.pretitle }}
+                    </div>
+                    <div
+                      :class="[
+                        'text-xs lg:text-sm mt-2',
+                        { '': item.pretitle.length === 0 },
+                      ]"
+                    >
+                      {{ item.title }}
+                    </div>
+                  </div>
+                  <div class="mt-1 lg:mt-3 flex flex-col justify-between">
+                    <div
+                      :class="{
+                        'text-xs text-red': item.subtitleColor,
+                        'text-xs text-green': !item.subtitleColor,
+                      }"
+                    >
+                      {{ item.subtitle }}
+                    </div>
+                    <div class="relative mt-1 flex items-center">
+                      <div
+                        class="md:text-sm text-xs lg:text-base pr-[50px] lg:pr-[70px]"
+                      >
+                        {{ item.price }}.грн
+                      </div>
+                      <div
+                        class="absolute top-0 right-0 w-[42px] lg:py-1 text-center rounded-3xl bg-accent text-white text-xs lg:w-[66px] shrink-0"
+                      >
+                        {{ item.status }}
+                      </div>
+                    </div>
+                    <div
+                      :class="[
+                        'md:text-sm text-xs lg:text-base text-red line-through mb-4',
+                        { 'text-green invisible': item.lastPrice.length === 0 },
+                      ]"
+                    >
+                      {{ item.lastPrice }}.грн
+                    </div>
+                    <div class="flex items-center mt-auto">
+                      <img src="../img/RecCards/map.svg" alt="" class="h-3" />
+                      <div class="text-xs text-gray">{{ item.map }}</div>
+                    </div>
+                    <div
+                      class="flex lg:flex-col flex-wrap lg:flex-nowrap lg:gap-y-[19px] lg:mt-3 lg:gap-x-0 gap-x-3"
+                    >
+                      <div
+                        class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                      >
+                        <div><img src="../img/new7/eye.svg" alt="" /></div>
+                        <div>{{ item.s1 }}</div>
+                      </div>
+                      <div
+                        class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                      >
+                        <div><img src="../img/new7/up.svg" alt="" /></div>
+                        <div>{{ item.s2 }}</div>
+                      </div>
+                      <div
+                        class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                      >
+                        <div><img src="../img/new7/heart.svg" alt="" /></div>
+                        <div>{{ item.s3 }}</div>
+                      </div>
+                      <div
+                        class="text-[10px] lg:text-xs flex items-center gap-x-0.5 lg:gap-x-1.5"
+                      >
+                        <div><img src="../img/new7/cal.svg" alt="" /></div>
+                        <div>{{ item.s4 }}</div>
+                      </div>
+                    </div>
+                    <div
+                      class="flex lg:hidden w-full mt-1.5 justify-between items-center"
+                    >
+                      <div
+                        class="bg-pink2 px-1.5 py-1 text-center text-white rounded-full text-[10px]"
+                      >
+                        Продати швидше
+                      </div>
+
+                      <div class="w-3">
+                        <img src="../img/new7/pen.svg" alt="" class="w-3.5" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </router-link>
         </div>
@@ -281,6 +429,14 @@ export default {
       cards: [
         {
           id: 1,
+          pretitle: "",
+          title: "Тест",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
+          map: "Одесса",
           image: "sp1.png",
           status: "Активно",
           i1: "Тест",
@@ -294,6 +450,14 @@ export default {
         },
         {
           id: 2,
+          pretitle: "",
+          title: "Lenovo ideapad 330-15ikb",
+          subtitle: "Під замовлення",
+          subtitleColor: true,
+          price: "8000",
+          lastPrice: "10000",
+          status: "Б/У",
+          map: "Одесса",
           image: "sp1.png",
           status: "Активно",
           i1: "Тест",
@@ -307,6 +471,14 @@ export default {
         },
         {
           id: 3,
+          pretitle: "",
+          title: "Lenovo ideapad 330-15ikb",
+          subtitle: "Під замовлення",
+          subtitleColor: true,
+          price: "8000",
+          lastPrice: "10000",
+          status: "Б/У",
+          map: "Одесса",
           image: "sp1.png",
           status: "Активно",
           i1: "Тест",
@@ -321,34 +493,36 @@ export default {
       ],
       cards2: [
         {
-          id: 1,
+          id: 3,
           pretitle: "",
-          title: "Тест",
-          image: "p1.png",
+          title: "Стеллаж с полками, в стиле лофт",
+          image: "sp1.png",
           subtitle: "У наявності",
           subtitleColor: false,
           price: "1",
           lastPrice: "",
           status: "Нове",
           map: "Одесса",
-          btnText: "Бізнес",
-          date: "27.07.2022",
-          isLike: false,
+          s1: "54",
+          s2: "41",
+          s3: "0",
+          s4: "10",
         },
         {
-          id: 2,
-          pretitle: "",
+          id: 4,
+          pretitle: "Безпечна угода",
           title: "Lenovo ideapad 330-15ikb",
-          image: "p2.png",
-          subtitle: "Під замовлення",
-          subtitleColor: true,
-          price: "8000",
-          lastPrice: "10000",
-          status: "Б/У",
+          image: "sp1.png",
+          subtitle: "У наявності",
+          subtitleColor: false,
+          price: "1",
+          lastPrice: "",
+          status: "Нове",
           map: "Одесса",
-          btnText: "Б/У",
-          date: "27.07.2022",
-          isLike: false,
+          s1: "54",
+          s2: "41",
+          s3: "0",
+          s4: "10",
         },
       ],
     };

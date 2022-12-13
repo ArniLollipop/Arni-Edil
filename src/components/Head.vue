@@ -66,7 +66,12 @@
                   isSearchOpen,
               },
             ]"
-            @click="isSearchOpen = !isSearchOpen"
+            @click="
+              () => {
+                isSearchOpen = !isSearchOpen;
+                isCategoryOpen = false;
+              }
+            "
           >
             <img src="../img/header/map.svg" alt="" class="w-4" />
             <div class="ml-0.5">Україна</div>
@@ -125,7 +130,12 @@
         <div class="py-1 px-3 flex items-center rounded-3xl bg-white w-1/2">
           <button
             class="px-5 py-3 rounded-[20px] bg-accent flex items-center"
-            @click="isCategoryOpen = !isCategoryOpen"
+            @click="
+              () => {
+                isCategoryOpen = !isCategoryOpen;
+                isSearchOpen = false;
+              }
+            "
           >
             <img src="../img/header/category.svg" alt="" class="w-3.5" />
             <div class="ml-1 text-sm text-white">Категорії</div>

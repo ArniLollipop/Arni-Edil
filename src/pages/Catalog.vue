@@ -22,9 +22,9 @@
       <div class="mt-3 lg:mt-5 text-sm lg:text-2xl">
         Продаж дитячих товарів на сайті оголошень Vamberi. 41
       </div>
-      <div class="mt-4 lg:mt-10 bg-accentLight rounded-xl">
+      <div class="mt-4 lg:mt-10 rounded-[10px]">
         <div
-          class="flex items-center justify-center gap-x-1 lg:gap-x-2.5 py-2 lg:py-5"
+          class="flex items-center justify-center gap-x-1 lg:gap-x-2.5 py-2 lg:py-5 bg-accentLight border-[0.25px] border-[#212529] rounded-[10px] lg:border-none lg:rounded-none lg:rounded-t-[10px]"
           @click="isCatalogOpen = !isCatalogOpen"
         >
           <div class="text-[13px] lg:text-2xl">Категорії</div>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div
-          class="grid lg:grid-cols-4 gap-y-2.5 lg:gap-7 px-6 lg:px-10 mt-3 lg:mt-8 pb-3 lg:pb-8"
+          class="grid lg:grid-cols-4 gap-y-2.5 lg:gap-7 px-6 lg:px-10 pt-3 lg:pt-8 pb-3 lg:pb-8 lg:bg-accentLight lg:rounded-b-[10px]"
           v-if="isCatalogOpen"
         >
           <div

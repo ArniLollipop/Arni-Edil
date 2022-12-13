@@ -151,7 +151,7 @@
         </div>
         <div class="space-y-10 mt-8">
           <div
-            class="flex p-4 items-center bg-white rounded-[10px]"
+            class="flex p-4 items-center bg-white rounded-[10px] border border-[#8B7AA8] lg:border-none"
             v-for="item in cards"
           >
             <div
