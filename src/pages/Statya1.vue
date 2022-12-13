@@ -216,27 +216,27 @@
         <div
           class="lg:w-[20%] lg:py-0 pt-4 w-full lg:grid-cols-1 lg:block grid grid-cols-2 lg:text-base md:text-sm text-[12px] text-center lg:text-start"
         >
-          <div class="col-span-1 lg:h-[30%] lg:px-0 px-4 lg:w-full">
+          <div class="col-span-1 lg:h-[30%] h-fit lg:px-0 px-4 lg:w-full">
             <img
               src="@/img/right_section_1.png"
               alt=""
-              class="w-[full] lg:h-[80%] mx-auto h-[60%]"
+              class="w-[full] lg:h-[80%] mx-auto h-[170px]"
             />
-            <p class="mt-2">Каталог оголошеннь - швидкий зручний пошук</p>
+            <p class="mt-2">Каталог оголошеннь - швидкий зручний пошук Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus corporis quos vitae nostrum itaque, tenetur sunt eaque error quisquam cumque, nam earum hic deleniti similique est deserunt voluptas! Impedit?</p>
           </div>
-          <div class="col-span-1 lg:h-[30%] lg:px-0 px-4 lg:w-full">
+          <div class="col-span-1 lg:h-[30%] h-fit lg:px-0 px-4 lg:w-full">
             <img
               src="@/img/right_section_2.png"
               alt=""
-              class="w-[full] lg:h-[80%] mx-auto h-[60%]"
+              class="w-[full] lg:h-[80%] mx-auto h-[170px]"
             />
             <p class="mt-2">Як купити авто, транспорт на Vamberi?</p>
           </div>
-          <div class="col-span-1 lg:h-[30%] lg:px-0 px-4 lg:w-full">
+          <div class="col-span-1 lg:h-[30%] h-fit lg:px-0 px-4 lg:w-full">
             <img
               src="@/img/right_section_3.png"
               alt=""
-              class="w-[full] lg:h-[80%] mx-auto h-[60%]"
+              class="w-[full] lg:h-[80%] mx-auto h-[170px]"
             />
             <p class="mt-2">Чому варто вибрати Вамбері.</p>
           </div>

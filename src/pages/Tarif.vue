@@ -39,9 +39,9 @@
             <img src="@/img/banner_x.svg" alt="" class="w-fit" />
           </button>
         </div>
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between my-4">
           <p
-            class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:mt-10 mt-4 text-main"
+            class="lg:text-3xl sm:text-2xl text-[13px] font-medium sm:mt-10 text-main"
           >
             Налаштування тарифу
           </p>
@@ -370,7 +370,7 @@
               </swiper>
               <button
                 ref="prev"
-                class="px-[0.7%] py-[3%] md:px-2 md:py-6 bg-white rounded-full z-10 absolute left-0 top-1/2 -translate-y-1/2"
+                class="px-[0.8%] py-[4%] md:px-2 sm:border-none border-[0.25px] border-accent md:py-6 bg-white rounded-full z-10 absolute left-0 top-1/2 -translate-y-1/2"
               >
                 <img
                   src="@/img/Стрелка_left.png"
@@ -380,7 +380,7 @@
               </button>
               <button
                 ref="next"
-                class="px-[0.7%] py-[3%] md:px-2 md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"
+                class="px-[0.8%] py-[4%] md:px-2 sm:border-none border-[0.25px] border-accent md:py-6 bg-white rounded-full z-10 absolute right-0 top-1/2 -translate-y-1/2"
               >
                 <img
                   src="@/img/Стрелка_right.png"

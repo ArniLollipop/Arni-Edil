@@ -40,21 +40,21 @@
       @mobileModalStatus="acceptMobileModalStatus"
     >
       <div class="sm:flex items-center md:gap-x-7 sm:gap-x-3 hidden">
-        <button
+        <router-link to = ""
           class="w-[210px] h-[34px] rounded-[10px] bg-white text-sm text-center border border-accent shadow-md shadow-accent"
         >
           Всі категорії
-        </button>
+        </router-link>
         <router-link
           to="/statya1"
           class="w-[210px] h-[34px] rounded-[10px] py-1 bg-white text-sm text-center border border-accent"
           >Новини компанії Vamberi</router-link
         >
-        <button
+        <router-link to = ""
           class="w-[210px] h-[34px] rounded-[10px] bg-white text-sm text-center border border-accent"
         >
           Нерухомість
-        </button>
+        </router-link>
       </div>
       <div class = "sm:grid grid-cols-1 md:pt-10 sm:pt-5 gap-y-6">
         <div class = "sm:bg-white  w-full sm:px-5 sm:py-5 rounded-[10px] min-h-[150px] xl:mt-8 sm:mt-4" v-for="text in texts">

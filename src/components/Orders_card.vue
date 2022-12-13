@@ -56,7 +56,11 @@
             <div class = "sm:flex items-center mt-4 pb-4 border-b-[0.5px] border-gray">
               <p class = "sm:text-sm text-xs w-[20%] sm:mb-0 mb-1">Продавець</p>
               <div class = "flex items-center space-x-3">
-                <img src="@/img/slider_img2.svg" alt="" class = "w-[57px] h-[36px] rounded-full">
+                <div class = "w-[50px] h-[50px] rounded-full relative">
+                  
+                  <img src="@/img/slider_img2.svg" alt="" class = "w-full h-full rounded-full">
+                  <div class = "w-2 h-2 bg-green absolute bottom-[6px] right-0 rounded-full"></div> 
+                </div>
                 <div >
                   <p class = "text-blueText sm:text-sm text-xs">Анна</p>
                   <p class = "sm:text-sm text-xs">На Дошка оголошень Vamberi з 13.02.2022</p>

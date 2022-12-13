@@ -245,7 +245,7 @@
             </div>
           </div>
           <p class = "sm:text-2xl text-sm font-medium sm:my-8 mt-6 sm:px-0 text-main">Загальні налаштування</p>
-          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full md:px-10 sm:px-4 py-2">
+          <div class = "md:bg-white md:border-[1px] border-accent rounded-[10px] w-full md:px-10 sm:px-4 py-2 sm:pb-6">
             <div class = "sm:grid grid-cols-10 items-center justify-between w-full border-b border-gray border-opacity-60 sm:pb-6 sm:mt-6 pb-2 mt-2 relative">
               <div class = "sm:col-span-3 w-[90%] sm:text-center">
                 <p class = "md:text-base sm:text-sm text-xs">Показувати мій телефон в оголошеннях</p>
